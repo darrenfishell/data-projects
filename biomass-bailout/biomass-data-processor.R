@@ -29,6 +29,9 @@ ReEnergy <- ReEnergy[!(is.na(ReEnergy$Hour) | ReEnergy$Hour==""),]
 #Merge tables
 dat<-merge(x = StoredSolar, y = ReEnergy, by = c("Hour","Date"), all = TRUE)
 
+#Set nulls to blank
+dat[is.na(dat)] <- ""
+
 #Set directory for merged data storage
 setwd("~/Github clones/data-projects/biomass-bailout/data")
 

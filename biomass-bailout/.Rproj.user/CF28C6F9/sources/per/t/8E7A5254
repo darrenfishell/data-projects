@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1546808110541.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "8E7A5254",
+    "lastKnownWriteTime" : -2934270121314615290,
+    "last_content_update" : 1546808110541,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "473E8179",
+        "caption" : "ReEnergy",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=ReEnergy&cache_key=473E8179",
+        "displayedObservations" : 14640,
+        "environment" : "",
+        "object" : "ReEnergy",
+        "preview" : 0,
+        "totalObservations" : 14640,
+        "variables" : 11
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
