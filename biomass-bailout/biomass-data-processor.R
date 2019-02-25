@@ -1,6 +1,6 @@
 #Processing the latest biomass data for Tableau
 
-#Enter the filename for the latest Excel extract
+#Enter the filename for the latest Excel extract (downloaded from PUC site)
 latest_biomass <- "12-31-2018.xlsx"
 
 #Set directory to biomass folder

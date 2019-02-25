@@ -1,0 +1,23 @@
+Field      Length       Comment
+
+GEOCODE    5            Civil code for the municipality.  
+                        The first 2 characters correspond to the County.
+                        01 = Androscoggin        17 = Oxford
+                        03 = Aroostook           19 = Penobscot
+                        05 = Cumberland          21 = Piscataquis
+                        07 = Franklin            23 = Sagadahoc
+                        09 = Hancock             25 = Somerset
+                        11 = Kennebec            27 = Waldo
+                        13 = Knox                29 = Washington
+                        15 = Lincoln             31 = York
+FILLER     1            (BLANK SPACE FOR READABILITY)
+LEGAL CITY 50           Name of the municipality
+FILLER     1            (BLANK SPACE FOR READABILITY)
+MAKE       4            Vehicle Make
+FILLER     1            (BLANK SPACE FOR READABILITY)
+MODEL      6            Vehicle Model
+FILLER     1            (BLANK SPACE FOR READABILITY)
+YEAR       4            Year of the Vehicle
+FILLER     1            (BLANK SPACE FOR READABILITY)
+COUNT      4            Count of how many for that municipality.
+
