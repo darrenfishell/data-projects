@@ -1,0 +1,1132 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20192.19.0515.1630                               -->
+<workbook source-build='2019.2.0 (20192.19.0515.1630)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts ignorable='true' predowngraded='true' />
+    <MapboxVectorStylesAndLayers />
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <SortTagCleanup />
+    <SpatialFileLayer />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='TownsalongtheNECECroute' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Maine_Boundaries_Town_Polygon' inline='true' name='federated.1fc1ts40vzk9ww12bfk3t0vck7iy' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Maine_Boundaries_Town_Polygon' name='ogrdirect.1crq3eb0289rrg12un9yr1nnokth'>
+            <connection class='ogrdirect' directory='/var/folders/pc/dr7xphpd12b2nnb8rsyz9kr40000gn/T/tableau-temp/757158908/Data/spatial-files/Maine_Boundaries_Town_Polygon' filename='Maine_Boundaries_Town_Polygon.shp' ogr-grid-shift-folder='/Applications/Tableau Desktop 2019.2.app/Contents/install/local/proj4' password='' server='' tablename='' workgroup-auth-mode='as-is' />
+          </named-connection>
+          <named-connection caption='NECEC Project Data' name='ogrdirect.0w6rmp20n8n88p1a0pif30xwl9sg'>
+            <connection class='ogrdirect' directory='/var/folders/pc/dr7xphpd12b2nnb8rsyz9kr40000gn/T/tableau-temp/757158908/Data/NECEC' filename='NECEC Project Data.kml' ogr-grid-shift-folder='/Applications/Tableau Desktop 2019.2.app/Contents/install/local/proj4' password='' server='' tablename='' workgroup-auth-mode='as-is' />
+          </named-connection>
+          <named-connection caption='NECEC towns' name='google-sheets.0nntzlr17zgi121a8hnp61jii7fi'>
+            <connection REDIRECT_URI='urn:ietf:wg:oauth:2.0:oob' SCOPE='email profile https://www.googleapis.com/auth/drive.readonly' class='google-sheets' cleaning='no' compat='no' dataRefreshTime='' filename='NECEC towns' googleSheetId='1rLQ7gcWu-8hZPqYgOn8SnWJocJ_Vsb0tWhYNqSaeDB4' interpretationMode='8' mimeType='application/vnd.google-apps.spreadsheet' server='' server-oauth='' username='darren.fishell@gmail.com' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation join='left' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[Maine_Boundaries_Town_Polygon.shp].[TOWN]' />
+              <expression op='[Towns Opposed or Supporting NECEC].[Town]' />
+            </expression>
+          </clause>
+          <relation join='left' type='join'>
+            <clause type='join'>
+              <expression op='Intersects'>
+                <expression op='[Maine_Boundaries_Town_Polygon.shp].[Geometry]' />
+                <expression op='[NECEC Proposed Structures].[Geometry]' />
+              </expression>
+            </clause>
+            <relation connection='ogrdirect.1crq3eb0289rrg12un9yr1nnokth' name='Maine_Boundaries_Town_Polygon.shp' table='[Maine_Boundaries_Town_Polygon.shp]' type='table'>
+              <columns>
+                <column datatype='integer' name='OBJECTID' ordinal='0' />
+                <column datatype='string' name='TOWN' ordinal='1' />
+                <column datatype='string' name='COUNTY' ordinal='2' />
+                <column datatype='string' name='GEOCODE' ordinal='3' />
+                <column datatype='integer' name='GEOCODENUM' ordinal='4' />
+                <column datatype='string' name='CNTYCODE' ordinal='5' />
+                <column datatype='string' name='LAND' ordinal='6' />
+                <column datatype='string' name='TAG' ordinal='7' />
+                <column datatype='string' name='ISLAND' ordinal='8' />
+                <column datatype='string' name='CIREG' ordinal='9' />
+                <column datatype='string' name='LURC' ordinal='10' />
+                <column datatype='string' name='BAXTER' ordinal='11' />
+                <column datatype='string' name='ISLANDID' ordinal='12' />
+                <column datatype='string' name='TYPE' ordinal='13' />
+                <column datatype='integer' name='DOT_REGNUM' ordinal='14' />
+                <column datatype='string' name='DOT_REGION' ordinal='15' />
+                <column datatype='string' name='GlobalID' ordinal='16' />
+                <column datatype='real' name='ShapeSTAre' ordinal='17' />
+                <column datatype='real' name='ShapeSTLen' ordinal='18' />
+                <column datatype='spatial' name='Geometry' ordinal='19' />
+              </columns>
+            </relation>
+            <relation connection='ogrdirect.0w6rmp20n8n88p1a0pif30xwl9sg' name='NECEC Proposed Structures' table='[NECEC Proposed Structures]' type='table'>
+              <columns>
+                <column datatype='string' name='Name' ordinal='0' />
+                <column datatype='string' name='Description' ordinal='1' />
+                <column datatype='spatial' name='Geometry' ordinal='2' />
+              </columns>
+            </relation>
+          </relation>
+          <relation connection='google-sheets.0nntzlr17zgi121a8hnp61jii7fi' name='Towns Opposed or Supporting NECEC' table='[Sheet1$]' type='table'>
+            <columns gridOrigin='A1:C17:no:A1:C17:0' header='yes' outcome='2'>
+              <column datatype='string' name='Town' ordinal='0' />
+              <column datatype='string' name='Nature of opposition' ordinal='1' />
+              <column datatype='string' name='Opposed or Support' ordinal='2' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[BAXTER]' value='[Maine_Boundaries_Town_Polygon.shp].[BAXTER]' />
+          <map key='[CIREG]' value='[Maine_Boundaries_Town_Polygon.shp].[CIREG]' />
+          <map key='[CNTYCODE]' value='[Maine_Boundaries_Town_Polygon.shp].[CNTYCODE]' />
+          <map key='[COUNTY]' value='[Maine_Boundaries_Town_Polygon.shp].[COUNTY]' />
+          <map key='[DOT_REGION]' value='[Maine_Boundaries_Town_Polygon.shp].[DOT_REGION]' />
+          <map key='[DOT_REGNUM]' value='[Maine_Boundaries_Town_Polygon.shp].[DOT_REGNUM]' />
+          <map key='[Description]' value='[NECEC Proposed Structures].[Description]' />
+          <map key='[GEOCODENUM]' value='[Maine_Boundaries_Town_Polygon.shp].[GEOCODENUM]' />
+          <map key='[GEOCODE]' value='[Maine_Boundaries_Town_Polygon.shp].[GEOCODE]' />
+          <map key='[Geometry (NECEC Proposed Structures)]' value='[NECEC Proposed Structures].[Geometry]' />
+          <map key='[Geometry]' value='[Maine_Boundaries_Town_Polygon.shp].[Geometry]' />
+          <map key='[GlobalID]' value='[Maine_Boundaries_Town_Polygon.shp].[GlobalID]' />
+          <map key='[ISLANDID]' value='[Maine_Boundaries_Town_Polygon.shp].[ISLANDID]' />
+          <map key='[ISLAND]' value='[Maine_Boundaries_Town_Polygon.shp].[ISLAND]' />
+          <map key='[LAND]' value='[Maine_Boundaries_Town_Polygon.shp].[LAND]' />
+          <map key='[LURC]' value='[Maine_Boundaries_Town_Polygon.shp].[LURC]' />
+          <map key='[Name]' value='[NECEC Proposed Structures].[Name]' />
+          <map key='[Nature of opposition]' value='[Towns Opposed or Supporting NECEC].[Nature of opposition]' />
+          <map key='[OBJECTID]' value='[Maine_Boundaries_Town_Polygon.shp].[OBJECTID]' />
+          <map key='[Opposed or Support]' value='[Towns Opposed or Supporting NECEC].[Opposed or Support]' />
+          <map key='[ShapeSTAre]' value='[Maine_Boundaries_Town_Polygon.shp].[ShapeSTAre]' />
+          <map key='[ShapeSTLen]' value='[Maine_Boundaries_Town_Polygon.shp].[ShapeSTLen]' />
+          <map key='[TAG]' value='[Maine_Boundaries_Town_Polygon.shp].[TAG]' />
+          <map key='[TOWN]' value='[Maine_Boundaries_Town_Polygon.shp].[TOWN]' />
+          <map key='[TYPE]' value='[Maine_Boundaries_Town_Polygon.shp].[TYPE]' />
+          <map key='[Town]' value='[Towns Opposed or Supporting NECEC].[Town]' />
+        </cols>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>OBJECTID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OBJECTID]</local-name>
+            <parent-name>[Maine_Boundaries_Town_Polygon.shp]</parent-name>
+            <remote-alias>OBJECTID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOWN</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TOWN]</local-name>
+            <parent-name>[Maine_Boundaries_Town_Polygon.shp]</parent-name>
+            <remote-alias>TOWN</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COUNTY]</local-name>
+            <parent-name>[Maine_Boundaries_Town_Polygon.shp]</parent-name>
+            <remote-alias>COUNTY</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GEOCODE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GEOCODE]</local-name>
+            <parent-name>[Maine_Boundaries_Town_Polygon.shp]</parent-name>
+            <remote-alias>GEOCODE</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GEOCODENUM</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GEOCODENUM]</local-name>
+            <parent-name>[Maine_Boundaries_Town_Polygon.shp]</parent-name>
+            <remote-alias>GEOCODENUM</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CNTYCODE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CNTYCODE]</local-name>
+            <parent-name>[Maine_Boundaries_Town_Polygon.shp]</parent-name>
+            <remote-alias>CNTYCODE</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LAND</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LAND]</local-name>
+            <parent-name>[Maine_Boundaries_Town_Polygon.shp]</parent-name>
+            <remote-alias>LAND</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TAG</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TAG]</local-name>
+            <parent-name>[Maine_Boundaries_Town_Polygon.shp]</parent-name>
+            <remote-alias>TAG</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ISLAND</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ISLAND]</local-name>
+            <parent-name>[Maine_Boundaries_Town_Polygon.shp]</parent-name>
+            <remote-alias>ISLAND</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CIREG</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CIREG]</local-name>
+            <parent-name>[Maine_Boundaries_Town_Polygon.shp]</parent-name>
+            <remote-alias>CIREG</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LURC</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LURC]</local-name>
+            <parent-name>[Maine_Boundaries_Town_Polygon.shp]</parent-name>
+            <remote-alias>LURC</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BAXTER</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BAXTER]</local-name>
+            <parent-name>[Maine_Boundaries_Town_Polygon.shp]</parent-name>
+            <remote-alias>BAXTER</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ISLANDID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ISLANDID]</local-name>
+            <parent-name>[Maine_Boundaries_Town_Polygon.shp]</parent-name>
+            <remote-alias>ISLANDID</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TYPE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TYPE]</local-name>
+            <parent-name>[Maine_Boundaries_Town_Polygon.shp]</parent-name>
+            <remote-alias>TYPE</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DOT_REGNUM</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DOT_REGNUM]</local-name>
+            <parent-name>[Maine_Boundaries_Town_Polygon.shp]</parent-name>
+            <remote-alias>DOT_REGNUM</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DOT_REGION</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DOT_REGION]</local-name>
+            <parent-name>[Maine_Boundaries_Town_Polygon.shp]</parent-name>
+            <remote-alias>DOT_REGION</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GlobalID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GlobalID]</local-name>
+            <parent-name>[Maine_Boundaries_Town_Polygon.shp]</parent-name>
+            <remote-alias>GlobalID</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ShapeSTAre</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ShapeSTAre]</local-name>
+            <parent-name>[Maine_Boundaries_Town_Polygon.shp]</parent-name>
+            <remote-alias>ShapeSTAre</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ShapeSTLen</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ShapeSTLen]</local-name>
+            <parent-name>[Maine_Boundaries_Town_Polygon.shp]</parent-name>
+            <remote-alias>ShapeSTLen</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geometry</remote-name>
+            <remote-type>8</remote-type>
+            <local-name>[Geometry]</local-name>
+            <parent-name>[Maine_Boundaries_Town_Polygon.shp]</parent-name>
+            <remote-alias>Geometry</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Collect</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[NECEC Proposed Structures]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Description]</local-name>
+            <parent-name>[NECEC Proposed Structures]</parent-name>
+            <remote-alias>Description</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geometry</remote-name>
+            <remote-type>8</remote-type>
+            <local-name>[Geometry (NECEC Proposed Structures)]</local-name>
+            <parent-name>[NECEC Proposed Structures]</parent-name>
+            <remote-alias>Geometry</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Collect</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Town</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Town]</local-name>
+            <parent-name>[Towns Opposed or Supporting NECEC]</parent-name>
+            <remote-alias>Town</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nature of opposition</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Nature of opposition]</local-name>
+            <parent-name>[Towns Opposed or Supporting NECEC]</parent-name>
+            <remote-alias>Nature of opposition</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Opposed or Support</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Opposed or Support]</local-name>
+            <parent-name>[Towns Opposed or Supporting NECEC]</parent-name>
+            <remote-alias>Opposed or Support</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Towns Opposed or Supporting NECEC]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C17:no:A1:C17:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Baxter' datatype='string' hidden='true' name='[BAXTER]' role='dimension' type='nominal' />
+      <column caption='Cireg' datatype='string' hidden='true' name='[CIREG]' role='dimension' type='nominal' />
+      <column caption='Cntycode' datatype='string' hidden='true' name='[CNTYCODE]' role='dimension' type='nominal' />
+      <column caption='County' datatype='string' hidden='true' name='[COUNTY]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Voted or affected' datatype='boolean' name='[Calculation_6779043400762621953]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='NOT ISNULL([Name])&#10;OR NOT ISNULL([Town])' />
+      </column>
+      <column caption='Dot Region' datatype='string' hidden='true' name='[DOT_REGION]' role='dimension' type='nominal' />
+      <column caption='Dot Regnum' datatype='integer' hidden='true' name='[DOT_REGNUM]' role='measure' type='quantitative' />
+      <column datatype='string' hidden='true' name='[Description]' role='dimension' type='nominal' />
+      <column caption='Geocodenum' datatype='integer' hidden='true' name='[GEOCODENUM]' role='measure' type='quantitative' />
+      <column caption='Geocode' datatype='string' hidden='true' name='[GEOCODE]' role='dimension' type='nominal' />
+      <column caption='Global ID' datatype='string' hidden='true' name='[GlobalID]' role='dimension' type='nominal' />
+      <column caption='Islandid' datatype='string' hidden='true' name='[ISLANDID]' role='dimension' type='nominal' />
+      <column caption='Island' datatype='string' hidden='true' name='[ISLAND]' role='dimension' type='nominal' />
+      <column caption='Land' datatype='string' hidden='true' name='[LAND]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Lurc' datatype='string' hidden='true' name='[LURC]' role='dimension' type='nominal' />
+      <column datatype='integer' hidden='true' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Objectid' datatype='integer' hidden='true' name='[OBJECTID]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Opposed or Support]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='%null%' value='No official stance' />
+        </aliases>
+      </column>
+      <column caption='Shape ST Are' datatype='real' hidden='true' name='[ShapeSTAre]' role='measure' type='quantitative' />
+      <column caption='Shape ST Len' datatype='real' hidden='true' name='[ShapeSTLen]' role='measure' type='quantitative' />
+      <column datatype='string' hidden='true' name='[TAG]' role='dimension' type='nominal' />
+      <column caption='Town' datatype='string' name='[TOWN]' role='dimension' type='nominal' />
+      <column caption='Type' datatype='string' hidden='true' name='[TYPE]' role='dimension' type='nominal' />
+      <column caption='Town1' datatype='string' name='[Town]' role='dimension' type='nominal' />
+      <column-instance column='[Opposed or Support]' derivation='None' name='[none:Opposed or Support:nk]' pivot='key' type='nominal' />
+      <drill-paths>
+        <drill-path name='LAND, COUNTY'>
+          <field>[LAND]</field>
+          <field>[COUNTY]</field>
+        </drill-path>
+      </drill-paths>
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/NECEC Towns.twb Files/federated.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <cols>
+            <map key='[Geometry (NECEC Proposed Structures)]' value='[Extract].[Geometry]' />
+            <map key='[Geometry]' value='[Extract].[Geometry1]' />
+            <map key='[Name]' value='[Extract].[Name]' />
+            <map key='[Nature of opposition]' value='[Extract].[Nature of opposition]' />
+            <map key='[Opposed or Support]' value='[Extract].[Opposed or Support]' />
+            <map key='[TOWN]' value='[Extract].[TOWN]' />
+            <map key='[Town]' value='[Extract].[Town1]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>TOWN</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[TOWN]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TOWN</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Maine_Boundaries_Town_Polygon.shp</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>440</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Geometry1</remote-name>
+              <remote-type>128</remote-type>
+              <local-name>[Geometry]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Geometry1</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Maine_Boundaries_Town_Polygon.shp</family>
+              <local-type>spatial</local-type>
+              <aggregation>Collect</aggregation>
+              <approx-count>4139</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Name</remote-alias>
+              <ordinal>2</ordinal>
+              <family>NECEC Proposed Structures</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2554</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Geometry</remote-name>
+              <remote-type>128</remote-type>
+              <local-name>[Geometry (NECEC Proposed Structures)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Geometry</remote-alias>
+              <ordinal>3</ordinal>
+              <family>NECEC Proposed Structures</family>
+              <local-type>spatial</local-type>
+              <aggregation>Collect</aggregation>
+              <approx-count>2554</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Town1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Town]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Town1</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Towns Opposed or Supporting NECEC</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Nature of opposition</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Nature of opposition]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Nature of opposition</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Towns Opposed or Supporting NECEC</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Opposed or Support</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Opposed or Support]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Opposed or Support</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Towns Opposed or Supporting NECEC</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.633333' measure-ordering='alphabetic' measure-percentage='0.366667' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Opposed or Support:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;Support&quot;</bucket>
+            </map>
+            <map to='#8b9598'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Oppose&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Highlight1' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Towns along the NECEC route' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Town' />
+        <param name='target' value='Towns along the NECEC route' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Map'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run>SOURCES: Maine Office of GIS, City of Lewiston and the Natural Resource Council of Maine.</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Maine_Boundaries_Town_Polygon' name='federated.1fc1ts40vzk9ww12bfk3t0vck7iy' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1fc1ts40vzk9ww12bfk3t0vck7iy'>
+            <column caption='Voted or affected' datatype='boolean' name='[Calculation_6779043400762621953]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='NOT ISNULL([Name])&#10;OR NOT ISNULL([Town])' />
+            </column>
+            <column datatype='spatial' name='[Geometry (NECEC Proposed Structures)]' role='measure' type='nominal' />
+            <column datatype='spatial' name='[Geometry]' role='measure' type='nominal' />
+            <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Nature of opposition]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Opposed or Support]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='%null%' value='No official stance' />
+              </aliases>
+            </column>
+            <column caption='Town' datatype='string' name='[TOWN]' role='dimension' type='nominal' />
+            <column caption='Town1' datatype='string' name='[Town]' role='dimension' type='nominal' />
+            <column-instance column='[Nature of opposition]' derivation='Attribute' name='[attr:Nature of opposition:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Geometry (NECEC Proposed Structures)]' derivation='Collect' name='[clct:Geometry (NECEC Proposed Structures):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Geometry]' derivation='Collect' name='[clct:Geometry:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_6779043400762621953]' derivation='None' name='[none:Calculation_6779043400762621953:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Name]' derivation='None' name='[none:Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Opposed or Support]' derivation='None' name='[none:Opposed or Support:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TOWN]' derivation='None' name='[none:TOWN:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[none:Calculation_6779043400762621953:nk]'>
+            <groupfilter function='member' level='[none:Calculation_6779043400762621953:nk]' member='true' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[none:Calculation_6779043400762621953:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[Longitude (generated)]' field-type='quantitative' fold='true' projection='EPSG:3857' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='col-width' field='[federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[none:Opposed or Support:nk]' value='140' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='poi-relevant-scalerank4-l15' value='false' />
+            <format attr='enabled' id='poi-relevant-scalerank4-l1' value='false' />
+            <format attr='enabled' id='poi-parks_scalerank4' value='false' />
+            <format attr='enabled' id='poi-scalerank3' value='false' />
+            <format attr='enabled' id='poi-parks-scalerank3' value='false' />
+            <format attr='enabled' id='poi-outdoor-features' value='false' />
+            <format attr='enabled' id='mountain-peak-label' value='false' />
+            <format attr='enabled' id='mountain-peak-label-with-elevation' value='false' />
+            <format attr='enabled' id='poi-scalerank2' value='false' />
+            <format attr='enabled' id='poi-parks-scalerank2' value='false' />
+            <format attr='enabled' id='poi-parks-scalerank1' value='false' />
+            <format attr='enabled' id='poi-scalerank1' value='false' />
+            <format attr='enabled' id='airport-label' value='false' />
+            <format attr='enabled' id='rail-label' value='false' />
+            <format attr='enabled' id='place-residential' value='false' />
+            <format attr='enabled' id='place-neighbourhood' value='false' />
+            <format attr='enabled' id='place-suburb' value='false' />
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='outdoors' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='geo-area-type' value='Zip Code' />
+            <format attr='palette' value='tableau-map-blue-green-light' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[none:TOWN:nk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='right' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[Longitude (generated)]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[none:Opposed or Support:nk]' />
+              <tooltip column='[federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[attr:Nature of opposition:nk]' />
+              <text column='[federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[none:TOWN:nk]' />
+              <lod column='[federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[clct:Geometry:nk]' />
+              <lod column='[federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[none:TOWN:nk]' />
+              <geometry column='[federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[clct:Geometry:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'>&lt;[federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[none:TOWN:nk]&gt;</run>
+                <run>&#10;&lt;[federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[attr:Nature of opposition:nk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[none:TOWN:nk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+                <format attr='text-align' value='auto' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#ffffff' />
+                <format attr='mark-transparency' value='157' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='highlight' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[Longitude (generated)]' x-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[clct:Geometry (NECEC Proposed Structures):nk]' />
+              <lod column='[federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[none:Name:nk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text />
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='right' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='0.0099999997764825821' />
+                <format attr='mark-color' value='#e15759' />
+                <format attr='has-stroke' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[Latitude (generated)]</rows>
+        <cols>([federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[Longitude (generated)] + [federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[Longitude (generated)])</cols>
+      </table>
+      <simple-id uuid='{D51EEB51-3349-4887-B5A1-866D9138DAD8}' />
+    </worksheet>
+    <worksheet name='Towns'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Maine_Boundaries_Town_Polygon' name='federated.1fc1ts40vzk9ww12bfk3t0vck7iy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1fc1ts40vzk9ww12bfk3t0vck7iy'>
+            <column caption='Voted or affected' datatype='boolean' name='[Calculation_6779043400762621953]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='NOT ISNULL([Name])&#10;OR NOT ISNULL([Town])' />
+            </column>
+            <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Nature of opposition]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Opposed or Support]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='%null%' value='No official stance' />
+              </aliases>
+            </column>
+            <column caption='Town' datatype='string' name='[TOWN]' role='dimension' type='nominal' />
+            <column caption='Town1' datatype='string' name='[Town]' role='dimension' type='nominal' />
+            <column-instance column='[Nature of opposition]' derivation='Attribute' name='[attr:Nature of opposition:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_6779043400762621953]' derivation='None' name='[none:Calculation_6779043400762621953:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Opposed or Support]' derivation='None' name='[none:Opposed or Support:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TOWN]' derivation='None' name='[none:TOWN:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[none:Calculation_6779043400762621953:nk]'>
+            <groupfilter function='member' level='[none:Calculation_6779043400762621953:nk]' member='true' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[none:Opposed or Support:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Oppose&quot;</bucket>
+              <bucket>&quot;Support&quot;</bucket>
+              <bucket>%null%</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[none:Calculation_6779043400762621953:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[none:TOWN:nk]' value='false' />
+            <format attr='display' field='[federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[none:Opposed or Support:nk]' value='false' />
+            <format attr='text-orientation' field='[federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[none:Opposed or Support:nk]' value='-90' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='1' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#f5f5f5' />
+            <format attr='div-level' scope='rows' value='1' />
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[none:Opposed or Support:nk]' />
+              <tooltip column='[federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[attr:Nature of opposition:nk]' />
+              <text column='[federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[none:TOWN:nk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run bold='true'>&lt;[federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[none:TOWN:nk]&gt;</run>
+                <run>&#10;&lt;[federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[attr:Nature of opposition:nk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[none:Opposed or Support:nk] / [federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[none:TOWN:nk])</rows>
+        <cols />
+        <tooltip-style tooltip-mode='none' />
+      </table>
+      <simple-id uuid='{0D743E71-66CB-4977-9B0A-3CE38AB83E58}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Towns along the NECEC route'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Sheet Name&gt;&#10;</run>
+            <run fontsize='9'>The path of the proposed New England Clean Energy Connect line, which would carry hydropower from Quebec into New England&apos;s regional power grid.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='700' maxwidth='900' minheight='700' minwidth='900' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='100000' id='13' param='vert' type='layout-flow' w='100000' x='0' y='0'>
+            <zone h='100000' id='10' param='horz' type='layout-flow' w='100000' x='0' y='0'>
+              <zone h='100000' id='8' type='layout-basic' w='100000' x='0' y='0'>
+                <zone h='90103' id='3' name='Map' show-caption='true' show-title='false' w='80778' x='444' y='9326'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='98858' id='5' name='Towns' show-title='false' w='18334' x='81222' y='571'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='0' />
+                    <format attr='background-color' value='#e6e6e6' />
+                  </zone-style>
+                </zone>
+                <zone h='8755' id='14' type='title' w='62445' x='444' y='571'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='8755' id='11' name='Map' pane-specification-id='4' param='[federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[none:Opposed or Support:nk]' show-title='false' type='color' w='18333' x='62889' y='571'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='0' />
+                    <format attr='background-color' value='#f5f5f5' />
+                  </zone-style>
+                </zone>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='0' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='6' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97714' id='7' param='vert' type='layout-flow' w='98222' x='889' y='1143'>
+                <zone fixed-size='280' h='97714' id='3' is-fixed='true' name='Map' show-caption='true' w='80054' x='889' y='1143'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='97714' id='5' is-fixed='true' name='Towns' w='18168' x='80943' y='1143'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{26F9729E-52C2-4B43-B4A8-A27283A3AE9F}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='Towns along the NECEC route'>
+      <viewpoints>
+        <viewpoint name='Map'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+        <viewpoint name='Towns'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='14' />
+      <simple-id uuid='{EC095D5C-05CA-4B42-9686-87FA82A7E99A}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='4' param='[federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[none:Opposed or Support:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9E5F728C-C402-424D-921F-D7BF9F495584}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Towns'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1fc1ts40vzk9ww12bfk3t0vck7iy].[none:Opposed or Support:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{196028B9-FFF9-4C0B-883A-3DF6F8D85EDE}' />
+    </window>
+  </windows>
+</workbook>
