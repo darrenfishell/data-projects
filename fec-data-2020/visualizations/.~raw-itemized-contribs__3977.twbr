@@ -1,0 +1,1906 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20192.19.0621.1547                               -->
+<workbook source-build='2019.2.1 (20192.19.0621.1547)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts ignorable='true' predowngraded='true' />
+    <GroupAction />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='ItemizedSenatecontributionsbystate' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='States or set' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Share of total&quot;'>
+        <calculation class='tableau' formula='&quot;Share of total&quot;' />
+        <members>
+          <member value='&quot;Share of total&quot;' />
+        </members>
+      </column>
+    </datasource>
+    <datasource caption='maine-fed-raw-itemized-receipts' inline='true' name='federated.0vm00sc11rriqj1bcxj9p1p1bahp' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='maine-fed-raw-itemized-receipts' name='textscan.09038ly091dvfl16auyfn0auwrs3'>
+            <connection class='textscan' directory='/Users/Darren/Github clones/data-projects/fec-data-2020' filename='maine-fed-raw-itemized-receipts.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.09038ly091dvfl16auyfn0auwrs3' name='maine-fed-raw-itemized-receipts.csv' table='[maine-fed-raw-itemized-receipts#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='committee.city' ordinal='1' />
+            <column datatype='string' name='committee.committee_id' ordinal='2' />
+            <column datatype='string' name='committee.committee_type_full' ordinal='3' />
+            <column datatype='integer' name='committee.cycle' ordinal='4' />
+            <column datatype='string' name='committee.name' ordinal='5' />
+            <column datatype='string' name='committee.party_full' ordinal='6' />
+            <column datatype='string' name='committee.state_full' ordinal='7' />
+            <column datatype='real' name='contribution_receipt_amount' ordinal='8' />
+            <column datatype='date' name='contribution_receipt_date' ordinal='9' />
+            <column datatype='real' name='contributor_aggregate_ytd' ordinal='10' />
+            <column datatype='string' name='contributor_city' ordinal='11' />
+            <column datatype='string' name='contributor_employer' ordinal='12' />
+            <column datatype='string' name='contributor_first_name' ordinal='13' />
+            <column datatype='string' name='contributor_last_name' ordinal='14' />
+            <column datatype='string' name='contributor_name' ordinal='15' />
+            <column datatype='integer' name='cycle' ordinal='16' />
+            <column datatype='string' name='contributor_occupation' ordinal='17' />
+            <column datatype='string' name='contributor_state' ordinal='18' />
+            <column datatype='integer' name='contributor_zip' ordinal='19' />
+            <column datatype='string' name='entity_type' ordinal='20' />
+            <column datatype='date' name='filing.coverage_end_date' ordinal='21' />
+            <column datatype='date' name='filing.coverage_start_date' ordinal='22' />
+            <column datatype='date' name='filing.filed_date' ordinal='23' />
+            <column datatype='boolean' name='filing.is_amended' ordinal='24' />
+            <column datatype='string' name='fec_election_type_desc' ordinal='25' />
+            <column datatype='string' name='memo_text' ordinal='26' />
+            <column datatype='string' name='filing.pdf_url' ordinal='27' />
+            <column datatype='string' name='transaction_id' ordinal='28' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[maine-fed-raw-itemized-receipts.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[maine-fed-raw-itemized-receipts.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>committee.city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[committee.city]</local-name>
+            <parent-name>[maine-fed-raw-itemized-receipts.csv]</parent-name>
+            <remote-alias>committee.city</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>committee.committee_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[committee.committee_id]</local-name>
+            <parent-name>[maine-fed-raw-itemized-receipts.csv]</parent-name>
+            <remote-alias>committee.committee_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>committee.committee_type_full</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[committee.committee_type_full]</local-name>
+            <parent-name>[maine-fed-raw-itemized-receipts.csv]</parent-name>
+            <remote-alias>committee.committee_type_full</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>committee.cycle</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[committee.cycle]</local-name>
+            <parent-name>[maine-fed-raw-itemized-receipts.csv]</parent-name>
+            <remote-alias>committee.cycle</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>committee.name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[committee.name]</local-name>
+            <parent-name>[maine-fed-raw-itemized-receipts.csv]</parent-name>
+            <remote-alias>committee.name</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>committee.party_full</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[committee.party_full]</local-name>
+            <parent-name>[maine-fed-raw-itemized-receipts.csv]</parent-name>
+            <remote-alias>committee.party_full</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>committee.state_full</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[committee.state_full]</local-name>
+            <parent-name>[maine-fed-raw-itemized-receipts.csv]</parent-name>
+            <remote-alias>committee.state_full</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contribution_receipt_amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[contribution_receipt_amount]</local-name>
+            <parent-name>[maine-fed-raw-itemized-receipts.csv]</parent-name>
+            <remote-alias>contribution_receipt_amount</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contribution_receipt_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[contribution_receipt_date]</local-name>
+            <parent-name>[maine-fed-raw-itemized-receipts.csv]</parent-name>
+            <remote-alias>contribution_receipt_date</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contributor_aggregate_ytd</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[contributor_aggregate_ytd]</local-name>
+            <parent-name>[maine-fed-raw-itemized-receipts.csv]</parent-name>
+            <remote-alias>contributor_aggregate_ytd</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contributor_city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[contributor_city]</local-name>
+            <parent-name>[maine-fed-raw-itemized-receipts.csv]</parent-name>
+            <remote-alias>contributor_city</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contributor_employer</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[contributor_employer]</local-name>
+            <parent-name>[maine-fed-raw-itemized-receipts.csv]</parent-name>
+            <remote-alias>contributor_employer</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contributor_first_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[contributor_first_name]</local-name>
+            <parent-name>[maine-fed-raw-itemized-receipts.csv]</parent-name>
+            <remote-alias>contributor_first_name</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contributor_last_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[contributor_last_name]</local-name>
+            <parent-name>[maine-fed-raw-itemized-receipts.csv]</parent-name>
+            <remote-alias>contributor_last_name</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contributor_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[contributor_name]</local-name>
+            <parent-name>[maine-fed-raw-itemized-receipts.csv]</parent-name>
+            <remote-alias>contributor_name</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cycle</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cycle]</local-name>
+            <parent-name>[maine-fed-raw-itemized-receipts.csv]</parent-name>
+            <remote-alias>cycle</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contributor_occupation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[contributor_occupation]</local-name>
+            <parent-name>[maine-fed-raw-itemized-receipts.csv]</parent-name>
+            <remote-alias>contributor_occupation</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contributor_state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[contributor_state]</local-name>
+            <parent-name>[maine-fed-raw-itemized-receipts.csv]</parent-name>
+            <remote-alias>contributor_state</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contributor_zip</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[contributor_zip]</local-name>
+            <parent-name>[maine-fed-raw-itemized-receipts.csv]</parent-name>
+            <remote-alias>contributor_zip</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>entity_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[entity_type]</local-name>
+            <parent-name>[maine-fed-raw-itemized-receipts.csv]</parent-name>
+            <remote-alias>entity_type</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>filing.coverage_end_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[filing.coverage_end_date]</local-name>
+            <parent-name>[maine-fed-raw-itemized-receipts.csv]</parent-name>
+            <remote-alias>filing.coverage_end_date</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>filing.coverage_start_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[filing.coverage_start_date]</local-name>
+            <parent-name>[maine-fed-raw-itemized-receipts.csv]</parent-name>
+            <remote-alias>filing.coverage_start_date</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>filing.filed_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[filing.filed_date]</local-name>
+            <parent-name>[maine-fed-raw-itemized-receipts.csv]</parent-name>
+            <remote-alias>filing.filed_date</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>filing.is_amended</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[filing.is_amended]</local-name>
+            <parent-name>[maine-fed-raw-itemized-receipts.csv]</parent-name>
+            <remote-alias>filing.is_amended</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fec_election_type_desc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fec_election_type_desc]</local-name>
+            <parent-name>[maine-fed-raw-itemized-receipts.csv]</parent-name>
+            <remote-alias>fec_election_type_desc</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>memo_text</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[memo_text]</local-name>
+            <parent-name>[maine-fed-raw-itemized-receipts.csv]</parent-name>
+            <remote-alias>memo_text</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>filing.pdf_url</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[filing.pdf_url]</local-name>
+            <parent-name>[maine-fed-raw-itemized-receipts.csv]</parent-name>
+            <remote-alias>filing.pdf_url</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transaction_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[transaction_id]</local-name>
+            <parent-name>[maine-fed-raw-itemized-receipts.csv]</parent-name>
+            <remote-alias>transaction_id</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='ZIP 5' datatype='string' name='[Calculation_234398299216101376]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal'>
+        <calculation class='tableau' formula='LEFT(STR([contributor_zip]),5)' />
+      </column>
+      <column caption='List of States' datatype='string' name='[Calculation_41306465026719749]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [ME Donations] THEN [contributor_state] END' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Committee.City' datatype='string' name='[committee.city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Committee.Committee Id' datatype='string' name='[committee.committee_id]' role='dimension' type='nominal' />
+      <column caption='Committee.Committee Type Full' datatype='string' name='[committee.committee_type_full]' role='dimension' type='nominal' />
+      <column caption='Committee.Cycle' datatype='integer' name='[committee.cycle]' role='measure' type='quantitative' />
+      <column caption='Committee.Name' datatype='string' name='[committee.name]' role='dimension' type='nominal' />
+      <column caption='Committee.Party Full' datatype='string' name='[committee.party_full]' role='dimension' type='nominal' />
+      <column caption='Committee.State Full' datatype='string' name='[committee.state_full]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Contribution Receipt Amount' datatype='real' name='[contribution_receipt_amount]' role='measure' type='quantitative' />
+      <column caption='Contribution Receipt Date' datatype='date' name='[contribution_receipt_date]' role='dimension' type='ordinal' />
+      <column caption='Contributor Aggregate Ytd' datatype='real' name='[contributor_aggregate_ytd]' role='measure' type='quantitative' />
+      <column caption='Contributor City' datatype='string' name='[contributor_city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Contributor Employer' datatype='string' name='[contributor_employer]' role='dimension' type='nominal' />
+      <column caption='Contributor First Name' datatype='string' name='[contributor_first_name]' role='dimension' type='nominal' />
+      <column caption='Contributor Last Name' datatype='string' name='[contributor_last_name]' role='dimension' type='nominal' />
+      <column caption='Contributor Name' datatype='string' name='[contributor_name]' role='dimension' type='nominal' />
+      <column caption='Contributor Occupation' datatype='string' name='[contributor_occupation]' role='dimension' type='nominal' />
+      <column caption='Contributor State' datatype='string' name='[contributor_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Contributor Zip' datatype='integer' default-format='*00000' name='[contributor_zip]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column caption='Cycle' datatype='integer' name='[cycle]' role='measure' type='quantitative' />
+      <column caption='Entity Type' datatype='string' name='[entity_type]' role='dimension' type='nominal' />
+      <column caption='Fec Election Type Desc' datatype='string' name='[fec_election_type_desc]' role='dimension' type='nominal' />
+      <column caption='Filing.Coverage End Date' datatype='date' name='[filing.coverage_end_date]' role='dimension' type='ordinal' />
+      <column caption='Filing.Coverage Start Date' datatype='date' name='[filing.coverage_start_date]' role='dimension' type='ordinal' />
+      <column caption='Filing.Filed Date' datatype='date' name='[filing.filed_date]' role='dimension' type='ordinal' />
+      <column caption='Filing.Is Amended' datatype='boolean' name='[filing.is_amended]' role='dimension' type='nominal' />
+      <column caption='Filing.Pdf Url' datatype='string' name='[filing.pdf_url]' role='dimension' type='nominal' />
+      <column datatype='string' name='[memo_text]' role='dimension' type='nominal' />
+      <column caption='Transaction Id' datatype='string' name='[transaction_id]' role='dimension' type='nominal' />
+      <column-instance column='[ME Donations]' derivation='InOut' name='[io:ME Donations:nk]' pivot='key' type='nominal' />
+      <column-instance column='[contributor_state]' derivation='None' name='[none:contributor_state:nk]' pivot='key' type='nominal' />
+      <column-instance column='[filing.coverage_end_date]' derivation='None' name='[none:filing.coverage_end_date:ok]' pivot='key' type='ordinal' />
+      <group caption='State donations' name='[ME Donations]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter function='member' level='[contributor_state]' member='&quot;MA&quot;' />
+      </group>
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/ItemizedSenatecontributionsbystate.twb Files/maine-fed-raw-itemized-receipts.hyper' default-settings='yes' schema='Extract' sslmode='' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>maine-fed-raw-itemized-receipts.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>committee.city</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[committee.city]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>committee.city</remote-alias>
+              <ordinal>1</ordinal>
+              <family>maine-fed-raw-itemized-receipts.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>committee.committee_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[committee.committee_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>committee.committee_id</remote-alias>
+              <ordinal>2</ordinal>
+              <family>maine-fed-raw-itemized-receipts.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>committee.committee_type_full</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[committee.committee_type_full]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>committee.committee_type_full</remote-alias>
+              <ordinal>3</ordinal>
+              <family>maine-fed-raw-itemized-receipts.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>committee.cycle</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[committee.cycle]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>committee.cycle</remote-alias>
+              <ordinal>4</ordinal>
+              <family>maine-fed-raw-itemized-receipts.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>committee.name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[committee.name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>committee.name</remote-alias>
+              <ordinal>5</ordinal>
+              <family>maine-fed-raw-itemized-receipts.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>committee.party_full</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[committee.party_full]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>committee.party_full</remote-alias>
+              <ordinal>6</ordinal>
+              <family>maine-fed-raw-itemized-receipts.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>committee.state_full</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[committee.state_full]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>committee.state_full</remote-alias>
+              <ordinal>7</ordinal>
+              <family>maine-fed-raw-itemized-receipts.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>contribution_receipt_amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[contribution_receipt_amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>contribution_receipt_amount</remote-alias>
+              <ordinal>8</ordinal>
+              <family>maine-fed-raw-itemized-receipts.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>525</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>contribution_receipt_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[contribution_receipt_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>contribution_receipt_date</remote-alias>
+              <ordinal>9</ordinal>
+              <family>maine-fed-raw-itemized-receipts.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>981</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>contributor_aggregate_ytd</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[contributor_aggregate_ytd]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>contributor_aggregate_ytd</remote-alias>
+              <ordinal>10</ordinal>
+              <family>maine-fed-raw-itemized-receipts.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>909</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>contributor_city</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[contributor_city]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>contributor_city</remote-alias>
+              <ordinal>11</ordinal>
+              <family>maine-fed-raw-itemized-receipts.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1258</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>contributor_employer</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[contributor_employer]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>contributor_employer</remote-alias>
+              <ordinal>12</ordinal>
+              <family>maine-fed-raw-itemized-receipts.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2034</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>contributor_first_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[contributor_first_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>contributor_first_name</remote-alias>
+              <ordinal>13</ordinal>
+              <family>maine-fed-raw-itemized-receipts.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1059</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>contributor_last_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[contributor_last_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>contributor_last_name</remote-alias>
+              <ordinal>14</ordinal>
+              <family>maine-fed-raw-itemized-receipts.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3431</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>contributor_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[contributor_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>contributor_name</remote-alias>
+              <ordinal>15</ordinal>
+              <family>maine-fed-raw-itemized-receipts.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4790</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cycle</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[cycle]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cycle</remote-alias>
+              <ordinal>16</ordinal>
+              <family>maine-fed-raw-itemized-receipts.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>contributor_occupation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[contributor_occupation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>contributor_occupation</remote-alias>
+              <ordinal>17</ordinal>
+              <family>maine-fed-raw-itemized-receipts.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>663</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>contributor_state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[contributor_state]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>contributor_state</remote-alias>
+              <ordinal>18</ordinal>
+              <family>maine-fed-raw-itemized-receipts.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>59</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>contributor_zip</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[contributor_zip]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>contributor_zip</remote-alias>
+              <ordinal>19</ordinal>
+              <family>maine-fed-raw-itemized-receipts.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4249</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>entity_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[entity_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>entity_type</remote-alias>
+              <ordinal>20</ordinal>
+              <family>maine-fed-raw-itemized-receipts.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>filing.coverage_end_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[filing.coverage_end_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>filing.coverage_end_date</remote-alias>
+              <ordinal>21</ordinal>
+              <family>maine-fed-raw-itemized-receipts.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>filing.coverage_start_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[filing.coverage_start_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>filing.coverage_start_date</remote-alias>
+              <ordinal>22</ordinal>
+              <family>maine-fed-raw-itemized-receipts.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>filing.filed_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[filing.filed_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>filing.filed_date</remote-alias>
+              <ordinal>23</ordinal>
+              <family>maine-fed-raw-itemized-receipts.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>filing.is_amended</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[filing.is_amended]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>filing.is_amended</remote-alias>
+              <ordinal>24</ordinal>
+              <family>maine-fed-raw-itemized-receipts.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fec_election_type_desc</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[fec_election_type_desc]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fec_election_type_desc</remote-alias>
+              <ordinal>25</ordinal>
+              <family>maine-fed-raw-itemized-receipts.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>memo_text</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[memo_text]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>memo_text</remote-alias>
+              <ordinal>26</ordinal>
+              <family>maine-fed-raw-itemized-receipts.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>34</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>filing.pdf_url</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[filing.pdf_url]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>filing.pdf_url</remote-alias>
+              <ordinal>27</ordinal>
+              <family>maine-fed-raw-itemized-receipts.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>48</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>transaction_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[transaction_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>transaction_id</remote-alias>
+              <ordinal>28</ordinal>
+              <family>maine-fed-raw-itemized-receipts.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>25812</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.714112' group-percentage='0.0279805' measure-ordering='alphabetic' measure-percentage='0.229927' parameter-percentage='0.0279805' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[io:ME Donations:nk]' type='palette'>
+            <map to='#a2a2a2'>
+              <bucket>false</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>true</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:contributor_state:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;DE&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;KS&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;AK&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;AZ&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;SC&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;TX&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;DC&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;OK&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;IA&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;MI&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;ZZ&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;MA&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;ND&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;WI&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;FL&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;MS&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;UT&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;LA&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;PA&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;AL&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;CA&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;SD&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;UK&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;NJ&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;NV&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;GA&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;MT&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;ID&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;MO&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;NC&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;NM&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;KY&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;NY&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;OH&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;RI&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;MD&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;NE&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;WV&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;IL&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;OR&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;VT&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;AR&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;CO&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;TN&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;VA&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;IN&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;NH&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;HI&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;ME&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;WY&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;CT&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;MN&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;WA&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <filter class='categorical' column='[memo_text]' filter-group='2'>
+        <groupfilter expression='NOT CONTAINS(LOWER([memo_text]),&apos;earmarked&apos;)' function='filter' user:ui-marker='filter-by'>
+          <groupfilter function='level-members' level='[memo_text]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+        </groupfilter>
+      </filter>
+      <filter class='categorical' column='[none:filing.coverage_end_date:ok]' filter-group='2'>
+        <groupfilter function='member' level='[none:filing.coverage_end_date:ok]' member='#2019-06-30#' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Hyperlink1' name='[Action2]'>
+      <activation type='on-select' />
+      <source datasource='federated.0vm00sc11rriqj1bcxj9p1p1bahp' type='datasource'>
+        <exclude-sheet name='Senate campaigns' />
+        <exclude-sheet name='Sheet 3' />
+        <exclude-sheet name='State summaries' />
+      </source>
+      <link caption='' expression='&lt;[filing.pdf_url]&gt;' />
+    </action>
+    <datasources>
+      <datasource caption='maine-fed-raw-itemized-receipts' name='federated.0vm00sc11rriqj1bcxj9p1p1bahp' />
+    </datasources>
+    <datasource-dependencies datasource='federated.0vm00sc11rriqj1bcxj9p1p1bahp'>
+      <column caption='Filing.Pdf Url' datatype='string' name='[filing.pdf_url]' role='dimension' type='nominal' />
+    </datasource-dependencies>
+    <edit-group-action caption='Set1' name='[Action1]'>
+      <activation type='on-select' />
+      <source dashboard='State and candidates' type='sheet' />
+      <params>
+        <param name='selection-clear-set-option' value='exclude-all' />
+        <param name='target-group' value='[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[ME Donations]' />
+      </params>
+    </edit-group-action>
+  </actions>
+  <worksheets>
+    <worksheet name='Candidate bars'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='maine-fed-raw-itemized-receipts' name='federated.0vm00sc11rriqj1bcxj9p1p1bahp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vm00sc11rriqj1bcxj9p1p1bahp'>
+            <column caption='Committee.Name' datatype='string' name='[committee.name]' role='dimension' type='nominal' />
+            <column caption='Contribution Receipt Amount' datatype='real' name='[contribution_receipt_amount]' role='measure' type='quantitative' />
+            <column-instance column='[committee.name]' derivation='None' name='[none:committee.name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[contribution_receipt_amount]' derivation='Sum' name='[sum:contribution_receipt_amount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:committee.name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[sum:contribution_receipt_amount:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:committee.name:nk]' value='220' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[sum:contribution_receipt_amount:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:committee.name:nk]</rows>
+        <cols>[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[sum:contribution_receipt_amount:qk]</cols>
+      </table>
+      <simple-id uuid='{646B2822-2BEA-4164-A799-8C124B3A6B1A}' />
+    </worksheet>
+    <worksheet name='Senate campaigns'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Contributions from people in &lt;</run>
+            <run>[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:Calculation_41306465026719749:nk]</run>
+            <run>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location id='Senatecampaigns' path='/workbooks/ItemizedSenatecontributionsbystate' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='maine-fed-raw-itemized-receipts' name='federated.0vm00sc11rriqj1bcxj9p1p1bahp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vm00sc11rriqj1bcxj9p1p1bahp'>
+            <column caption='{FIXED [Committee]:SUM([Contribution Receipt Amount])}' datatype='real' name='[Calculation_41306465020739584]' role='measure' type='quantitative' user:unnamed='Sheet 1'>
+              <calculation class='tableau' formula='{FIXED [committee.name]:SUM([contribution_receipt_amount])}' />
+            </column>
+            <column caption='July report fundraising' datatype='real' name='[Calculation_41306465020936193]' role='measure' type='quantitative' user:unnamed='Sheet 1'>
+              <calculation class='tableau' formula='//July report fundraising&#10;{FIXED [committee.name]:SUM([contribution_receipt_amount])}' />
+            </column>
+            <column caption='List of States' datatype='string' name='[Calculation_41306465026719749]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [ME Donations] THEN [contributor_state] END' />
+            </column>
+            <column caption='Committee.Committee Type Full' datatype='string' name='[committee.committee_type_full]' role='dimension' type='nominal' />
+            <column caption='Committee.Name' datatype='string' name='[committee.name]' role='dimension' type='nominal' />
+            <column caption='Contribution Receipt Amount' datatype='real' name='[contribution_receipt_amount]' role='measure' type='quantitative' />
+            <column caption='Contributor State' datatype='string' name='[contributor_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[ME Donations]' derivation='InOut' name='[io:ME Donations:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_41306465026719749]' derivation='None' name='[none:Calculation_41306465026719749:nk]' pivot='key' type='nominal' />
+            <column-instance column='[committee.committee_type_full]' derivation='None' name='[none:committee.committee_type_full:nk]' pivot='key' type='nominal' />
+            <column-instance column='[committee.name]' derivation='None' name='[none:committee.name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[contribution_receipt_amount]' derivation='Sum' name='[pcto:sum:contribution_receipt_amount:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Calculation_41306465020739584]' derivation='Sum' name='[sum:Calculation_41306465020739584:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_41306465020936193]' derivation='Sum' name='[sum:Calculation_41306465020936193:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[io:ME Donations:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>false</bucket>
+              <bucket>true</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:committee.committee_type_full:nk]'>
+            <groupfilter function='member' level='[none:committee.committee_type_full:nk]' member='&quot;Senate&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:committee.name:nk]' direction='DESC' using='[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[sum:Calculation_41306465020739584:qk]' />
+          <slices>
+            <column>[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:committee.committee_type_full:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[pcto:sum:contribution_receipt_amount:qk:2]' value='p0%' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='36' />
+            <format attr='width' field='[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[sum:Calculation_41306465020936193:ok]' value='120' />
+            <format attr='width' field='[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:committee.name:nk]' value='200' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[sum:Calculation_41306465020936193:ok]' value='c&quot;$&quot;#,##0;(&quot;$&quot;#,##0)' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[io:ME Donations:nk]' />
+              <text column='[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[pcto:sum:contribution_receipt_amount:qk:2]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:committee.name:nk] / [federated.0vm00sc11rriqj1bcxj9p1p1bahp].[sum:Calculation_41306465020936193:ok])</rows>
+        <cols>[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[pcto:sum:contribution_receipt_amount:qk:2]</cols>
+      </table>
+      <simple-id uuid='{EDEEA385-D8FE-400C-A9C2-141C7E35C286}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <repository-location id='Sheet3' path='/workbooks/ItemizedSenatecontributionsbystate' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='maine-fed-raw-itemized-receipts' name='federated.0vm00sc11rriqj1bcxj9p1p1bahp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vm00sc11rriqj1bcxj9p1p1bahp'>
+            <column caption='List of States' datatype='string' name='[Calculation_41306465026719749]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [ME Donations] THEN [contributor_state] END' />
+            </column>
+            <column caption='Contributor State' datatype='string' name='[contributor_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[ME Donations]' derivation='InOut' name='[io:ME Donations:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_41306465026719749]' derivation='None' name='[none:Calculation_41306465026719749:nk]' pivot='key' type='nominal' />
+            <column-instance column='[contributor_state]' derivation='None' name='[none:contributor_state:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:Calculation_41306465026719749:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0vm00sc11rriqj1bcxj9p1p1bahp].[io:ME Donations:nk] / [federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:contributor_state:nk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{D2E2FB6B-B07B-4A6A-88FC-4DB38C237902}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='maine-fed-raw-itemized-receipts' name='federated.0vm00sc11rriqj1bcxj9p1p1bahp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vm00sc11rriqj1bcxj9p1p1bahp'>
+            <column caption='Committee.Name' datatype='string' name='[committee.name]' role='dimension' type='nominal' />
+            <column caption='Contributor Name' datatype='string' name='[contributor_name]' role='dimension' type='nominal' />
+            <column caption='Contributor Occupation' datatype='string' name='[contributor_occupation]' role='dimension' type='nominal' />
+            <column caption='Filing.Pdf Url' datatype='string' name='[filing.pdf_url]' role='dimension' type='nominal' />
+            <column-instance column='[committee.name]' derivation='None' name='[none:committee.name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[contributor_name]' derivation='None' name='[none:contributor_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[contributor_occupation]' derivation='None' name='[none:contributor_occupation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[filing.pdf_url]' derivation='None' name='[none:filing.pdf_url:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:contributor_name:nk]'>
+            <groupfilter function='member' level='[none:contributor_name:nk]' member='&quot;Adelson,  Sheldon G.&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:contributor_occupation:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:contributor_occupation:nk]' />
+              <groupfilter function='member' level='[none:contributor_occupation:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:contributor_occupation:nk]</column>
+            <column>[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:contributor_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:filing.pdf_url:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:contributor_occupation:nk] / ([federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:contributor_name:nk] / [federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:committee.name:nk]))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{EEABEB1C-C06D-472A-8675-619AAB4B89CB}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='maine-fed-raw-itemized-receipts' name='federated.0vm00sc11rriqj1bcxj9p1p1bahp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vm00sc11rriqj1bcxj9p1p1bahp'>
+            <column caption='Committee.Name' datatype='string' name='[committee.name]' role='dimension' type='nominal' />
+            <column caption='Committee.Party Full' datatype='string' name='[committee.party_full]' role='dimension' type='nominal' />
+            <column caption='Contribution Receipt Amount' datatype='real' name='[contribution_receipt_amount]' role='measure' type='quantitative' />
+            <column caption='Contributor Employer' datatype='string' name='[contributor_employer]' role='dimension' type='nominal' />
+            <column caption='Contributor Name' datatype='string' name='[contributor_name]' role='dimension' type='nominal' />
+            <column caption='Contributor Occupation' datatype='string' name='[contributor_occupation]' role='dimension' type='nominal' />
+            <column caption='Contributor State' datatype='string' name='[contributor_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[committee.name]' derivation='None' name='[none:committee.name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[committee.party_full]' derivation='None' name='[none:committee.party_full:nk]' pivot='key' type='nominal' />
+            <column-instance column='[contributor_employer]' derivation='None' name='[none:contributor_employer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[contributor_name]' derivation='None' name='[none:contributor_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[contributor_occupation]' derivation='None' name='[none:contributor_occupation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[contributor_state]' derivation='None' name='[none:contributor_state:nk]' pivot='key' type='nominal' />
+            <column-instance column='[contribution_receipt_amount]' derivation='Sum' name='[sum:contribution_receipt_amount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:contributor_state:nk]'>
+            <groupfilter function='member' level='[none:contributor_state:nk]' member='&quot;ME&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:contributor_state:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:contributor_name:nk] / ([federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:contributor_occupation:nk] / ([federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:contributor_employer:nk] / ([federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:committee.party_full:nk] / [federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:committee.name:nk]))))</rows>
+        <cols>[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[sum:contribution_receipt_amount:qk]</cols>
+      </table>
+      <simple-id uuid='{FA7147C8-9B97-4728-B137-8082B125B039}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='maine-fed-raw-itemized-receipts' name='federated.0vm00sc11rriqj1bcxj9p1p1bahp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vm00sc11rriqj1bcxj9p1p1bahp'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Committee.Name' datatype='string' name='[committee.name]' role='dimension' type='nominal' />
+            <column caption='Contributor Name' datatype='string' name='[contributor_name]' role='dimension' type='nominal' />
+            <column caption='Filing.Is Amended' datatype='boolean' name='[filing.is_amended]' role='dimension' type='nominal' />
+            <column-instance column='[committee.name]' derivation='None' name='[none:committee.name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[contributor_name]' derivation='None' name='[none:contributor_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[filing.is_amended]' derivation='None' name='[none:filing.is_amended:nk]' pivot='key' type='nominal' />
+            <column-instance column='[transaction_id]' derivation='None' name='[none:transaction_id:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column caption='Transaction Id' datatype='string' name='[transaction_id]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:transaction_id:nk]' context='true'>
+            <groupfilter expression='RIGHT([transaction_id],1) != &apos;E&apos;' function='filter' user:ui-marker='filter-by'>
+              <groupfilter function='level-members' level='[none:transaction_id:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:transaction_id:nk]' direction='ASC' measure-to-sort-by='[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[sum:Number of Records:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:transaction_id:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:transaction_id:nk] / ([federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:filing.is_amended:nk] / ([federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:contributor_name:nk] / [federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:committee.name:nk])))</rows>
+        <cols>[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[sum:Number of Records:qk]</cols>
+      </table>
+      <simple-id uuid='{A99B9CA8-C34B-4BE3-B4B9-27EDD1AE61B2}' />
+    </worksheet>
+    <worksheet name='Sheet 9'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{EE775DF7-C683-4F1D-8C9B-F20430DA1A39}' />
+    </worksheet>
+    <worksheet name='State summaries'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='9'>Select a state to see shares raised by each candidate</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location id='Statesummaries' path='/workbooks/ItemizedSenatecontributionsbystate' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='maine-fed-raw-itemized-receipts' name='federated.0vm00sc11rriqj1bcxj9p1p1bahp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vm00sc11rriqj1bcxj9p1p1bahp'>
+            <column caption='Committee.Committee Type Full' datatype='string' name='[committee.committee_type_full]' role='dimension' type='nominal' />
+            <column caption='Contribution Receipt Amount' datatype='real' name='[contribution_receipt_amount]' role='measure' type='quantitative' />
+            <column caption='Contributor State' datatype='string' name='[contributor_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[committee.committee_type_full]' derivation='None' name='[none:committee.committee_type_full:nk]' pivot='key' type='nominal' />
+            <column-instance column='[contributor_state]' derivation='None' name='[none:contributor_state:nk]' pivot='key' type='nominal' />
+            <column-instance column='[contribution_receipt_amount]' derivation='Sum' name='[pcto:sum:contribution_receipt_amount:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[contribution_receipt_amount]' derivation='Sum' name='[sum:contribution_receipt_amount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:committee.committee_type_full:nk]'>
+            <groupfilter function='member' level='[none:committee.committee_type_full:nk]' member='&quot;Senate&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:contributor_state:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[sum:contribution_receipt_amount:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:committee.committee_type_full:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[sum:contribution_receipt_amount:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:contributor_state:nk]' />
+              <tooltip column='[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[pcto:sum:contribution_receipt_amount:qk:2]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[sum:contribution_receipt_amount:qk]</rows>
+        <cols>[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:contributor_state:nk]</cols>
+      </table>
+      <simple-id uuid='{8EFFD179-654C-4EA5-88F8-CB21B1504D8F}' />
+    </worksheet>
+    <worksheet name='Top donors'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='maine-fed-raw-itemized-receipts' name='federated.0vm00sc11rriqj1bcxj9p1p1bahp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vm00sc11rriqj1bcxj9p1p1bahp'>
+            <column caption='Committee.Name' datatype='string' name='[committee.name]' role='dimension' type='nominal' />
+            <column caption='Committee.Party Full' datatype='string' name='[committee.party_full]' role='dimension' type='nominal' />
+            <column caption='Contribution Receipt Amount' datatype='real' name='[contribution_receipt_amount]' role='measure' type='quantitative' />
+            <column caption='Contributor Name' datatype='string' name='[contributor_name]' role='dimension' type='nominal' />
+            <column caption='Contributor State' datatype='string' name='[contributor_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[committee.name]' derivation='CountD' name='[ctd:committee.name:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[committee.party_full]' derivation='None' name='[none:committee.party_full:nk]' pivot='key' type='nominal' />
+            <column-instance column='[contributor_name]' derivation='None' name='[none:contributor_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[contributor_state]' derivation='None' name='[none:contributor_state:nk]' pivot='key' type='nominal' />
+            <column-instance column='[contribution_receipt_amount]' derivation='Sum' name='[sum:contribution_receipt_amount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:contributor_state:nk]'>
+            <groupfilter function='member' level='[none:contributor_state:nk]' member='&quot;ME&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:contributor_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[sum:contribution_receipt_amount:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:contributor_state:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[ctd:committee.name:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:committee.party_full:nk] / [federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:contributor_name:nk])</rows>
+        <cols>[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[sum:contribution_receipt_amount:qk]</cols>
+      </table>
+      <simple-id uuid='{970F3473-E791-452C-8F52-1F35E9779D77}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='State and candidates'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Individual donations in Maine&apos;s Senate race, by state&#10;</run>
+            <run fontsize='9'>From July quarterly reports (does not include past itemized contributions)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location id='Stateandcandidates' path='/workbooks/ItemizedSenatecontributionsbystate' revision='' />
+      <style />
+      <size maxheight='500' maxwidth='1000' minheight='500' minwidth='1000' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='96800' id='11' param='vert' type='layout-flow' w='98400' x='800' y='1600'>
+            <zone h='11800' id='12' type='title' w='98400' x='800' y='1600'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='85000' id='7' param='horz' type='layout-flow' w='98400' x='800' y='13400'>
+              <zone h='85000' id='5' type='layout-basic' w='98400' x='800' y='13400'>
+                <zone h='42800' id='3' name='Senate campaigns' show-title='false' w='98400' x='800' y='13400'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='42200' id='9' name='State summaries' w='98400' x='800' y='56200'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run>Individual donations in Maine&apos;s Senate race, by state&#10;</run>
+                <run fontsize='9'>From July quarterly reports (does not include past itemized contributions)</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='21' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='96800' id='22' param='vert' type='layout-flow' w='98400' x='800' y='1600'>
+                <zone h='11800' id='12' type='title' w='98400' x='800' y='1600'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='206' h='42800' id='3' is-fixed='true' name='Senate campaigns' show-title='false' w='98400' x='800' y='13400'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='203' h='42200' id='9' is-fixed='true' name='State summaries' w='98400' x='800' y='56200'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{DD8B9345-4C77-48F2-A657-2710B9B579ED}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' name='State and candidates'>
+      <viewpoints>
+        <viewpoint name='Senate campaigns'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='State summaries'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{F05CA7C2-E888-489C-9B78-B04F046BE0AC}' />
+    </window>
+    <window class='worksheet' name='Top donors'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[ctd:committee.name:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FFD2AB11-4462-4E32-A288-1A1BC6655B1D}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Candidate bars'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1599E9A7-D00B-4835-8E50-7268D8CBF331}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{502E7305-533B-40A1-ADC1-61460F2C9542}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7F7C615B-8B84-4032-A776-A23B3E0B6D5A}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E540E835-7547-41C3-A09A-1BEF9F36A147}' />
+    </window>
+    <window class='worksheet' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0C8F8E25-2E7C-409B-AE49-355F73709358}' />
+    </window>
+    <window class='worksheet' name='Sheet 9'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E437B979-3BC8-47E6-945E-B63BAF5968E9}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Senate campaigns'>
+      <cards>
+        <edge name='left'>
+          <strip size='290'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[io:ME Donations:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5E365934-9EF0-4B5D-AFC6-6997EF570F3E}' />
+    </window>
+    <window class='worksheet' hidden='true' name='State summaries'>
+      <cards>
+        <edge name='left'>
+          <strip size='290'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0vm00sc11rriqj1bcxj9p1p1bahp].[none:contributor_state:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{42669492-B3D9-4147-892E-4646C8631601}' />
+    </window>
+  </windows>
+</workbook>
