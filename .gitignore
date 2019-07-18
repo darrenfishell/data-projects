@@ -13,3 +13,6 @@ maine-roads/medotpubrds_05232019/medotpubrds.cpg
 fec-data-2020/config.py
 fec-data-2020/2020 Federal Campaign Finance-47429ada9996.json
 fec-data-2020/me-congress-2020-creds.json
+fec-data-2020/mitch-mccollins/config.py
+fec-data-2020/mitch-mccollins/__pycache__/config.cpython-36.pyc
+fec-data-2020/mitch-mccollins/me-congress-2020-creds.json
