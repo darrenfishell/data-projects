@@ -18,3 +18,5 @@ fec-data-2020/mitch-mccollins/__pycache__/config.cpython-36.pyc
 fec-data-2020/mitch-mccollins/me-congress-2020-creds.json
 opioid-files/arcos-me-statewide-itemized.tsv
 opioid-files/arcos-me-statewide-cleaned-towns.csv
+opioid-files/processed files/arcos-me-statewide-cleaned-towns.csv
+opioid-files/raw data/arcos-me-statewide-itemized.tsv
