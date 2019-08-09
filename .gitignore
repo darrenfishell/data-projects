@@ -31,3 +31,11 @@ election-results/Maine historical voter registration.twbx
 election-results/Load election data.ipynb
 election-results/voter-registration-loader.ipynb
 bls-journalism-stats/config.py
+maine-roads/medotpubrds/medotpubrds.cpg
+maine-roads/medotpubrds/medotpubrds.dbf
+maine-roads/medotpubrds/medotpubrds.prj
+maine-roads/medotpubrds/medotpubrds.sbn
+maine-roads/medotpubrds/medotpubrds.sbx
+maine-roads/medotpubrds/medotpubrds.shp
+maine-roads/medotpubrds/medotpubrds.shp.xml
+maine-roads/medotpubrds/medotpubrds.shx
