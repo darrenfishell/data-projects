@@ -1,0 +1,494 @@
+﻿﻿Sumlev,State,County,Place,Cousub,Concit,Primgeo Flag,Funcstat,Name,Year,Census Year,2010 Census Population,City/Town,Lower City
+61,23,21,0,100,0,1,A,Abbot town,Census2010Pop,1/1/10,714,Abbot,abbot
+61,23,31,0,275,0,1,A,Acton town,Census2010Pop,1/1/10,"2,447",Acton,acton
+61,23,29,0,380,0,1,A,Addison town,Census2010Pop,1/1/10,"1,266",Addison,addison
+61,23,11,0,590,0,1,A,Albion town,Census2010Pop,1/1/10,"2,041",Albion,albion
+61,23,29,0,660,0,1,A,Alexander town,Census2010Pop,1/1/10,499,Alexander,alexander
+61,23,31,0,730,0,1,A,Alfred town,Census2010Pop,1/1/10,"3,019",Alfred,alfred
+61,23,3,0,800,0,1,A,Allagash town,Census2010Pop,1/1/10,239,Allagash,allagash
+61,23,15,0,"1,010",0,1,A,Alna town,Census2010Pop,1/1/10,709,Alna,alna
+61,23,19,0,"1,115",0,1,A,Alton town,Census2010Pop,1/1/10,890,Alton,alton
+61,23,9,0,"1,185",0,1,A,Amherst town,Census2010Pop,1/1/10,265,Amherst,amherst
+61,23,3,0,"1,220",0,1,A,Amity town,Census2010Pop,1/1/10,238,Amity,amity
+61,23,17,0,"1,325",0,1,A,Andover town,Census2010Pop,1/1/10,821,Andover,andover
+61,23,25,0,"1,395",0,1,A,Anson town,Census2010Pop,1/1/10,"2,511",Anson,anson
+61,23,13,0,"1,465",0,1,A,Appleton town,Census2010Pop,1/1/10,"1,316",Appleton,appleton
+61,23,23,0,"1,570",0,1,A,Arrowsic town,Census2010Pop,1/1/10,427,Arrowsic,arrowsic
+61,23,31,0,"1,605",0,1,A,Arundel town,Census2010Pop,1/1/10,"4,022",Arundel,arundel
+61,23,3,0,"1,710",0,1,A,Ashland town,Census2010Pop,1/1/10,"1,302",Ashland,ashland
+61,23,25,0,"1,885",0,1,A,Athens town,Census2010Pop,1/1/10,"1,019",Athens,athens
+61,23,21,0,"1,920",0,1,A,Atkinson town,Census2010Pop,1/1/10,326,Atkinson,atkinson
+71,23,1,"2,060","2,060",0,1,A,Auburn city,Census2010Pop,1/1/10,"23,055",Auburn,auburn
+71,23,11,"2,100","2,100",0,1,A,Augusta city,Census2010Pop,1/1/10,"19,136",Augusta,augusta
+61,23,9,0,"2,165",0,1,A,Aurora town,Census2010Pop,1/1/10,114,Aurora,aurora
+61,23,7,0,"2,235",0,1,A,Avon town,Census2010Pop,1/1/10,461,Avon,avon
+61,23,29,0,"2,480",0,1,A,Baileyville town,Census2010Pop,1/1/10,"1,521",Baileyville,baileyville
+61,23,5,0,"2,655",0,1,A,Baldwin town,Census2010Pop,1/1/10,"1,525",Baldwin,baldwin
+61,23,3,0,"2,760",0,1,A,Bancroft town,Census2010Pop,1/1/10,68,Bancroft,bancroft
+71,23,19,"2,795","2,795",0,1,A,Bangor city,Census2010Pop,1/1/10,"33,039",Bangor,bangor
+61,23,9,0,"2,865",0,1,A,Bar Harbor town,Census2010Pop,1/1/10,"5,235",Bar Harbor,bar harbor
+61,23,29,0,"2,970",0,1,A,Baring plantation,Census2010Pop,1/1/10,251,Baring,baring
+71,23,23,"3,355","3,355",0,1,A,Bath city,Census2010Pop,1/1/10,"8,514",Bath,bath
+61,23,29,0,"3,670",0,1,A,Beals town,Census2010Pop,1/1/10,508,Beals,beals
+61,23,21,0,"3,740",0,1,A,Beaver Cove town,Census2010Pop,1/1/10,122,Beaver Cove,beaver cove
+61,23,29,0,"3,810",0,1,A,Beddington town,Census2010Pop,1/1/10,50,Beddington,beddington
+71,23,27,"3,950","3,950",0,1,A,Belfast city,Census2010Pop,1/1/10,"6,668",Belfast,belfast
+61,23,11,0,"4,020",0,1,A,Belgrade town,Census2010Pop,1/1/10,"3,189",Belgrade,belgrade
+61,23,27,0,"4,125",0,1,A,Belmont town,Census2010Pop,1/1/10,942,Belmont,belmont
+61,23,11,0,"4,475",0,1,A,Benton town,Census2010Pop,1/1/10,"2,732",Benton,benton
+61,23,31,0,"4,720",0,1,A,Berwick town,Census2010Pop,1/1/10,"7,246",Berwick,berwick
+61,23,17,0,"4,825",0,1,A,Bethel town,Census2010Pop,1/1/10,"2,607",Bethel,bethel
+71,23,31,"4,860","4,860",0,1,A,Biddeford city,Census2010Pop,1/1/10,"21,277",Biddeford,biddeford
+61,23,25,0,"5,000",0,1,A,Bingham town,Census2010Pop,1/1/10,922,Bingham,bingham
+61,23,3,0,"5,385",0,1,A,Blaine town,Census2010Pop,1/1/10,726,Blaine,blaine
+61,23,9,0,"5,700",0,1,A,Blue Hill town,Census2010Pop,1/1/10,"2,686",Blue Hill,blue hill
+61,23,15,0,"6,120",0,1,A,Boothbay Harbor town,Census2010Pop,1/1/10,"2,165",Boothbay Harbor,boothbay harbor
+61,23,15,0,"6,050",0,1,A,Boothbay town,Census2010Pop,1/1/10,"3,120",Boothbay,boothbay
+61,23,23,0,"6,260",0,1,A,Bowdoin town,Census2010Pop,1/1/10,"3,061",Bowdoin,bowdoin
+61,23,23,0,"6,365",0,1,A,Bowdoinham town,Census2010Pop,1/1/10,"2,889",Bowdoinham,bowdoinham
+61,23,21,0,"6,400",0,1,A,Bowerbank town,Census2010Pop,1/1/10,116,Bowerbank,bowerbank
+61,23,19,0,"6,575",0,1,A,Bradford town,Census2010Pop,1/1/10,"1,290",Bradford,bradford
+61,23,19,0,"6,680",0,1,A,Bradley town,Census2010Pop,1/1/10,"1,492",Bradley,bradley
+61,23,15,0,"6,855",0,1,A,Bremen town,Census2010Pop,1/1/10,806,Bremen,bremen
+71,23,19,"6,925","6,925",0,1,A,Brewer city,Census2010Pop,1/1/10,"9,482",Brewer,brewer
+61,23,3,0,"7,065",0,1,A,Bridgewater town,Census2010Pop,1/1/10,610,Bridgewater,bridgewater
+61,23,5,0,"7,170",0,1,A,Bridgton town,Census2010Pop,1/1/10,"5,210",Bridgton,bridgton
+61,23,25,0,"7,380",0,1,A,Brighton plantation,Census2010Pop,1/1/10,70,Brighton,brighton
+61,23,15,0,"7,485",0,1,A,Bristol town,Census2010Pop,1/1/10,"2,755",Bristol,bristol
+61,23,9,0,"7,800",0,1,A,Brooklin town,Census2010Pop,1/1/10,824,Brooklin,brooklin
+61,23,27,0,"7,870",0,1,A,Brooks town,Census2010Pop,1/1/10,"1,078",Brooks,brooks
+61,23,9,0,"7,975",0,1,A,Brooksville town,Census2010Pop,1/1/10,934,Brooksville,brooksville
+61,23,17,0,"8,150",0,1,A,Brownfield town,Census2010Pop,1/1/10,"1,597",Brownfield,brownfield
+61,23,21,0,"8,325",0,1,A,Brownville town,Census2010Pop,1/1/10,"1,250",Brownville,brownville
+61,23,5,0,"8,430",0,1,A,Brunswick town,Census2010Pop,1/1/10,"20,278",Brunswick,brunswick
+61,23,17,0,"8,710",0,1,A,Buckfield town,Census2010Pop,1/1/10,"2,009",Buckfield,buckfield
+61,23,9,0,"8,815",0,1,A,Bucksport town,Census2010Pop,1/1/10,"4,924",Bucksport,bucksport
+61,23,19,0,"9,200",0,1,A,Burlington town,Census2010Pop,1/1/10,363,Burlington,burlington
+61,23,27,0,"9,270",0,1,A,Burnham town,Census2010Pop,1/1/10,"1,164",Burnham,burnham
+61,23,31,0,"9,410",0,1,A,Buxton town,Census2010Pop,1/1/10,"8,034",Buxton,buxton
+61,23,17,0,"9,550",0,1,A,Byron town,Census2010Pop,1/1/10,145,Byron,byron
+71,23,29,"9,585","9,585",0,1,A,Calais city,Census2010Pop,1/1/10,"3,123",Calais,calais
+61,23,25,0,"9,655",0,1,A,Cambridge town,Census2010Pop,1/1/10,462,Cambridge,cambridge
+61,23,13,0,"9,725",0,1,A,Camden town,Census2010Pop,1/1/10,"4,850",Camden,camden
+61,23,25,0,"9,935",0,1,A,Canaan town,Census2010Pop,1/1/10,"2,275",Canaan,canaan
+61,23,17,0,"10,005",0,1,A,Canton town,Census2010Pop,1/1/10,990,Canton,canton
+61,23,5,0,"10,180",0,1,A,Cape Elizabeth town,Census2010Pop,1/1/10,"9,015",Cape Elizabeth,cape elizabeth
+61,23,25,0,"10,495",0,1,A,Caratunk town,Census2010Pop,1/1/10,69,Caratunk,caratunk
+71,23,3,"10,565","10,565",0,1,A,Caribou city,Census2010Pop,1/1/10,"8,189",Caribou,caribou
+61,23,19,0,"10,670",0,1,A,Carmel town,Census2010Pop,1/1/10,"2,794",Carmel,carmel
+61,23,7,0,"10,740",0,1,A,Carrabassett Valley town,Census2010Pop,1/1/10,781,Carrabassett Valley,carrabassett valley
+61,23,19,0,"10,810",0,1,A,Carroll plantation,Census2010Pop,1/1/10,153,Carroll,carroll
+61,23,7,0,"10,915",0,1,A,Carthage town,Census2010Pop,1/1/10,560,Carthage,carthage
+61,23,3,0,"11,020",0,1,A,Cary plantation,Census2010Pop,1/1/10,218,Cary,cary
+61,23,5,0,"11,125",0,1,A,Casco town,Census2010Pop,1/1/10,"3,742",Casco,casco
+61,23,9,0,"11,265",0,1,A,Castine town,Census2010Pop,1/1/10,"1,366",Castine,castine
+61,23,3,0,"11,300",0,1,A,Castle Hill town,Census2010Pop,1/1/10,425,Castle Hill,castle hill
+61,23,3,0,"11,335",0,1,A,Caswell town,Census2010Pop,1/1/10,306,Caswell,caswell
+61,23,3,0,"12,000",0,1,A,Chapman town,Census2010Pop,1/1/10,468,Chapman,chapman
+61,23,19,0,"12,105",0,1,A,Charleston town,Census2010Pop,1/1/10,"1,409",Charleston,charleston
+61,23,29,0,"12,175",0,1,A,Charlotte town,Census2010Pop,1/1/10,332,Charlotte,charlotte
+61,23,5,0,"12,300",0,1,A,Chebeague Island town,Census2010Pop,1/1/10,341,Chebeague Island,chebeague island
+61,23,11,0,"12,350",0,1,A,Chelsea town,Census2010Pop,1/1/10,"2,721",Chelsea,chelsea
+61,23,29,0,"12,455",0,1,A,Cherryfield town,Census2010Pop,1/1/10,"1,232",Cherryfield,cherryfield
+61,23,19,0,"12,525",0,1,A,Chester town,Census2010Pop,1/1/10,546,Chester,chester
+61,23,7,0,"12,595",0,1,A,Chesterville town,Census2010Pop,1/1/10,"1,352",Chesterville,chesterville
+61,23,11,0,"12,735",0,1,A,China town,Census2010Pop,1/1/10,"4,328",China,china
+61,23,19,0,"13,365",0,1,A,Clifton town,Census2010Pop,1/1/10,921,Clifton,clifton
+61,23,11,0,"13,470",0,1,A,Clinton town,Census2010Pop,1/1/10,"3,486",Clinton,clinton
+61,23,29,0,"13,610",0,1,A,Codyville plantation,Census2010Pop,1/1/10,24,Codyville,codyville
+61,23,29,0,"13,820",0,1,A,Columbia Falls town,Census2010Pop,1/1/10,560,Columbia Falls,columbia falls
+61,23,29,0,"13,750",0,1,A,Columbia town,Census2010Pop,1/1/10,486,Columbia,columbia
+61,23,29,0,"14,100",0,1,A,Cooper town,Census2010Pop,1/1/10,154,Cooper,cooper
+61,23,7,0,"14,205",0,1,A,Coplin plantation,Census2010Pop,1/1/10,166,Coplin,coplin
+61,23,19,0,"14,310",0,1,A,Corinna town,Census2010Pop,1/1/10,"2,198",Corinna,corinna
+61,23,19,0,"14,380",0,1,A,Corinth town,Census2010Pop,1/1/10,"2,878",Corinth,corinth
+61,23,31,0,"14,485",0,1,A,Cornish town,Census2010Pop,1/1/10,"1,403",Cornish,cornish
+61,23,25,0,"14,555",0,1,A,Cornville town,Census2010Pop,1/1/10,"1,314",Cornville,cornville
+61,23,9,0,"14,905",0,1,A,Cranberry Isles town,Census2010Pop,1/1/10,141,Cranberry Isles,cranberry isles
+61,23,29,0,"14,940",0,1,A,Crawford town,Census2010Pop,1/1/10,105,Crawford,crawford
+61,23,3,0,"15,395",0,1,A,Crystal town,Census2010Pop,1/1/10,269,Crystal,crystal
+61,23,5,0,"15,430",0,1,A,Cumberland town,Census2010Pop,1/1/10,"7,211",Cumberland,cumberland
+61,23,13,0,"15,780",0,1,A,Cushing town,Census2010Pop,1/1/10,"1,534",Cushing,cushing
+61,23,29,0,"15,920",0,1,A,Cutler town,Census2010Pop,1/1/10,507,Cutler,cutler
+61,23,3,0,"15,990",0,1,A,Cyr plantation,Census2010Pop,1/1/10,103,Cyr,cyr
+61,23,7,0,"16,165",0,1,A,Dallas plantation,Census2010Pop,1/1/10,309,Dallas,dallas
+61,23,15,0,"16,235",0,1,A,Damariscotta town,Census2010Pop,1/1/10,"2,218",Damariscotta,damariscotta
+61,23,29,0,"16,410",0,1,A,Danforth town,Census2010Pop,1/1/10,589,Danforth,danforth
+61,23,31,0,"16,725",0,1,A,Dayton town,Census2010Pop,1/1/10,"1,965",Dayton,dayton
+61,23,29,0,"16,865",0,1,A,Deblois town,Census2010Pop,1/1/10,57,Deblois,deblois
+61,23,9,0,"16,935",0,1,A,Dedham town,Census2010Pop,1/1/10,"1,681",Dedham,dedham
+61,23,9,0,"17,145",0,1,A,Deer Isle town,Census2010Pop,1/1/10,"1,975",Deer Isle,deer isle
+61,23,17,0,"17,250",0,1,A,Denmark town,Census2010Pop,1/1/10,"1,148",Denmark,denmark
+61,23,25,0,"17,285",0,1,A,Dennistown plantation,Census2010Pop,1/1/10,33,Dennistown,dennistown
+61,23,29,0,"17,355",0,1,A,Dennysville town,Census2010Pop,1/1/10,342,Dennysville,dennysville
+61,23,25,0,"17,460",0,1,A,Detroit town,Census2010Pop,1/1/10,852,Detroit,detroit
+61,23,19,0,"17,530",0,1,A,Dexter town,Census2010Pop,1/1/10,"3,895",Dexter,dexter
+61,23,17,0,"17,740",0,1,A,Dixfield town,Census2010Pop,1/1/10,"2,550",Dixfield,dixfield
+61,23,19,0,"17,950",0,1,A,Dixmont town,Census2010Pop,1/1/10,"1,181",Dixmont,dixmont
+61,23,21,0,"18,195",0,1,A,Dover-Foxcroft town,Census2010Pop,1/1/10,"4,213",Dover-Foxcroft,dover-foxcroft
+61,23,15,0,"18,475",0,1,A,Dresden town,Census2010Pop,1/1/10,"1,672",Dresden,dresden
+61,23,19,0,"18,580",0,1,A,Drew plantation,Census2010Pop,1/1/10,46,Drew,drew
+61,23,1,0,"19,105",0,1,A,Durham town,Census2010Pop,1/1/10,"3,848",Durham,durham
+61,23,3,0,"19,210",0,1,A,Dyer Brook town,Census2010Pop,1/1/10,213,Dyer Brook,dyer brook
+61,23,3,0,"19,420",0,1,A,Eagle Lake town,Census2010Pop,1/1/10,864,Eagle Lake,eagle lake
+61,23,29,0,"20,960",0,1,A,East Machias town,Census2010Pop,1/1/10,"1,368",East Machias,east machias
+61,23,19,0,"21,030",0,1,A,East Millinocket town,Census2010Pop,1/1/10,"1,723",East Millinocket,east millinocket
+61,23,9,0,"19,770",0,1,A,Eastbrook town,Census2010Pop,1/1/10,423,Eastbrook,eastbrook
+61,23,3,0,"21,380",0,1,A,Easton town,Census2010Pop,1/1/10,"1,287",Easton,easton
+71,23,29,"21,730","21,730",0,1,A,Eastport city,Census2010Pop,1/1/10,"1,331",Eastport,eastport
+61,23,19,0,"22,535",0,1,A,Eddington town,Census2010Pop,1/1/10,"2,225",Eddington,eddington
+61,23,15,0,"22,675",0,1,A,Edgecomb town,Census2010Pop,1/1/10,"1,249",Edgecomb,edgecomb
+61,23,19,0,"22,710",0,1,A,Edinburg town,Census2010Pop,1/1/10,131,Edinburg,edinburg
+61,23,31,0,"22,955",0,1,A,Eliot town,Census2010Pop,1/1/10,"6,204",Eliot,eliot
+71,23,9,"23,200","23,200",0,1,A,Ellsworth city,Census2010Pop,1/1/10,"7,741",Ellsworth,ellsworth
+61,23,25,0,"23,410",0,1,A,Embden town,Census2010Pop,1/1/10,939,Embden,embden
+61,23,19,0,"23,620",0,1,A,Enfield town,Census2010Pop,1/1/10,"1,607",Enfield,enfield
+61,23,19,0,"23,865",0,1,A,Etna town,Census2010Pop,1/1/10,"1,246",Etna,etna
+61,23,7,0,"24,005",0,1,A,Eustis town,Census2010Pop,1/1/10,618,Eustis,eustis
+61,23,19,0,"24,110",0,1,A,Exeter town,Census2010Pop,1/1/10,"1,092",Exeter,exeter
+61,23,25,0,"24,320",0,1,A,Fairfield town,Census2010Pop,1/1/10,"6,735",Fairfield,fairfield
+61,23,5,0,"24,495",0,1,A,Falmouth town,Census2010Pop,1/1/10,"11,185",Falmouth,falmouth
+61,23,11,0,"24,670",0,1,A,Farmingdale town,Census2010Pop,1/1/10,"2,956",Farmingdale,farmingdale
+61,23,7,0,"24,775",0,1,A,Farmington town,Census2010Pop,1/1/10,"7,760",Farmington,farmington
+61,23,11,0,"24,950",0,1,A,Fayette town,Census2010Pop,1/1/10,"1,140",Fayette,fayette
+61,23,3,0,"25,615",0,1,A,Fort Fairfield town,Census2010Pop,1/1/10,"3,496",Fort Fairfield,fort fairfield
+61,23,3,0,"25,755",0,1,A,Fort Kent town,Census2010Pop,1/1/10,"4,097",Fort Kent,fort kent
+61,23,27,0,"26,280",0,1,A,Frankfort town,Census2010Pop,1/1/10,"1,124",Frankfort,frankfort
+61,23,9,0,"26,350",0,1,A,Franklin town,Census2010Pop,1/1/10,"1,483",Franklin,franklin
+61,23,27,0,"26,420",0,1,A,Freedom town,Census2010Pop,1/1/10,719,Freedom,freedom
+61,23,5,0,"26,525",0,1,A,Freeport town,Census2010Pop,1/1/10,"7,879",Freeport,freeport
+61,23,9,0,"26,595",0,1,A,Frenchboro town,Census2010Pop,1/1/10,61,Frenchboro,frenchboro
+61,23,3,0,"26,735",0,1,A,Frenchville town,Census2010Pop,1/1/10,"1,087",Frenchville,frenchville
+61,23,13,0,"26,805",0,1,A,Friendship town,Census2010Pop,1/1/10,"1,152",Friendship,friendship
+61,23,5,0,"27,025",0,1,A,Frye Island town,Census2010Pop,1/1/10,5,Frye Island,frye island
+61,23,17,0,"26,910",0,1,A,Fryeburg town,Census2010Pop,1/1/10,"3,449",Fryeburg,fryeburg
+71,23,11,"27,085","27,085",0,1,A,Gardiner city,Census2010Pop,1/1/10,"5,800",Gardiner,gardiner
+61,23,3,0,"27,120",0,1,A,Garfield plantation,Census2010Pop,1/1/10,81,Garfield,garfield
+61,23,19,0,"27,190",0,1,A,Garland town,Census2010Pop,1/1/10,"1,105",Garland,garland
+61,23,23,0,"27,295",0,1,A,Georgetown town,Census2010Pop,1/1/10,"1,042",Georgetown,georgetown
+61,23,17,0,"27,505",0,1,A,Gilead town,Census2010Pop,1/1/10,209,Gilead,gilead
+61,23,19,0,"27,645",0,1,A,Glenburn town,Census2010Pop,1/1/10,"4,594",Glenburn,glenburn
+61,23,3,0,"27,855",0,1,A,Glenwood plantation,Census2010Pop,1/1/10,3,Glenwood,glenwood
+61,23,5,0,"28,240",0,1,A,Gorham town,Census2010Pop,1/1/10,"16,381",Gorham,gorham
+61,23,9,0,"28,450",0,1,A,Gouldsboro town,Census2010Pop,1/1/10,"1,737",Gouldsboro,gouldsboro
+61,23,3,0,"28,590",0,1,A,Grand Isle town,Census2010Pop,1/1/10,467,Grand Isle,grand isle
+61,23,29,0,"28,660",0,1,A,Grand Lake Stream plantation,Census2010Pop,1/1/10,109,Grand Lake Stream,grand lake stream
+61,23,5,0,"28,870",0,1,A,Gray town,Census2010Pop,1/1/10,"7,761",Gray,gray
+61,23,9,0,"28,975",0,1,A,Great Pond town,Census2010Pop,1/1/10,58,Great Pond,great pond
+61,23,19,0,"29,185",0,1,A,Greenbush town,Census2010Pop,1/1/10,"1,491",Greenbush,greenbush
+61,23,1,0,"29,255",0,1,A,Greene town,Census2010Pop,1/1/10,"4,350",Greene,greene
+61,23,21,0,"29,535",0,1,A,Greenville town,Census2010Pop,1/1/10,"1,646",Greenville,greenville
+61,23,17,0,"29,710",0,1,A,Greenwood town,Census2010Pop,1/1/10,830,Greenwood,greenwood
+61,23,21,0,"30,095",0,1,A,Guilford town,Census2010Pop,1/1/10,"1,521",Guilford,guilford
+71,23,11,"30,550","30,550",0,1,A,Hallowell city,Census2010Pop,1/1/10,"2,381",Hallowell,hallowell
+61,23,3,0,"30,690",0,1,A,Hamlin town,Census2010Pop,1/1/10,219,Hamlin,hamlin
+61,23,3,0,"30,725",0,1,A,Hammond town,Census2010Pop,1/1/10,118,Hammond,hammond
+61,23,19,0,"30,795",0,1,A,Hampden town,Census2010Pop,1/1/10,"7,257",Hampden,hampden
+61,23,9,0,"30,970",0,1,A,Hancock town,Census2010Pop,1/1/10,"2,394",Hancock,hancock
+61,23,17,0,"31,110",0,1,A,Hanover town,Census2010Pop,1/1/10,238,Hanover,hanover
+61,23,25,0,"31,355",0,1,A,Harmony town,Census2010Pop,1/1/10,939,Harmony,harmony
+61,23,5,0,"31,390",0,1,A,Harpswell town,Census2010Pop,1/1/10,"4,740",Harpswell,harpswell
+61,23,29,0,"31,530",0,1,A,Harrington town,Census2010Pop,1/1/10,"1,004",Harrington,harrington
+61,23,5,0,"31,600",0,1,A,Harrison town,Census2010Pop,1/1/10,"2,730",Harrison,harrison
+61,23,17,0,"31,670",0,1,A,Hartford town,Census2010Pop,1/1/10,"1,185",Hartford,hartford
+61,23,25,0,"31,740",0,1,A,Hartland town,Census2010Pop,1/1/10,"1,782",Hartland,hartland
+61,23,3,0,"32,195",0,1,A,Haynesville town,Census2010Pop,1/1/10,121,Haynesville,haynesville
+61,23,17,0,"32,370",0,1,A,Hebron town,Census2010Pop,1/1/10,"1,416",Hebron,hebron
+61,23,19,0,"32,510",0,1,A,Hermon town,Census2010Pop,1/1/10,"5,416",Hermon,hermon
+61,23,3,0,"32,685",0,1,A,Hersey town,Census2010Pop,1/1/10,83,Hersey,hersey
+61,23,25,0,"32,895",0,1,A,Highland plantation,Census2010Pop,1/1/10,73,Highland,highland
+61,23,17,0,"33,315",0,1,A,Hiram town,Census2010Pop,1/1/10,"1,620",Hiram,hiram
+61,23,3,0,"33,385",0,1,A,Hodgdon town,Census2010Pop,1/1/10,"1,309",Hodgdon,hodgdon
+61,23,19,0,"33,490",0,1,A,Holden town,Census2010Pop,1/1/10,"3,076",Holden,holden
+61,23,31,0,"33,665",0,1,A,Hollis town,Census2010Pop,1/1/10,"4,281",Hollis,hollis
+61,23,13,0,"33,840",0,1,A,Hope town,Census2010Pop,1/1/10,"1,536",Hope,hope
+61,23,3,0,"33,980",0,1,A,Houlton town,Census2010Pop,1/1/10,"6,123",Houlton,houlton
+61,23,19,0,"34,190",0,1,A,Howland town,Census2010Pop,1/1/10,"1,241",Howland,howland
+61,23,19,0,"34,365",0,1,A,Hudson town,Census2010Pop,1/1/10,"1,536",Hudson,hudson
+61,23,7,0,"34,820",0,1,A,Industry town,Census2010Pop,1/1/10,929,Industry,industry
+61,23,3,0,"35,065",0,1,A,Island Falls town,Census2010Pop,1/1/10,837,Island Falls,island falls
+61,23,13,0,"35,135",0,1,A,Isle au Haut town,Census2010Pop,1/1/10,73,Isle au Haut,isle au haut
+61,23,27,0,"35,240",0,1,A,Islesboro town,Census2010Pop,1/1/10,566,Islesboro,islesboro
+61,23,25,0,"35,345",0,1,A,Jackman town,Census2010Pop,1/1/10,862,Jackman,jackman
+61,23,27,0,"35,450",0,1,A,Jackson town,Census2010Pop,1/1/10,548,Jackson,jackson
+61,23,7,0,"35,625",0,1,A,Jay town,Census2010Pop,1/1/10,"4,851",Jay,jay
+61,23,15,0,"35,695",0,1,A,Jefferson town,Census2010Pop,1/1/10,"2,427",Jefferson,jefferson
+61,23,29,0,"35,905",0,1,A,Jonesboro town,Census2010Pop,1/1/10,583,Jonesboro,jonesboro
+61,23,29,0,"36,010",0,1,A,Jonesport town,Census2010Pop,1/1/10,"1,370",Jonesport,jonesport
+61,23,19,0,"36,325",0,1,A,Kenduskeag town,Census2010Pop,1/1/10,"1,348",Kenduskeag,kenduskeag
+61,23,31,0,"36,535",0,1,A,Kennebunk town,Census2010Pop,1/1/10,"10,798",Kennebunk,kennebunk
+61,23,31,0,"36,745",0,1,A,Kennebunkport town,Census2010Pop,1/1/10,"3,474",Kennebunkport,kennebunkport
+61,23,7,0,"37,025",0,1,A,Kingfield town,Census2010Pop,1/1/10,997,Kingfield,kingfield
+61,23,21,0,"37,095",0,1,A,Kingsbury plantation,Census2010Pop,1/1/10,28,Kingsbury,kingsbury
+61,23,31,0,"37,270",0,1,A,Kittery town,Census2010Pop,1/1/10,"9,490",Kittery,kittery
+61,23,27,0,"37,585",0,1,A,Knox town,Census2010Pop,1/1/10,806,Knox,knox
+61,23,19,0,"37,760",0,1,A,Lagrange town,Census2010Pop,1/1/10,708,Lagrange,lagrange
+61,23,21,0,"37,970",0,1,A,Lake View plantation,Census2010Pop,1/1/10,89,Lake View,lake view
+61,23,19,0,"38,005",0,1,A,Lakeville town,Census2010Pop,1/1/10,105,Lakeville,lakeville
+61,23,9,0,"38,180",0,1,A,Lamoine town,Census2010Pop,1/1/10,"1,602",Lamoine,lamoine
+61,23,31,0,"38,425",0,1,A,Lebanon town,Census2010Pop,1/1/10,"6,031",Lebanon,lebanon
+61,23,19,0,"38,530",0,1,A,Lee town,Census2010Pop,1/1/10,922,Lee,lee
+61,23,1,0,"38,565",0,1,A,Leeds town,Census2010Pop,1/1/10,"2,326",Leeds,leeds
+61,23,19,0,"38,705",0,1,A,Levant town,Census2010Pop,1/1/10,"2,851",Levant,levant
+71,23,1,"38,740","38,740",0,1,A,Lewiston city,Census2010Pop,1/1/10,"36,592",Lewiston,lewiston
+61,23,27,0,"39,055",0,1,A,Liberty town,Census2010Pop,1/1/10,913,Liberty,liberty
+61,23,31,0,"39,195",0,1,A,Limerick town,Census2010Pop,1/1/10,"2,892",Limerick,limerick
+61,23,3,0,"39,300",0,1,A,Limestone town,Census2010Pop,1/1/10,"2,314",Limestone,limestone
+61,23,31,0,"39,405",0,1,A,Limington town,Census2010Pop,1/1/10,"3,713",Limington,limington
+61,23,17,0,"39,422",0,1,A,Lincoln plantation,Census2010Pop,1/1/10,45,Lincoln,lincoln
+61,23,19,0,"39,475",0,1,A,Lincoln town,Census2010Pop,1/1/10,"5,085",Lincoln,lincoln
+61,23,27,0,"39,755",0,1,A,Lincolnville town,Census2010Pop,1/1/10,"2,164",Lincolnville,lincolnville
+61,23,3,0,"39,965",0,1,A,Linneus town,Census2010Pop,1/1/10,984,Linneus,linneus
+61,23,1,0,"40,035",0,1,A,Lisbon town,Census2010Pop,1/1/10,"9,009",Lisbon,lisbon
+61,23,11,0,"40,175",0,1,A,Litchfield town,Census2010Pop,1/1/10,"3,624",Litchfield,litchfield
+61,23,3,0,"40,595",0,1,A,Littleton town,Census2010Pop,1/1/10,"1,068",Littleton,littleton
+61,23,1,0,"40,770",0,1,A,Livermore Falls town,Census2010Pop,1/1/10,"3,187",Livermore Falls,livermore falls
+61,23,1,0,"40,665",0,1,A,Livermore town,Census2010Pop,1/1/10,"2,095",Livermore,livermore
+61,23,5,0,"41,067",0,1,A,Long Island town,Census2010Pop,1/1/10,230,Long Island,long island
+61,23,17,0,"41,365",0,1,A,Lovell town,Census2010Pop,1/1/10,"1,140",Lovell,lovell
+61,23,19,0,"41,435",0,1,A,Lowell town,Census2010Pop,1/1/10,358,Lowell,lowell
+61,23,29,0,"41,610",0,1,A,Lubec town,Census2010Pop,1/1/10,"1,359",Lubec,lubec
+61,23,3,0,"41,715",0,1,A,Ludlow town,Census2010Pop,1/1/10,404,Ludlow,ludlow
+61,23,31,0,"41,750",0,1,A,Lyman town,Census2010Pop,1/1/10,"4,344",Lyman,lyman
+61,23,29,0,"41,960",0,1,A,Machias town,Census2010Pop,1/1/10,"2,221",Machias,machias
+61,23,29,0,"42,100",0,1,A,Machiasport town,Census2010Pop,1/1/10,"1,119",Machiasport,machiasport
+61,23,3,0,"42,450",0,1,A,Macwahoc plantation,Census2010Pop,1/1/10,79,Macwahoc,macwahoc
+61,23,3,0,"42,520",0,1,A,Madawaska town,Census2010Pop,1/1/10,"4,035",Madawaska,madawaska
+61,23,25,0,"42,660",0,1,A,Madison town,Census2010Pop,1/1/10,"4,855",Madison,madison
+61,23,17,0,"42,835",0,1,A,Magalloway plantation,Census2010Pop,1/1/10,46,Magalloway,magalloway
+61,23,11,0,"43,080",0,1,A,Manchester town,Census2010Pop,1/1/10,"2,580",Manchester,manchester
+61,23,3,0,"43,255",0,1,A,Mapleton town,Census2010Pop,1/1/10,"1,948",Mapleton,mapleton
+61,23,9,0,"43,430",0,1,A,Mariaville town,Census2010Pop,1/1/10,513,Mariaville,mariaville
+61,23,3,0,"43,710",0,1,A,Mars Hill town,Census2010Pop,1/1/10,"1,493",Mars Hill,mars hill
+61,23,29,0,"43,640",0,1,A,Marshfield town,Census2010Pop,1/1/10,518,Marshfield,marshfield
+61,23,3,0,"43,990",0,1,A,Masardis town,Census2010Pop,1/1/10,249,Masardis,masardis
+61,23,13,0,"44,165",0,1,A,Matinicus Isle plantation,Census2010Pop,1/1/10,74,Matinicus Isle,matinicus isle
+61,23,19,0,"44,270",0,1,A,Mattawamkeag town,Census2010Pop,1/1/10,687,Mattawamkeag,mattawamkeag
+61,23,19,0,"44,340",0,1,A,Maxfield town,Census2010Pop,1/1/10,97,Maxfield,maxfield
+61,23,1,0,"44,585",0,1,A,Mechanic Falls town,Census2010Pop,1/1/10,"3,031",Mechanic Falls,mechanic falls
+61,23,29,0,"44,760",0,1,A,Meddybemps town,Census2010Pop,1/1/10,157,Meddybemps,meddybemps
+61,23,21,0,"44,830",0,1,A,Medford town,Census2010Pop,1/1/10,254,Medford,medford
+61,23,19,0,"45,005",0,1,A,Medway town,Census2010Pop,1/1/10,"1,349",Medway,medway
+61,23,25,0,"45,110",0,1,A,Mercer town,Census2010Pop,1/1/10,664,Mercer,mercer
+61,23,3,0,"45,180",0,1,A,Merrill town,Census2010Pop,1/1/10,273,Merrill,merrill
+61,23,17,0,"45,285",0,1,A,Mexico town,Census2010Pop,1/1/10,"2,681",Mexico,mexico
+61,23,29,0,"45,600",0,1,A,Milbridge town,Census2010Pop,1/1/10,"1,353",Milbridge,milbridge
+61,23,19,0,"45,670",0,1,A,Milford town,Census2010Pop,1/1/10,"3,070",Milford,milford
+61,23,19,0,"45,810",0,1,A,Millinocket town,Census2010Pop,1/1/10,"4,506",Millinocket,millinocket
+61,23,21,0,"46,020",0,1,A,Milo town,Census2010Pop,1/1/10,"2,340",Milo,milo
+61,23,1,0,"46,160",0,1,A,Minot town,Census2010Pop,1/1/10,"2,607",Minot,minot
+61,23,15,0,"46,335",0,1,A,Monhegan plantation,Census2010Pop,1/1/10,69,Monhegan,monhegan
+61,23,11,0,"46,405",0,1,A,Monmouth town,Census2010Pop,1/1/10,"4,104",Monmouth,monmouth
+61,23,27,0,"46,475",0,1,A,Monroe town,Census2010Pop,1/1/10,890,Monroe,monroe
+61,23,21,0,"46,580",0,1,A,Monson town,Census2010Pop,1/1/10,686,Monson,monson
+61,23,3,0,"46,685",0,1,A,Monticello town,Census2010Pop,1/1/10,790,Monticello,monticello
+61,23,27,0,"46,790",0,1,A,Montville town,Census2010Pop,1/1/10,"1,032",Montville,montville
+61,23,25,0,"47,140",0,1,A,Moose River town,Census2010Pop,1/1/10,218,Moose River,moose river
+61,23,3,0,"47,175",0,1,A,Moro plantation,Census2010Pop,1/1/10,38,Moro,moro
+61,23,27,0,"47,245",0,1,A,Morrill town,Census2010Pop,1/1/10,884,Morrill,morrill
+61,23,25,0,"47,455",0,1,A,Moscow town,Census2010Pop,1/1/10,512,Moscow,moscow
+61,23,19,0,"47,560",0,1,A,Mount Chase town,Census2010Pop,1/1/10,201,Mount Chase,mount chase
+61,23,9,0,"47,630",0,1,A,Mount Desert town,Census2010Pop,1/1/10,"2,053",Mount Desert,mount desert
+61,23,11,0,"47,770",0,1,A,Mount Vernon town,Census2010Pop,1/1/10,"1,640",Mount Vernon,mount vernon
+61,23,5,0,"48,085",0,1,A,Naples town,Census2010Pop,1/1/10,"3,872",Naples,naples
+61,23,3,0,"48,120",0,1,A,Nashville plantation,Census2010Pop,1/1/10,46,Nashville,nashville
+61,23,3,0,"48,575",0,1,A,New Canada town,Census2010Pop,1/1/10,321,New Canada,new canada
+61,23,5,0,"48,820",0,1,A,New Gloucester town,Census2010Pop,1/1/10,"5,542",New Gloucester,new gloucester
+61,23,3,0,"48,960",0,1,A,New Limerick town,Census2010Pop,1/1/10,510,New Limerick,new limerick
+61,23,25,0,"49,205",0,1,A,New Portland town,Census2010Pop,1/1/10,718,New Portland,new portland
+61,23,7,0,"49,345",0,1,A,New Sharon town,Census2010Pop,1/1/10,"1,407",New Sharon,new sharon
+61,23,3,0,"49,415",0,1,A,New Sweden town,Census2010Pop,1/1/10,602,New Sweden,new sweden
+61,23,7,0,"49,520",0,1,A,New Vineyard town,Census2010Pop,1/1/10,757,New Vineyard,new vineyard
+61,23,19,0,"48,505",0,1,A,Newburgh town,Census2010Pop,1/1/10,"1,551",Newburgh,newburgh
+61,23,15,0,"48,645",0,1,A,Newcastle town,Census2010Pop,1/1/10,"1,752",Newcastle,newcastle
+61,23,31,0,"48,750",0,1,A,Newfield town,Census2010Pop,1/1/10,"1,522",Newfield,newfield
+61,23,19,0,"49,065",0,1,A,Newport town,Census2010Pop,1/1/10,"3,275",Newport,newport
+61,23,17,0,"49,275",0,1,A,Newry town,Census2010Pop,1/1/10,329,Newry,newry
+61,23,15,0,"49,660",0,1,A,Nobleboro town,Census2010Pop,1/1/10,"1,643",Nobleboro,nobleboro
+61,23,25,0,"49,835",0,1,A,Norridgewock town,Census2010Pop,1/1/10,"3,367",Norridgewock,norridgewock
+61,23,31,0,"50,325",0,1,A,North Berwick town,Census2010Pop,1/1/10,"4,576",North Berwick,north berwick
+61,23,13,0,"51,620",0,1,A,North Haven town,Census2010Pop,1/1/10,355,North Haven,north haven
+61,23,5,0,"53,860",0,1,A,North Yarmouth town,Census2010Pop,1/1/10,"3,565",North Yarmouth,north yarmouth
+61,23,29,0,"51,375",0,1,A,Northfield town,Census2010Pop,1/1/10,148,Northfield,northfield
+61,23,27,0,"52,845",0,1,A,Northport town,Census2010Pop,1/1/10,"1,520",Northport,northport
+61,23,17,0,"54,000",0,1,A,Norway town,Census2010Pop,1/1/10,"5,014",Norway,norway
+61,23,3,0,"54,385",0,1,A,Oakfield town,Census2010Pop,1/1/10,737,Oakfield,oakfield
+61,23,11,0,"54,560",0,1,A,Oakland town,Census2010Pop,1/1/10,"6,240",Oakland,oakland
+61,23,31,0,"54,980",0,1,A,Ogunquit town,Census2010Pop,1/1/10,892,Ogunquit,ogunquit
+61,23,31,0,"55,085",0,1,A,Old Orchard Beach town,Census2010Pop,1/1/10,"8,624",Old Orchard Beach,old orchard beach
+71,23,19,"55,225","55,225",0,1,A,Old Town city,Census2010Pop,1/1/10,"7,840",Old Town,old town
+61,23,3,0,"55,435",0,1,A,Orient town,Census2010Pop,1/1/10,147,Orient,orient
+61,23,9,0,"55,505",0,1,A,Orland town,Census2010Pop,1/1/10,"2,225",Orland,orland
+61,23,19,0,"55,565",0,1,A,Orono town,Census2010Pop,1/1/10,"10,362",Orono,orono
+61,23,19,0,"55,680",0,1,A,Orrington town,Census2010Pop,1/1/10,"3,733",Orrington,orrington
+61,23,9,0,"55,855",0,1,A,Osborn town,Census2010Pop,1/1/10,67,Osborn,osborn
+61,23,9,0,"55,890",0,1,A,Otis town,Census2010Pop,1/1/10,672,Otis,otis
+61,23,17,0,"55,960",0,1,A,Otisfield town,Census2010Pop,1/1/10,"1,770",Otisfield,otisfield
+61,23,13,0,"56,135",0,1,A,Owls Head town,Census2010Pop,1/1/10,"1,580",Owls Head,owls head
+61,23,3,0,"56,205",0,1,A,Oxbow plantation,Census2010Pop,1/1/10,66,Oxbow,oxbow
+61,23,17,0,"56,310",0,1,A,Oxford town,Census2010Pop,1/1/10,"4,110",Oxford,oxford
+61,23,27,0,"56,450",0,1,A,Palermo town,Census2010Pop,1/1/10,"1,535",Palermo,palermo
+61,23,25,0,"56,520",0,1,A,Palmyra town,Census2010Pop,1/1/10,"1,986",Palmyra,palmyra
+61,23,17,0,"56,625",0,1,A,Paris town,Census2010Pop,1/1/10,"5,183",Paris,paris
+61,23,21,0,"56,765",0,1,A,Parkman town,Census2010Pop,1/1/10,843,Parkman,parkman
+61,23,31,0,"56,870",0,1,A,Parsonsfield town,Census2010Pop,1/1/10,"1,898",Parsonsfield,parsonsfield
+61,23,19,0,"57,045",0,1,A,Passadumkeag town,Census2010Pop,1/1/10,374,Passadumkeag,passadumkeag
+61,23,29,0,"57,082",0,1,F,Passamaquoddy Indian Township Reservation,Census2010Pop,1/1/10,718,Passamaquoddy Indian Township Reservation,passamaquoddy indian township reservation
+61,23,29,0,"57,090",0,1,F,Passamaquoddy Pleasant Point Reservation,Census2010Pop,1/1/10,749,Passamaquoddy Pleasant Point Reservation,passamaquoddy pleasant point reservation
+61,23,19,0,"57,150",0,1,A,Patten town,Census2010Pop,1/1/10,"1,017",Patten,patten
+61,23,29,0,"57,780",0,1,A,Pembroke town,Census2010Pop,1/1/10,840,Pembroke,pembroke
+61,23,3,0,"57,936",0,1,F,Penobscot Indian Island Reservation,Census2010Pop,1/1/10,610,Penobscot Indian Island Reservation,indian island
+61,23,19,0,"57,936",0,1,F,Penobscot Indian Island Reservation,Census2010Pop,1/1/10,610,Penobscot Indian Island Reservation,indian island
+61,23,9,0,"57,920",0,1,A,Penobscot town,Census2010Pop,1/1/10,"1,263",Penobscot,penobscot
+61,23,3,0,"58,060",0,1,A,Perham town,Census2010Pop,1/1/10,386,Perham,perham
+61,23,29,0,"58,165",0,1,A,Perry town,Census2010Pop,1/1/10,889,Perry,perry
+61,23,17,0,"58,270",0,1,A,Peru town,Census2010Pop,1/1/10,"1,541",Peru,peru
+61,23,7,0,"58,445",0,1,A,Phillips town,Census2010Pop,1/1/10,"1,028",Phillips,phillips
+61,23,23,0,"58,515",0,1,A,Phippsburg town,Census2010Pop,1/1/10,"2,216",Phippsburg,phippsburg
+61,23,25,0,"59,005",0,1,A,Pittsfield town,Census2010Pop,1/1/10,"4,215",Pittsfield,pittsfield
+61,23,11,0,"59,110",0,1,A,Pittston town,Census2010Pop,1/1/10,"2,666",Pittston,pittston
+61,23,25,0,"59,705",0,1,A,Pleasant Ridge plantation,Census2010Pop,1/1/10,93,Pleasant Ridge,pleasant ridge
+61,23,19,0,"59,950",0,1,A,Plymouth town,Census2010Pop,1/1/10,"1,380",Plymouth,plymouth
+61,23,1,0,"60,020",0,1,A,Poland town,Census2010Pop,1/1/10,"5,376",Poland,poland
+61,23,3,0,"60,300",0,1,A,Portage Lake town,Census2010Pop,1/1/10,391,Portage Lake,portage lake
+61,23,17,0,"60,405",0,1,A,Porter town,Census2010Pop,1/1/10,"1,498",Porter,porter
+71,23,5,"60,545","60,545",0,1,A,Portland city,Census2010Pop,1/1/10,"66,194",Portland,portland
+61,23,5,0,"60,685",0,1,A,Pownal town,Census2010Pop,1/1/10,"1,474",Pownal,pownal
+71,23,3,"60,825","60,825",0,1,A,Presque Isle city,Census2010Pop,1/1/10,"9,692",Presque Isle,presque isle
+61,23,29,0,"61,035",0,1,A,Princeton town,Census2010Pop,1/1/10,832,Princeton,princeton
+61,23,27,0,"61,210",0,1,A,Prospect town,Census2010Pop,1/1/10,709,Prospect,prospect
+61,23,11,0,"61,700",0,1,A,Randolph town,Census2010Pop,1/1/10,"1,772",Randolph,randolph
+61,23,7,0,"61,875",0,1,A,Rangeley plantation,Census2010Pop,1/1/10,189,Rangeley,rangeley
+61,23,7,0,"61,840",0,1,A,Rangeley town,Census2010Pop,1/1/10,"1,168",Rangeley,rangeley
+61,23,5,0,"61,945",0,1,A,Raymond town,Census2010Pop,1/1/10,"4,436",Raymond,raymond
+61,23,11,0,"62,190",0,1,A,Readfield town,Census2010Pop,1/1/10,"2,598",Readfield,readfield
+61,23,3,0,"62,400",0,1,A,Reed plantation,Census2010Pop,1/1/10,161,Reed,reed
+61,23,23,0,"62,645",0,1,A,Richmond town,Census2010Pop,1/1/10,"3,411",Richmond,richmond
+61,23,25,0,"62,995",0,1,A,Ripley town,Census2010Pop,1/1/10,488,Ripley,ripley
+61,23,29,0,"63,275",0,1,A,Robbinston town,Census2010Pop,1/1/10,574,Robbinston,robbinston
+71,23,13,"63,590","63,590",0,1,A,Rockland city,Census2010Pop,1/1/10,"7,297",Rockland,rockland
+61,23,13,0,"63,660",0,1,A,Rockport town,Census2010Pop,1/1/10,"3,330",Rockport,rockport
+61,23,11,0,"63,835",0,1,A,Rome town,Census2010Pop,1/1/10,"1,010",Rome,rome
+61,23,29,0,"63,940",0,1,A,Roque Bluffs town,Census2010Pop,1/1/10,303,Roque Bluffs,roque bluffs
+61,23,17,0,"64,185",0,1,A,Roxbury town,Census2010Pop,1/1/10,369,Roxbury,roxbury
+61,23,17,0,"64,290",0,1,A,Rumford town,Census2010Pop,1/1/10,"5,841",Rumford,rumford
+61,23,1,0,"64,570",0,1,A,Sabattus town,Census2010Pop,1/1/10,"4,876",Sabattus,sabattus
+71,23,31,"64,675","64,675",0,1,A,Saco city,Census2010Pop,1/1/10,"18,482",Saco,saco
+61,23,7,0,"65,655",0,1,A,Sandy River plantation,Census2010Pop,1/1/10,133,Sandy River,sandy river
+71,23,31,"65,725","65,725",0,1,A,Sanford city,Census2010Pop,1/1/10,null,Sanford,sanford
+61,23,21,0,"65,865",0,1,A,Sangerville town,Census2010Pop,1/1/10,"1,343",Sangerville,sangerville
+61,23,5,0,"66,145",0,1,A,Scarborough town,Census2010Pop,1/1/10,"18,919",Scarborough,scarborough
+61,23,27,0,"66,565",0,1,A,Searsmont town,Census2010Pop,1/1/10,"1,392",Searsmont,searsmont
+61,23,27,0,"66,635",0,1,A,Searsport town,Census2010Pop,1/1/10,"2,615",Searsport,searsport
+61,23,5,0,"66,775",0,1,A,Sebago town,Census2010Pop,1/1/10,"1,719",Sebago,sebago
+61,23,21,0,"66,950",0,1,A,Sebec town,Census2010Pop,1/1/10,630,Sebec,sebec
+61,23,19,0,"67,160",0,1,A,Seboeis plantation,Census2010Pop,1/1/10,35,Seboeis,seboeis
+61,23,9,0,"67,300",0,1,A,Sedgwick town,Census2010Pop,1/1/10,"1,196",Sedgwick,sedgwick
+61,23,31,0,"67,475",0,1,A,Shapleigh town,Census2010Pop,1/1/10,"2,668",Shapleigh,shapleigh
+61,23,3,0,"67,790",0,1,A,Sherman town,Census2010Pop,1/1/10,848,Sherman,sherman
+61,23,21,0,"68,140",0,1,A,Shirley town,Census2010Pop,1/1/10,233,Shirley,shirley
+61,23,11,0,"68,385",0,1,A,Sidney town,Census2010Pop,1/1/10,"4,208",Sidney,sidney
+61,23,25,0,"68,910",0,1,A,Skowhegan town,Census2010Pop,1/1/10,"8,589",Skowhegan,skowhegan
+61,23,25,0,"69,155",0,1,A,Smithfield town,Census2010Pop,1/1/10,"1,033",Smithfield,smithfield
+61,23,3,0,"69,260",0,1,A,Smyrna town,Census2010Pop,1/1/10,442,Smyrna,smyrna
+61,23,25,0,"69,505",0,1,A,Solon town,Census2010Pop,1/1/10,"1,053",Solon,solon
+61,23,15,0,"69,645",0,1,A,Somerville town,Census2010Pop,1/1/10,548,Somerville,somerville
+61,23,9,0,"69,750",0,1,A,Sorrento town,Census2010Pop,1/1/10,274,Sorrento,sorrento
+61,23,31,0,"70,030",0,1,A,South Berwick town,Census2010Pop,1/1/10,"7,220",South Berwick,south berwick
+61,23,15,0,"70,240",0,1,A,South Bristol town,Census2010Pop,1/1/10,892,South Bristol,south bristol
+71,23,5,"71,990","71,990",0,1,A,South Portland city,Census2010Pop,1/1/10,"25,002",South Portland,south portland
+61,23,13,0,"72,585",0,1,A,South Thomaston town,Census2010Pop,1/1/10,"1,558",South Thomaston,south thomaston
+61,23,15,0,"71,955",0,1,A,Southport town,Census2010Pop,1/1/10,606,Southport,southport
+61,23,9,0,"72,865",0,1,A,Southwest Harbor town,Census2010Pop,1/1/10,"1,764",Southwest Harbor,southwest harbor
+61,23,19,0,"73,250",0,1,A,Springfield town,Census2010Pop,1/1/10,409,Springfield,springfield
+61,23,3,0,"64,780",0,1,A,St. Agatha town,Census2010Pop,1/1/10,747,St. Agatha,st. agatha
+61,23,25,0,"64,850",0,1,A,St. Albans town,Census2010Pop,1/1/10,"2,005",St. Albans,st. albans
+61,23,3,0,"65,025",0,1,A,St. Francis town,Census2010Pop,1/1/10,485,St. Francis,st. francis
+61,23,13,0,"65,130",0,1,A,St. George town,Census2010Pop,1/1/10,"2,591",St. George,st. george
+61,23,3,0,"65,200",0,1,A,St. John plantation,Census2010Pop,1/1/10,267,St. John,st. john
+61,23,19,0,"73,600",0,1,A,Stacyville town,Census2010Pop,1/1/10,396,Stacyville,stacyville
+61,23,5,0,"73,670",0,1,A,Standish town,Census2010Pop,1/1/10,"9,874",Standish,standish
+61,23,25,0,"73,845",0,1,A,Starks town,Census2010Pop,1/1/10,640,Starks,starks
+61,23,19,0,"74,055",0,1,A,Stetson town,Census2010Pop,1/1/10,"1,202",Stetson,stetson
+61,23,29,0,"74,125",0,1,A,Steuben town,Census2010Pop,1/1/10,"1,131",Steuben,steuben
+61,23,3,0,"74,405",0,1,A,Stockholm town,Census2010Pop,1/1/10,253,Stockholm,stockholm
+61,23,27,0,"74,475",0,1,A,Stockton Springs town,Census2010Pop,1/1/10,"1,591",Stockton Springs,stockton springs
+61,23,17,0,"74,510",0,1,A,Stoneham town,Census2010Pop,1/1/10,236,Stoneham,stoneham
+61,23,9,0,"74,580",0,1,A,Stonington town,Census2010Pop,1/1/10,"1,043",Stonington,stonington
+61,23,17,0,"74,685",0,1,A,Stow town,Census2010Pop,1/1/10,385,Stow,stow
+61,23,7,0,"74,825",0,1,A,Strong town,Census2010Pop,1/1/10,"1,213",Strong,strong
+61,23,9,0,"74,965",0,1,A,Sullivan town,Census2010Pop,1/1/10,"1,236",Sullivan,sullivan
+61,23,17,0,"75,035",0,1,A,Sumner town,Census2010Pop,1/1/10,939,Sumner,sumner
+61,23,9,0,"75,280",0,1,A,Surry town,Census2010Pop,1/1/10,"1,466",Surry,surry
+61,23,9,0,"75,455",0,1,A,Swans Island town,Census2010Pop,1/1/10,332,Swans Island,swans island
+61,23,27,0,"75,525",0,1,A,Swanville town,Census2010Pop,1/1/10,"1,388",Swanville,swanville
+61,23,17,0,"75,595",0,1,A,Sweden town,Census2010Pop,1/1/10,391,Sweden,sweden
+61,23,29,0,"75,770",0,1,A,Talmadge town,Census2010Pop,1/1/10,64,Talmadge,talmadge
+61,23,7,0,"75,980",0,1,A,Temple town,Census2010Pop,1/1/10,528,Temple,temple
+61,23,25,0,"76,190",0,1,A,The Forks plantation,Census2010Pop,1/1/10,37,The Forks,the forks
+61,23,13,0,"76,365",0,1,A,Thomaston town,Census2010Pop,1/1/10,"2,781",Thomaston,thomaston
+61,23,27,0,"76,610",0,1,A,Thorndike town,Census2010Pop,1/1/10,890,Thorndike,thorndike
+61,23,29,0,"76,895",0,1,A,Topsfield town,Census2010Pop,1/1/10,237,Topsfield,topsfield
+61,23,23,0,"76,960",0,1,A,Topsham town,Census2010Pop,1/1/10,"8,784",Topsham,topsham
+61,23,9,0,"77,345",0,1,A,Tremont town,Census2010Pop,1/1/10,"1,563",Tremont,tremont
+61,23,9,0,"77,415",0,1,A,Trenton town,Census2010Pop,1/1/10,"1,481",Trenton,trenton
+61,23,27,0,"77,625",0,1,A,Troy town,Census2010Pop,1/1/10,"1,030",Troy,troy
+61,23,1,0,"77,800",0,1,A,Turner town,Census2010Pop,1/1/10,"5,734",Turner,turner
+61,23,13,0,"78,115",0,1,A,Union town,Census2010Pop,1/1/10,"2,259",Union,union
+61,23,27,0,"78,255",0,1,A,Unity town,Census2010Pop,1/1/10,"2,099",Unity,unity
+61,23,17,0,"78,465",0,1,A,Upton town,Census2010Pop,1/1/10,113,Upton,upton
+61,23,3,0,"78,570",0,1,A,Van Buren town,Census2010Pop,1/1/10,"2,171",Van Buren,van buren
+61,23,29,0,"78,675",0,1,A,Vanceboro town,Census2010Pop,1/1/10,140,Vanceboro,vanceboro
+61,23,11,0,"78,745",0,1,A,Vassalboro town,Census2010Pop,1/1/10,"4,340",Vassalboro,vassalboro
+61,23,19,0,"78,780",0,1,A,Veazie town,Census2010Pop,1/1/10,"1,919",Veazie,veazie
+61,23,9,0,"78,925",0,1,A,Verona Island town,Census2010Pop,1/1/10,544,Verona Island,verona island
+61,23,11,0,"79,025",0,1,A,Vienna town,Census2010Pop,1/1/10,570,Vienna,vienna
+61,23,13,0,"79,130",0,1,A,Vinalhaven town,Census2010Pop,1/1/10,"1,165",Vinalhaven,vinalhaven
+61,23,3,0,"79,270",0,1,A,Wade town,Census2010Pop,1/1/10,283,Wade,wade
+61,23,29,0,"79,375",0,1,A,Waite town,Census2010Pop,1/1/10,101,Waite,waite
+61,23,27,0,"79,480",0,1,A,Waldo town,Census2010Pop,1/1/10,762,Waldo,waldo
+61,23,15,0,"79,550",0,1,A,Waldoboro town,Census2010Pop,1/1/10,"5,075",Waldoboro,waldoboro
+61,23,1,0,"79,585",0,1,A,Wales town,Census2010Pop,1/1/10,"1,616",Wales,wales
+61,23,3,0,"79,865",0,1,A,Wallagrass town,Census2010Pop,1/1/10,546,Wallagrass,wallagrass
+61,23,9,0,"80,040",0,1,A,Waltham town,Census2010Pop,1/1/10,353,Waltham,waltham
+61,23,13,0,"80,215",0,1,A,Warren town,Census2010Pop,1/1/10,"4,751",Warren,warren
+61,23,3,0,"80,285",0,1,A,Washburn town,Census2010Pop,1/1/10,"1,687",Washburn,washburn
+61,23,13,0,"80,425",0,1,A,Washington town,Census2010Pop,1/1/10,"1,527",Washington,washington
+61,23,31,0,"80,530",0,1,A,Waterboro town,Census2010Pop,1/1/10,"7,693",Waterboro,waterboro
+61,23,17,0,"80,635",0,1,A,Waterford town,Census2010Pop,1/1/10,"1,553",Waterford,waterford
+71,23,11,"80,740","80,740",0,1,A,Waterville city,Census2010Pop,1/1/10,"15,722",Waterville,waterville
+61,23,11,0,"80,880",0,1,A,Wayne town,Census2010Pop,1/1/10,"1,189",Wayne,wayne
+61,23,19,0,"81,055",0,1,A,Webster plantation,Census2010Pop,1/1/10,85,Webster,webster
+61,23,7,0,"81,300",0,1,A,Weld town,Census2010Pop,1/1/10,419,Weld,weld
+61,23,21,0,"81,405",0,1,A,Wellington town,Census2010Pop,1/1/10,260,Wellington,wellington
+61,23,31,0,"81,475",0,1,A,Wells town,Census2010Pop,1/1/10,"9,589",Wells,wells
+61,23,29,0,"81,685",0,1,A,Wesley town,Census2010Pop,1/1/10,98,Wesley,wesley
+61,23,23,0,"81,930",0,1,A,West Bath town,Census2010Pop,1/1/10,"1,877",West Bath,west bath
+61,23,25,0,"82,840",0,1,A,West Forks plantation,Census2010Pop,1/1/10,60,West Forks,west forks
+61,23,11,0,"82,945",0,1,A,West Gardiner town,Census2010Pop,1/1/10,"3,474",West Gardiner,west gardiner
+61,23,17,0,"83,890",0,1,A,West Paris town,Census2010Pop,1/1/10,"1,812",West Paris,west paris
+71,23,5,"82,105","82,105",0,1,A,Westbrook city,Census2010Pop,1/1/10,"17,494",Westbrook,westbrook
+61,23,3,0,"82,770",0,1,A,Westfield town,Census2010Pop,1/1/10,549,Westfield,westfield
+61,23,3,0,"83,540",0,1,A,Westmanland town,Census2010Pop,1/1/10,62,Westmanland,westmanland
+61,23,3,0,"83,785",0,1,A,Weston town,Census2010Pop,1/1/10,228,Weston,weston
+61,23,15,0,"84,140",0,1,A,Westport Island town,Census2010Pop,1/1/10,718,Westport Island,westport island
+61,23,15,0,"85,010",0,1,A,Whitefield town,Census2010Pop,1/1/10,"2,300",Whitefield,whitefield
+61,23,29,0,"85,185",0,1,A,Whiting town,Census2010Pop,1/1/10,487,Whiting,whiting
+61,23,29,0,"85,290",0,1,A,Whitneyville town,Census2010Pop,1/1/10,220,Whitneyville,whitneyville
+61,23,21,0,"85,710",0,1,A,Willimantic town,Census2010Pop,1/1/10,150,Willimantic,willimantic
+61,23,7,0,"85,850",0,1,A,Wilton town,Census2010Pop,1/1/10,"4,116",Wilton,wilton
+61,23,5,0,"86,025",0,1,A,Windham town,Census2010Pop,1/1/10,"17,001",Windham,windham
+61,23,11,0,"86,165",0,1,A,Windsor town,Census2010Pop,1/1/10,"2,575",Windsor,windsor
+61,23,19,0,"86,305",0,1,A,Winn town,Census2010Pop,1/1/10,407,Winn,winn
+61,23,11,0,"86,515",0,1,A,Winslow town,Census2010Pop,1/1/10,"7,794",Winslow,winslow
+61,23,9,0,"86,655",0,1,A,Winter Harbor town,Census2010Pop,1/1/10,516,Winter Harbor,winter harbor
+61,23,27,0,"86,760",0,1,A,Winterport town,Census2010Pop,1/1/10,"3,757",Winterport,winterport
+61,23,3,0,"86,865",0,1,A,Winterville plantation,Census2010Pop,1/1/10,224,Winterville,winterville
+61,23,11,0,"86,970",0,1,A,Winthrop town,Census2010Pop,1/1/10,"6,092",Winthrop,winthrop
+61,23,15,0,"87,075",0,1,A,Wiscasset town,Census2010Pop,1/1/10,"3,732",Wiscasset,wiscasset
+61,23,3,0,"87,215",0,1,A,Woodland town,Census2010Pop,1/1/10,"1,213",Woodland,woodland
+61,23,17,0,"87,355",0,1,A,Woodstock town,Census2010Pop,1/1/10,"1,277",Woodstock,woodstock
+61,23,19,0,"87,390",0,1,A,Woodville town,Census2010Pop,1/1/10,248,Woodville,woodville
+61,23,23,0,"87,460",0,1,A,Woolwich town,Census2010Pop,1/1/10,"3,072",Woolwich,woolwich
+61,23,5,0,"87,845",0,1,A,Yarmouth town,Census2010Pop,1/1/10,"8,349",Yarmouth,yarmouth
+61,23,31,0,"87,985",0,1,A,York town,Census2010Pop,1/1/10,"12,529",York,york
