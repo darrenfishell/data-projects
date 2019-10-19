@@ -1,0 +1,744 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20193.19.0821.2225                               -->
+<workbook source-build='2019.3.0 (20193.19.0821.2225)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts ignorable='true' predowngraded='true' />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='mainely_businesses_scraped' inline='true' name='federated.1wejebk1fp43cl125xtls0zasape' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='mainely_businesses_scraped' name='textscan.1i6kubu0o1y587180nzz80rp5hq5'>
+            <connection class='textscan' directory='/Users/Darren/Github clones/data-projects/mainely-business' filename='mainely_businesses_scraped.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1i6kubu0o1y587180nzz80rp5hq5' name='mainely_businesses_scraped.csv' table='[mainely_businesses_scraped#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='names' ordinal='1' />
+            <column datatype='string' name='type' ordinal='2' />
+            <column datatype='string' name='urls' ordinal='3' />
+            <column datatype='string' name='status' ordinal='4' />
+            <column datatype='string' name='owner/org_type' ordinal='5' />
+            <column datatype='string' name='address' ordinal='6' />
+            <column datatype='string' name='owner_or_clerk' ordinal='7' />
+            <column datatype='date' name='filing_date' ordinal='8' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[mainely_businesses_scraped.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[mainely_businesses_scraped.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[names]</local-name>
+            <parent-name>[mainely_businesses_scraped.csv]</parent-name>
+            <remote-alias>names</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[mainely_businesses_scraped.csv]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>urls</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[urls]</local-name>
+            <parent-name>[mainely_businesses_scraped.csv]</parent-name>
+            <remote-alias>urls</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[status]</local-name>
+            <parent-name>[mainely_businesses_scraped.csv]</parent-name>
+            <remote-alias>status</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>owner/org_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[owner/org_type]</local-name>
+            <parent-name>[mainely_businesses_scraped.csv]</parent-name>
+            <remote-alias>owner/org_type</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>address</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[address]</local-name>
+            <parent-name>[mainely_businesses_scraped.csv]</parent-name>
+            <remote-alias>address</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>owner_or_clerk</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[owner_or_clerk]</local-name>
+            <parent-name>[mainely_businesses_scraped.csv]</parent-name>
+            <remote-alias>owner_or_clerk</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>filing_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[filing_date]</local-name>
+            <parent-name>[mainely_businesses_scraped.csv]</parent-name>
+            <remote-alias>filing_date</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' caption='Index' datatype='integer' name='[F1]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='string' name='[Status (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[status]' default='&quot;Other&quot;' new-bin='true'>
+          <bin default-name='true' value='&quot;ACTIVE &amp; GOOD STANDING&quot;'>
+            <value>&quot;ACTIVE&quot;</value>
+            <value>&quot;GOOD STANDING&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column caption='Address' datatype='string' name='[address]' role='dimension' type='nominal' />
+      <column caption='Filing Date' datatype='date' name='[filing_date]' role='dimension' type='ordinal' />
+      <column caption='Owner/Org Type' datatype='string' name='[owner/org_type]' role='dimension' type='nominal' />
+      <column caption='Status' datatype='string' name='[status]' role='dimension' type='nominal' />
+      <column-instance column='[filing_date]' derivation='Year' name='[yr:filing_date:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (Status (group),YEAR(Filing Date))' hidden='true' name='[Action (Status (group),YEAR(Filing Date))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Status (group)]' />
+          <groupfilter function='level-members' level='[yr:filing_date:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (YEAR(Filing Date))' hidden='true' name='[Action (YEAR(Filing Date))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[yr:filing_date:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (YEAR(Filing Date),Status)' hidden='true' name='[Action (YEAR(Filing Date),Status)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[yr:filing_date:ok]' />
+          <groupfilter function='level-members' level='[status]' />
+        </groupfilter>
+      </group>
+      <group caption='Tooltip (YEAR(Filing Date),Status)' hidden='true' name='[Tooltip (YEAR(Filing Date),Status)]' name-style='unqualified' user:auto-column='sheet_link' user:ui-vit-column='true'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[yr:filing_date:ok]' />
+          <groupfilter function='level-members' level='[status]' />
+        </groupfilter>
+      </group>
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/mainely-business-workbook.twb Files/mainely_businesses_scraped.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='10/16/2019 02:04:30 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='mainely_businesses_scraped' increment-value='%null%' refresh-type='create' rows-inserted='594' timestamp-start='2019-10-16 02:04:30.760' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>mainely_businesses_scraped.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>594</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>names</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[names]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>names</remote-alias>
+              <ordinal>1</ordinal>
+              <family>mainely_businesses_scraped.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>584</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>type</remote-alias>
+              <ordinal>2</ordinal>
+              <family>mainely_businesses_scraped.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>urls</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[urls]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>urls</remote-alias>
+              <ordinal>3</ordinal>
+              <family>mainely_businesses_scraped.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>594</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>status</remote-alias>
+              <ordinal>4</ordinal>
+              <family>mainely_businesses_scraped.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>owner/org_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[owner/org_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>owner/org_type</remote-alias>
+              <ordinal>5</ordinal>
+              <family>mainely_businesses_scraped.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>address</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[address]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>address</remote-alias>
+              <ordinal>6</ordinal>
+              <family>mainely_businesses_scraped.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>497</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>owner_or_clerk</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[owner_or_clerk]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>owner_or_clerk</remote-alias>
+              <ordinal>7</ordinal>
+              <family>mainely_businesses_scraped.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>508</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>filing_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[filing_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>filing_date</remote-alias>
+              <ordinal>8</ordinal>
+              <family>mainely_businesses_scraped.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>567</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.595361' measure-ordering='alphabetic' measure-percentage='0.404639' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[Status (group)]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;ACTIVE &amp; GOOD STANDING&quot;</bucket>
+            </map>
+            <map to='#a2a2a2'>
+              <bucket>&quot;Other&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter1' name='[Action1]'>
+      <activation type='on-select' />
+      <source dashboard='Mainely business timeline' type='sheet' worksheet='Active Year Bars' />
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='Active Year Bars' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='Mainely business timeline' />
+      </command>
+    </action>
+    <action caption='Hyperlink1' name='[Action2]'>
+      <activation type='on-select' />
+      <source dashboard='Mainely business timeline' type='sheet' worksheet='Tooltip names' />
+      <link caption='Hyperlink1' expression='&lt;[urls]&gt;' />
+    </action>
+    <action caption='Names by address' name='[Action3]'>
+      <activation type='on-select' />
+      <source datasource='federated.1wejebk1fp43cl125xtls0zasape' type='datasource'>
+        <exclude-sheet name='Active Year Bars' />
+        <exclude-sheet name='Tooltip names' />
+      </source>
+      <link caption='Hyperlink2' expression='&lt;[urls]&gt;' />
+    </action>
+    <datasources>
+      <datasource caption='mainely_businesses_scraped' name='federated.1wejebk1fp43cl125xtls0zasape' />
+    </datasources>
+    <datasource-dependencies datasource='federated.1wejebk1fp43cl125xtls0zasape'>
+      <column datatype='string' name='[urls]' role='dimension' type='nominal' />
+    </datasource-dependencies>
+  </actions>
+  <worksheets>
+    <worksheet name='Active Year Bars'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='mainely_businesses_scraped' name='federated.1wejebk1fp43cl125xtls0zasape' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1wejebk1fp43cl125xtls0zasape'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='string' name='[Status (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[status]' default='&quot;Other&quot;' new-bin='true'>
+                <bin default-name='true' value='&quot;ACTIVE &amp; GOOD STANDING&quot;'>
+                  <value>&quot;ACTIVE&quot;</value>
+                  <value>&quot;GOOD STANDING&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column-instance column='[names]' derivation='CountD' name='[ctd:names:qk]' pivot='key' type='quantitative' />
+            <column caption='Filing Date' datatype='date' name='[filing_date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[names]' role='dimension' type='nominal' />
+            <column caption='Status' datatype='string' name='[status]' role='dimension' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[filing_date]' derivation='Year' name='[yr:filing_date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1wejebk1fp43cl125xtls0zasape].[Status (group)]'>
+            <groupfilter function='member' level='[Status (group)]' member='&quot;ACTIVE &amp; GOOD STANDING&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1wejebk1fp43cl125xtls0zasape].[Status (group)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.1wejebk1fp43cl125xtls0zasape].[ctd:names:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1wejebk1fp43cl125xtls0zasape].[sum:Number of Records:qk]</rows>
+        <cols>[federated.1wejebk1fp43cl125xtls0zasape].[yr:filing_date:ok]</cols>
+      </table>
+      <simple-id uuid='{B0B71D2F-1A32-4BDC-8709-D7E4AC743AFC}' />
+    </worksheet>
+    <worksheet name='Names by address'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='mainely_businesses_scraped' name='federated.1wejebk1fp43cl125xtls0zasape' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1wejebk1fp43cl125xtls0zasape'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Address' datatype='string' name='[address]' role='dimension' type='nominal' />
+            <column datatype='string' name='[names]' role='dimension' type='nominal' />
+            <column-instance column='[address]' derivation='None' name='[none:address:nk]' pivot='key' type='nominal' />
+            <column-instance column='[names]' derivation='None' name='[none:names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[owner_or_clerk]' derivation='None' name='[none:owner_or_clerk:nk]' pivot='key' type='nominal' />
+            <column-instance column='[urls]' derivation='None' name='[none:urls:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[owner_or_clerk]' role='dimension' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[urls]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1wejebk1fp43cl125xtls0zasape].[none:address:nk]' direction='DESC' measure-to-sort-by='[federated.1wejebk1fp43cl125xtls0zasape].[sum:Number of Records:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1wejebk1fp43cl125xtls0zasape].[none:address:nk]' value='324' />
+            <format attr='width' field='[federated.1wejebk1fp43cl125xtls0zasape].[none:names:nk]' value='328' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1wejebk1fp43cl125xtls0zasape].[none:urls:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1wejebk1fp43cl125xtls0zasape].[none:address:nk] / ([federated.1wejebk1fp43cl125xtls0zasape].[none:owner_or_clerk:nk] / [federated.1wejebk1fp43cl125xtls0zasape].[none:names:nk]))</rows>
+        <cols>[federated.1wejebk1fp43cl125xtls0zasape].[sum:Number of Records:qk]</cols>
+      </table>
+      <simple-id uuid='{039ED994-F5BD-4BB0-9EB0-D42DCB9175B9}' />
+    </worksheet>
+    <worksheet name='Tooltip names'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Sheet Name&gt;&#10;</run>
+            <run fontsize='9'>Year: &lt;[federated.1wejebk1fp43cl125xtls0zasape].[yr:filing_date:ok]&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='mainely_businesses_scraped' name='federated.1wejebk1fp43cl125xtls0zasape' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1wejebk1fp43cl125xtls0zasape'>
+            <column caption='Filing Date' datatype='date' name='[filing_date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[names]' role='dimension' type='nominal' />
+            <column-instance column='[names]' derivation='None' name='[none:names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[urls]' derivation='None' name='[none:urls:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[urls]' role='dimension' type='nominal' />
+            <column-instance column='[filing_date]' derivation='Year' name='[yr:filing_date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1wejebk1fp43cl125xtls0zasape].[Action (YEAR(Filing Date))]'>
+            <groupfilter function='member' level='[yr:filing_date:ok]' member='2018' user:ui-action-filter='[Action1]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1wejebk1fp43cl125xtls0zasape].[Action (YEAR(Filing Date))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1wejebk1fp43cl125xtls0zasape].[none:names:nk]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1wejebk1fp43cl125xtls0zasape].[none:urls:nk]' />
+              <text column='[federated.1wejebk1fp43cl125xtls0zasape].[none:names:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1wejebk1fp43cl125xtls0zasape].[none:names:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{5438CEA6-CA3C-4A99-9234-678F57822186}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Mainely business timeline'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type='layout-basic' w='98400' x='800' y='1000'>
+              <zone h='81250' id='3' name='Active Year Bars' w='60066' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='98000' id='9' name='Tooltip names' w='38334' x='60866' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='16750' id='8' name='Active Year Bars' pane-specification-id='0' param='[federated.1wejebk1fp43cl125xtls0zasape].[Status (group)]' type='color' w='60066' x='800' y='82250'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='18' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='19' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='81250' id='3' is-fixed='true' name='Active Year Bars' w='60066' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='16750' id='8' name='Active Year Bars' pane-specification-id='0' param='[federated.1wejebk1fp43cl125xtls0zasape].[Status (group)]' type='color' w='60066' x='800' y='82250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98000' id='9' is-fixed='true' name='Tooltip names' w='38334' x='60866' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{733B321B-66E3-45AE-97A0-7F2AECA4A1E0}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' name='Mainely business timeline'>
+      <viewpoints>
+        <viewpoint name='Active Year Bars'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Tooltip names'>
+          <zoom type='fit-width' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{9BC58CAF-C59C-4B5D-818B-8AF00526C4FA}' />
+    </window>
+    <window class='worksheet' name='Active Year Bars'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{AD652375-A508-492B-9780-5277063D4890}' />
+    </window>
+    <window class='worksheet' name='Tooltip names'>
+      <cards>
+        <edge name='left'>
+          <strip size='300'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{74B3188A-EB41-43D0-9246-EA26DA6D0743}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Names by address'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E955FB3E-FF70-4796-9725-2D298AA48930}' />
+    </window>
+  </windows>
+</workbook>
