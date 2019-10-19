@@ -32,7 +32,7 @@ The MPUC's official report only considered the EIA data and the figures for resi
 
 ### The process
 
-#### "Low-cost scenario"
+#### Residential scenario
 
 The first Tableau Prep workflow, `standard-offer-load-shares.tfl`, deals only with the MPUC migration data.
 
@@ -52,7 +52,7 @@ These tables produce the "low-cost scenario" estimate, which simply calculates t
 
 This produces our final "what-if" number for each supplier: how would the cost have differed if all of that electricity was instead purchased at the weighted standard offer rate?
 
-#### High-cost scenario
+#### Residential + small business scenario
 
 The second scenario considers a summary of all retail supplier data at the regional grid level -- ISO or NBSO.
 
