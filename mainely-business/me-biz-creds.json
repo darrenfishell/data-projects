@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "me-federal-campaign-finance",
+  "private_key_id": "47429ada9996221ca377fdd2bdc2ed675f18ad57",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCpOMgu+mozv7vo\nw/J46YIMlA8zwBP3oaNO0u7aLmp40g+hgH1OQghtF5YGXGSv69uPf7aoqjt4kWF0\n+CzNTpaDRwdhA9im4EzHjZCDPVN+z27Zx8A2X7IvPtixFwlsTzhm6NtvUgH/5R+s\nTDwCnJLzyIgIlHuVosrIrPrHkN2O1rzmybjw2EPFlfsu01WXeOerx66WGICPjjjF\nDNlv1bE43m4wGL7b4guptF+y6tyZU9/YzU3r6lxo8HG2huM+W+5H7eE9M636qtzl\nk+35LNjh9RFDo6tFMqecG+dRIsmSrUWRaMlnn+iaIRl8P72QqDliY8WQecMwq3XO\nm9nXd4TlAgMBAAECggEAIQSIgKwRGUBFppTHBIMRQimIbtFBRB24esqK2qzYTvMz\npBApQuH8+WYy+lJAPhgPysfBSNcQTAXXxWYf/b4h/YLYJHyG4wacTIppYkYOus04\nBIumTCWvY2sIhkMnrkelymSQXj/azoZy/+APDHZm8OSVcFEibO+qz+16cAJqzHH2\nB76rlcO8eGs/s9W6SghW5iuTgzlxup/vRfyUHPe36UC8Vd3kL38P3m26hW7jF295\nu1BwbQWUnMh4RccUzNdIai+Vfc6UD4h7g0D7VtQWg9B/LeOU5jol4YHbdK508EFp\nz8XEiStQ5nnSz45S+kRZ48KvBi4JSdjYiSgHkvm1IQKBgQDRp41GgHHzRppq2t+7\nw+R+qh93S/fDkmqfFq60pI6q6lY+UWkyNKoxcYPI1FeGIyXF6r3AHo43fGEZHPN9\npLlBr1kRsrdCt65tgzPs6vwtRpmJmxMrerz+hTDusHU6emBqN8KHGaucbKWeSXv9\nyRKXhLcVqHgZkJAHlEr9c9oyxQKBgQDOoR/m6VBNhRwA8D0Xc4+/NQdcsiCZWhkv\n3gc3E4r0aNXSkyvFqYfQlH/zCwL6e8tZfhDXJBnpG3HrsQRc41UKsLxBptzl0k7X\nXPWw/U4EiEsWsr6PLhU455iQmm75Zs0nPfhlB8W4Q7XDeQMNMJ4Xs3iW7JMofTb3\nIQ3ss0SroQKBgQCtPJ7fF7mQxNFJ5EulMkv3YgmYINy87JpPlIWN3L/KeNIEsm6T\nPrM3Ic48P0GHJDnNHZfnTRhEvvDYuHR2aItvvD2EA0GszmxCL3zTkqQHoWOzMcGY\nVtYeFd6GDKcBSCes/SAvVEXafmgnsB7VaLWFH/PM4KVEspBgwudoILe25QKBgFpo\nj2/WWAeDHUyf0Oso6hVsW2tImRDgJjMWf6uuhlcIY74+HKHg2ob94rnx8Hyum7vt\nd+raZefj1UWd713BLh1+VPCY1QBNs6dxiiLFwlQjWk91KAG31RtP4iYrHDFNtKfd\n6ogyDWXhYm9DzH0B77pJEZNfsce+ecVJljEiAwLhAoGAeqVo3O0/8j71MrftrMXZ\nzeRXxn1znfNFk31U9Ob18Fv2uy4V4d08BpXXLO5D0f6G6ojoM084NFUEw2yFSXhZ\nlfWhWfZikjNq3ZC17IMAos3rnx0THwl6ZCqQ3zleTmYUPUxZMloUN6ve2azZzml6\nI6DnPQu+ZUb5cxVsA/8rnqQ=\n-----END PRIVATE KEY-----\n",
+  "client_email": "fec-data-loader@me-federal-campaign-finance.iam.gserviceaccount.com",
+  "client_id": "104862045350320523501",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/fec-data-loader%40me-federal-campaign-finance.iam.gserviceaccount.com"
+}
