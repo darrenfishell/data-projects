@@ -1,0 +1,1891 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20193.19.1017.1259                               -->
+<workbook source-build='2019.3.1 (20193.19.1017.1259)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts ignorable='true' predowngraded='true' />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='election summary' inline='true' name='federated.0ggshsf1hz4mks12cxttz0kizplr' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='darrenfishell/2020-election-repo' name='webdata-direct.1b6px081ixjlq8121aziq1qwx2pa'>
+            <connection APIVersion='' authType='custom' authentication='yes' channel='https' class='webdata-direct' connectionData='{&quot;dataset&quot;:&quot;darrenfishell/2020-election-repo&quot;,&quot;query&quot;:&quot;SELECT candidate_committee_lookup.candidate_name\n,candidate_committee_lookup.party_full\n,net_contributions\n,cash_on_hand_beginning_period\n,last_cash_on_hand_end_period\n,coverage_start_date\n,coverage_end_date\n,last_report_type_full\nFROM senate_financial_summary\nLEFT JOIN candidate_committee_lookup\nON senate_financial_summary.committee_id = candidate_committee_lookup.committee_id&quot;,&quot;queryType&quot;:&quot;sql&quot;,&quot;version&quot;:&quot;1.1.0&quot;}' connectionName='darrenfishell/2020-election-repo' filename='' increment-key='' path='/' port='443' scriptVersion='' secondary_whitelist='' server='tableau.data.world' urlQuery='dataset_name=darrenfishell%2F2020-election-repo&amp;query=SELECT%20candidate_committee_lookup.candidate_name%0A%2Cnet_contributions%0A%2Ccash_on_hand_beginning_period%0A%2Clast_cash_on_hand_end_period%0A%2Ccoverage_start_date%0A%2Ccoverage_end_date%0A%2Clast_report_type_full%0AFROM%20senate_financial_summary%0ALEFT%20JOIN%20candidate_committee_lookup%0AON%20senate_financial_summary.committee_id%20%3D%20candidate_committee_lookup.committee_id&amp;queryType=SQL' username='' usernameAlias='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='webdata-direct.1b6px081ixjlq8121aziq1qwx2pa' name='Election Summary' table='[QueryTable]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>candidate_name</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[candidate_name]</local-name>
+            <parent-name>[Election Summary]</parent-name>
+            <remote-alias>candidate_name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>party_full</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[party_full]</local-name>
+            <parent-name>[Election Summary]</parent-name>
+            <remote-alias>party_full</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>net_contributions</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[net_contributions]</local-name>
+            <parent-name>[Election Summary]</parent-name>
+            <remote-alias>net_contributions</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;float&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cash_on_hand_beginning_period</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[cash_on_hand_beginning_period]</local-name>
+            <parent-name>[Election Summary]</parent-name>
+            <remote-alias>cash_on_hand_beginning_period</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;float&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last_cash_on_hand_end_period</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[last_cash_on_hand_end_period]</local-name>
+            <parent-name>[Election Summary]</parent-name>
+            <remote-alias>last_cash_on_hand_end_period</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;float&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>coverage_start_date</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[coverage_start_date]</local-name>
+            <parent-name>[Election Summary]</parent-name>
+            <remote-alias>coverage_start_date</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;datetime&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>coverage_end_date</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[coverage_end_date]</local-name>
+            <parent-name>[Election Summary]</parent-name>
+            <remote-alias>coverage_end_date</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;datetime&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last_report_type_full</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[last_report_type_full]</local-name>
+            <parent-name>[Election Summary]</parent-name>
+            <remote-alias>last_report_type_full</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Measure Names' datatype='string' name='[:Measure Names]' role='dimension' type='nominal' />
+      <column caption='Last name' datatype='string' name='[Calculation_1130544292893462532]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='SPLIT([candidate_name],&apos;,&apos;,1)' />
+      </column>
+      <column caption='Measure Values' datatype='real' name='[Multiple Values]' role='measure' type='quantitative' />
+      <column caption='Number of Records' datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Candidate Name' datatype='string' name='[candidate_name]' role='dimension' type='nominal' />
+      <column caption='Cash On Hand Beginning Period' datatype='real' name='[cash_on_hand_beginning_period]' role='measure' type='quantitative' />
+      <column caption='Coverage End Date' datatype='date' datatype-customized='true' name='[coverage_end_date]' role='dimension' type='ordinal' />
+      <column caption='Coverage Start Date' datatype='date' datatype-customized='true' name='[coverage_start_date]' role='dimension' type='ordinal' />
+      <column caption='Last Cash On Hand End Period' datatype='real' name='[last_cash_on_hand_end_period]' role='measure' type='quantitative' />
+      <column caption='Last Report Type Full' datatype='string' name='[last_report_type_full]' role='dimension' type='nominal' />
+      <column caption='Net Contributions' datatype='real' name='[net_contributions]' role='measure' type='quantitative' />
+      <column datatype='string' name='[party_full]' role='dimension' type='nominal' />
+      <column-instance column='[party_full]' derivation='None' name='[none:party_full:nk]' pivot='key' type='nominal' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/Datasources/federated.0ggshsf1hz4mks12cxttz0kizplr_034myl31nibfcr14nw1qz1o69rbs.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='10/28/2019 02:03:25 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='election summary' increment-value='%null%' refresh-type='create' rows-inserted='8' timestamp-start='2019-10-28 02:03:25.422' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>candidate_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[candidate_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>candidate_name</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Election Summary</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>party_full</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[party_full]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>party_full</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Election Summary</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>net_contributions</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[net_contributions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>net_contributions</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Election Summary</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cash_on_hand_beginning_period</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[cash_on_hand_beginning_period]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cash_on_hand_beginning_period</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Election Summary</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>last_cash_on_hand_end_period</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[last_cash_on_hand_end_period]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>last_cash_on_hand_end_period</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Election Summary</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>coverage_start_date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[coverage_start_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>coverage_start_date</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Election Summary</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>coverage_end_date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[coverage_end_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>coverage_end_date</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Election Summary</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>last_report_type_full</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[last_report_type_full]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>last_report_type_full</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Election Summary</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.52973' measure-ordering='alphabetic' measure-percentage='0.47027' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:party_full:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;DEMOCRATIC PARTY&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;INDEPENDENT&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;REPUBLICAN PARTY&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='darrenfishell/2020-election-repo' inline='true' name='federated.1fpqm8613vkrsd194aevy0c68jim' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='darrenfishell/2020-election-repo' name='webdata-direct.1jz33r00ybluq716tinn80lbu6pw'>
+            <connection APIVersion='' authType='custom' authentication='yes' channel='https' class='webdata-direct' connectionData='{&quot;dataset&quot;:&quot;darrenfishell/2020-election-repo&quot;,&quot;query&quot;:&quot;SELECT *\nFROM v_contributions_and_outside_spending&quot;,&quot;queryType&quot;:&quot;sql&quot;,&quot;version&quot;:&quot;1.1.0&quot;}' connectionName='darrenfishell/2020-election-repo' filename='' increment-key='' path='/' port='443' scriptVersion='' secondary_whitelist='' server='tableau.data.world' urlQuery='dataset_name=darrenfishell%2F2020-election-repo&amp;query=SELECT%20*%0AFROM%20v_contributions_and_outside_spending&amp;queryType=SQL' username='' usernameAlias='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='webdata-direct.1jz33r00ybluq716tinn80lbu6pw' name='Query Results' table='[QueryTable]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>committee_name</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[committee_name]</local-name>
+            <parent-name>[Query Results]</parent-name>
+            <remote-alias>committee_name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>candidate_name</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[candidate_name]</local-name>
+            <parent-name>[Query Results]</parent-name>
+            <remote-alias>candidate_name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>committee_party_full</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[committee_party_full]</local-name>
+            <parent-name>[Query Results]</parent-name>
+            <remote-alias>committee_party_full</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contribution_receipt_amount</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[contribution_receipt_amount]</local-name>
+            <parent-name>[Query Results]</parent-name>
+            <remote-alias>contribution_receipt_amount</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;float&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contribution_receipt_date</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[contribution_receipt_date]</local-name>
+            <parent-name>[Query Results]</parent-name>
+            <remote-alias>contribution_receipt_date</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;date&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>entity_type</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[entity_type]</local-name>
+            <parent-name>[Query Results]</parent-name>
+            <remote-alias>entity_type</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contributor_city</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[contributor_city]</local-name>
+            <parent-name>[Query Results]</parent-name>
+            <remote-alias>contributor_city</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contributor_state</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[contributor_state]</local-name>
+            <parent-name>[Query Results]</parent-name>
+            <remote-alias>contributor_state</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contributor_street_1</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[contributor_street_1]</local-name>
+            <parent-name>[Query Results]</parent-name>
+            <remote-alias>contributor_street_1</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contributor_street_2</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[contributor_street_2]</local-name>
+            <parent-name>[Query Results]</parent-name>
+            <remote-alias>contributor_street_2</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contributor_zip</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[contributor_zip]</local-name>
+            <parent-name>[Query Results]</parent-name>
+            <remote-alias>contributor_zip</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contributor_employer</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[contributor_employer]</local-name>
+            <parent-name>[Query Results]</parent-name>
+            <remote-alias>contributor_employer</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contributor_name</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[contributor_name]</local-name>
+            <parent-name>[Query Results]</parent-name>
+            <remote-alias>contributor_name</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contributor_occupation</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[contributor_occupation]</local-name>
+            <parent-name>[Query Results]</parent-name>
+            <remote-alias>contributor_occupation</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fec_election_type_desc</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[fec_election_type_desc]</local-name>
+            <parent-name>[Query Results]</parent-name>
+            <remote-alias>fec_election_type_desc</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>load_date</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[load_date]</local-name>
+            <parent-name>[Query Results]</parent-name>
+            <remote-alias>load_date</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;datetime&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pdf_url</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[pdf_url]</local-name>
+            <parent-name>[Query Results]</parent-name>
+            <remote-alias>pdf_url</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transaction_id</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[transaction_id]</local-name>
+            <parent-name>[Query Results]</parent-name>
+            <remote-alias>transaction_id</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>support_oppose_indicator</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[support_oppose_indicator]</local-name>
+            <parent-name>[Query Results]</parent-name>
+            <remote-alias>support_oppose_indicator</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>money_type</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[money_type]</local-name>
+            <parent-name>[Query Results]</parent-name>
+            <remote-alias>money_type</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Measure Names' datatype='string' name='[:Measure Names]' role='dimension' type='nominal' />
+      <column caption='Support' datatype='real' default-format='c&quot;$&quot;#,##0;(&quot;$&quot;#,##0)' name='[Calculation_1130544292881846272]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [support_oppose_indicator]=&apos;S&apos; THEN [contribution_receipt_amount] END' />
+      </column>
+      <column caption='Contribution as of Date' datatype='date' default-format='L' name='[Calculation_1130544292890886145]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='{MAX(IF [money_type]=&apos;committee contributions&apos; THEN [contribution_receipt_date] END)}' />
+      </column>
+      <column caption='Outside spending as of date' datatype='date' default-format='L' name='[Calculation_1130544292891258883]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='{MAX(IF [money_type]!=&apos;committee contributions&apos; THEN [contribution_receipt_date] END)}' />
+      </column>
+      <column caption='Last name' datatype='string' name='[Calculation_1130544292893462532]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='SPLIT([candidate_name],&apos;,&apos;,1)' />
+      </column>
+      <column caption='Measure Values' datatype='real' name='[Multiple Values]' role='measure' type='quantitative' />
+      <column caption='Number of Records' datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Opposition' datatype='real' default-format='c&quot;$&quot;#,##0;(&quot;$&quot;#,##0)' name='[Support (copy)]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [support_oppose_indicator]=&apos;O&apos; THEN -[contribution_receipt_amount] END' />
+      </column>
+      <column caption='Candidate Name' datatype='string' name='[candidate_name]' role='dimension' type='nominal' />
+      <column caption='Committee Name' datatype='string' name='[committee_name]' role='dimension' type='nominal' />
+      <column caption='Committee Party Full' datatype='string' name='[committee_party_full]' role='dimension' type='nominal' />
+      <column caption='Contribution Receipt Amount' datatype='real' name='[contribution_receipt_amount]' role='measure' type='quantitative' />
+      <column caption='Contribution Receipt Date' datatype='date' name='[contribution_receipt_date]' role='dimension' type='ordinal' />
+      <column caption='Contributor City' datatype='string' name='[contributor_city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Contributor Employer' datatype='string' name='[contributor_employer]' role='dimension' type='nominal' />
+      <column caption='Contributor Name' datatype='string' name='[contributor_name]' role='dimension' type='nominal' />
+      <column caption='Contributor Occupation' datatype='string' name='[contributor_occupation]' role='dimension' type='nominal' />
+      <column caption='Contributor State' datatype='string' name='[contributor_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Contributor Street 1' datatype='string' name='[contributor_street_1]' role='dimension' type='nominal' />
+      <column caption='Contributor Street 2' datatype='string' name='[contributor_street_2]' role='dimension' type='nominal' />
+      <column caption='Contributor Zip' datatype='string' name='[contributor_zip]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+      <column caption='Entity Type' datatype='string' name='[entity_type]' role='dimension' type='nominal' />
+      <column caption='Fec Election Type Desc' datatype='string' name='[fec_election_type_desc]' role='dimension' type='nominal' />
+      <column caption='Load Date' datatype='datetime' name='[load_date]' role='dimension' type='ordinal' />
+      <column caption='Money Type' datatype='string' name='[money_type]' role='dimension' type='nominal' />
+      <column caption='Pdf Url' datatype='string' name='[pdf_url]' role='dimension' type='nominal' />
+      <column caption='Support Oppose Indicator' datatype='string' name='[support_oppose_indicator]' role='dimension' type='nominal' />
+      <column caption='Transaction Id' datatype='string' name='[transaction_id]' role='dimension' type='nominal' />
+      <column-instance column='[committee_party_full]' derivation='None' name='[none:committee_party_full:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_1130544292881846272]' derivation='Sum' name='[sum:Calculation_1130544292881846272:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Support (copy)]' derivation='Sum' name='[sum:Support (copy):qk]' pivot='key' type='quantitative' />
+      <group caption='Set 1' name='[Set 1]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter function='member' level='[contributor_name]' member='&quot;Unitemized individual contributions&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate' />
+      </group>
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/senate-race-summary-dashboards.twb Files/darrenfishell2020-election-repo.hyper' default-settings='yes' schema='Extract' sslmode='' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>committee_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[committee_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>committee_name</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Query Results</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>candidate_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[candidate_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>candidate_name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Query Results</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>committee_party_full</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[committee_party_full]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>committee_party_full</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Query Results</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>contribution_receipt_amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[contribution_receipt_amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>contribution_receipt_amount</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Query Results</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>208</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>contribution_receipt_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[contribution_receipt_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>contribution_receipt_date</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Query Results</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>276</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>entity_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[entity_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>entity_type</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Query Results</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>contributor_city</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[contributor_city]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>contributor_city</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Query Results</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1090</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>contributor_state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[contributor_state]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>contributor_state</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Query Results</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>68</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>contributor_street_1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[contributor_street_1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>contributor_street_1</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Query Results</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3260</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>contributor_street_2</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[contributor_street_2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>contributor_street_2</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Query Results</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>408</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>contributor_zip</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[contributor_zip]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>contributor_zip</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Query Results</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1633</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>contributor_employer</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[contributor_employer]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>contributor_employer</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Query Results</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1665</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>contributor_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[contributor_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>contributor_name</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Query Results</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3337</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>contributor_occupation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[contributor_occupation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>contributor_occupation</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Query Results</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>478</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fec_election_type_desc</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[fec_election_type_desc]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fec_election_type_desc</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Query Results</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>load_date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[load_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>load_date</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Query Results</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>2709</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pdf_url</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[pdf_url]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pdf_url</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Query Results</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4441</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>transaction_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[transaction_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>transaction_id</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Query Results</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13367</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>support_oppose_indicator</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[support_oppose_indicator]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>support_oppose_indicator</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Query Results</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>money_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[money_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>money_type</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Query Results</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.70547' group-percentage='0.0603086' measure-ordering='alphabetic' measure-percentage='0.234222' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1fpqm8613vkrsd194aevy0c68jim].[sum:Support (copy):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1fpqm8613vkrsd194aevy0c68jim].[sum:Calculation_1130544292881846272:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_2573807238461927424:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;DEMOCRATIC PARTY&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;REPUBLICAN PARTY&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:committee_party_full:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;DEMOCRATIC PARTY&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;REPUBLICAN PARTY&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Financial summary'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='10'>&lt;Sheet Name&gt;</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontsize='9' italic='true'>&lt;[federated.0ggshsf1hz4mks12cxttz0kizplr].[attr:Calculation_1130544292898304006:ok]&gt; - &lt;[federated.0ggshsf1hz4mks12cxttz0kizplr].[attr:Calculation_1130544292898385927:ok]&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='election summary' name='federated.0ggshsf1hz4mks12cxttz0kizplr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ggshsf1hz4mks12cxttz0kizplr'>
+            <column caption='Last name' datatype='string' name='[Calculation_1130544292893462532]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='SPLIT([candidate_name],&apos;,&apos;,1)' />
+            </column>
+            <column caption='{MIN([Coverage Start Date])}' datatype='date' name='[Calculation_1130544292898304006]' role='dimension' type='ordinal' user:unnamed='Financial summary'>
+              <calculation class='tableau' formula='{MIN([coverage_start_date])}' />
+            </column>
+            <column caption='{MAX([Coverage End Date])}' datatype='date' name='[Calculation_1130544292898385927]' role='dimension' type='ordinal' user:unnamed='Financial summary'>
+              <calculation class='tableau' formula='{MAX([coverage_end_date])}' />
+            </column>
+            <column-instance column='[Calculation_1130544292898304006]' derivation='Attribute' name='[attr:Calculation_1130544292898304006:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1130544292898385927]' derivation='Attribute' name='[attr:Calculation_1130544292898385927:ok]' pivot='key' type='ordinal' />
+            <column caption='Candidate Name' datatype='string' name='[candidate_name]' role='dimension' type='nominal' />
+            <column caption='Cash On Hand Beginning Period' datatype='real' name='[cash_on_hand_beginning_period]' role='measure' type='quantitative' />
+            <column caption='Coverage End Date' datatype='date' datatype-customized='true' name='[coverage_end_date]' role='dimension' type='ordinal' />
+            <column caption='Coverage Start Date' datatype='date' datatype-customized='true' name='[coverage_start_date]' role='dimension' type='ordinal' />
+            <column caption='Last Cash On Hand End Period' datatype='real' name='[last_cash_on_hand_end_period]' role='measure' type='quantitative' />
+            <column caption='Net Contributions' datatype='real' name='[net_contributions]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1130544292893462532]' derivation='None' name='[none:Calculation_1130544292893462532:nk]' pivot='key' type='nominal' />
+            <column-instance column='[candidate_name]' derivation='None' name='[none:candidate_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[party_full]' derivation='None' name='[none:party_full:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[party_full]' role='dimension' type='nominal' />
+            <column-instance column='[cash_on_hand_beginning_period]' derivation='Sum' name='[sum:cash_on_hand_beginning_period:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[last_cash_on_hand_end_period]' derivation='Sum' name='[sum:last_cash_on_hand_end_period:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[net_contributions]' derivation='Sum' name='[sum:net_contributions:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ggshsf1hz4mks12cxttz0kizplr].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ggshsf1hz4mks12cxttz0kizplr].[sum:net_contributions:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ggshsf1hz4mks12cxttz0kizplr].[sum:cash_on_hand_beginning_period:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ggshsf1hz4mks12cxttz0kizplr].[sum:last_cash_on_hand_end_period:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0ggshsf1hz4mks12cxttz0kizplr].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0ggshsf1hz4mks12cxttz0kizplr].[sum:net_contributions:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0ggshsf1hz4mks12cxttz0kizplr].[sum:cash_on_hand_beginning_period:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0ggshsf1hz4mks12cxttz0kizplr].[sum:last_cash_on_hand_end_period:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.0ggshsf1hz4mks12cxttz0kizplr].[none:candidate_name:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:candidate_name:nk]' member='&quot;COLLINS FOR SENATOR&quot;' />
+              <groupfilter function='member' level='[none:candidate_name:nk]' member='&quot;COLLINS, SUSAN M.&quot;' />
+              <groupfilter function='member' level='[none:candidate_name:nk]' member='&quot;GIDEON, SARA&quot;' />
+              <groupfilter function='member' level='[none:candidate_name:nk]' member='&quot;SARA GIDEON FOR MAINE&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0ggshsf1hz4mks12cxttz0kizplr].[:Measure Names]</column>
+            <column>[federated.0ggshsf1hz4mks12cxttz0kizplr].[none:candidate_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.0ggshsf1hz4mks12cxttz0kizplr].[none:candidate_name:nk]' value='39' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0ggshsf1hz4mks12cxttz0kizplr].[Multiple Values]' value='c&quot;$&quot;#,##0,,.0M;(&quot;$&quot;#,##0,,.0M)' />
+            <format attr='text-format' field='[federated.0ggshsf1hz4mks12cxttz0kizplr].[attr:Calculation_1130544292898304006:ok]' value='S' />
+            <format attr='text-format' field='[federated.0ggshsf1hz4mks12cxttz0kizplr].[attr:Calculation_1130544292898385927:ok]' value='S' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.0ggshsf1hz4mks12cxttz0kizplr].[:Measure Names]' value='41' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.0ggshsf1hz4mks12cxttz0kizplr].[none:candidate_name:nk]' value='0' />
+            <format attr='text-orientation' field='[federated.0ggshsf1hz4mks12cxttz0kizplr].[none:Calculation_1130544292893462532:nk]' value='0' />
+            <format attr='text-format' field='[federated.0ggshsf1hz4mks12cxttz0kizplr].[attr:Calculation_1130544292898385927:ok]' value='S' />
+            <format attr='text-format' field='[federated.0ggshsf1hz4mks12cxttz0kizplr].[attr:Calculation_1130544292898304006:ok]' value='S' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0ggshsf1hz4mks12cxttz0kizplr].[none:party_full:nk]' />
+              <lod column='[federated.0ggshsf1hz4mks12cxttz0kizplr].[attr:Calculation_1130544292898385927:ok]' />
+              <lod column='[federated.0ggshsf1hz4mks12cxttz0kizplr].[attr:Calculation_1130544292898304006:ok]' />
+              <text column='[federated.0ggshsf1hz4mks12cxttz0kizplr].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ggshsf1hz4mks12cxttz0kizplr].[Multiple Values]</rows>
+        <cols>([federated.0ggshsf1hz4mks12cxttz0kizplr].[:Measure Names] / [federated.0ggshsf1hz4mks12cxttz0kizplr].[none:Calculation_1130544292893462532:nk])</cols>
+      </table>
+      <simple-id uuid='{ED51B06A-80D8-4D47-AB2C-4D4EFE0A9C8B}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='darrenfishell/2020-election-repo' name='federated.1fpqm8613vkrsd194aevy0c68jim' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1fpqm8613vkrsd194aevy0c68jim'>
+            <column caption='Committee Name' datatype='string' name='[committee_name]' role='dimension' type='nominal' />
+            <column caption='Contribution Receipt Amount' datatype='real' name='[contribution_receipt_amount]' role='measure' type='quantitative' />
+            <column caption='Contributor Name' datatype='string' name='[contributor_name]' role='dimension' type='nominal' />
+            <column caption='Entity Type' datatype='string' name='[entity_type]' role='dimension' type='nominal' />
+            <column-instance column='[Set 1]' derivation='InOut' name='[io:Set 1:nk]' pivot='key' type='nominal' />
+            <column caption='Money Type' datatype='string' name='[money_type]' role='dimension' type='nominal' />
+            <column-instance column='[committee_name]' derivation='None' name='[none:committee_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[entity_type]' derivation='None' name='[none:entity_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[money_type]' derivation='None' name='[none:money_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[contribution_receipt_amount]' derivation='Sum' name='[sum:contribution_receipt_amount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1fpqm8613vkrsd194aevy0c68jim].[none:money_type:nk]'>
+            <groupfilter function='member' level='[none:money_type:nk]' member='&quot;committee contributions&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1fpqm8613vkrsd194aevy0c68jim].[none:money_type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1fpqm8613vkrsd194aevy0c68jim].[io:Set 1:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1fpqm8613vkrsd194aevy0c68jim].[none:committee_name:nk] / [federated.1fpqm8613vkrsd194aevy0c68jim].[none:entity_type:nk])</rows>
+        <cols>[federated.1fpqm8613vkrsd194aevy0c68jim].[sum:contribution_receipt_amount:qk]</cols>
+        <subtotals>
+          <column>[federated.1fpqm8613vkrsd194aevy0c68jim].[none:committee_name:nk]</column>
+        </subtotals>
+      </table>
+      <simple-id uuid='{E6DB6E5D-57CF-47AD-B0F3-086A6BE097C1}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='darrenfishell/2020-election-repo' name='federated.1fpqm8613vkrsd194aevy0c68jim' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1fpqm8613vkrsd194aevy0c68jim'>
+            <column caption='Contribution Receipt Date' datatype='date' name='[contribution_receipt_date]' role='dimension' type='ordinal' />
+            <column caption='Money Type' datatype='string' name='[money_type]' role='dimension' type='nominal' />
+            <column-instance column='[money_type]' derivation='None' name='[none:money_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[contribution_receipt_date]' derivation='Year' name='[yr:contribution_receipt_date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1fpqm8613vkrsd194aevy0c68jim].[yr:contribution_receipt_date:ok]' value='134' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>([federated.1fpqm8613vkrsd194aevy0c68jim].[none:money_type:nk] / [federated.1fpqm8613vkrsd194aevy0c68jim].[yr:contribution_receipt_date:ok])</cols>
+      </table>
+      <simple-id uuid='{7A60F359-3055-44E0-A486-FEDD0A070644}' />
+    </worksheet>
+    <worksheet name='Top individual donors'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='darrenfishell/2020-election-repo' name='federated.1fpqm8613vkrsd194aevy0c68jim' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1fpqm8613vkrsd194aevy0c68jim'>
+            <column caption='Committee Party Full' datatype='string' name='[committee_party_full]' role='dimension' type='nominal' />
+            <column caption='Contribution Receipt Amount' datatype='real' name='[contribution_receipt_amount]' role='measure' type='quantitative' />
+            <column caption='Contributor City' datatype='string' name='[contributor_city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column caption='Contributor Employer' datatype='string' name='[contributor_employer]' role='dimension' type='nominal' />
+            <column caption='Contributor Name' datatype='string' name='[contributor_name]' role='dimension' type='nominal' />
+            <column caption='Contributor Occupation' datatype='string' name='[contributor_occupation]' role='dimension' type='nominal' />
+            <column caption='Contributor State' datatype='string' name='[contributor_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='Entity Type' datatype='string' name='[entity_type]' role='dimension' type='nominal' />
+            <column-instance column='[contributor_employer]' derivation='Max' name='[max:contributor_employer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[contributor_occupation]' derivation='Max' name='[max:contributor_occupation:nk]' pivot='key' type='nominal' />
+            <column caption='Money Type' datatype='string' name='[money_type]' role='dimension' type='nominal' />
+            <column-instance column='[committee_party_full]' derivation='None' name='[none:committee_party_full:nk]' pivot='key' type='nominal' />
+            <column-instance column='[contributor_city]' derivation='None' name='[none:contributor_city:nk]' pivot='key' type='nominal' />
+            <column-instance column='[contributor_name]' derivation='None' name='[none:contributor_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[contributor_state]' derivation='None' name='[none:contributor_state:nk]' pivot='key' type='nominal' />
+            <column-instance column='[entity_type]' derivation='None' name='[none:entity_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[money_type]' derivation='None' name='[none:money_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[contribution_receipt_amount]' derivation='Sum' name='[sum:contribution_receipt_amount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1fpqm8613vkrsd194aevy0c68jim].[none:contributor_name:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:contributor_name:nk]' />
+              <groupfilter function='member' level='[none:contributor_name:nk]' member='&quot;Unitemized individual contributions&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1fpqm8613vkrsd194aevy0c68jim].[none:entity_type:nk]'>
+            <groupfilter function='member' level='[none:entity_type:nk]' member='&quot;IND&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1fpqm8613vkrsd194aevy0c68jim].[none:money_type:nk]' context='true'>
+            <groupfilter function='member' level='[none:money_type:nk]' member='&quot;committee contributions&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1fpqm8613vkrsd194aevy0c68jim].[sum:contribution_receipt_amount:qk]' included-values='in-range'>
+            <min>5600.0</min>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1fpqm8613vkrsd194aevy0c68jim].[none:contributor_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1fpqm8613vkrsd194aevy0c68jim].[sum:contribution_receipt_amount:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1fpqm8613vkrsd194aevy0c68jim].[none:money_type:nk]</column>
+            <column>[federated.1fpqm8613vkrsd194aevy0c68jim].[sum:contribution_receipt_amount:qk]</column>
+            <column>[federated.1fpqm8613vkrsd194aevy0c68jim].[none:entity_type:nk]</column>
+            <column>[federated.1fpqm8613vkrsd194aevy0c68jim].[none:contributor_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1fpqm8613vkrsd194aevy0c68jim].[none:committee_party_full:nk]' />
+              <lod column='[federated.1fpqm8613vkrsd194aevy0c68jim].[none:contributor_city:nk]' />
+              <lod column='[federated.1fpqm8613vkrsd194aevy0c68jim].[none:contributor_state:nk]' />
+              <tooltip column='[federated.1fpqm8613vkrsd194aevy0c68jim].[max:contributor_employer:nk]' />
+              <tooltip column='[federated.1fpqm8613vkrsd194aevy0c68jim].[max:contributor_occupation:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='206' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#555555' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1fpqm8613vkrsd194aevy0c68jim].[none:contributor_name:nk]</rows>
+        <cols>[federated.1fpqm8613vkrsd194aevy0c68jim].[sum:contribution_receipt_amount:qk]</cols>
+      </table>
+      <simple-id uuid='{72FF7C21-897F-48CF-8AED-D300715D5936}' />
+    </worksheet>
+    <worksheet name='Top outside spenders'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='10'>Top 10 outside spenders</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='darrenfishell/2020-election-repo' name='federated.1fpqm8613vkrsd194aevy0c68jim' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1fpqm8613vkrsd194aevy0c68jim'>
+            <column caption='Support' datatype='real' default-format='c&quot;$&quot;#,##0;(&quot;$&quot;#,##0)' name='[Calculation_1130544292881846272]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [support_oppose_indicator]=&apos;S&apos; THEN [contribution_receipt_amount] END' />
+            </column>
+            <column caption='Opposition' datatype='real' default-format='c&quot;$&quot;#,##0;(&quot;$&quot;#,##0)' name='[Support (copy)]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [support_oppose_indicator]=&apos;O&apos; THEN -[contribution_receipt_amount] END' />
+            </column>
+            <column-instance column='[entity_type]' derivation='Attribute' name='[attr:entity_type:nk]' pivot='key' type='nominal' />
+            <column caption='Candidate Name' datatype='string' name='[candidate_name]' role='dimension' type='nominal' />
+            <column caption='Contribution Receipt Amount' datatype='real' name='[contribution_receipt_amount]' role='measure' type='quantitative' />
+            <column caption='Contributor Name' datatype='string' name='[contributor_name]' role='dimension' type='nominal' />
+            <column caption='Entity Type' datatype='string' name='[entity_type]' role='dimension' type='nominal' />
+            <column caption='Money Type' datatype='string' name='[money_type]' role='dimension' type='nominal' />
+            <column-instance column='[candidate_name]' derivation='None' name='[none:candidate_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[contributor_name]' derivation='None' name='[none:contributor_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[money_type]' derivation='None' name='[none:money_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[support_oppose_indicator]' derivation='None' name='[none:support_oppose_indicator:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1130544292881846272]' derivation='Sum' name='[sum:Calculation_1130544292881846272:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Support (copy)]' derivation='Sum' name='[sum:Support (copy):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[contribution_receipt_amount]' derivation='Sum' name='[sum:contribution_receipt_amount:qk]' pivot='key' type='quantitative' />
+            <column caption='Support Oppose Indicator' datatype='string' name='[support_oppose_indicator]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1fpqm8613vkrsd194aevy0c68jim].[none:contributor_name:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([contribution_receipt_amount])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:contributor_name:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.1fpqm8613vkrsd194aevy0c68jim].[none:contributor_name:nk]' direction='DESC' using='[federated.1fpqm8613vkrsd194aevy0c68jim].[sum:contribution_receipt_amount:qk]' />
+          <filter class='categorical' column='[federated.1fpqm8613vkrsd194aevy0c68jim].[none:money_type:nk]' context='true'>
+            <groupfilter function='member' level='[none:money_type:nk]' member='&quot;outside spending&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1fpqm8613vkrsd194aevy0c68jim].[none:money_type:nk]</column>
+            <column>[federated.1fpqm8613vkrsd194aevy0c68jim].[none:contributor_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1fpqm8613vkrsd194aevy0c68jim].[sum:Calculation_1130544292881846272:qk]' field-type='quantitative' fold='true' scope='cols' type='space' />
+            <format attr='display' class='0' field='[federated.1fpqm8613vkrsd194aevy0c68jim].[sum:Calculation_1130544292881846272:qk]' scope='cols' value='false' />
+            <format attr='title' class='0' field='[federated.1fpqm8613vkrsd194aevy0c68jim].[sum:Support (copy):qk]' scope='cols' value='Committee fundraising and outside spending' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1fpqm8613vkrsd194aevy0c68jim].[none:contributor_name:nk]' value='224' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1fpqm8613vkrsd194aevy0c68jim].[none:support_oppose_indicator:nk]' />
+              <tooltip column='[federated.1fpqm8613vkrsd194aevy0c68jim].[attr:entity_type:nk]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1fpqm8613vkrsd194aevy0c68jim].[sum:Support (copy):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1fpqm8613vkrsd194aevy0c68jim].[none:support_oppose_indicator:nk]' />
+              <tooltip column='[federated.1fpqm8613vkrsd194aevy0c68jim].[attr:entity_type:nk]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1fpqm8613vkrsd194aevy0c68jim].[sum:Calculation_1130544292881846272:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1fpqm8613vkrsd194aevy0c68jim].[none:support_oppose_indicator:nk]' />
+              <tooltip column='[federated.1fpqm8613vkrsd194aevy0c68jim].[attr:entity_type:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1fpqm8613vkrsd194aevy0c68jim].[none:contributor_name:nk]</rows>
+        <cols>([federated.1fpqm8613vkrsd194aevy0c68jim].[none:candidate_name:nk] * ([federated.1fpqm8613vkrsd194aevy0c68jim].[sum:Support (copy):qk] + [federated.1fpqm8613vkrsd194aevy0c68jim].[sum:Calculation_1130544292881846272:qk]))</cols>
+      </table>
+      <simple-id uuid='{0D8A8608-7431-4F78-905A-3A8FE6A96FAD}' />
+    </worksheet>
+    <worksheet name='summary bars'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='9'>For contributions through </run>
+            <run bold='true' fontalignment='1' fontsize='9'>&lt;[federated.1fpqm8613vkrsd194aevy0c68jim].[attr:Calculation_1130544292890886145:ok]&gt; | </run>
+            <run fontalignment='1' fontsize='9'>Outside spending through </run>
+            <run bold='true' fontalignment='1' fontsize='9'>&lt;[federated.1fpqm8613vkrsd194aevy0c68jim].[attr:Calculation_1130544292891258883:ok]&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='darrenfishell/2020-election-repo' name='federated.1fpqm8613vkrsd194aevy0c68jim' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1fpqm8613vkrsd194aevy0c68jim'>
+            <column caption='Support' datatype='real' default-format='c&quot;$&quot;#,##0;(&quot;$&quot;#,##0)' name='[Calculation_1130544292881846272]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [support_oppose_indicator]=&apos;S&apos; THEN [contribution_receipt_amount] END' />
+            </column>
+            <column caption='Contribution as of Date' datatype='date' default-format='L' name='[Calculation_1130544292890886145]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='{MAX(IF [money_type]=&apos;committee contributions&apos; THEN [contribution_receipt_date] END)}' />
+            </column>
+            <column caption='Outside spending as of date' datatype='date' default-format='L' name='[Calculation_1130544292891258883]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='{MAX(IF [money_type]!=&apos;committee contributions&apos; THEN [contribution_receipt_date] END)}' />
+            </column>
+            <column caption='LEFT([Committee Party Full],1)' datatype='string' name='[Calculation_2573807238461927424]' role='dimension' type='nominal' user:unnamed='summary bars'>
+              <calculation class='tableau' formula='LEFT([committee_party_full],1)' />
+            </column>
+            <column caption='Opposition' datatype='real' default-format='c&quot;$&quot;#,##0;(&quot;$&quot;#,##0)' name='[Support (copy)]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [support_oppose_indicator]=&apos;O&apos; THEN -[contribution_receipt_amount] END' />
+            </column>
+            <column-instance column='[Calculation_1130544292890886145]' derivation='Attribute' name='[attr:Calculation_1130544292890886145:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1130544292891258883]' derivation='Attribute' name='[attr:Calculation_1130544292891258883:ok]' pivot='key' type='ordinal' />
+            <column caption='Committee Name' datatype='string' name='[committee_name]' role='dimension' type='nominal' />
+            <column caption='Committee Party Full' datatype='string' name='[committee_party_full]' role='dimension' type='nominal' />
+            <column caption='Contribution Receipt Amount' datatype='real' name='[contribution_receipt_amount]' role='measure' type='quantitative' />
+            <column caption='Contribution Receipt Date' datatype='date' name='[contribution_receipt_date]' role='dimension' type='ordinal' />
+            <column caption='Money Type' datatype='string' name='[money_type]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_2573807238461927424]' derivation='None' name='[none:Calculation_2573807238461927424:nk]' pivot='key' type='nominal' />
+            <column-instance column='[committee_name]' derivation='None' name='[none:committee_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[money_type]' derivation='None' name='[none:money_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[support_oppose_indicator]' derivation='None' name='[none:support_oppose_indicator:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1130544292881846272]' derivation='Sum' name='[sum:Calculation_1130544292881846272:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Support (copy)]' derivation='Sum' name='[sum:Support (copy):qk]' pivot='key' type='quantitative' />
+            <column caption='Support Oppose Indicator' datatype='string' name='[support_oppose_indicator]' role='dimension' type='nominal' />
+            <style>
+              <style-rule element='mark'>
+                <encoding attr='color' field='[none:Calculation_2573807238461927424:nk]' type='palette'>
+                  <map to='#4e79a7'>
+                    <bucket>&quot;DEMOCRATIC PARTY&quot;</bucket>
+                  </map>
+                  <map to='#e15759'>
+                    <bucket>&quot;REPUBLICAN PARTY&quot;</bucket>
+                  </map>
+                </encoding>
+              </style-rule>
+            </style>
+          </datasource-dependencies>
+          <manual-sort column='[federated.1fpqm8613vkrsd194aevy0c68jim].[none:Calculation_2573807238461927424:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;R&quot;</bucket>
+              <bucket>&quot;D&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.1fpqm8613vkrsd194aevy0c68jim].[none:committee_name:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:committee_name:nk]' member='&quot;COLLINS FOR SENATOR&quot;' />
+              <groupfilter function='member' level='[none:committee_name:nk]' member='&quot;SARA GIDEON FOR MAINE&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1fpqm8613vkrsd194aevy0c68jim].[none:committee_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1fpqm8613vkrsd194aevy0c68jim].[sum:Support (copy):qk]' scope='cols' value='' />
+            <encoding attr='space' class='0' field='[federated.1fpqm8613vkrsd194aevy0c68jim].[sum:Calculation_1130544292881846272:qk]' field-type='quantitative' fold='true' scope='cols' synchronized='true' type='space' />
+            <format attr='display' class='0' field='[federated.1fpqm8613vkrsd194aevy0c68jim].[sum:Calculation_1130544292881846272:qk]' scope='cols' value='false' />
+            <format attr='height' field='[federated.1fpqm8613vkrsd194aevy0c68jim].[sum:Support (copy):qk]' value='33' />
+            <format attr='height' field='[federated.1fpqm8613vkrsd194aevy0c68jim].[sum:Calculation_1130544292881846272:qk]' value='33' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1fpqm8613vkrsd194aevy0c68jim].[none:money_type:nk]' value='204' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+            <format attr='width' field='[federated.1fpqm8613vkrsd194aevy0c68jim].[none:Calculation_2573807238461927424:nk]' value='28' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' field='[federated.1fpqm8613vkrsd194aevy0c68jim].[none:Calculation_2573807238461927424:nk]' value='center' />
+            <format attr='vertical-align' field='[federated.1fpqm8613vkrsd194aevy0c68jim].[none:Calculation_2573807238461927424:nk]' value='center' />
+            <format attr='text-orientation' field='[federated.1fpqm8613vkrsd194aevy0c68jim].[none:committee_name:nk]' value='-90' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='header-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1fpqm8613vkrsd194aevy0c68jim].[none:support_oppose_indicator:nk]' />
+              <tooltip column='[federated.1fpqm8613vkrsd194aevy0c68jim].[attr:Calculation_1130544292890886145:ok]' />
+              <tooltip column='[federated.1fpqm8613vkrsd194aevy0c68jim].[attr:Calculation_1130544292891258883:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1fpqm8613vkrsd194aevy0c68jim].[sum:Support (copy):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1fpqm8613vkrsd194aevy0c68jim].[none:support_oppose_indicator:nk]' />
+              <tooltip column='[federated.1fpqm8613vkrsd194aevy0c68jim].[attr:Calculation_1130544292890886145:ok]' />
+              <tooltip column='[federated.1fpqm8613vkrsd194aevy0c68jim].[attr:Calculation_1130544292891258883:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1fpqm8613vkrsd194aevy0c68jim].[sum:Calculation_1130544292881846272:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1fpqm8613vkrsd194aevy0c68jim].[none:support_oppose_indicator:nk]' />
+              <tooltip column='[federated.1fpqm8613vkrsd194aevy0c68jim].[attr:Calculation_1130544292890886145:ok]' />
+              <tooltip column='[federated.1fpqm8613vkrsd194aevy0c68jim].[attr:Calculation_1130544292891258883:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows onTop='true'>([federated.1fpqm8613vkrsd194aevy0c68jim].[none:Calculation_2573807238461927424:nk] / ([federated.1fpqm8613vkrsd194aevy0c68jim].[none:committee_name:nk] / [federated.1fpqm8613vkrsd194aevy0c68jim].[none:money_type:nk]))</rows>
+        <cols>([federated.1fpqm8613vkrsd194aevy0c68jim].[sum:Support (copy):qk] + [federated.1fpqm8613vkrsd194aevy0c68jim].[sum:Calculation_1130544292881846272:qk])</cols>
+        <subtotals>
+          <column>[federated.1fpqm8613vkrsd194aevy0c68jim].[none:Calculation_1130544292893462532:nk]</column>
+          <column>[federated.1fpqm8613vkrsd194aevy0c68jim].[none:candidate_name:nk]</column>
+          <column>[federated.1fpqm8613vkrsd194aevy0c68jim].[none:committee_name:nk]</column>
+        </subtotals>
+      </table>
+      <simple-id uuid='{75F0A591-A74A-4D0A-A689-E6E460A28EEE}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Campaign finance tracker for Maine&apos;s Senate race'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='900' maxwidth='1000' minheight='900' minwidth='1000' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98222' id='16' param='vert' type='layout-flow' w='98400' x='800' y='889'>
+            <zone h='4667' id='17' type='title' w='98400' x='800' y='889'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='93555' id='13' param='horz' type='layout-flow' w='98400' x='800' y='5556'>
+              <zone h='93555' id='10' param='horz' type='layout-flow' w='98400' x='800' y='5556'>
+                <zone h='93555' id='7' param='horz' type='layout-flow' w='98400' x='800' y='5556'>
+                  <zone h='93555' id='5' type='layout-basic' w='98400' x='800' y='5556'>
+                    <zone h='30888' id='3' name='summary bars' w='98400' x='800' y='5556'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='26667' id='11' name='Top individual donors' w='98400' x='800' y='72444'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='36000' id='18' param='horz' type='layout-flow' w='98400' x='800' y='36444'>
+                      <zone h='35778' id='14' name='Financial summary' w='42400' x='900' y='36555'>
+                        <layout-cache cell-count-w='6' minheight='214' non-cell-size-w='64' type-h='scalable' type-w='cell' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='35778' id='8' name='Top outside spenders' w='55800' x='43300' y='36555'>
+                        <layout-cache minwidth='426' type-h='fixed' type-w='scalable' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone-style>
+                        <format attr='border-color' value='#898989' />
+                        <format attr='border-style' value='solid' />
+                        <format attr='border-width' value='1' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1200' minheight='1200' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='29' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='30' param='vert' type='layout-flow' w='84000' x='8000' y='8000'>
+                <zone h='4667' id='17' type='title' w='98400' x='800' y='889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='270' h='30888' id='3' is-fixed='true' name='summary bars' w='98400' x='800' y='5556'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='35778' id='14' is-fixed='true' name='Financial summary' w='42400' x='900' y='36555'>
+                  <layout-cache cell-count-w='6' minheight='214' non-cell-size-w='64' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='35778' id='8' is-fixed='true' name='Top outside spenders' w='55800' x='43300' y='36555'>
+                  <layout-cache minwidth='326' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='232' h='26667' id='11' is-fixed='true' name='Top individual donors' w='98400' x='800' y='72444'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C967F940-6D21-440F-BC45-77DD47092CFE}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='dashboard' maximized='true' name='Campaign finance tracker for Maine&apos;s Senate race'>
+      <viewpoints>
+        <viewpoint name='Financial summary'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top individual donors' />
+        <viewpoint name='Top outside spenders'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='summary bars'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{2B4F744A-C852-41CF-886C-A1E53FC81DCF}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='273'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1fpqm8613vkrsd194aevy0c68jim].[io:Set 1:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B48909D2-5213-4F1F-92AE-0F7320E3CEDA}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FC443363-B1C5-4CD4-8902-5ABE59C94373}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Financial summary'>
+      <cards>
+        <edge name='left'>
+          <strip size='249'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ggshsf1hz4mks12cxttz0kizplr].[none:party_full:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{360E4A45-1899-480C-9B4C-68C0A7FEE394}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Top individual donors'>
+      <cards>
+        <edge name='left'>
+          <strip size='271'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1fpqm8613vkrsd194aevy0c68jim].[none:committee_party_full:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C15E9334-7640-4589-BF09-3D22F61625E3}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Top outside spenders'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1fpqm8613vkrsd194aevy0c68jim].[none:support_oppose_indicator:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F05BA2AB-C15A-4DDC-AC73-A09A973CAF20}' />
+    </window>
+    <window class='worksheet' hidden='true' name='summary bars'>
+      <cards>
+        <edge name='left'>
+          <strip size='226'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1fpqm8613vkrsd194aevy0c68jim].[none:support_oppose_indicator:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{CDB4A71E-BDDC-4610-BD9B-42653D0E599F}' />
+    </window>
+  </windows>
+</workbook>
