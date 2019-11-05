@@ -22,14 +22,6 @@ opioid-files/processed files/arcos-me-statewide-cleaned-towns.csv
 opioid-files/raw data/arcos-me-statewide-itemized.tsv
 opioid-files/processed_files/arcos-me-statewide-cleaned-towns.csv
 opioid-files/raw_data/arcos-me-statewide-itemized.tsv
-election-results/me-voter-registration-trends.csv
-election-results/me-general-election-results.csv
-election-results/Maine voter registration trends.twbx
-election-results/Maine historical voter registration.twbx
-election-results/me-general-election-results.csv
-election-results/Maine historical voter registration.twbx
-election-results/Load election data.ipynb
-election-results/voter-registration-loader.ipynb
 bls-journalism-stats/config.py
 maine-roads/medotpubrds/medotpubrds.cpg
 maine-roads/medotpubrds/medotpubrds.dbf
