@@ -1,3 +1,0 @@
-[console_scripts]
-dw = datadotworld.cli:cli
-
