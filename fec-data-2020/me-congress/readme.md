@@ -1,0 +1,1 @@
+##Maine campaign finance loader
