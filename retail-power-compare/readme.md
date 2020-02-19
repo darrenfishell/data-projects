@@ -1,4 +1,4 @@
-## Comparing retail supply to the standard Offer
+## Comparing retail supply to the standard offer
 
 These raw files and Tableau Prep workflow produce a file that can be used for analysis of retail power supplier prices in Maine, by year.
 
@@ -40,7 +40,7 @@ It produces two summary files, one that shows the retail supplier (CEP load) by 
 
 These two files are fed into the second workflow, `cep-price-comparison.tfl`.
 
-This file ingests the standard offer prices, and assigns a region to each of Maine's three major utility districts: Central Maine Power, Emera Maine's Bangor Hydro District, and Emera Maine's Maine Public Service District.
+This file ingests the standard offer prices and assigns a region to each of Maine's three major utility districts: Central Maine Power, Emera Maine's Bangor Hydro District and Emera Maine's Maine Public Service District.
 
 The monthly standard offer rates table is joined with the table summarizing the load served by each utility. Those load totals are then multiplied with the price information to generate a weighted average standard offer price for the whole state (ISONE and NBSO) and for ISONE, which contains two different rates through CMP and Emera Maine's Bangor Hydro District.
 
@@ -62,7 +62,7 @@ This summary information then generates an annual average retail supplier price,
 
 This is then joined with two files -- one showing annual CEP load by utility, annualized from the MPUC file showing retail supplier load for "small class" customers, which includes small businesses and residential customers.
 
-It should be noted that the source file here reflects
+It should be noted that the source file reflects an average daily load by customer class. That number is extrapolated out to a yearly value.
 
 It is also joined with the same weighted standard offer price file used in the low-cost estimate.
 
@@ -70,4 +70,4 @@ This load data then gives a higher estimate of retail supply usage than the EIA 
 
 The same comparison is then made at the regional utility level, comparing the average retail price to the weighted average or average standard offer price by regional utility.
 
-The "what-if" scenario in this case consider then asks what if all power in the small class for those years were purchased at the standard offer price?
+The "what-if" scenario in this case then asks: what if all power in the small class for those years were purchased at the standard offer price?
