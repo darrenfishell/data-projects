@@ -48,3 +48,10 @@ fec-data-2020/me-congress/config.py
 fec-data-2020/me-congress/gcreds.json
 covid-19-me/covid-gcreds.json
 .DS_Store
+covid-19-me/.idea/covid-19-me.iml
+covid-19-me/.idea/inspectionProfiles/profiles_settings.xml
+covid-19-me/.idea/libraries/R_User_Library.xml
+covid-19-me/.idea/misc.xml
+covid-19-me/.idea/modules.xml
+covid-19-me/.idea/vcs.xml
+covid-19-me/.idea/workspace.xml
