@@ -1,16 +1,20 @@
 import pandas as pd
 import requests
-import string
-import time
-import datadotworld as dw
 import os
-import random
-from scrapy import Selector
-from datetime import date
+import pygsheets
+import http.client
+import json
 
 #Pull in Summary and case-level tables
-case_summary = pd.read_html('https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml', match='COVID-19 Testing Data')[0]
-cases = pd.read_html('https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml', match='COVID-19 Case Tracker')[0]
+try:
+    case_summary = pd.read_html('https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml', match='COVID-19 Testing Data')[0]
+except:
+    print("Load of case summary table failed.")
+
+try:
+    cases = pd.read_html('https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml', match='COVID-19 Case Tracker')[0]
+except:
+    print("Load of cases table failed.")
 
 #Extract update dates into separate variables, format as date
 summary_update_time = str(case_summary.keys()[0][1]).replace('Updated: ','').strip()
@@ -39,3 +43,20 @@ with dw.open_remote_file('darrenfishell/covid-19-me', 'maine-covid-19-cases.csv'
 with dw.open_remote_file('darrenfishell/covid-19-me', 'maine-covid-19-summary.csv') as w:
     case_summary.to_csv(w, index=False)
 
+##WRITE FILES TO Google Sheets##
+#Authorize
+gc = pygsheets.authorize(service_file='covid-gcreds.json')
+
+#Write Cases to sheet 1
+sh = gc.open('covid-19-maine')
+wks = sh.worksheet('index', 0)
+wks.clear()
+wks.rows = cases.shape[0]
+wks.set_dataframe(cases, start='A1', nan='')
+
+#Write summary to sheet 2
+sh = gc.open('covid-19-maine')
+wks = sh.worksheet('index', 1)
+wks.clear()
+wks.rows = case_summary.shape[0]
+wks.set_dataframe(case_summary, start='A1', nan='')
