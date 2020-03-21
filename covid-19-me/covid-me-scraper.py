@@ -7,18 +7,18 @@ import http.client
 import json
 
 #Dictionary of table match (key], then (header_row, column count]
-shape_dict = {'Testing Data':{'header_row':2, 'column_count':3, 'filename':'case_summary'}
-            ,'Confirmed, Presumptive and Recovered Case Counts by County':{'header_row':1, 'column_count':4, 'filename':'cases_by_county'}
-            ,'Confirmed and Presumptive Cases by Age':{'header_row':1,'column_count':3,'filename':'cases_by_age'}
-            ,'Confirmed and Presumptive Cases by Sex':{'header_row':1,'column_count':3,'filename':'cases_by_sex'}}
+shape_dict = {'Testing Data':{'header_row':2, 'filename':'case_summary'}
+            ,'Confirmed and Recovered Case Counts by County':{'header_row':1, 'filename':'cases_by_county'}
+            ,'Confirmed and Presumptive Cases by Age':{'header_row':1,'filename':'cases_by_age'}
+            ,'Confirmed and Presumptive Cases by Sex':{'header_row':1,'filename':'cases_by_sex'}}
 
 matches = list(shape_dict)[0:]
 
 #Manual column mapping for each table -- new columns will show null values for old records
-column_list = {'Testing Data': ['Confirmed Cases1','Negative Tests2']
-            ,'Confirmed, Presumptive and Recovered Case Counts by County': ['County','Confirmed','Recovered']
-            ,'Confirmed and Presumptive Cases by Age':['Age Range','Count']
-            ,'Confirmed and Presumptive Cases by Sex':['Sex','Count']}
+column_list = {matches[0]: ['Confirmed Cases1','Negative Tests2']
+            ,matches[1]: ['County','Confirmed','Recovered']
+            ,matches[2]:['Age Range','Count']
+            ,matches[3]:['Sex','Count']}
 
 cols = list(column_list.values())
 
@@ -33,7 +33,7 @@ except:
 
 i=0
 y=0
-for x in range(0,2):
+for x in matches:
     try:
         #Finds tables in order of dictionary match, sets header row, specifies columns
         df = pd.read_html('https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml',
@@ -47,7 +47,7 @@ for x in range(0,2):
         i += 1
     else:
         # Join county data table to county population records
-        if matches[i] == 'Confirmed, Presumptive and Recovered Case Counts by County':
+        if matches[i] == matches[1]:
             # Bring in population source, join and drop dupe column
             results = dw.query('darrenfishell/covid-19-me', 'SELECT * FROM `2018_population_by_county`').dataframe
             results['county'] = results['county'].str.strip()
@@ -72,7 +72,7 @@ for x in range(0,2):
         # print(dfg)
 
         # Get target sheet as dataframe, combine with new load and eliminate dupes
-        df = pd.concat([df, dfg]).drop_duplicates(keep='last')
+        df = pd.concat([df, dfg]).drop_duplicates()
 
         # Truncate table and load modified dataframe
         wks.clear()
