@@ -16,7 +16,7 @@ matches = list(shape_dict)[0:]
 
 #Manual column mapping for each table -- new columns will show null values for old records
 column_list = {'Testing Data': ['Confirmed Cases1','Negative Tests2']
-            ,'Confirmed, Presumptive and Recovered Case Counts by County': ['County','Confirmed','Presumptive Positive','Recovered']
+            ,'Confirmed, Presumptive and Recovered Case Counts by County': ['County','Confirmed','Recovered']
             ,'Confirmed and Presumptive Cases by Age':['Age Range','Count']
             ,'Confirmed and Presumptive Cases by Sex':['Sex','Count']}
 
