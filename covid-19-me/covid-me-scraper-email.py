@@ -9,8 +9,8 @@ import json
 
 import config
 
-email_address = os.environ['EMAIL_NAME']
-pw = os.environ['EMAIL_PW']
+email_address = config.email_name
+pw = config.email_pass
 
 gc = pygsheets.authorize(service_file='covid-gcreds.json')
 
