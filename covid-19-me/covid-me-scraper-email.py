@@ -23,8 +23,8 @@ shape_dict = {'Maine COVID-19': {'header_row': 2, 'filename': 'case_summary', 't
 matches = list(shape_dict)[0:]
 
 # Manual column mapping for each table -- new columns will show null values for old records
-column_list = {matches[0]: ['Confirmed Cases1','Deaths','Negative Tests2']
-    , matches[1]: ['County', 'Confirmed', 'Recovered', 'Deaths']
+column_list = {matches[0]: ['Confirmed Cases1','Recovered','Hospitalized','Deaths']
+    , matches[1]: ['County1', 'Confirmed', 'Recovered','Hospitalizations','Deaths']
     , matches[2]: ['Age Range', 'Count']
     , matches[3]: ['Sex', 'Count']}
 
@@ -82,8 +82,11 @@ for x in matches:
                 # Bring in population source, join and drop dupe column
                 results = dw.query('darrenfishell/covid-19-me', 'SELECT * FROM `2018_population_by_county`').dataframe
                 results['county'] = results['county'].str.strip()
-                df = pd.merge(df, results, left_on='County', right_on='county', how='left')
+                df = pd.merge(df, results, left_on=cols[i][0], right_on='county', how='left')
                 df.drop(['county'], axis=1, inplace=True)
+
+                #Change county name to County
+                df.rename(columns={cols[i][0]:'County'},inplace=True)
 
             # TRANSFORM DATAFRAME FOR LOAD#
             df.fillna('', inplace=True)
@@ -93,7 +96,8 @@ for x in matches:
             # Get target sheet as dataframe, combine with new load and eliminate dupes
             df = pd.concat([df, dfg], sort=False).drop_duplicates()
 
-            print(df.info())
+            #LOCAL OUTPUT FOR TESTING
+            df.to_csv('test-output/'+list(shape_dict.values())[i]['filename'] + '.csv')
 
             # Truncate table and load modified dataframe
             wks.clear()
