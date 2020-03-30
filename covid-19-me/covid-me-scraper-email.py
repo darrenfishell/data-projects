@@ -15,15 +15,15 @@ pw = config.email_pass
 gc = pygsheets.authorize(service_file='covid-gcreds.json')
 
 # Dictionary of table match (key], then (header_row, column count]
-shape_dict = {'Testing Data': {'header_row': 2, 'filename': 'case_summary'}
-    , 'COVID-19 Case Counts by County': {'header_row': 2, 'filename': 'cases_by_county'}
-    , 'Confirmed Cases by Age': {'header_row': 2, 'filename': 'cases_by_age'}
-    , 'Confirmed Cases by Sex': {'header_row': 2, 'filename': 'cases_by_sex'}}
+shape_dict = {'Maine COVID-19': {'header_row': 2, 'filename': 'case_summary', 'table':1}
+    , 'COVID-19 Case Counts by County': {'header_row': 2, 'filename': 'cases_by_county','table':2}
+    , 'Confirmed Cases by Age': {'header_row': 2, 'filename': 'cases_by_age','table':3}
+    , 'Confirmed Cases by Sex': {'header_row': 2, 'filename': 'cases_by_sex','table':4}}
 
 matches = list(shape_dict)[0:]
 
 # Manual column mapping for each table -- new columns will show null values for old records
-column_list = {matches[0]: ['Confirmed Cases1', 'Negative Tests2']
+column_list = {matches[0]: ['Confirmed Cases1','Deaths','Negative Tests2']
     , matches[1]: ['County', 'Confirmed', 'Recovered', 'Deaths']
     , matches[2]: ['Age Range', 'Count']
     , matches[3]: ['Sex', 'Count']}
@@ -92,6 +92,8 @@ for x in matches:
             ##WRITE FILES TO Google Sheets##
             # Get target sheet as dataframe, combine with new load and eliminate dupes
             df = pd.concat([df, dfg], sort=False).drop_duplicates()
+
+            print(df.info())
 
             # Truncate table and load modified dataframe
             wks.clear()
