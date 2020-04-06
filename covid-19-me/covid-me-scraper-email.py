@@ -15,8 +15,8 @@ pw = config.email_pass
 gc = pygsheets.authorize(service_file='covid-gcreds.json')
 
 # Dictionary of table match (key], then (header_row, column count]
-shape_dict = {'Maine COVID-19': {'header_row': 2, 'filename': 'case_summary', 'table':1}
-    , 'COVID-19 Case Counts by County': {'header_row': 2, 'filename': 'cases_by_county','table':2}
+shape_dict = {'Data$': {'header_row': 2, 'filename': 'case_summary', 'table':1}
+    , 'Case Counts by County$': {'header_row': 2, 'filename': 'cases_by_county','table':2}
     , 'Confirmed Cases by Age': {'header_row': 2, 'filename': 'cases_by_age','table':3}
     , 'Confirmed Cases by Sex': {'header_row': 2, 'filename': 'cases_by_sex','table':4}}
 
