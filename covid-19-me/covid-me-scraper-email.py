@@ -30,13 +30,17 @@ column_list = {matches[0]: ['Confirmed Cases1','Recovered','Hospitalized','Death
 
 cols = list(column_list.values())
 
+
+updated = []
+not_updated = []
 i = 0
 y = 0
-for x in matches:
+
+for x in range(len(matches)):
     try:
         # Finds tables in order of dictionary match, sets header row, specifies columns
         df = pd.read_html('https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml',
-                          match=matches[i], header=list(shape_dict.values())[i]['header_row'])[0][cols[i]]
+                          match=matches[x], header=list(shape_dict.values())[x]['header_row'])[0][cols[x]]
 
         # Update time could now unique to each table -- March 22
         update_time = pd.to_datetime(
@@ -46,7 +50,7 @@ for x in matches:
     except:
         # log failures
         y += 1
-        print(str(list(shape_dict.values())[i]['filename']) + ' failed to load or changed structures.')
+        print(str(list(shape_dict.values())[x]['filename']) + ' failed to load or changed structures.')
         # advance main iterator
         i += 1
     else:
@@ -55,38 +59,27 @@ for x in matches:
         sh = gc.open('covid-19-maine')
         wks = sh.worksheet('index', i)
         dfg = wks.get_as_df()
-
-        filename = list(shape_dict.values())[i]['filename']
         last_update_time = max(pd.to_datetime(dfg['timestamp']))
+
+        #Lists for updates in email string
+        filename = list(shape_dict.values())[x]['filename']
 
         if update_time > last_update_time:
 
-            print('CDC ' + str(list(shape_dict.values())[i]['filename']) + str(
-                update_time) + '. Prior update was at: ' + str(last_update_time))
+            print('CDC ' + filename + str(update_time) + '. Prior update was at: ' + str(last_update_time))
 
-            with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
-                smtp.ehlo()
-                smtp.starttls()
-                smtp.ehlo()
-
-                smtp.login(email_address, pw)
-
-                subject = f'MAINE CDC TABLE {filename} UPDATED AS OF {update_time}'
-                body = f'The prior update of {filename} was at {last_update_time} \n\n Data just refreshed at {update_time}'
-                msg = f'Subject: {subject}\n\n{body}'
-
-                smtp.sendmail(email_address, email_address, msg)
+            updated.append(f'{filename} updated at {update_time}. Prior refresh: {last_update_time}\n')
 
             # Join county data table to county population records
-            if matches[i] == matches[1]:
+            if matches[x] == matches[1]:
                 # Bring in population source, join and drop dupe column
                 results = dw.query('darrenfishell/covid-19-me', 'SELECT * FROM `2018_population_by_county`').dataframe
                 results['county'] = results['county'].str.strip()
-                df = pd.merge(df, results, left_on=cols[i][0], right_on='county', how='left')
+                df = pd.merge(df, results, left_on=cols[x][0], right_on='county', how='left')
                 df.drop(['county'], axis=1, inplace=True)
 
                 #Change county name to County
-                df.rename(columns={cols[i][0]:'County'},inplace=True)
+                df.rename(columns={cols[x][0]:'County'},inplace=True)
 
             # TRANSFORM DATAFRAME FOR LOAD#
             df.fillna('', inplace=True)
@@ -97,7 +90,7 @@ for x in matches:
             df = pd.concat([df, dfg], sort=False).drop_duplicates()
 
             #LOCAL OUTPUT FOR TESTING
-            df.to_csv('test-output/'+list(shape_dict.values())[i]['filename'] + '.csv')
+            df.to_csv('test-output/'+list(shape_dict.values())[x]['filename'] + '.csv')
 
             # Truncate table and load modified dataframe
             wks.clear()
@@ -106,13 +99,31 @@ for x in matches:
 
             ##WRITE FILES to data.world##
             with dw.open_remote_file('darrenfishell/covid-19-me',
-                                     list(shape_dict.values())[i]['filename'] + '.csv') as w:
+                                     list(shape_dict.values())[x]['filename'] + '.csv') as w:
                 df.to_csv(w, index=False)
 
         else:
-            print('CDC ' + str(list(shape_dict.values())[i]['filename']) + ' not updated. Last updated: ' + str(
-                last_update_time) + '. Current CDC timestamp: ' + str(update_time))
+            print('CDC ' + filename + ' not updated. Last updated: ' + str(last_update_time) + '. Current CDC timestamp: ' + str(update_time))
+
+            not_updated.append(f'{filename} last refreshed at {last_update_time}\n')
+
         i += 1
+
+    updates = len(updated)
+    no_updates = len(not_updated)
+
+with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
+    smtp.ehlo()
+    smtp.starttls()
+    smtp.ehlo()
+
+    smtp.login(email_address, pw)
+
+    subject = f'{updates} files updated'
+    body = f'{i} files processed successfully, {y} files failed\n\n{updates} files updated:\n' + ' '.join(updated) + f'\n\n{no_updates} files not updated:\n' + ' '.join(not_updated)
+    msg = f'Subject: {subject}\n\n{body}'
+
+    smtp.sendmail(email_address, email_address, msg)
 
 print(str(i) + ' files processed successfully.')
 print(str(y) + ' files failed.')
