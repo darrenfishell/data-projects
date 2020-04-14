@@ -16,15 +16,15 @@ gc = pygsheets.authorize(service_file='covid-gcreds.json')
 
 # Dictionary of table match (key], then (header_row, column count]
 shape_dict = {'Data$': {'header_row': 2, 'filename': 'case_summary', 'table':1}
-    , 'Case Counts by County$': {'header_row': 2, 'filename': 'cases_by_county','table':2}
-    , 'Confirmed Cases by Age': {'header_row': 2, 'filename': 'cases_by_age','table':3}
-    , 'Confirmed Cases by Sex': {'header_row': 2, 'filename': 'cases_by_sex','table':4}}
+    , 'Case Counts by County$': {'header_row': 1, 'filename': 'cases_by_county','table':2}
+    , 'Cases by Age$': {'header_row': 1, 'filename': 'cases_by_age','table':3}
+    , 'Cases by Sex$': {'header_row': 1, 'filename': 'cases_by_sex','table':4}}
 
 matches = list(shape_dict)[0:]
 
 # Manual column mapping for each table -- new columns will show null values for old records
 column_list = {matches[0]: ['Confirmed Cases1','Recovered','Hospitalized','Deaths']
-    , matches[1]: ['County1', 'Confirmed', 'Recovered','Hospitalizations','Deaths']
+    , matches[1]: ['County1', 'Confirmed','Recovered','Hospitalizations','Deaths']
     , matches[2]: ['Age Range', 'Count']
     , matches[3]: ['Sex', 'Count']}
 
@@ -41,7 +41,7 @@ for x in matches:
         # Update time could now unique to each table -- March 22
         update_time = pd.to_datetime(
             pd.read_html('https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml',
-                         match=matches[i], header=None)[0].columns[0][1].replace('Updated: ', '').replace(' at ',
+                         match=matches[0], header=None)[0].columns[0][1].replace('Updated: ', '').replace(' at ',
                                                                                                           ' ').strip())
     except:
         # log failures
