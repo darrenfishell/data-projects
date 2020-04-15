@@ -78,8 +78,8 @@ for x in range(len(matches)):
                 df = pd.merge(df, results, left_on=cols[x][0], right_on='county', how='left')
                 df.drop(['county'], axis=1, inplace=True)
 
-                #Change county name to County
-                df.rename(columns={cols[x][0]:'County'},inplace=True)
+                # Change county name to County
+                df.rename(columns={cols[x][0]: 'County'}, inplace=True)
 
             # TRANSFORM DATAFRAME FOR LOAD#
             df.fillna('', inplace=True)
