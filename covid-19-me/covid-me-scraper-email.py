@@ -15,7 +15,7 @@ pw = config.email_pass
 gc = pygsheets.authorize(service_file='covid-gcreds.json')
 
 # Dictionary of table match (key], then (header_row, column count]
-shape_dict = {'Data$': {'header_row': 2, 'filename': 'case_summary', 'table':1}
+shape_dict = {'Case Data$': {'header_row': 2, 'filename': 'case_summary', 'table':1}
     , 'Case Counts by County$': {'header_row': 1, 'filename': 'cases_by_county','table':2}
     , 'Cases by Age$': {'header_row': 1, 'filename': 'cases_by_age','table':3}
     , 'Cases by Sex$': {'header_row': 1, 'filename': 'cases_by_sex','table':4}}
@@ -23,8 +23,8 @@ shape_dict = {'Data$': {'header_row': 2, 'filename': 'case_summary', 'table':1}
 matches = list(shape_dict)[0:]
 
 # Manual column mapping for each table -- new columns will show null values for old records
-column_list = {matches[0]: ['Confirmed Cases1','Recovered','Hospitalized','Deaths']
-    , matches[1]: ['County1', 'Confirmed','Recovered','Hospitalizations','Deaths']
+column_list = {matches[0]: ['Confirmed Cases','Recovered','Hospitalizations','Deaths']
+    , matches[1]: ['County', 'Confirmed','Recovered','Hospitalizations','Deaths']
     , matches[2]: ['Age Range', 'Count']
     , matches[3]: ['Sex', 'Count']}
 
@@ -112,18 +112,20 @@ for x in range(len(matches)):
     updates = len(updated)
     no_updates = len(not_updated)
 
-with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
-    smtp.ehlo()
-    smtp.starttls()
-    smtp.ehlo()
+if update_time > last_update_time:
 
-    smtp.login(email_address, pw)
+    with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
+        smtp.ehlo()
+        smtp.starttls()
+        smtp.ehlo()
 
-    subject = f'{updates} files updated'
-    body = f'{i} files processed successfully, {y} files failed\n\n{updates} files updated:\n' + ' '.join(updated) + f'\n\n{no_updates} files not updated:\n' + ' '.join(not_updated)
-    msg = f'Subject: {subject}\n\n{body}'
+        smtp.login(email_address, pw)
 
-    smtp.sendmail(email_address, email_address, msg)
+        subject = f'{updates} files updated'
+        body = f'{i} files processed successfully, {y} files failed\n\n{updates} files updated:\n' + ' '.join(updated) + f'\n\n{no_updates} files not updated:\n' + ' '.join(not_updated)
+        msg = f'Subject: {subject}\n\n{body}'
+
+        smtp.sendmail(email_address, email_address, msg)
 
 print(str(i) + ' files processed successfully.')
 print(str(y) + ' files failed.')
