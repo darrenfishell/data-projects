@@ -56,3 +56,5 @@ covid-19-me/.idea/modules.xml
 covid-19-me/.idea/vcs.xml
 covid-19-me/.idea/workspace.xml
 covid-19-me/config.py
+maine-campaign-finance/config.py
+me-ethics-scraper/config.py
