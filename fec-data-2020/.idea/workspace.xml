@@ -11,6 +11,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Python Unit Test" />
       </list>
     </option>
   </component>
@@ -43,8 +44,8 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.me-congress-loader-rewrite">
-    <configuration name="Multi-candidate raw congressional filings " type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.fec_main">
+    <configuration name="fec_functions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="fec-data-2020" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -52,11 +53,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/me-congress" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Multi-candidate raw congressional filings .py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/me-congress/fec_functions.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="fec_main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="fec-data-2020" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/me-congress" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/me-congress/fec_main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -86,7 +108,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="unitemized-committee-contribs" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="scratch" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="fec-data-2020" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -94,11 +116,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="testing-cycler" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="fec-data-2020" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/me-congress" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/unitemized-committee-contribs.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/me-congress/testing-cycler.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -109,9 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.fec_main" />
+        <item itemvalue="Python.testing-cycler" />
+        <item itemvalue="Python.fec_functions" />
+        <item itemvalue="Python.scratch" />
         <item itemvalue="Python.me-congress-loader-rewrite" />
-        <item itemvalue="Python.Multi-candidate raw congressional filings " />
-        <item itemvalue="Python.unitemized-committee-contribs" />
       </list>
     </recent_temporary>
   </component>
@@ -129,22 +174,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2966" height="475" key="GridCell.Tab.0.bottom" timestamp="1588426734642">
+    <state width="1515" height="475" key="GridCell.Tab.0.bottom" timestamp="1591274123559">
       <screen x="0" y="23" width="3008" height="1619" />
     </state>
-    <state width="2966" height="475" key="GridCell.Tab.0.bottom/0.23.3008.1619@0.23.3008.1619" timestamp="1588426734642" />
-    <state width="2966" height="475" key="GridCell.Tab.0.center" timestamp="1588426734641">
+    <state width="1515" height="475" key="GridCell.Tab.0.bottom/0.23.3008.1619@0.23.3008.1619" timestamp="1591274123559" />
+    <state width="1515" height="475" key="GridCell.Tab.0.center" timestamp="1591274123559">
       <screen x="0" y="23" width="3008" height="1619" />
     </state>
-    <state width="2966" height="475" key="GridCell.Tab.0.center/0.23.3008.1619@0.23.3008.1619" timestamp="1588426734641" />
-    <state width="2966" height="475" key="GridCell.Tab.0.left" timestamp="1588426734641">
+    <state width="1515" height="475" key="GridCell.Tab.0.center/0.23.3008.1619@0.23.3008.1619" timestamp="1591274123559" />
+    <state width="1515" height="475" key="GridCell.Tab.0.left" timestamp="1591274123558">
       <screen x="0" y="23" width="3008" height="1619" />
     </state>
-    <state width="2966" height="475" key="GridCell.Tab.0.left/0.23.3008.1619@0.23.3008.1619" timestamp="1588426734641" />
-    <state width="2966" height="475" key="GridCell.Tab.0.right" timestamp="1588426734642">
+    <state width="1515" height="475" key="GridCell.Tab.0.left/0.23.3008.1619@0.23.3008.1619" timestamp="1591274123558" />
+    <state width="1515" height="475" key="GridCell.Tab.0.right" timestamp="1591274123559">
       <screen x="0" y="23" width="3008" height="1619" />
     </state>
-    <state width="2966" height="475" key="GridCell.Tab.0.right/0.23.3008.1619@0.23.3008.1619" timestamp="1588426734642" />
+    <state width="1515" height="475" key="GridCell.Tab.0.right/0.23.3008.1619@0.23.3008.1619" timestamp="1591274123559" />
     <state x="1005" y="471" key="SettingsEditor" timestamp="1588426436103">
       <screen x="0" y="23" width="3008" height="1619" />
     </state>

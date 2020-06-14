@@ -9,9 +9,6 @@ import json
 from io import StringIO
 from pandas.io.json import json_normalize
 
-event=[]
-context=[]
-lambda_handler(event,context)
 
 def lambda_handler(event, context):
     # Initialize session
@@ -84,7 +81,7 @@ def get_trans(year, headers):
 
     transaction_types = {'contributions': 'CON'
         , 'expenditures': 'EXP'
-        , 'independent_expenditures': 'IE'}
+        , 'independent_expenditures_2': 'IE'}
 
     trans_types = list(transaction_types.values())
     filenames = list(transaction_types.keys())
@@ -100,6 +97,8 @@ def get_trans(year, headers):
 
         data.update({"TransactionType": trans_types[idx]})
 
+        file = filenames[idx]
+
         dfs = []
 
         # Reset index
@@ -108,10 +107,13 @@ def get_trans(year, headers):
 
             data.update({"CommitteeType": comm_types[i]})
 
+            comm_type = comm_types[i]
+
             try:
                 r = s.post(url, data=json.dumps(data), headers=headers)
                 df = pd.read_csv(StringIO(r.content.decode('utf-8')))
                 dfs.append(df)
+                print(f'Loaded {file} for {comm_type} to dataframe')
             except:
                 continue
 
@@ -119,24 +121,23 @@ def get_trans(year, headers):
         df = pd.concat(dfs, sort=False, ignore_index=True).drop_duplicates()
 
         length = len(df)
+        count = dw.query('darrenfishell/2020-maine-state-campaign-finance', 'SELECT COUNT(*) FROM '+filenames[idx]).dataframe['count'][0]
 
-        file = filenames[idx]
+        print(count)
 
-        # count = dw.query('darrenfishell/2020-maine-state-campaign-finance', 'SELECT COUNT(*) FROM '+filenames[idx]).dataframe['count'][0]
-        # if count < len(df):
-        with dw.open_remote_file('darrenfishell/2020-maine-state-campaign-finance', file + '.csv') as w:
-            df.to_csv(w, index=False)
-        print(f'Wrote file {file}.csv to data.world, at {length} records.')
-        # else:
-        #     print(f'No updates to {file}.')
-
+        if count < len(df):
+            with dw.open_remote_file('darrenfishell/2020-maine-state-campaign-finance', file + '.csv') as w:
+                df.to_csv(w, index=False)
+            print(f'Wrote file {file}.csv to data.world, at {length} records.')
+        else:
+            print(f'No updates to {file}.')
 
 def write_to_gsheet():
     # Write contribution query to GSheets
     gc = pygsheets.authorize(service_file='gcreds.json')
     conn = http.client.HTTPSConnection("api.data.world")
 
-    headers = {'authorization': "Bearer " + os.environ['DW_AUTH_TOKEN']}
+    headers = {'authorization': "Bearer " + config.dw_key}
 
     queryid = 'a65bf908-26ba-4f11-b413-a57bd8b3a9f5'
     project = '2020-maine-state-campaign-finance'
@@ -155,3 +156,7 @@ def write_to_gsheet():
     wks.clear()
     wks.rows = results.shape[0]
     wks.set_dataframe(results, start='A1', nan='')
+
+event=[]
+context=[]
+lambda_handler(event, context)
