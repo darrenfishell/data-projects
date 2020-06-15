@@ -5,13 +5,11 @@ import datadotworld as dw
 import pygsheets
 import http.client
 import json
-import time
-import os
 from pandas.io.json import json_normalize
 
 ##Schedule_a API guide: https://api.open.fec.gov/developers/#/receipts/get_schedules_schedule_a_˜
 
-#Define functions
+##Define functions
 def get_cands(state, cycle):
     state = state.split(',')
     cycle = cycle.split(',')
@@ -84,50 +82,18 @@ def get_committees(names):
 
 
 def get_itemized(cycle, cands):
+    def get_unitem(cycle, cands, commid):
 
-    def new_unitem(cycle, cands, commid):
-
-
-        udf = []
-        end = 'https://api.open.fec.gov/v1/committee'
+        end = 'https://api.open.fec.gov/v1/committee/'
         params = {
             'api_key': config.fec_key
             , 'cycle': cycle
             , 'per_page': '100'
+            , 'committee_id': commid
         }
-
-        candidate = cands['candidate_name'][idx]
-        path = os.path.join(end, commid, 'totals')
-        print(path)
-
         # Collect unitemized contributions
-        r = requests.get(os.path.join(end, commid, 'totals'), params=params).json()
+        r = requests.get(end + commid + '/totals', params=params).json()
         udf = json_normalize(r['results'])
-        print(candidate)
-        print(udf.head())
-        return udf
-
-    def get_unitem(cycle, cand, commid):
-
-        udf=[]
-        end = 'https://api.open.fec.gov/v1/committee'
-
-        params = {
-            'api_key': config.fec_key
-            , 'cycle': cycle
-            , 'per_page': '100'
-        }
-
-        path = os.path.join(end,commid,'totals')
-
-        # Collect unitemized contributions
-        r = requests.get(path, params=params).json()
-
-        try:
-            udf = json_normalize(r['results'])
-        except:
-            print(f'No unitemized contributions for {cand}')
-
         return udf
 
     cycle = cycle.split(',')
@@ -135,10 +101,10 @@ def get_itemized(cycle, cands):
     ids = cands['committee_id']
     dfs = []
     udfs = []
+    page_count = 0
     cand_count = len(cands)
 
     for idx, commid in enumerate(ids):
-        page_count = 0
 
         params = {
             'per_page': '100'
@@ -151,15 +117,24 @@ def get_itemized(cycle, cands):
             , 'committee_id': commid
         }
 
+        udfs.append(get_unitem(cycle, cands, commid))
+
+        # Initialize Schedule A request
+        r = requests.get(end, params=params).json()
+
         candidate = cands['candidate_name'][idx]
 
-        udfs.append(new_unitem(cycle, cands, commid))
-
         try:
-            r = requests.get(end, params=params).json()
-            while r['pagination']['last_indexes'] is not None:
-                page_count += 1
+            pages = r['pagination']['pages']
+        except:
+            pages = 0
 
+        if pages == 0:
+            df = json_normalize(r['results'])
+            dfs.append(df)
+        else:
+            page_count = page_count + pages
+            while r['pagination']['last_indexes'] is not None:
                 df = json_normalize(r['results'])
                 dfs.append(df)
 
@@ -170,16 +145,14 @@ def get_itemized(cycle, cands):
                                   , ('last_contribution_receipt_date', last_date)])
 
                 r = requests.get(end, params=params).json()
-        except:
-            continue
 
-        print(f'Returned {page_count} itemized pages for {candidate}')
+    print(f'{page_count} pages for {cand_count} candidates')
 
-    # After for loop, concatenate all dfs
+    # After for loop, concatenate dfs
     df = pd.concat(dfs, sort=False, ignore_index=True).drop_duplicates(subset='transaction_id')
-    # ustore = pd.concat(udfs, sort=False, ignore_index=True).drop_duplicates()
+    ustore = pd.concat(udfs, sort=False, ignore_index=True).drop_duplicates()
 
-    # Clean dataframe ZIPs
+    # Clean dataframe
     df['contributor_zip'] = df['contributor_zip'].str[:5]
 
     # Filter to is_individual and no memoed subtotal
@@ -223,7 +196,6 @@ def get_ies(cycle, cands):
     end = 'https://api.open.fec.gov/v1/schedules/schedule_e/'
     ids = cands['candidate_id']
     dfs = []
-    page_count = 0
 
     for idx, item in enumerate(ids):
 
@@ -241,6 +213,14 @@ def get_ies(cycle, cands):
         candidate = cands['candidate_name'][idx]
 
         try:
+            pages = str(r['pagination']['pages'])
+        except:
+            pages = 0
+
+        if pages == 0:
+            df = json_normalize(r['results'])
+            dfs.append(df)
+        else:
             while r['pagination']['last_indexes'] is not None:
                 df = json_normalize(r['results'])
                 dfs.append(df)
@@ -251,12 +231,7 @@ def get_ies(cycle, cands):
                 params.update([('last_index', last_index)
                                   , ('last_expenditure_date', last_date)])
 
-
                 r = requests.get(end, params=params).json()
-
-                print(f'IEs failed at page {page_count} of {pages} for {candidate}.')
-        except:
-            continue
 
     # After for loop, concatenate dfs
     df = pd.concat(dfs, sort=False, ignore_index=True).drop_duplicates(subset='transaction_id')
@@ -379,13 +354,13 @@ def write_to_gsheet():
     conn = http.client.HTTPSConnection("api.data.world")
     headers = {'authorization': "Bearer " + config.dw_key}
 
-    sheets_to_dw = [['maine-congress-2020', 'e2b1bde2-1e60-4d49-bd31-da5aa7ce0611', 'campaign-summaries'],
-                    ['maine-congress-2020', '026e8f40-d10e-4324-8b45-80dbc0e61627', 'individual-contributors']]
+    sheets_to_dw = [['maine-congress-2020', 'e2b1bde2-1e60-4d49-bd31-da5aa7ce0611', 1],
+                    ['maine-congress-2020', '026e8f40-d10e-4324-8b45-80dbc0e61627', 0]]
 
     for idx, sheet in enumerate(sheets_to_dw):
         sheet = [x[0] for x in sheets_to_dw][idx]
         queryid = [x[1] for x in sheets_to_dw][idx]
-        gsh_name = [x[2] for x in sheets_to_dw][idx]
+        gsh_idx = [x[2] for x in sheets_to_dw][idx]
 
         # Retrieve query
         conn.request("GET", "/v0/queries/" + queryid, headers=headers)
@@ -395,7 +370,7 @@ def write_to_gsheet():
 
         # Prepare to load into Google Sheets
         sh = gc.open(sheet)
-        wks = sh.worksheet('title', gsh_name)
+        wks = sh.worksheet('index', gsh_idx)
         wks.clear()
         wks.rows = results.shape[0]
         wks.set_dataframe(results, start='A1', nan='')

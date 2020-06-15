@@ -1,6 +1,8 @@
 from fec_functions import *
+import time
 
 def lambda_handler(event, context):
+    start = time.time()
     # Step 1: Set state(s) and cycle(s) for candidate search
     state = 'ME'
     cycle = '2020'
@@ -40,30 +42,34 @@ def lambda_handler(event, context):
         # Set filename
         file = files[idx]
 
-        # Run function r, return dataframes
-        df = get(*params[idx])
+        try:
+            # Run function r, return dataframes
+            df = get(*params[idx])
 
-        print(f'Retrieved df for item {idx}')
+            # Set filename and df length
+            length = len(df)
+            file = files[idx]
 
-        print(df.head())
+            # Execute write functions to write to datadotworld
+            new = write(df)
 
-        # Set filename and df length
-        length = len(df)
-        file = files[idx]
+            if new:
+                print(f'Wrote {length} records to {file}')
+            else:
+                print(f'No update to {file}.')
 
-        # Execute write functions to write to datadotworld
-        new = write(df)
+        except:
+            print(f'Failed to write {file}')
 
-        if new:
-            print(f'Wrote {length} records to {file}')
-        else:
-            print(f'No update to {file}.')
+    end = time.time()
+    duration = end - start
+    print(f'Script ran for {duration}')
 
     try:
         write_to_gsheet()
-        print(f'Wrote {file} to GSheets')
+        print('Wrote to GSheets')
     except:
-        print(f'Failed to write {file} to GSheet')
+        print('Failed to write to GSheet')
 
 ##TESTING
 test_event = {
