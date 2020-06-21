@@ -48,7 +48,6 @@ def lambda_handler(event, context):
 
             # Set filename and df length
             length = len(df)
-            file = files[idx]
 
             # Execute write functions to write to datadotworld
             new = write(df)

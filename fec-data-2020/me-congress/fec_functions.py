@@ -5,6 +5,7 @@ import datadotworld as dw
 import pygsheets
 import http.client
 import json
+import time
 from pandas.io.json import json_normalize
 
 ##Schedule_a API guide: https://api.open.fec.gov/developers/#/receipts/get_schedules_schedule_a_˜
@@ -25,18 +26,16 @@ def get_cands(state, cycle):
             r = requests.get(end, params=params).json()
 
             cand_all = []
-            cands = json_normalize(data=r['results']) \
-                [['candidate_id'
-                    , 'name'
-                    , 'party_full'
-                    , 'incumbent_challenge_full'
-                    , 'office_full'
-                    , 'first_file_date'
-                  ]]
+            cands = json_normalize(data=r['results'])[['candidate_id'
+                                                    , 'name'
+                                                    , 'party_full'
+                                                    , 'incumbent_challenge_full'
+                                                    , 'office_full'
+                                                    , 'first_file_date'
+                                                  ]]
 
-            comm = json_normalize(data=r['results'],
-                                  record_path='principal_committees') \
-                [['candidate_ids'
+            comm = json_normalize(data=r['results'],record_path='principal_committees')
+            comm = comm[['candidate_ids'
                     , 'committee_id'
                     , 'name']]
 
@@ -82,7 +81,7 @@ def get_committees(names):
 
 
 def get_itemized(cycle, cands):
-    def get_unitem(cycle, cands, commid):
+    def get_unitem(cycle, commid):
 
         end = 'https://api.open.fec.gov/v1/committee/'
         params = {
@@ -106,6 +105,8 @@ def get_itemized(cycle, cands):
 
     for idx, commid in enumerate(ids):
 
+        for_start = time.time()
+
         params = {
             'per_page': '100'
             , 'sort': 'contribution_receipt_date'
@@ -117,10 +118,11 @@ def get_itemized(cycle, cands):
             , 'committee_id': commid
         }
 
-        udfs.append(get_unitem(cycle, cands, commid))
+        udfs.append(get_unitem(cycle, commid))
 
         # Initialize Schedule A request
         r = requests.get(end, params=params).json()
+        r_count = 1
 
         candidate = cands['candidate_name'][idx]
 
@@ -128,23 +130,39 @@ def get_itemized(cycle, cands):
             pages = r['pagination']['pages']
         except:
             pages = 0
-
         if pages == 0:
             df = json_normalize(r['results'])
             dfs.append(df)
         else:
             page_count = page_count + pages
-            while r['pagination']['last_indexes'] is not None:
-                df = json_normalize(r['results'])
-                dfs.append(df)
 
-                last_index = r['pagination']['last_indexes']['last_index']
-                last_date = r['pagination']['last_indexes']['last_contribution_receipt_date']
+            try:
+                while r['pagination']['last_indexes'] is not None:
 
-                params.update([('last_index', last_index)
-                                  , ('last_contribution_receipt_date', last_date)])
+                    df = json_normalize(r['results'])
+                    dfs.append(df)
 
-                r = requests.get(end, params=params).json()
+                    last_index = r['pagination']['last_indexes']['last_index']
+                    last_date = r['pagination']['last_indexes']['last_contribution_receipt_date']
+
+                    params.update([('last_index', last_index)
+                                      , ('last_contribution_receipt_date', last_date)])
+
+                    r = requests.get(end, params=params).json()
+                    r_count += 1
+
+                    for_duration = for_start - time.time()
+
+                    if r_count / for_duration >= 1.95:
+                        time.sleep(.5)
+                        print(f'Triggered .5s sleep on {page_count}, candidate {candidate}')
+
+            except:
+                time.sleep(60)
+                print(f'Broke on page {page_count} for {candidate}.')
+                print(f'Last index: {last_index} //n Last date: {last_date} //n commid: {commid}')
+
+        print(f'Reached page {page_count} for {candidate}.')
 
     print(f'{page_count} pages for {cand_count} candidates')
 
