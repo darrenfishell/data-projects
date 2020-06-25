@@ -158,7 +158,6 @@ def get_itemized(cycle, cands):
                         print(f'Triggered .5s sleep on {page_count}, candidate {candidate}')
 
             except:
-                time.sleep(60)
                 print(f'Broke on page {page_count} for {candidate}.')
                 print(f'Last index: {last_index} //n Last date: {last_date} //n commid: {commid}')
 
