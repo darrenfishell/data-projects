@@ -1,0 +1,1902 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20202.20.0614.2338                               -->
+<workbook source-build='2020.2.2 (20202.20.0614.2338)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='All States' inline='true' name='federated.1tg2udo00e3ghn1c2gu8i108ipcs' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='PPP Data 150k plus' name='textscan.0plfcf716sqe7j1bq3rig1w2vqrc'>
+            <connection class='textscan' directory='/Users/Darren/Github clones/data-projects/ppp/raw-data' filename='PPP Data 150k plus.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0plfcf716sqe7j1bq3rig1w2vqrc' name='PPP Data 150k plus.csv' table='[PPP Data 150k plus#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='LoanRange' ordinal='0' />
+            <column datatype='string' name='BusinessName' ordinal='1' />
+            <column datatype='string' name='Address' ordinal='2' />
+            <column datatype='string' name='City' ordinal='3' />
+            <column datatype='string' name='State' ordinal='4' />
+            <column datatype='integer' name='Zip' ordinal='5' />
+            <column datatype='integer' name='NAICSCode' ordinal='6' />
+            <column datatype='string' name='BusinessType' ordinal='7' />
+            <column datatype='string' name='RaceEthnicity' ordinal='8' />
+            <column datatype='string' name='Gender' ordinal='9' />
+            <column datatype='string' name='Veteran' ordinal='10' />
+            <column datatype='string' name='NonProfit' ordinal='11' />
+            <column datatype='integer' name='JobsRetained' ordinal='12' />
+            <column datatype='date' name='DateApproved' ordinal='13' />
+            <column datatype='string' name='Lender' ordinal='14' />
+            <column datatype='string' name='CD' ordinal='15' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0plfcf716sqe7j1bq3rig1w2vqrc' name='PPP Data 150k plus.csv' table='[PPP Data 150k plus#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='LoanRange' ordinal='0' />
+            <column datatype='string' name='BusinessName' ordinal='1' />
+            <column datatype='string' name='Address' ordinal='2' />
+            <column datatype='string' name='City' ordinal='3' />
+            <column datatype='string' name='State' ordinal='4' />
+            <column datatype='integer' name='Zip' ordinal='5' />
+            <column datatype='integer' name='NAICSCode' ordinal='6' />
+            <column datatype='string' name='BusinessType' ordinal='7' />
+            <column datatype='string' name='RaceEthnicity' ordinal='8' />
+            <column datatype='string' name='Gender' ordinal='9' />
+            <column datatype='string' name='Veteran' ordinal='10' />
+            <column datatype='string' name='NonProfit' ordinal='11' />
+            <column datatype='integer' name='JobsRetained' ordinal='12' />
+            <column datatype='date' name='DateApproved' ordinal='13' />
+            <column datatype='string' name='Lender' ordinal='14' />
+            <column datatype='string' name='CD' ordinal='15' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[PPP Data 150k plus.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LoanRange</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LoanRange]</local-name>
+            <parent-name>[PPP Data 150k plus.csv]</parent-name>
+            <remote-alias>LoanRange</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PPP Data 150k plus.csv_FCC59E2586A3475E93651E262232F12A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BusinessName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BusinessName]</local-name>
+            <parent-name>[PPP Data 150k plus.csv]</parent-name>
+            <remote-alias>BusinessName</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PPP Data 150k plus.csv_FCC59E2586A3475E93651E262232F12A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Address</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Address]</local-name>
+            <parent-name>[PPP Data 150k plus.csv]</parent-name>
+            <remote-alias>Address</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PPP Data 150k plus.csv_FCC59E2586A3475E93651E262232F12A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[PPP Data 150k plus.csv]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PPP Data 150k plus.csv_FCC59E2586A3475E93651E262232F12A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[PPP Data 150k plus.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PPP Data 150k plus.csv_FCC59E2586A3475E93651E262232F12A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zip</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zip]</local-name>
+            <parent-name>[PPP Data 150k plus.csv]</parent-name>
+            <remote-alias>Zip</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PPP Data 150k plus.csv_FCC59E2586A3475E93651E262232F12A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAICSCode</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NAICSCode]</local-name>
+            <parent-name>[PPP Data 150k plus.csv]</parent-name>
+            <remote-alias>NAICSCode</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PPP Data 150k plus.csv_FCC59E2586A3475E93651E262232F12A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BusinessType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BusinessType]</local-name>
+            <parent-name>[PPP Data 150k plus.csv]</parent-name>
+            <remote-alias>BusinessType</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PPP Data 150k plus.csv_FCC59E2586A3475E93651E262232F12A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RaceEthnicity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RaceEthnicity]</local-name>
+            <parent-name>[PPP Data 150k plus.csv]</parent-name>
+            <remote-alias>RaceEthnicity</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PPP Data 150k plus.csv_FCC59E2586A3475E93651E262232F12A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[PPP Data 150k plus.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PPP Data 150k plus.csv_FCC59E2586A3475E93651E262232F12A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Veteran</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Veteran]</local-name>
+            <parent-name>[PPP Data 150k plus.csv]</parent-name>
+            <remote-alias>Veteran</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PPP Data 150k plus.csv_FCC59E2586A3475E93651E262232F12A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NonProfit</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NonProfit]</local-name>
+            <parent-name>[PPP Data 150k plus.csv]</parent-name>
+            <remote-alias>NonProfit</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PPP Data 150k plus.csv_FCC59E2586A3475E93651E262232F12A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JobsRetained</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[JobsRetained]</local-name>
+            <parent-name>[PPP Data 150k plus.csv]</parent-name>
+            <remote-alias>JobsRetained</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PPP Data 150k plus.csv_FCC59E2586A3475E93651E262232F12A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DateApproved</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[DateApproved]</local-name>
+            <parent-name>[PPP Data 150k plus.csv]</parent-name>
+            <remote-alias>DateApproved</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PPP Data 150k plus.csv_FCC59E2586A3475E93651E262232F12A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Lender]</local-name>
+            <parent-name>[PPP Data 150k plus.csv]</parent-name>
+            <remote-alias>Lender</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PPP Data 150k plus.csv_FCC59E2586A3475E93651E262232F12A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CD</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CD]</local-name>
+            <parent-name>[PPP Data 150k plus.csv]</parent-name>
+            <remote-alias>CD</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[PPP Data 150k plus.csv_FCC59E2586A3475E93651E262232F12A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Business Name' datatype='string' name='[BusinessName]' role='dimension' type='nominal' />
+      <column caption='Business Type' datatype='string' name='[BusinessType]' role='dimension' type='nominal' />
+      <column caption='Loan Range Average' datatype='integer' name='[Calculation_479985206126870529]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='CASE SPLIT([LoanRange],&apos; &apos;,1)&#10;WHEN &apos;a&apos; THEN 7500000&#10;WHEN &apos;b&apos; THEN 3000000&#10;WHEN &apos;c&apos; THEN 1500000&#10;WHEN &apos;d&apos; THEN 675000&#10;WHEN &apos;e&apos; THEN 250000&#10;END' />
+      </column>
+      <column caption='$ per Job Retained' datatype='real' default-format='c&quot;$&quot;#,##0;(&quot;$&quot;#,##0)' name='[Calculation_479985206130085890]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Calculation_479985206126870529]) / SUM([JobsRetained])' />
+      </column>
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Date Approved' datatype='date' name='[DateApproved]' role='dimension' type='ordinal' />
+      <column caption='Jobs Retained' datatype='integer' name='[JobsRetained]' role='measure' type='quantitative' />
+      <column caption='Loan Range' datatype='string' name='[LoanRange]' role='dimension' type='nominal' />
+      <column caption='NAICS Code' datatype='integer' name='[NAICSCode]' role='dimension' type='ordinal' />
+      <column caption='Non Profit' datatype='string' name='[NonProfit]' role='dimension' type='nominal' />
+      <column caption='Race Ethnicity' datatype='string' name='[RaceEthnicity]' role='dimension' type='nominal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Zip]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='PPP Data 150k plus.csv' datatype='table' name='[__tableau_internal_object_id__].[PPP Data 150k plus.csv_FCC59E2586A3475E93651E262232F12A]' role='measure' type='quantitative' />
+      <column-instance column='[Maine Set]' derivation='InOut' name='[io:Maine Set:nk]' pivot='key' type='nominal' />
+      <group caption='Maine Set' name='[Maine Set]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter function='member' level='[State]' member='&quot;ME&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/Datasources/All States.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='07/10/2020 02:06:40 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='All States' increment-value='%null%' refresh-type='create' rows-inserted='661218' timestamp-start='2020-07-10 02:06:40.051' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>LoanRange</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[LoanRange]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LoanRange</remote-alias>
+              <ordinal>0</ordinal>
+              <family>PPP Data 150k plus.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BusinessName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[BusinessName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BusinessName</remote-alias>
+              <ordinal>1</ordinal>
+              <family>PPP Data 150k plus.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>639667</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Address</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Address]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Address</remote-alias>
+              <ordinal>2</ordinal>
+              <family>PPP Data 150k plus.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>650341</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>City</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[City]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>City</remote-alias>
+              <ordinal>3</ordinal>
+              <family>PPP Data 150k plus.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>17552</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>4</ordinal>
+              <family>PPP Data 150k plus.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>53</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Zip</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Zip]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Zip</remote-alias>
+              <ordinal>5</ordinal>
+              <family>PPP Data 150k plus.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>47589</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NAICSCode</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[NAICSCode]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NAICSCode</remote-alias>
+              <ordinal>6</ordinal>
+              <family>PPP Data 150k plus.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3208</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BusinessType</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[BusinessType]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BusinessType</remote-alias>
+              <ordinal>7</ordinal>
+              <family>PPP Data 150k plus.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RaceEthnicity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[RaceEthnicity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RaceEthnicity</remote-alias>
+              <ordinal>8</ordinal>
+              <family>PPP Data 150k plus.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>9</ordinal>
+              <family>PPP Data 150k plus.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Veteran</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Veteran]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Veteran</remote-alias>
+              <ordinal>10</ordinal>
+              <family>PPP Data 150k plus.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NonProfit</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NonProfit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NonProfit</remote-alias>
+              <ordinal>11</ordinal>
+              <family>PPP Data 150k plus.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>JobsRetained</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[JobsRetained]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>JobsRetained</remote-alias>
+              <ordinal>12</ordinal>
+              <family>PPP Data 150k plus.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1410</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DateApproved</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[DateApproved]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DateApproved</remote-alias>
+              <ordinal>13</ordinal>
+              <family>PPP Data 150k plus.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>195</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Lender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Lender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Lender</remote-alias>
+              <ordinal>14</ordinal>
+              <family>PPP Data 150k plus.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8304</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CD</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CD]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CD</remote-alias>
+              <ordinal>15</ordinal>
+              <family>PPP Data 150k plus.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>663</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[io:Maine Set:nk]' type='palette'>
+            <map to='#a2a2a2'>
+              <bucket>false</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>true</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='PPP Data 150k plus.csv' id='PPP Data 150k plus.csv_FCC59E2586A3475E93651E262232F12A'>
+            <properties context=''>
+              <relation connection='textscan.0plfcf716sqe7j1bq3rig1w2vqrc' name='PPP Data 150k plus.csv' table='[PPP Data 150k plus#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='LoanRange' ordinal='0' />
+                  <column datatype='string' name='BusinessName' ordinal='1' />
+                  <column datatype='string' name='Address' ordinal='2' />
+                  <column datatype='string' name='City' ordinal='3' />
+                  <column datatype='string' name='State' ordinal='4' />
+                  <column datatype='integer' name='Zip' ordinal='5' />
+                  <column datatype='integer' name='NAICSCode' ordinal='6' />
+                  <column datatype='string' name='BusinessType' ordinal='7' />
+                  <column datatype='string' name='RaceEthnicity' ordinal='8' />
+                  <column datatype='string' name='Gender' ordinal='9' />
+                  <column datatype='string' name='Veteran' ordinal='10' />
+                  <column datatype='string' name='NonProfit' ordinal='11' />
+                  <column datatype='integer' name='JobsRetained' ordinal='12' />
+                  <column datatype='date' name='DateApproved' ordinal='13' />
+                  <column datatype='string' name='Lender' ordinal='14' />
+                  <column datatype='string' name='CD' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='maine-ppp-recipients' inline='true' name='federated.1fknta80uvu92n15ijdf31ql0w6d' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='maine-ppp-recipients' name='textscan.1j1uwuy1uakne71br3y5c13ckmrs'>
+            <connection class='textscan' directory='/Users/Darren/Github clones/data-projects/ppp/prep-and-data' filename='maine-ppp-recipients.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1j1uwuy1uakne71br3y5c13ckmrs' name='maine-ppp-recipients.csv' table='[maine-ppp-recipients#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='SuperSector Cleaned' ordinal='0' />
+            <column datatype='string' name='SuperSector Code' ordinal='1' />
+            <column datatype='string' name='Table Names' ordinal='2' />
+            <column datatype='string' name='LoanRange' ordinal='3' />
+            <column datatype='string' name='BusinessName' ordinal='4' />
+            <column datatype='string' name='Address' ordinal='5' />
+            <column datatype='string' name='City' ordinal='6' />
+            <column datatype='string' name='State' ordinal='7' />
+            <column datatype='integer' name='Zip' ordinal='8' />
+            <column datatype='integer' name='NAICSCode' ordinal='9' />
+            <column datatype='string' name='BusinessType' ordinal='10' />
+            <column datatype='string' name='RaceEthnicity' ordinal='11' />
+            <column datatype='string' name='Gender' ordinal='12' />
+            <column datatype='string' name='Veteran' ordinal='13' />
+            <column datatype='string' name='NonProfit' ordinal='14' />
+            <column datatype='integer' name='JobsRetained' ordinal='15' />
+            <column datatype='date' name='DateApproved' ordinal='16' />
+            <column datatype='string' name='Lender' ordinal='17' />
+            <column datatype='string' name='CD' ordinal='18' />
+            <column datatype='integer' name='LoanAmount' ordinal='19' />
+            <column datatype='string' name='NAICS code' ordinal='20' />
+            <column datatype='integer' name='Industry Title' ordinal='21' />
+            <column datatype='integer' name='Industry Description' ordinal='22' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1j1uwuy1uakne71br3y5c13ckmrs' name='maine-ppp-recipients.csv' table='[maine-ppp-recipients#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='SuperSector Cleaned' ordinal='0' />
+            <column datatype='string' name='SuperSector Code' ordinal='1' />
+            <column datatype='string' name='Table Names' ordinal='2' />
+            <column datatype='string' name='LoanRange' ordinal='3' />
+            <column datatype='string' name='BusinessName' ordinal='4' />
+            <column datatype='string' name='Address' ordinal='5' />
+            <column datatype='string' name='City' ordinal='6' />
+            <column datatype='string' name='State' ordinal='7' />
+            <column datatype='integer' name='Zip' ordinal='8' />
+            <column datatype='integer' name='NAICSCode' ordinal='9' />
+            <column datatype='string' name='BusinessType' ordinal='10' />
+            <column datatype='string' name='RaceEthnicity' ordinal='11' />
+            <column datatype='string' name='Gender' ordinal='12' />
+            <column datatype='string' name='Veteran' ordinal='13' />
+            <column datatype='string' name='NonProfit' ordinal='14' />
+            <column datatype='integer' name='JobsRetained' ordinal='15' />
+            <column datatype='date' name='DateApproved' ordinal='16' />
+            <column datatype='string' name='Lender' ordinal='17' />
+            <column datatype='string' name='CD' ordinal='18' />
+            <column datatype='integer' name='LoanAmount' ordinal='19' />
+            <column datatype='string' name='NAICS code' ordinal='20' />
+            <column datatype='integer' name='Industry Title' ordinal='21' />
+            <column datatype='integer' name='Industry Description' ordinal='22' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[maine-ppp-recipients.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SuperSector Cleaned</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SuperSector Cleaned]</local-name>
+            <parent-name>[maine-ppp-recipients.csv]</parent-name>
+            <remote-alias>SuperSector Cleaned</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SuperSector Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SuperSector Code]</local-name>
+            <parent-name>[maine-ppp-recipients.csv]</parent-name>
+            <remote-alias>SuperSector Code</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Names]</local-name>
+            <parent-name>[maine-ppp-recipients.csv]</parent-name>
+            <remote-alias>Table Names</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LoanRange</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LoanRange]</local-name>
+            <parent-name>[maine-ppp-recipients.csv]</parent-name>
+            <remote-alias>LoanRange</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BusinessName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BusinessName]</local-name>
+            <parent-name>[maine-ppp-recipients.csv]</parent-name>
+            <remote-alias>BusinessName</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Address</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Address]</local-name>
+            <parent-name>[maine-ppp-recipients.csv]</parent-name>
+            <remote-alias>Address</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[maine-ppp-recipients.csv]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[maine-ppp-recipients.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zip</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zip]</local-name>
+            <parent-name>[maine-ppp-recipients.csv]</parent-name>
+            <remote-alias>Zip</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAICSCode</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NAICSCode]</local-name>
+            <parent-name>[maine-ppp-recipients.csv]</parent-name>
+            <remote-alias>NAICSCode</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BusinessType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BusinessType]</local-name>
+            <parent-name>[maine-ppp-recipients.csv]</parent-name>
+            <remote-alias>BusinessType</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RaceEthnicity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RaceEthnicity]</local-name>
+            <parent-name>[maine-ppp-recipients.csv]</parent-name>
+            <remote-alias>RaceEthnicity</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[maine-ppp-recipients.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Veteran</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Veteran]</local-name>
+            <parent-name>[maine-ppp-recipients.csv]</parent-name>
+            <remote-alias>Veteran</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NonProfit</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NonProfit]</local-name>
+            <parent-name>[maine-ppp-recipients.csv]</parent-name>
+            <remote-alias>NonProfit</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JobsRetained</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[JobsRetained]</local-name>
+            <parent-name>[maine-ppp-recipients.csv]</parent-name>
+            <remote-alias>JobsRetained</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DateApproved</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[DateApproved]</local-name>
+            <parent-name>[maine-ppp-recipients.csv]</parent-name>
+            <remote-alias>DateApproved</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Lender]</local-name>
+            <parent-name>[maine-ppp-recipients.csv]</parent-name>
+            <remote-alias>Lender</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CD</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CD]</local-name>
+            <parent-name>[maine-ppp-recipients.csv]</parent-name>
+            <remote-alias>CD</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LoanAmount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LoanAmount]</local-name>
+            <parent-name>[maine-ppp-recipients.csv]</parent-name>
+            <remote-alias>LoanAmount</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAICS code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAICS code]</local-name>
+            <parent-name>[maine-ppp-recipients.csv]</parent-name>
+            <remote-alias>NAICS code</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Industry Title</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Industry Title]</local-name>
+            <parent-name>[maine-ppp-recipients.csv]</parent-name>
+            <remote-alias>Industry Title</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Industry Description</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Industry Description]</local-name>
+            <parent-name>[maine-ppp-recipients.csv]</parent-name>
+            <remote-alias>Industry Description</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Business Name' datatype='string' name='[BusinessName]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='%null%' value='Not Disclosed (under $150,000)' />
+        </aliases>
+      </column>
+      <column caption='Business Type' datatype='string' name='[BusinessType]' role='dimension' type='nominal' />
+      <column caption='$ per Job Retained' datatype='real' default-format='c&quot;$&quot;#,##0;(&quot;$&quot;#,##0)' name='[Calculation_479985206130085890]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([LoanAmount]) / SUM([JobsRetained])' />
+      </column>
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Date Approved' datatype='date' name='[DateApproved]' role='dimension' type='ordinal' />
+      <column caption='Jobs Retained' datatype='integer' name='[JobsRetained]' role='measure' type='quantitative' />
+      <column caption='Loan Amount' datatype='integer' default-format='c&quot;$&quot;#,##0;(&quot;$&quot;#,##0)' name='[LoanAmount]' role='measure' type='quantitative' />
+      <column caption='Loan Range' datatype='string' name='[LoanRange]' role='dimension' type='nominal' />
+      <column caption='NAICS Code' datatype='integer' name='[NAICSCode]' role='dimension' type='ordinal' />
+      <column caption='Non Profit' datatype='string' name='[NonProfit]' role='dimension' type='nominal' />
+      <column caption='Race Ethnicity' datatype='string' name='[RaceEthnicity]' role='dimension' type='nominal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='SuperSector' datatype='string' name='[SuperSector Cleaned]' role='dimension' type='nominal' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Zip]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='maine-ppp-recipients.csv' datatype='table' name='[__tableau_internal_object_id__].[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]' role='measure' type='quantitative' />
+      <column-instance column='[SuperSector Cleaned]' derivation='None' name='[none:SuperSector Cleaned:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/Datasources/maine-ppp-recipients.hyper' default-settings='yes' schema='Extract' sslmode='' update-time='07/10/2020 02:40:24 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='maine-ppp-recipients' increment-value='%null%' refresh-type='create' rows-inserted='28551' timestamp-start='2020-07-10 02:40:24.916' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>SuperSector Cleaned</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SuperSector Cleaned]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SuperSector Cleaned</remote-alias>
+              <ordinal>0</ordinal>
+              <family>maine-ppp-recipients.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SuperSector Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SuperSector Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SuperSector Code</remote-alias>
+              <ordinal>1</ordinal>
+              <family>maine-ppp-recipients.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Table Names</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Table Names]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Table Names</remote-alias>
+              <ordinal>2</ordinal>
+              <family>maine-ppp-recipients.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LoanRange</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[LoanRange]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LoanRange</remote-alias>
+              <ordinal>3</ordinal>
+              <family>maine-ppp-recipients.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BusinessName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[BusinessName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BusinessName</remote-alias>
+              <ordinal>4</ordinal>
+              <family>maine-ppp-recipients.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3998</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Address</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Address]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Address</remote-alias>
+              <ordinal>5</ordinal>
+              <family>maine-ppp-recipients.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3998</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>City</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[City]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>City</remote-alias>
+              <ordinal>6</ordinal>
+              <family>maine-ppp-recipients.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>824</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>7</ordinal>
+              <family>maine-ppp-recipients.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Zip</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Zip]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Zip</remote-alias>
+              <ordinal>8</ordinal>
+              <family>maine-ppp-recipients.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>685</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NAICSCode</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[NAICSCode]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NAICSCode</remote-alias>
+              <ordinal>9</ordinal>
+              <family>maine-ppp-recipients.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>872</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BusinessType</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[BusinessType]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BusinessType</remote-alias>
+              <ordinal>10</ordinal>
+              <family>maine-ppp-recipients.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RaceEthnicity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[RaceEthnicity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RaceEthnicity</remote-alias>
+              <ordinal>11</ordinal>
+              <family>maine-ppp-recipients.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>12</ordinal>
+              <family>maine-ppp-recipients.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Veteran</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Veteran]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Veteran</remote-alias>
+              <ordinal>13</ordinal>
+              <family>maine-ppp-recipients.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NonProfit</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NonProfit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NonProfit</remote-alias>
+              <ordinal>14</ordinal>
+              <family>maine-ppp-recipients.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>JobsRetained</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[JobsRetained]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>JobsRetained</remote-alias>
+              <ordinal>15</ordinal>
+              <family>maine-ppp-recipients.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>176</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DateApproved</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[DateApproved]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DateApproved</remote-alias>
+              <ordinal>16</ordinal>
+              <family>maine-ppp-recipients.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>105</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Lender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Lender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Lender</remote-alias>
+              <ordinal>17</ordinal>
+              <family>maine-ppp-recipients.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>130</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CD</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CD]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CD</remote-alias>
+              <ordinal>18</ordinal>
+              <family>maine-ppp-recipients.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LoanAmount</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[LoanAmount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LoanAmount</remote-alias>
+              <ordinal>19</ordinal>
+              <family>maine-ppp-recipients.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3140</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NAICS code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NAICS code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NAICS code</remote-alias>
+              <ordinal>20</ordinal>
+              <family>maine-ppp-recipients.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1104</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Industry Title</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Industry Title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Industry Title</remote-alias>
+              <ordinal>21</ordinal>
+              <family>maine-ppp-recipients.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Industry Description</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Industry Description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Industry Description</remote-alias>
+              <ordinal>22</ordinal>
+              <family>maine-ppp-recipients.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:SuperSector Cleaned:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Health Care and Social Assistance&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Wholesale Trade&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Arts, Entertainment, and Recreation&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Mining, Quarrying, and Oil and Gas Extraction&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Information&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Construction&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Transportation and Warehousing&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Accommodation and Food Services&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Real Estate and Rental and Leasing&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Educational Services&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Other Services (except Public Administration)&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Professional, Scientific, and Technical Services&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Retail Trade&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Utilities&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Management of Companies and Enterprises&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Finance and Insurance&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Administrative and Support and Waste Management and Remediation Services&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Public Administration&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Manufacturing&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Agriculture, Forestry, Fishing and Hunting&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='maine-ppp-recipients.csv' id='maine-ppp-recipients.csv_D6BF95BCE2F14C1AA5766ADB826DD7B9'>
+            <properties context=''>
+              <relation connection='textscan.1j1uwuy1uakne71br3y5c13ckmrs' name='maine-ppp-recipients.csv' table='[maine-ppp-recipients#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='SuperSector Cleaned' ordinal='0' />
+                  <column datatype='string' name='SuperSector Code' ordinal='1' />
+                  <column datatype='string' name='Table Names' ordinal='2' />
+                  <column datatype='string' name='LoanRange' ordinal='3' />
+                  <column datatype='string' name='BusinessName' ordinal='4' />
+                  <column datatype='string' name='Address' ordinal='5' />
+                  <column datatype='string' name='City' ordinal='6' />
+                  <column datatype='string' name='State' ordinal='7' />
+                  <column datatype='integer' name='Zip' ordinal='8' />
+                  <column datatype='integer' name='NAICSCode' ordinal='9' />
+                  <column datatype='string' name='BusinessType' ordinal='10' />
+                  <column datatype='string' name='RaceEthnicity' ordinal='11' />
+                  <column datatype='string' name='Gender' ordinal='12' />
+                  <column datatype='string' name='Veteran' ordinal='13' />
+                  <column datatype='string' name='NonProfit' ordinal='14' />
+                  <column datatype='integer' name='JobsRetained' ordinal='15' />
+                  <column datatype='date' name='DateApproved' ordinal='16' />
+                  <column datatype='string' name='Lender' ordinal='17' />
+                  <column datatype='string' name='CD' ordinal='18' />
+                  <column datatype='integer' name='LoanAmount' ordinal='19' />
+                  <column datatype='string' name='NAICS code' ordinal='20' />
+                  <column datatype='integer' name='Industry Title' ordinal='21' />
+                  <column datatype='integer' name='Industry Description' ordinal='22' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='City highlight' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Approximate PPP loans to Maine firms, by industry and congressional district' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='ATTR(City)' />
+        <param name='target' value='Approximate PPP loans to Maine firms, by industry and congressional district' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Approximate PPP loans to Maine firms, by industry and congressional district'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='18'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='maine-ppp-recipients' name='federated.1fknta80uvu92n15ijdf31ql0w6d' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1fknta80uvu92n15ijdf31ql0w6d'>
+            <column caption='Business Name' datatype='string' name='[BusinessName]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='%null%' value='Not Disclosed (under $150,000)' />
+              </aliases>
+            </column>
+            <column datatype='string' name='[CD]' role='dimension' type='nominal' />
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column caption='Loan Amount' datatype='integer' default-format='c&quot;$&quot;#,##0;(&quot;$&quot;#,##0)' name='[LoanAmount]' role='measure' type='quantitative' />
+            <column caption='Loan Range' datatype='string' name='[LoanRange]' role='dimension' type='nominal' />
+            <column caption='SuperSector' datatype='string' name='[SuperSector Cleaned]' role='dimension' type='nominal' />
+            <column-instance column='[City]' derivation='Attribute' name='[attr:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[LoanRange]' derivation='Attribute' name='[attr:LoanRange:nk]' pivot='key' type='nominal' />
+            <column-instance column='[BusinessName]' derivation='None' name='[none:BusinessName:nk]' pivot='key' type='nominal' />
+            <column-instance column='[CD]' derivation='None' name='[none:CD:nk]' pivot='key' type='nominal' />
+            <column-instance column='[SuperSector Cleaned]' derivation='None' name='[none:SuperSector Cleaned:nk]' pivot='key' type='nominal' />
+            <column-instance column='[LoanAmount]' derivation='Sum' name='[sum:LoanAmount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1fknta80uvu92n15ijdf31ql0w6d].[none:BusinessName:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:BusinessName:nk]' />
+              <groupfilter function='member' level='[none:BusinessName:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1fknta80uvu92n15ijdf31ql0w6d].[none:CD:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:CD:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:CD:nk]' member='%null%' />
+                <groupfilter function='member' level='[none:CD:nk]' member='&quot;ME -&quot;' />
+                <groupfilter function='member' level='[none:CD:nk]' member='&quot;ME - 00&quot;' />
+                <groupfilter from='&quot;ME - 04&quot;' function='range' level='[none:CD:nk]' to='&quot;ME - 14&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.1fknta80uvu92n15ijdf31ql0w6d].[none:SuperSector Cleaned:nk]' direction='DESC' using='[federated.1fknta80uvu92n15ijdf31ql0w6d].[sum:LoanAmount:qk]' />
+          <slices>
+            <column>[federated.1fknta80uvu92n15ijdf31ql0w6d].[none:CD:nk]</column>
+            <column>[federated.1fknta80uvu92n15ijdf31ql0w6d].[none:BusinessName:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1fknta80uvu92n15ijdf31ql0w6d].[none:BusinessName:nk]' value='300' />
+            <format attr='width' field='[federated.1fknta80uvu92n15ijdf31ql0w6d].[none:SuperSector Cleaned:nk]' value='284' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.1fknta80uvu92n15ijdf31ql0w6d].[none:SuperSector Cleaned:nk]' value='bold' />
+            <format attr='color' field='[federated.1fknta80uvu92n15ijdf31ql0w6d].[none:SuperSector Cleaned:nk]' value='#000000' />
+            <format attr='text-align' field='[federated.1fknta80uvu92n15ijdf31ql0w6d].[none:SuperSector Cleaned:nk]' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1fknta80uvu92n15ijdf31ql0w6d].[none:SuperSector Cleaned:nk]' />
+              <size column='[federated.1fknta80uvu92n15ijdf31ql0w6d].[sum:LoanAmount:qk]' />
+              <lod column='[federated.1fknta80uvu92n15ijdf31ql0w6d].[none:BusinessName:nk]' />
+              <tooltip column='[federated.1fknta80uvu92n15ijdf31ql0w6d].[attr:City:nk]' />
+              <tooltip column='[federated.1fknta80uvu92n15ijdf31ql0w6d].[attr:LoanRange:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontsize='12'><![CDATA[<[federated.1fknta80uvu92n15ijdf31ql0w6d].[none:BusinessName:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[<[federated.1fknta80uvu92n15ijdf31ql0w6d].[none:CD:nk]>]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run fontcolor='#787878'>SuperSector:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1fknta80uvu92n15ijdf31ql0w6d].[none:SuperSector Cleaned:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>City:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1fknta80uvu92n15ijdf31ql0w6d].[attr:City:nk]>]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run fontcolor='#787878'>Assigned loan amount:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1fknta80uvu92n15ijdf31ql0w6d].[sum:LoanAmount:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Loan Range:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1fknta80uvu92n15ijdf31ql0w6d].[attr:LoanRange:nk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1fknta80uvu92n15ijdf31ql0w6d].[none:SuperSector Cleaned:nk]</rows>
+        <cols>[federated.1fknta80uvu92n15ijdf31ql0w6d].[none:CD:nk]</cols>
+      </table>
+      <simple-id uuid='{743D4C90-FD33-4447-BF68-C1BE530AF2CD}' />
+    </worksheet>
+    <worksheet name='Businesses by $ per job'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='maine-ppp-recipients' name='federated.1fknta80uvu92n15ijdf31ql0w6d' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1fknta80uvu92n15ijdf31ql0w6d'>
+            <column caption='Business Name' datatype='string' name='[BusinessName]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='%null%' value='Not Disclosed (under $150,000)' />
+              </aliases>
+            </column>
+            <column caption='$ per Job Retained' datatype='real' default-format='c&quot;$&quot;#,##0;(&quot;$&quot;#,##0)' name='[Calculation_479985206130085890]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([LoanAmount]) / SUM([JobsRetained])' />
+            </column>
+            <column caption='Jobs Retained' datatype='integer' name='[JobsRetained]' role='measure' type='quantitative' />
+            <column caption='Loan Amount' datatype='integer' default-format='c&quot;$&quot;#,##0;(&quot;$&quot;#,##0)' name='[LoanAmount]' role='measure' type='quantitative' />
+            <column caption='Loan Range' datatype='string' name='[LoanRange]' role='dimension' type='nominal' />
+            <column-instance column='[LoanRange]' derivation='Attribute' name='[attr:LoanRange:nk]' pivot='key' type='nominal' />
+            <column-instance column='[BusinessName]' derivation='None' name='[none:BusinessName:nk]' pivot='key' type='nominal' />
+            <column-instance column='[JobsRetained]' derivation='Sum' name='[sum:JobsRetained:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_479985206130085890]' derivation='User' name='[usr:Calculation_479985206130085890:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1fknta80uvu92n15ijdf31ql0w6d].[none:BusinessName:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1fknta80uvu92n15ijdf31ql0w6d].[usr:Calculation_479985206130085890:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <tooltip column='[federated.1fknta80uvu92n15ijdf31ql0w6d].[sum:JobsRetained:qk]' />
+              <tooltip column='[federated.1fknta80uvu92n15ijdf31ql0w6d].[attr:LoanRange:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1fknta80uvu92n15ijdf31ql0w6d].[none:BusinessName:nk]</rows>
+        <cols>[federated.1fknta80uvu92n15ijdf31ql0w6d].[usr:Calculation_479985206130085890:qk]</cols>
+      </table>
+      <simple-id uuid='{5F8C4B3D-E445-424C-987A-0AE56BAFC45F}' />
+    </worksheet>
+    <worksheet name='State totals'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='All States' name='federated.1tg2udo00e3ghn1c2gu8i108ipcs' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1tg2udo00e3ghn1c2gu8i108ipcs'>
+            <column caption='Loan Range Average' datatype='integer' name='[Calculation_479985206126870529]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='CASE SPLIT([LoanRange],&apos; &apos;,1)&#10;WHEN &apos;a&apos; THEN 7500000&#10;WHEN &apos;b&apos; THEN 3000000&#10;WHEN &apos;c&apos; THEN 1500000&#10;WHEN &apos;d&apos; THEN 675000&#10;WHEN &apos;e&apos; THEN 250000&#10;END' />
+            </column>
+            <column caption='Loan Range' datatype='string' name='[LoanRange]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Maine Set]' derivation='InOut' name='[io:Maine Set:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_479985206126870529]' derivation='Sum' name='[sum:Calculation_479985206126870529:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1tg2udo00e3ghn1c2gu8i108ipcs].[none:State:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:State:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:State:nk]' member='&quot;AS&quot;' />
+                <groupfilter function='member' level='[none:State:nk]' member='&quot;GU&quot;' />
+                <groupfilter function='member' level='[none:State:nk]' member='&quot;MP&quot;' />
+                <groupfilter function='member' level='[none:State:nk]' member='&quot;VI&quot;' />
+                <groupfilter function='member' level='[none:State:nk]' member='&quot;XX&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1tg2udo00e3ghn1c2gu8i108ipcs].[none:State:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1tg2udo00e3ghn1c2gu8i108ipcs].[sum:Calculation_479985206126870529:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1tg2udo00e3ghn1c2gu8i108ipcs].[none:State:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1tg2udo00e3ghn1c2gu8i108ipcs].[sum:Calculation_479985206126870529:qk]' value='c&quot;$&quot;#,##0,,,.00B;(&quot;$&quot;#,##0,,,.00B)' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1tg2udo00e3ghn1c2gu8i108ipcs].[io:Maine Set:nk]' />
+              <text column='[federated.1tg2udo00e3ghn1c2gu8i108ipcs].[sum:Calculation_479985206126870529:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1tg2udo00e3ghn1c2gu8i108ipcs].[none:State:nk]</rows>
+        <cols>[federated.1tg2udo00e3ghn1c2gu8i108ipcs].[sum:Calculation_479985206126870529:qk]</cols>
+      </table>
+      <simple-id uuid='{AA416FF4-5D45-4486-99A2-B9DB1D6551E1}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Maine PPP receipts by industry sector'>
+      <style />
+      <size maxheight='1300' maxwidth='1100' minheight='1200' minwidth='400' sizing-mode='range' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98770' id='7' param='horz' w='98546' x='727' y='615'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98770' id='5' w='98546' x='727' y='615'>
+              <zone h='98770' id='3' name='Approximate PPP loans to Maine firms, by industry and congressional district' w='98546' x='727' y='615'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='9' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98770' id='8' param='vert' w='98546' x='727' y='615'>
+                <zone fixed-size='280' h='98770' id='3' is-fixed='true' name='Approximate PPP loans to Maine firms, by industry and congressional district' w='98546' x='727' y='615'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{BFE6DC5D-51A2-4478-A10F-5412292691DC}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='worksheet' name='State totals'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1tg2udo00e3ghn1c2gu8i108ipcs].[io:Maine Set:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{63DEC846-BF8B-431C-A0AD-1CCCB595492C}' />
+    </window>
+    <window class='dashboard' name='Maine PPP receipts by industry sector'>
+      <viewpoints>
+        <viewpoint name='Approximate PPP loans to Maine firms, by industry and congressional district'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{3384773D-3A01-457D-BFCE-3362B0A91A77}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Businesses by $ per job'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{37822FD6-38B2-49B7-9177-6811A294A19E}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Approximate PPP loans to Maine firms, by industry and congressional district'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1fknta80uvu92n15ijdf31ql0w6d].[none:SuperSector Cleaned:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{81CD1FB5-76A3-4503-AA19-75BC8FDEF761}' />
+    </window>
+  </windows>
+</workbook>
