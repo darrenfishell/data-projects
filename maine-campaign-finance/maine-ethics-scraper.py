@@ -1,6 +1,5 @@
 import pandas as pd
 import requests
-import os
 import config
 import pygsheets
 import http.client
@@ -11,16 +10,9 @@ from pandas.io.json import json_normalize
 
 
 def lambda_handler(event, context):
-    # Initialize session
-    s = requests.Session()
-    cookies = requests.cookies.RequestsCookieJar()
-
-    # URL and session variables
-    url_base = config.url_base
     headers = config.headers
     year = config.year
-
-    print(year)
+    bqc_lookup = config.bqcs
 
     # Execute queries
     try:
@@ -42,6 +34,32 @@ def lambda_handler(event, context):
     except:
         print("Write to GSheet failed")
 
+    try:
+        for name, bqc_id in bqc_lookup.items():
+            get_bqc(year, name, bqc_id, headers)
+            print(f'BQC lookup loaded for {name}')
+    except:
+        print('BQC committee retrieval failed')
+
+def get_bqc(year, name, bqc_id, headers):
+    # GET QUESTION ONE COMMITTEES#
+    url = 'https://mainecampaignfinance.com/api///Organization/SearchAssociatedBallotQuestionCommittees'
+
+    s = requests.Session()
+
+    params = {"BallotQuestionTypeId": bqc_id
+        , "ElectionYear": year
+        , "pageNumber": "1"
+        , "pageSize": '10'
+        , "sortDir": "desc"
+        , "sortedBy": ""}
+
+    r = s.post(url, data=json.dumps(params), headers=headers).json()
+
+    df = json_normalize(r)
+
+    with dw.open_remote_file('darrenfishell/2020-maine-state-campaign-finance', f'{name}-committees.csv') as w:
+        df.to_csv(w, index=False)
 
 # GET CANDS / TRANSACTION FUNCTIONS
 def get_cands(year, headers):
@@ -81,7 +99,7 @@ def get_trans(year, headers):
 
     transaction_types = {'contributions': 'CON'
         , 'expenditures': 'EXP'
-        , 'independent_expenditures_2': 'IE'}
+        , 'independent_expenditures': 'IE'}
 
     trans_types = list(transaction_types.values())
     filenames = list(transaction_types.keys())
@@ -121,7 +139,11 @@ def get_trans(year, headers):
         df = pd.concat(dfs, sort=False, ignore_index=True).drop_duplicates()
 
         length = len(df)
-        count = dw.query('darrenfishell/2020-maine-state-campaign-finance', 'SELECT COUNT(*) FROM '+filenames[idx]).dataframe['count'][0]
+
+        try:
+            count = dw.query('darrenfishell/2020-maine-state-campaign-finance', 'SELECT COUNT(*) FROM '+filenames[idx]).dataframe['count'][0]
+        except:
+            count = 0
 
         print(count)
 
@@ -140,22 +162,23 @@ def write_to_gsheet():
     headers = {'authorization': "Bearer " + config.dw_key}
 
     queryid = 'a65bf908-26ba-4f11-b413-a57bd8b3a9f5'
-    project = '2020-maine-state-campaign-finance'
-    gsh_idx = 0
+    dw_project = '2020-maine-state-campaign-finance'
     sheet = 'maine-state-campaign-finance-2020'
+    tab = 'house-and-senate'
 
     # Retrieve query
     conn.request("GET", "/v0/queries/" + queryid, headers=headers)
     data = conn.getresponse().read()
     # Execute Query
-    results = dw.query('darrenfishell/' + project, json.loads(data)['body']).dataframe
+    results = dw.query('darrenfishell/' + dw_project, json.loads(data)['body']).dataframe
 
     # Prepare to load into Google Sheets
     sh = gc.open(sheet)
-    wks = sh.worksheet('index', gsh_idx)
+    wks = sh.worksheet('title', tab)
     wks.clear()
     wks.rows = results.shape[0]
     wks.set_dataframe(results, start='A1', nan='')
+    print(f'Wrote DW {queryid} to GSheets')
 
 event=[]
 context=[]

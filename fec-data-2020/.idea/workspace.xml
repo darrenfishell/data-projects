@@ -10,18 +10,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Python Unit Test" />
+        <option value="Python Script" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>comm_ids</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -36,10 +28,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/me-congress/fec-dev" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/me-congress/fec-dev" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -174,22 +169,30 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1403" height="475" key="GridCell.Tab.0.bottom" timestamp="1593035568974">
+    <state x="555" y="498" key="#Notifications" timestamp="1593604866151">
       <screen x="0" y="23" width="3008" height="1619" />
     </state>
-    <state width="1403" height="475" key="GridCell.Tab.0.bottom/0.23.3008.1619@0.23.3008.1619" timestamp="1593035568974" />
-    <state width="1403" height="475" key="GridCell.Tab.0.center" timestamp="1593035568974">
+    <state x="555" y="498" key="#Notifications/0.23.3008.1619@0.23.3008.1619" timestamp="1593604866151" />
+    <state x="643" y="575" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1593604768001">
       <screen x="0" y="23" width="3008" height="1619" />
     </state>
-    <state width="1403" height="475" key="GridCell.Tab.0.center/0.23.3008.1619@0.23.3008.1619" timestamp="1593035568974" />
-    <state width="1403" height="475" key="GridCell.Tab.0.left" timestamp="1593035568973">
+    <state x="643" y="575" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.3008.1619@0.23.3008.1619" timestamp="1593604768001" />
+    <state width="1442" height="475" key="GridCell.Tab.0.bottom" timestamp="1594212973629">
       <screen x="0" y="23" width="3008" height="1619" />
     </state>
-    <state width="1403" height="475" key="GridCell.Tab.0.left/0.23.3008.1619@0.23.3008.1619" timestamp="1593035568973" />
-    <state width="1403" height="475" key="GridCell.Tab.0.right" timestamp="1593035568974">
+    <state width="1442" height="475" key="GridCell.Tab.0.bottom/0.23.3008.1619@0.23.3008.1619" timestamp="1594212973629" />
+    <state width="1442" height="475" key="GridCell.Tab.0.center" timestamp="1594212973628">
       <screen x="0" y="23" width="3008" height="1619" />
     </state>
-    <state width="1403" height="475" key="GridCell.Tab.0.right/0.23.3008.1619@0.23.3008.1619" timestamp="1593035568974" />
+    <state width="1442" height="475" key="GridCell.Tab.0.center/0.23.3008.1619@0.23.3008.1619" timestamp="1594212973628" />
+    <state width="1442" height="475" key="GridCell.Tab.0.left" timestamp="1594212973628">
+      <screen x="0" y="23" width="3008" height="1619" />
+    </state>
+    <state width="1442" height="475" key="GridCell.Tab.0.left/0.23.3008.1619@0.23.3008.1619" timestamp="1594212973628" />
+    <state width="1442" height="475" key="GridCell.Tab.0.right" timestamp="1594212973628">
+      <screen x="0" y="23" width="3008" height="1619" />
+    </state>
+    <state width="1442" height="475" key="GridCell.Tab.0.right/0.23.3008.1619@0.23.3008.1619" timestamp="1594212973628" />
     <state width="1543" height="582" key="GridCell.Tab.1.bottom" timestamp="1592488532819">
       <screen x="0" y="23" width="3008" height="1619" />
     </state>
@@ -206,9 +209,9 @@
       <screen x="0" y="23" width="3008" height="1619" />
     </state>
     <state width="1543" height="582" key="GridCell.Tab.1.right/0.23.3008.1619@0.23.3008.1619" timestamp="1592488532819" />
-    <state x="1005" y="471" key="SettingsEditor" timestamp="1592276313508">
+    <state x="671" y="440" key="SettingsEditor" timestamp="1593194986471">
       <screen x="0" y="23" width="3008" height="1619" />
     </state>
-    <state x="1005" y="471" key="SettingsEditor/0.23.3008.1619@0.23.3008.1619" timestamp="1592276313508" />
+    <state x="671" y="440" key="SettingsEditor/0.23.3008.1619@0.23.3008.1619" timestamp="1593194986471" />
   </component>
 </project>
