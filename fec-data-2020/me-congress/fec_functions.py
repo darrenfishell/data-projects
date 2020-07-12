@@ -134,6 +134,7 @@ def get_itemized(cycle, cands):
             df = json_normalize(r['results'])
             dfs.append(df)
         else:
+            #Store eumulative page count
             page_count = page_count + pages
 
             try:
@@ -161,7 +162,7 @@ def get_itemized(cycle, cands):
                 print(f'Broke on page {page_count} for {candidate}.')
                 print(f'Last index: {last_index} //n Last date: {last_date} //n commid: {commid}')
 
-        print(f'Reached page {page_count} for {candidate}.')
+        print(f'Reached page {pages} for {candidate}.')
 
     print(f'{page_count} pages for {cand_count} candidates')
 
@@ -331,39 +332,55 @@ def write_cands(df):
 
 def write_indiv(df):
     results = dw.query('darrenfishell/2020-election-repo', 'SELECT * FROM individual_congressional_contributions')
-    test = len(results.dataframe) < len(df)
+    oldlen = len(results.dataframe)
+    newlen = len(df)
+
+    test = oldlen < newlen
+
     if test:
         with dw.open_remote_file('darrenfishell/2020-election-repo', 'individual-congressional-contributions.csv') as w:
             df.to_csv(w, index=False)
-    return test
+    return test, oldlen, newlen
 
 
 def write_summary(df):
     results = dw.query('darrenfishell/2020-election-repo', 'SELECT * FROM congress_financial_summaries')
-    test = sum(results.dataframe['receipts']) < len(df['receipts'])
+    oldlen = sum(results.dataframe['receipts'])
+    newlen = len(df['receipts'])
+
+    test = oldlen < newlen
+
     if test:
         with dw.open_remote_file('darrenfishell/2020-election-repo', 'congress_financial_summaries.csv') as w:
             df.to_csv(w, index=False)
-    return test
+    return test, oldlen, newlen
 
 
 def write_ies(df):
     results = dw.query('darrenfishell/2020-election-repo', 'SELECT * FROM congress_independent_expenditures')
-    test = len(results.dataframe) < len(df)
+    oldlen = len(results.dataframe)
+    newlen = len(df)
+
+    test = oldlen < newlen
+
     if test:
         with dw.open_remote_file('darrenfishell/2020-election-repo', 'congress-independent-expenditures.csv') as w:
             df.to_csv(w, index=False)
-    return test
+    return test, oldlen, newlen
 
 
 def write_coord(df):
     results = dw.query('darrenfishell/2020-election-repo', 'SELECT * FROM congress_party_coordinated_expenditures')
-    test = len(results.dataframe) < len(df)
+    oldlen = len(results.dataframe)
+    newlen = len(df)
+
+    test = oldlen < newlen
+
     if test:
         with dw.open_remote_file('darrenfishell/2020-election-repo',
                                  'congress-party-coordinated-expenditures.csv') as w:
             df.to_csv(w, index=False)
-    return test
+    return test, oldlen, newlen
 
 
 def write_to_gsheet():
