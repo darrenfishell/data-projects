@@ -1,0 +1,2407 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20202.20.0614.2338                               -->
+<workbook source-build='2020.2.2 (20202.20.0614.2338)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <CustomReferenceLineTooltips />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <SpatialFileLayer />
+    <VizInTooltipHideWorksheet />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneFriendlyName />
+  </document-format-change-manifest>
+  <repository-location id='post-primary-campaign-analysis' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='house-and-senate (maine-state-campaign-finance-2020)' inline='true' name='federated.16nqjia0k8k965180r75g0osydpw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='(2)' name='google-sheets.0gxqkyq0k6kn9y144hovj1hm1vxz'>
+            <connection class='google-sheets' cleaning='no' compat='no' dataRefreshTime='' filename='' googleSheetId='1ewBidmQf4P63xKZptsuqgQAOrv1zTToKasTl9jWONPY' interpretationMode='8' mimeType='application/vnd.google-apps.spreadsheet' server-oauth='' username='darren.fishell@gmail.com' validate='no' workgroup-auth-mode='prompt' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='google-sheets.0gxqkyq0k6kn9y144hovj1hm1vxz' name='house-and-senate' table='[&apos;house-and-senate$&apos;]' type='table'>
+          <columns gridOrigin='A1:T5700:no:A1:T5700:0' header='yes' outcome='2'>
+            <column datatype='string' name='candidate_name' ordinal='0' />
+            <column datatype='string' name='financetype' ordinal='1' />
+            <column datatype='string' name='gender' ordinal='2' />
+            <column datatype='string' name='office' ordinal='3' />
+            <column datatype='string' name='cand_party' ordinal='4' />
+            <column datatype='string' name='seat_status' ordinal='5' />
+            <column datatype='string' name='primary_result' ordinal='6' />
+            <column datatype='string' name='current_party' ordinal='7' />
+            <column datatype='string' name='current_officeholder' ordinal='8' />
+            <column datatype='integer' name='district' ordinal='9' />
+            <column datatype='real' name='contribution_receipt_amount' ordinal='10' />
+            <column datatype='date' name='date_filed' ordinal='11' />
+            <column datatype='string' name='contributor_type' ordinal='12' />
+            <column datatype='string' name='contributor_state' ordinal='13' />
+            <column datatype='string' name='contributor_name' ordinal='14' />
+            <column datatype='string' name='contributor_employer' ordinal='15' />
+            <column datatype='string' name='contributor_occupation' ordinal='16' />
+            <column datatype='string' name='support_oppose_indicator' ordinal='17' />
+            <column datatype='string' name='money_type' ordinal='18' />
+            <column datatype='datetime' name='refresh_date' ordinal='19' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='google-sheets.0gxqkyq0k6kn9y144hovj1hm1vxz' name='house-and-senate' table='[&apos;house-and-senate$&apos;]' type='table'>
+          <columns gridOrigin='A1:T5700:no:A1:T5700:0' header='yes' outcome='2'>
+            <column datatype='string' name='candidate_name' ordinal='0' />
+            <column datatype='string' name='financetype' ordinal='1' />
+            <column datatype='string' name='gender' ordinal='2' />
+            <column datatype='string' name='office' ordinal='3' />
+            <column datatype='string' name='cand_party' ordinal='4' />
+            <column datatype='string' name='seat_status' ordinal='5' />
+            <column datatype='string' name='primary_result' ordinal='6' />
+            <column datatype='string' name='current_party' ordinal='7' />
+            <column datatype='string' name='current_officeholder' ordinal='8' />
+            <column datatype='integer' name='district' ordinal='9' />
+            <column datatype='real' name='contribution_receipt_amount' ordinal='10' />
+            <column datatype='date' name='date_filed' ordinal='11' />
+            <column datatype='string' name='contributor_type' ordinal='12' />
+            <column datatype='string' name='contributor_state' ordinal='13' />
+            <column datatype='string' name='contributor_name' ordinal='14' />
+            <column datatype='string' name='contributor_employer' ordinal='15' />
+            <column datatype='string' name='contributor_occupation' ordinal='16' />
+            <column datatype='string' name='support_oppose_indicator' ordinal='17' />
+            <column datatype='string' name='money_type' ordinal='18' />
+            <column datatype='datetime' name='refresh_date' ordinal='19' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[house-and-senate]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:T5700:no:A1:T5700:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>candidate_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[candidate_name]</local-name>
+            <parent-name>[house-and-senate]</parent-name>
+            <remote-alias>candidate_name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house-and-senate_A4A112C5455F4598ADDE9DAB263401F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>financetype</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[financetype]</local-name>
+            <parent-name>[house-and-senate]</parent-name>
+            <remote-alias>financetype</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house-and-senate_A4A112C5455F4598ADDE9DAB263401F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[house-and-senate]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house-and-senate_A4A112C5455F4598ADDE9DAB263401F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>office</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[office]</local-name>
+            <parent-name>[house-and-senate]</parent-name>
+            <remote-alias>office</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house-and-senate_A4A112C5455F4598ADDE9DAB263401F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cand_party</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[cand_party]</local-name>
+            <parent-name>[house-and-senate]</parent-name>
+            <remote-alias>cand_party</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house-and-senate_A4A112C5455F4598ADDE9DAB263401F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>seat_status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[seat_status]</local-name>
+            <parent-name>[house-and-senate]</parent-name>
+            <remote-alias>seat_status</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house-and-senate_A4A112C5455F4598ADDE9DAB263401F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>primary_result</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[primary_result]</local-name>
+            <parent-name>[house-and-senate]</parent-name>
+            <remote-alias>primary_result</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house-and-senate_A4A112C5455F4598ADDE9DAB263401F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>current_party</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[current_party]</local-name>
+            <parent-name>[house-and-senate]</parent-name>
+            <remote-alias>current_party</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house-and-senate_A4A112C5455F4598ADDE9DAB263401F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>current_officeholder</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[current_officeholder]</local-name>
+            <parent-name>[house-and-senate]</parent-name>
+            <remote-alias>current_officeholder</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house-and-senate_A4A112C5455F4598ADDE9DAB263401F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>district</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[district]</local-name>
+            <parent-name>[house-and-senate]</parent-name>
+            <remote-alias>district</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house-and-senate_A4A112C5455F4598ADDE9DAB263401F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contribution_receipt_amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[contribution_receipt_amount]</local-name>
+            <parent-name>[house-and-senate]</parent-name>
+            <remote-alias>contribution_receipt_amount</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house-and-senate_A4A112C5455F4598ADDE9DAB263401F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_filed</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date_filed]</local-name>
+            <parent-name>[house-and-senate]</parent-name>
+            <remote-alias>date_filed</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house-and-senate_A4A112C5455F4598ADDE9DAB263401F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contributor_type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[contributor_type]</local-name>
+            <parent-name>[house-and-senate]</parent-name>
+            <remote-alias>contributor_type</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house-and-senate_A4A112C5455F4598ADDE9DAB263401F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contributor_state</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[contributor_state]</local-name>
+            <parent-name>[house-and-senate]</parent-name>
+            <remote-alias>contributor_state</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house-and-senate_A4A112C5455F4598ADDE9DAB263401F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contributor_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[contributor_name]</local-name>
+            <parent-name>[house-and-senate]</parent-name>
+            <remote-alias>contributor_name</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house-and-senate_A4A112C5455F4598ADDE9DAB263401F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contributor_employer</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[contributor_employer]</local-name>
+            <parent-name>[house-and-senate]</parent-name>
+            <remote-alias>contributor_employer</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house-and-senate_A4A112C5455F4598ADDE9DAB263401F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contributor_occupation</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[contributor_occupation]</local-name>
+            <parent-name>[house-and-senate]</parent-name>
+            <remote-alias>contributor_occupation</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house-and-senate_A4A112C5455F4598ADDE9DAB263401F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>support_oppose_indicator</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[support_oppose_indicator]</local-name>
+            <parent-name>[house-and-senate]</parent-name>
+            <remote-alias>support_oppose_indicator</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house-and-senate_A4A112C5455F4598ADDE9DAB263401F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>money_type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[money_type]</local-name>
+            <parent-name>[house-and-senate]</parent-name>
+            <remote-alias>money_type</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house-and-senate_A4A112C5455F4598ADDE9DAB263401F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>refresh_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[refresh_date]</local-name>
+            <parent-name>[house-and-senate]</parent-name>
+            <remote-alias>refresh_date</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house-and-senate_A4A112C5455F4598ADDE9DAB263401F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Gender Grouper' datatype='string' name='[Calculation_493355269945221120]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IFNULL([gender],[candidate_name])' />
+      </column>
+      <column caption='Gender' datatype='string' name='[Calculation_493355269948358657]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Gender (Remainder Grouped Manually)]' />
+      </column>
+      <column caption='candidate/candidates' datatype='string' name='[Calculation_493355269953265666]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='IF COUNTD([candidate_name])&gt;1 THEN &apos;candidates&apos; ELSE &apos;candidate&apos; END' />
+      </column>
+      <column aggregation='Sum' caption='House District' datatype='integer' name='[Calculation_493355269954674691]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='IF [office]=&apos;Representative&apos; THEN [district] END' />
+      </column>
+      <column caption='Female District Party' datatype='string' name='[Calculation_493355269956943879]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='IF MIN([cand_party]) != MAX([cand_party]) THEN &apos;Multiple parties&apos;&#10;ELSE ATTR([cand_party]) END' />
+      </column>
+      <column caption='Support' datatype='real' default-format='c&quot;$&quot;#,##0;(&quot;$&quot;#,##0)' name='[Calculation_493355269963075592]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [support_oppose_indicator] = &apos;Support&apos; THEN [contribution_receipt_amount] END' />
+      </column>
+      <column caption='Opposition' datatype='real' name='[Calculation_493355269963161609]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [support_oppose_indicator]=&apos;Oppose&apos; THEN [contribution_receipt_amount] END' />
+      </column>
+      <column caption='Short Party' datatype='string' name='[Calculation_493355269964009482]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='LEFT([cand_party],1)' />
+      </column>
+      <column caption='Winning Candidates' datatype='string' name='[Calculation_493355269965168651]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [primary_result] = &apos;Won&apos; THEN [candidate_name] END' />
+      </column>
+      <column caption='Winning Candidate Count' datatype='integer' name='[Calculation_493355269969760270]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([Calculation_493355269965168651])' />
+      </column>
+      <column caption='Incumbent marker' datatype='string' name='[Calculation_493355269973774352]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [seat_status] = &apos;INCUMBENT&apos; THEN &apos;•&apos; END' />
+      </column>
+      <column caption='Name + incumbency + party' datatype='string' name='[Calculation_493355269973905425]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF ISNULL([Calculation_493355269973774352]) THEN [candidate_name] + &apos; (&apos; + [Calculation_493355269964009482] + &apos;)&apos;&#10;ELSE [Calculation_493355269973774352]  + &apos; &apos; +  [candidate_name] + &apos; (&apos; + [Calculation_493355269964009482] + &apos;)&apos; END' />
+      </column>
+      <column caption='Candidates with Primaries' datatype='integer' name='[Calculation_493355269977370642]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD(&#10;    IF NOT ISNULL([primary_result]) AND [primary_result] != &apos;None&apos;&#10;    THEN [candidate_name]&#10;END)' />
+      </column>
+      <column datatype='string' name='[Gender (Remainder Grouped Manually)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Calculation_493355269945221120]' default='&quot;Other&quot;' new-bin='true'>
+          <bin default-name='false' value='&quot;Female&quot;'>
+            <value>&quot;Abercrombie, Susan M&quot;</value>
+            <value>&quot;Austin, Susan M&quot;</value>
+            <value>&quot;Bernard, Susan&quot;</value>
+            <value>&quot;Blume, Lydia&quot;</value>
+            <value>&quot;Brenner, Stacy&quot;</value>
+            <value>&quot;Collamore, Amanda Noelle&quot;</value>
+            <value>&quot;Cushing, Andre E III&quot;</value>
+            <value>&quot;Daughtry, Matthea E&quot;</value>
+            <value>&quot;Dolloff, Josanne&quot;</value>
+            <value>&quot;Female&quot;</value>
+            <value>&quot;Fleming, Anne Chalmers&quot;</value>
+            <value>&quot;Fogg, Patricia A&quot;</value>
+            <value>&quot;Gautier, Patricia M&quot;</value>
+            <value>&quot;Graves, Carole Stover&quot;</value>
+            <value>&quot;Hallett, Elaine D&quot;</value>
+            <value>&quot;Hatch, Victoria&quot;</value>
+            <value>&quot;Hawke, Stephanie&quot;</value>
+            <value>&quot;Javner, Kathy Irene&quot;</value>
+            <value>&quot;Jordan, Heidi P&quot;</value>
+            <value>&quot;Kaplan, Michelle R&quot;</value>
+            <value>&quot;Kelly, Terri D&quot;</value>
+            <value>&quot;Leparulo, Karry&quot;</value>
+            <value>&quot;Libby, Laurel D&quot;</value>
+            <value>&quot;Luce, Molly P&quot;</value>
+            <value>&quot;MacDonald, Sharri K&quot;</value>
+            <value>&quot;McCreight, Joyce E&quot;</value>
+            <value>&quot;Menair, Marion Suzanne&quot;</value>
+            <value>&quot;Morales, Victoria&quot;</value>
+            <value>&quot;Peavey, Sharon W&quot;</value>
+            <value>&quot;Perreault, Corinne A&quot;</value>
+            <value>&quot;Robinson, Kimberley F&quot;</value>
+            <value>&quot;Rosenblatt, Annalee Z&quot;</value>
+            <value>&quot;Soma-Hernandez, Cynthia J&quot;</value>
+            <value>&quot;Terry, Maureen Fitzgerald&quot;</value>
+            <value>&quot;Trescot, Mary R&quot;</value>
+            <value>&quot;Turner, April Dawn&quot;</value>
+            <value>&quot;Wallace, Lowell B&quot;</value>
+            <value>&quot;Wiswell, Susan Jane&quot;</value>
+            <value>&quot;Witonis, Susan Eileen&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Male&quot;'>
+            <value>&quot;Baldacci, Peter K&quot;</value>
+            <value>&quot;Blasi, Antonio&quot;</value>
+            <value>&quot;CABOT, BENJAMIN K&quot;</value>
+            <value>&quot;Clark, Richard&quot;</value>
+            <value>&quot;Clark, William F&quot;</value>
+            <value>&quot;Cohen, Edward&quot;</value>
+            <value>&quot;Cole, Scott G&quot;</value>
+            <value>&quot;Costain, Danny E&quot;</value>
+            <value>&quot;Cote, Michael Joseph&quot;</value>
+            <value>&quot;Crockett, Patsy Garside&quot;</value>
+            <value>&quot;Davis, Stephen Warner&quot;</value>
+            <value>&quot;Delli Paoli, Nicolas&quot;</value>
+            <value>&quot;Densmore, Roger E III&quot;</value>
+            <value>&quot;Despres, Mark&quot;</value>
+            <value>&quot;Dunleavy, James P&quot;</value>
+            <value>&quot;Erkkinen, Wayne E&quot;</value>
+            <value>&quot;Faulkingham, William R&quot;</value>
+            <value>&quot;Foss, Richard Andrew Jr&quot;</value>
+            <value>&quot;Foster, Gregory E&quot;</value>
+            <value>&quot;Fournier, Norman L&quot;</value>
+            <value>&quot;Fowler, Fenwick L&quot;</value>
+            <value>&quot;Galemmo, Charles&quot;</value>
+            <value>&quot;Gifford, Jeffery A&quot;</value>
+            <value>&quot;Gombar, William J&quot;</value>
+            <value>&quot;Goodwin, Timothy H&quot;</value>
+            <value>&quot;Grover, Mark D&quot;</value>
+            <value>&quot;Hastings, Edward H IV&quot;</value>
+            <value>&quot;Hiatt, Joshua Timothy&quot;</value>
+            <value>&quot;Jabar, George M&quot;</value>
+            <value>&quot;Jandreau, Nelson&quot;</value>
+            <value>&quot;Krolick, Clifford&quot;</value>
+            <value>&quot;Lawler, Michael J&quot;</value>
+            <value>&quot;Lemont, Kenneth F&quot;</value>
+            <value>&quot;Lippincott, William J&quot;</value>
+            <value>&quot;Lyford, Peter A&quot;</value>
+            <value>&quot;Male&quot;</value>
+            <value>&quot;McKinney, Michael A&quot;</value>
+            <value>&quot;Merry, Joel A&quot;</value>
+            <value>&quot;Meserve, Hamilton W&quot;</value>
+            <value>&quot;Michael, John M&quot;</value>
+            <value>&quot;Mullins, Michael Joseph&quot;</value>
+            <value>&quot;Munson, Thomas W&quot;</value>
+            <value>&quot;Nutting, John M&quot;</value>
+            <value>&quot;Parent, Richard L Jr&quot;</value>
+            <value>&quot;Perkins, Michael Dana&quot;</value>
+            <value>&quot;Perry, Joseph C Sr&quot;</value>
+            <value>&quot;Pietroski, Joseph J&quot;</value>
+            <value>&quot;Pray, Charles P&quot;</value>
+            <value>&quot;Rielly, Morgan&quot;</value>
+            <value>&quot;Rockwell, Randy&quot;</value>
+            <value>&quot;Sayers, Michael Joseph&quot;</value>
+            <value>&quot;Seavey, H Stedman&quot;</value>
+            <value>&quot;Sezak, Robert&quot;</value>
+            <value>&quot;Sharpe, Braden&quot;</value>
+            <value>&quot;Shorey, William D&quot;</value>
+            <value>&quot;Stoddard, Jacob T&quot;</value>
+            <value>&quot;Sylvester, Michael A&quot;</value>
+            <value>&quot;Taylor, Scott B&quot;</value>
+            <value>&quot;Todd, Donovan E III&quot;</value>
+            <value>&quot;Torbett, Andrew R&quot;</value>
+            <value>&quot;Underwood, Joseph&quot;</value>
+            <value>&quot;Underwood, Paul J&quot;</value>
+            <value>&quot;Washburn, Robert&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column aggregation='Sum' caption='Senate District' datatype='integer' name='[House District (copy)_493355269954748420]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='IF [office]=&apos;Senator&apos; THEN [district] END' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='house-and-senate' datatype='table' name='[__tableau_internal_object_id__].[house-and-senate_A4A112C5455F4598ADDE9DAB263401F0]' role='measure' type='quantitative' />
+      <column caption='Cand Party' datatype='string' name='[cand_party]' role='dimension' type='nominal' />
+      <column caption='Candidate Name' datatype='string' name='[candidate_name]' role='dimension' type='nominal' />
+      <column caption='Contribution Receipt Amount' datatype='real' name='[contribution_receipt_amount]' role='measure' type='quantitative' />
+      <column caption='Contributor Employer' datatype='string' name='[contributor_employer]' role='dimension' type='nominal' />
+      <column caption='Contributor Name' datatype='string' name='[contributor_name]' role='dimension' type='nominal' />
+      <column caption='Contributor Occupation' datatype='string' name='[contributor_occupation]' role='dimension' type='nominal' />
+      <column caption='Contributor State' datatype='string' name='[contributor_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Contributor Type' datatype='string' name='[contributor_type]' role='dimension' type='nominal' />
+      <column caption='Current Officeholder' datatype='string' name='[current_officeholder]' role='dimension' type='nominal' />
+      <column caption='Current Party' datatype='string' name='[current_party]' role='dimension' type='nominal' />
+      <column caption='Date Filed' datatype='date' name='[date_filed]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='District' datatype='integer' name='[district]' role='dimension' type='ordinal' />
+      <column caption='Financetype' datatype='string' name='[financetype]' role='dimension' type='nominal' />
+      <column caption='Gender (me-ethics)' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Money Type' datatype='string' name='[money_type]' role='dimension' type='nominal' />
+      <column caption='Office' datatype='string' name='[office]' role='dimension' type='nominal' />
+      <column caption='Primary Result' datatype='string' name='[primary_result]' role='dimension' type='nominal' />
+      <column caption='Refresh Date' datatype='datetime' name='[refresh_date]' role='dimension' type='ordinal' />
+      <column caption='Seat Status' datatype='string' name='[seat_status]' role='dimension' type='nominal' />
+      <column caption='Support Oppose Indicator' datatype='string' name='[support_oppose_indicator]' role='dimension' type='nominal' />
+      <column-instance column='[Calculation_493355269948358657]' derivation='None' name='[none:Calculation_493355269948358657:nk]' pivot='key' type='nominal' />
+      <column-instance column='[cand_party]' derivation='None' name='[none:cand_party:nk]' pivot='key' type='nominal' />
+      <column-instance column='[primary_result]' derivation='None' name='[none:primary_result:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Office)' hidden='true' name='[Action (Office)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[office]' />
+        </groupfilter>
+      </group>
+      <group caption='Tooltip (District)' hidden='true' name='[Tooltip (District)]' name-style='unqualified' user:auto-column='sheet_link' user:ui-vit-column='true'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[district]' />
+        </groupfilter>
+      </group>
+      <group caption='Tooltip (District,Office)' hidden='true' name='[Tooltip (District,Office)]' name-style='unqualified' user:auto-column='sheet_link' user:ui-vit-column='true'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[district]' />
+          <groupfilter function='level-members' level='[office]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/Datasources/house-and-senate (maine-state-campaign-finance-2020).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>candidate_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[candidate_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>candidate_name</remote-alias>
+              <ordinal>0</ordinal>
+              <family>house-and-senate</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>407</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>financetype</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[financetype]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>financetype</remote-alias>
+              <ordinal>1</ordinal>
+              <family>house-and-senate</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>2</ordinal>
+              <family>house-and-senate</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>office</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[office]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>office</remote-alias>
+              <ordinal>3</ordinal>
+              <family>house-and-senate</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cand_party</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[cand_party]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cand_party</remote-alias>
+              <ordinal>4</ordinal>
+              <family>house-and-senate</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>seat_status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[seat_status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>seat_status</remote-alias>
+              <ordinal>5</ordinal>
+              <family>house-and-senate</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>primary_result</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[primary_result]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>primary_result</remote-alias>
+              <ordinal>6</ordinal>
+              <family>house-and-senate</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>current_party</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[current_party]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>current_party</remote-alias>
+              <ordinal>7</ordinal>
+              <family>house-and-senate</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>current_officeholder</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[current_officeholder]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>current_officeholder</remote-alias>
+              <ordinal>8</ordinal>
+              <family>house-and-senate</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>185</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>district</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[district]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>district</remote-alias>
+              <ordinal>9</ordinal>
+              <family>house-and-senate</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>154</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>contribution_receipt_amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[contribution_receipt_amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>contribution_receipt_amount</remote-alias>
+              <ordinal>10</ordinal>
+              <family>house-and-senate</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>220</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date_filed</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date_filed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date_filed</remote-alias>
+              <ordinal>11</ordinal>
+              <family>house-and-senate</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>109</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>contributor_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[contributor_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>contributor_type</remote-alias>
+              <ordinal>12</ordinal>
+              <family>house-and-senate</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>contributor_state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[contributor_state]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>contributor_state</remote-alias>
+              <ordinal>13</ordinal>
+              <family>house-and-senate</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>41</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>contributor_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[contributor_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>contributor_name</remote-alias>
+              <ordinal>14</ordinal>
+              <family>house-and-senate</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2872</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>contributor_employer</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[contributor_employer]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>contributor_employer</remote-alias>
+              <ordinal>15</ordinal>
+              <family>house-and-senate</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1088</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>contributor_occupation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[contributor_occupation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>contributor_occupation</remote-alias>
+              <ordinal>16</ordinal>
+              <family>house-and-senate</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>36</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>support_oppose_indicator</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[support_oppose_indicator]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>support_oppose_indicator</remote-alias>
+              <ordinal>17</ordinal>
+              <family>house-and-senate</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>money_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[money_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>money_type</remote-alias>
+              <ordinal>18</ordinal>
+              <family>house-and-senate</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>refresh_date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[refresh_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>refresh_date</remote-alias>
+              <ordinal>19</ordinal>
+              <family>house-and-senate</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:primary_result:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Won&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;None&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Lost&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='shape' field='[none:Calculation_493355269948358657:nk]' type='shape'>
+            <map to='Gender/4.png'>
+              <bucket>&quot;Male&quot;</bucket>
+            </map>
+            <map to='Gender/5.png'>
+              <bucket>&quot;Female&quot;</bucket>
+            </map>
+            <map to='Gender/9.png'>
+              <bucket>&quot;Other&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:cand_party:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Democratic&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Green Independent&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Unenrolled&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Republican&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>%all%</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='house-and-senate' id='house-and-senate_A4A112C5455F4598ADDE9DAB263401F0'>
+            <properties context=''>
+              <relation connection='google-sheets.0gxqkyq0k6kn9y144hovj1hm1vxz' name='house-and-senate' table='[&apos;house-and-senate$&apos;]' type='table'>
+                <columns gridOrigin='A1:T5700:no:A1:T5700:0' header='yes' outcome='2'>
+                  <column datatype='string' name='candidate_name' ordinal='0' />
+                  <column datatype='string' name='financetype' ordinal='1' />
+                  <column datatype='string' name='gender' ordinal='2' />
+                  <column datatype='string' name='office' ordinal='3' />
+                  <column datatype='string' name='cand_party' ordinal='4' />
+                  <column datatype='string' name='seat_status' ordinal='5' />
+                  <column datatype='string' name='primary_result' ordinal='6' />
+                  <column datatype='string' name='current_party' ordinal='7' />
+                  <column datatype='string' name='current_officeholder' ordinal='8' />
+                  <column datatype='integer' name='district' ordinal='9' />
+                  <column datatype='real' name='contribution_receipt_amount' ordinal='10' />
+                  <column datatype='date' name='date_filed' ordinal='11' />
+                  <column datatype='string' name='contributor_type' ordinal='12' />
+                  <column datatype='string' name='contributor_state' ordinal='13' />
+                  <column datatype='string' name='contributor_name' ordinal='14' />
+                  <column datatype='string' name='contributor_employer' ordinal='15' />
+                  <column datatype='string' name='contributor_occupation' ordinal='16' />
+                  <column datatype='string' name='support_oppose_indicator' ordinal='17' />
+                  <column datatype='string' name='money_type' ordinal='18' />
+                  <column datatype='datetime' name='refresh_date' ordinal='19' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='house-and-senate-fix' inline='true' name='federated.1mpmemv1p5fhne1dg2xk911ksvab' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='house-and-senate-fix' name='ogrdirect.1b9e3ij0dhftq513avuyw0f31jfp'>
+            <connection class='ogrdirect' directory='/Users/Darren/Desktop/TOTAL FOLDER/BDN-Data/reference files/maine-house-and-senate' filename='house-and-senate-fix.shp' ogr-grid-shift-folder='/Applications/Tableau Desktop 2020.2.app/Contents/install/local/proj4' password='' server='' tablename='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='ogrdirect.1b9e3ij0dhftq513avuyw0f31jfp' name='house-and-senate-fix.shp' table='[house-and-senate-fix.shp]' type='table'>
+          <columns>
+            <column datatype='integer' name='HD2013' ordinal='0' />
+            <column datatype='real' name='Shape_area' ordinal='1' />
+            <column datatype='real' name='Shape_len' ordinal='2' />
+            <column datatype='string' name='Chamber' ordinal='3' />
+            <column datatype='integer' name='OBJECTID' ordinal='4' />
+            <column datatype='integer' name='SD2013' ordinal='5' />
+            <column datatype='string' name='layer' ordinal='6' />
+            <column datatype='string' name='path' ordinal='7' />
+            <column datatype='spatial' name='Geometry' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='ogrdirect.1b9e3ij0dhftq513avuyw0f31jfp' name='house-and-senate-fix.shp' table='[house-and-senate-fix.shp]' type='table'>
+          <columns>
+            <column datatype='integer' name='HD2013' ordinal='0' />
+            <column datatype='real' name='Shape_area' ordinal='1' />
+            <column datatype='real' name='Shape_len' ordinal='2' />
+            <column datatype='string' name='Chamber' ordinal='3' />
+            <column datatype='integer' name='OBJECTID' ordinal='4' />
+            <column datatype='integer' name='SD2013' ordinal='5' />
+            <column datatype='string' name='layer' ordinal='6' />
+            <column datatype='string' name='path' ordinal='7' />
+            <column datatype='spatial' name='Geometry' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>HD2013</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[HD2013]</local-name>
+            <parent-name>[house-and-senate-fix.shp]</parent-name>
+            <remote-alias>HD2013</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house-and-senate-fix.shp_5C13B6DB90D44140A44A5CEE889EA38F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Shape_area</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Shape_area]</local-name>
+            <parent-name>[house-and-senate-fix.shp]</parent-name>
+            <remote-alias>Shape_area</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house-and-senate-fix.shp_5C13B6DB90D44140A44A5CEE889EA38F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Shape_len</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Shape_len]</local-name>
+            <parent-name>[house-and-senate-fix.shp]</parent-name>
+            <remote-alias>Shape_len</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house-and-senate-fix.shp_5C13B6DB90D44140A44A5CEE889EA38F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Chamber</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Chamber]</local-name>
+            <parent-name>[house-and-senate-fix.shp]</parent-name>
+            <remote-alias>Chamber</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house-and-senate-fix.shp_5C13B6DB90D44140A44A5CEE889EA38F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OBJECTID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OBJECTID]</local-name>
+            <parent-name>[house-and-senate-fix.shp]</parent-name>
+            <remote-alias>OBJECTID</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house-and-senate-fix.shp_5C13B6DB90D44140A44A5CEE889EA38F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SD2013</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[SD2013]</local-name>
+            <parent-name>[house-and-senate-fix.shp]</parent-name>
+            <remote-alias>SD2013</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house-and-senate-fix.shp_5C13B6DB90D44140A44A5CEE889EA38F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>layer</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[layer]</local-name>
+            <parent-name>[house-and-senate-fix.shp]</parent-name>
+            <remote-alias>layer</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house-and-senate-fix.shp_5C13B6DB90D44140A44A5CEE889EA38F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>path</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[path]</local-name>
+            <parent-name>[house-and-senate-fix.shp]</parent-name>
+            <remote-alias>path</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house-and-senate-fix.shp_5C13B6DB90D44140A44A5CEE889EA38F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geometry</remote-name>
+            <remote-type>8</remote-type>
+            <local-name>[Geometry]</local-name>
+            <parent-name>[house-and-senate-fix.shp]</parent-name>
+            <remote-alias>Geometry</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Collect</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[house-and-senate-fix.shp_5C13B6DB90D44140A44A5CEE889EA38F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' caption='District' datatype='integer' name='[Calculation_493355269955330053]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='IFNULL([HD2013],[SD2013])' />
+      </column>
+      <column caption='Office' datatype='string' name='[Calculation_493355269955846150]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='CASE [Chamber]&#10;WHEN &apos;House&apos; THEN &apos;Representative&apos;&#10;WHEN &apos;Senate&apos; THEN &apos;Senator&apos;&#10;END' />
+      </column>
+      <column aggregation='Sum' caption='Hd2013' datatype='integer' name='[HD2013]' role='dimension' type='ordinal' />
+      <column caption='Objectid' datatype='integer' name='[OBJECTID]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Sd2013' datatype='integer' name='[SD2013]' role='dimension' type='ordinal' />
+      <column caption='Shape area' datatype='real' name='[Shape_area]' role='measure' type='quantitative' />
+      <column caption='Shape len' datatype='real' name='[Shape_len]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='house-and-senate-fix.shp' datatype='table' name='[__tableau_internal_object_id__].[house-and-senate-fix.shp_5C13B6DB90D44140A44A5CEE889EA38F]' role='measure' type='quantitative' />
+      <column caption='Layer' datatype='string' name='[layer]' role='dimension' type='nominal' />
+      <column caption='Path' datatype='string' name='[path]' role='dimension' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/tableau-temp/TEMP_07ascfr0rssmrm1fmyagv0bx420y.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>HD2013</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[HD2013]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>HD2013</remote-alias>
+              <ordinal>0</ordinal>
+              <family>house-and-senate-fix.shp</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>152</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Shape_area</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Shape_area]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Shape_area</remote-alias>
+              <ordinal>1</ordinal>
+              <family>house-and-senate-fix.shp</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>228</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Shape_len</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Shape_len]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Shape_len</remote-alias>
+              <ordinal>2</ordinal>
+              <family>house-and-senate-fix.shp</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>228</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Chamber</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Chamber]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Chamber</remote-alias>
+              <ordinal>3</ordinal>
+              <family>house-and-senate-fix.shp</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OBJECTID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[OBJECTID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OBJECTID</remote-alias>
+              <ordinal>4</ordinal>
+              <family>house-and-senate-fix.shp</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>37</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SD2013</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[SD2013]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SD2013</remote-alias>
+              <ordinal>5</ordinal>
+              <family>house-and-senate-fix.shp</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>36</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>layer</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[layer]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>layer</remote-alias>
+              <ordinal>6</ordinal>
+              <family>house-and-senate-fix.shp</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>path</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[path]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>path</remote-alias>
+              <ordinal>7</ordinal>
+              <family>house-and-senate-fix.shp</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Geometry</remote-name>
+              <remote-type>128</remote-type>
+              <local-name>[Geometry]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Geometry</remote-alias>
+              <ordinal>8</ordinal>
+              <family>house-and-senate-fix.shp</family>
+              <local-type>spatial</local-type>
+              <aggregation>Collect</aggregation>
+              <approx-count>228</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='house-and-senate-fix.shp' id='house-and-senate-fix.shp_5C13B6DB90D44140A44A5CEE889EA38F'>
+            <properties context=''>
+              <relation connection='ogrdirect.1b9e3ij0dhftq513avuyw0f31jfp' name='house-and-senate-fix.shp' table='[house-and-senate-fix.shp]' type='table'>
+                <columns>
+                  <column datatype='integer' name='HD2013' ordinal='0' />
+                  <column datatype='real' name='Shape_area' ordinal='1' />
+                  <column datatype='real' name='Shape_len' ordinal='2' />
+                  <column datatype='string' name='Chamber' ordinal='3' />
+                  <column datatype='integer' name='OBJECTID' ordinal='4' />
+                  <column datatype='integer' name='SD2013' ordinal='5' />
+                  <column datatype='string' name='layer' ordinal='6' />
+                  <column datatype='string' name='path' ordinal='7' />
+                  <column datatype='spatial' name='Geometry' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <datasource-relationships>
+    <datasource-dependencies datasource='federated.16nqjia0k8k965180r75g0osydpw'>
+      <column aggregation='Sum' caption='House District' datatype='integer' name='[Calculation_493355269954674691]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='IF [office]=&apos;Representative&apos; THEN [district] END' />
+      </column>
+      <column aggregation='Sum' caption='Senate District' datatype='integer' name='[House District (copy)_493355269954748420]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='IF [office]=&apos;Senator&apos; THEN [district] END' />
+      </column>
+      <column-instance column='[Calculation_493355269954674691]' derivation='None' name='[none:Calculation_493355269954674691:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[House District (copy)_493355269954748420]' derivation='None' name='[none:House District (copy)_493355269954748420:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[office]' derivation='None' name='[none:office:nk]' pivot='key' type='nominal' />
+      <column caption='Office' datatype='string' name='[office]' role='dimension' type='nominal' />
+    </datasource-dependencies>
+    <datasource-dependencies datasource='federated.1mpmemv1p5fhne1dg2xk911ksvab'>
+      <column caption='Office' datatype='string' name='[Calculation_493355269955846150]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='CASE [Chamber]&#10;WHEN &apos;House&apos; THEN &apos;Representative&apos;&#10;WHEN &apos;Senate&apos; THEN &apos;Senator&apos;&#10;END' />
+      </column>
+      <column aggregation='Sum' caption='Hd2013' datatype='integer' name='[HD2013]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Sd2013' datatype='integer' name='[SD2013]' role='dimension' type='ordinal' />
+      <column-instance column='[Calculation_493355269955846150]' derivation='None' name='[none:Calculation_493355269955846150:nk]' pivot='key' type='nominal' />
+      <column-instance column='[HD2013]' derivation='None' name='[none:HD2013:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[SD2013]' derivation='None' name='[none:SD2013:ok]' pivot='key' type='ordinal' />
+    </datasource-dependencies>
+    <datasource-relationship source='federated.1mpmemv1p5fhne1dg2xk911ksvab' target='federated.16nqjia0k8k965180r75g0osydpw'>
+      <column-mapping>
+        <map key='[federated.1mpmemv1p5fhne1dg2xk911ksvab].[none:Calculation_493355269955846150:nk]' value='[federated.16nqjia0k8k965180r75g0osydpw].[none:office:nk]' />
+        <map key='[federated.1mpmemv1p5fhne1dg2xk911ksvab].[none:HD2013:ok]' value='[federated.16nqjia0k8k965180r75g0osydpw].[none:Calculation_493355269954674691:ok]' />
+        <map key='[federated.1mpmemv1p5fhne1dg2xk911ksvab].[none:SD2013:ok]' value='[federated.16nqjia0k8k965180r75g0osydpw].[none:House District (copy)_493355269954748420:ok]' />
+      </column-mapping>
+    </datasource-relationship>
+  </datasource-relationships>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Bar to map highlight' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Share of female winners in Maine&apos;s 2020 primary races' type='sheet' worksheet='female primary winner share by party' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Cand Party' />
+        <param name='target' value='Share of female winners in Maine&apos;s 2020 primary races' />
+      </command>
+    </action>
+    <action caption='Chamber filter' name='[Action2]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Share of female winners in Maine&apos;s 2020 primary races' type='sheet' worksheet='districts with female primary winners' />
+      <link caption='Chamber filter' delimiter=',' escape='\' expression='tsl:Share%20of%20female%20winners%20in%20Maine%27s%202020%20primary%20races?%5Bfederated.16nqjia0k8k965180r75g0osydpw%5D.%5Boffice%5D~s0=&lt;[Calculation_493355269955846150]~na&gt;' include-null='true' multi-select='true' url-escape='true' />
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='districts with female primary winners' />
+        <param name='target' value='Share of female winners in Maine&apos;s 2020 primary races' />
+      </command>
+    </action>
+    <datasources>
+      <datasource caption='house-and-senate (maine-state-campaign-finance-2020)' name='federated.16nqjia0k8k965180r75g0osydpw' />
+      <datasource caption='house-and-senate-fix' name='federated.1mpmemv1p5fhne1dg2xk911ksvab' />
+    </datasources>
+    <datasource-dependencies datasource='federated.16nqjia0k8k965180r75g0osydpw'>
+      <column caption='Office' datatype='string' name='[office]' role='dimension' type='nominal' />
+    </datasource-dependencies>
+    <datasource-dependencies datasource='federated.1mpmemv1p5fhne1dg2xk911ksvab'>
+      <column caption='Office' datatype='string' name='[Calculation_493355269955846150]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='CASE [Chamber]&#10;WHEN &apos;House&apos; THEN &apos;Representative&apos;&#10;WHEN &apos;Senate&apos; THEN &apos;Senator&apos;&#10;END' />
+      </column>
+    </datasource-dependencies>
+  </actions>
+  <worksheets>
+    <worksheet name='districts with female primary winners'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='9'>Click</run>
+            <run fontalignment='1' fontsize='9'> a district or title to filter the bar chart above by Senate and House</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run>SOURCE: Maine Ethics Commission, candidate websites (for candidates who did not report a gender on their campaign registration forms).</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='house-and-senate-fix' name='federated.1mpmemv1p5fhne1dg2xk911ksvab' />
+            <datasource caption='house-and-senate (maine-state-campaign-finance-2020)' name='federated.16nqjia0k8k965180r75g0osydpw' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.16nqjia0k8k965180r75g0osydpw'>
+            <column caption='Gender Grouper' datatype='string' name='[Calculation_493355269945221120]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IFNULL([gender],[candidate_name])' />
+            </column>
+            <column caption='Gender' datatype='string' name='[Calculation_493355269948358657]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Gender (Remainder Grouped Manually)]' />
+            </column>
+            <column caption='Female District Party' datatype='string' name='[Calculation_493355269956943879]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='IF MIN([cand_party]) != MAX([cand_party]) THEN &apos;Multiple parties&apos;&#10;ELSE ATTR([cand_party]) END' />
+            </column>
+            <column datatype='string' name='[Gender (Remainder Grouped Manually)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Calculation_493355269945221120]' default='&quot;Other&quot;' new-bin='true'>
+                <bin default-name='false' value='&quot;Female&quot;'>
+                  <value>&quot;Abercrombie, Susan M&quot;</value>
+                  <value>&quot;Austin, Susan M&quot;</value>
+                  <value>&quot;Bernard, Susan&quot;</value>
+                  <value>&quot;Blume, Lydia&quot;</value>
+                  <value>&quot;Brenner, Stacy&quot;</value>
+                  <value>&quot;Collamore, Amanda Noelle&quot;</value>
+                  <value>&quot;Cushing, Andre E III&quot;</value>
+                  <value>&quot;Daughtry, Matthea E&quot;</value>
+                  <value>&quot;Dolloff, Josanne&quot;</value>
+                  <value>&quot;Female&quot;</value>
+                  <value>&quot;Fleming, Anne Chalmers&quot;</value>
+                  <value>&quot;Fogg, Patricia A&quot;</value>
+                  <value>&quot;Gautier, Patricia M&quot;</value>
+                  <value>&quot;Graves, Carole Stover&quot;</value>
+                  <value>&quot;Hallett, Elaine D&quot;</value>
+                  <value>&quot;Hatch, Victoria&quot;</value>
+                  <value>&quot;Hawke, Stephanie&quot;</value>
+                  <value>&quot;Javner, Kathy Irene&quot;</value>
+                  <value>&quot;Jordan, Heidi P&quot;</value>
+                  <value>&quot;Kaplan, Michelle R&quot;</value>
+                  <value>&quot;Kelly, Terri D&quot;</value>
+                  <value>&quot;Leparulo, Karry&quot;</value>
+                  <value>&quot;Libby, Laurel D&quot;</value>
+                  <value>&quot;Luce, Molly P&quot;</value>
+                  <value>&quot;MacDonald, Sharri K&quot;</value>
+                  <value>&quot;McCreight, Joyce E&quot;</value>
+                  <value>&quot;Menair, Marion Suzanne&quot;</value>
+                  <value>&quot;Morales, Victoria&quot;</value>
+                  <value>&quot;Peavey, Sharon W&quot;</value>
+                  <value>&quot;Perreault, Corinne A&quot;</value>
+                  <value>&quot;Robinson, Kimberley F&quot;</value>
+                  <value>&quot;Rosenblatt, Annalee Z&quot;</value>
+                  <value>&quot;Soma-Hernandez, Cynthia J&quot;</value>
+                  <value>&quot;Terry, Maureen Fitzgerald&quot;</value>
+                  <value>&quot;Trescot, Mary R&quot;</value>
+                  <value>&quot;Turner, April Dawn&quot;</value>
+                  <value>&quot;Wallace, Lowell B&quot;</value>
+                  <value>&quot;Wiswell, Susan Jane&quot;</value>
+                  <value>&quot;Witonis, Susan Eileen&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Male&quot;'>
+                  <value>&quot;Baldacci, Peter K&quot;</value>
+                  <value>&quot;Blasi, Antonio&quot;</value>
+                  <value>&quot;CABOT, BENJAMIN K&quot;</value>
+                  <value>&quot;Clark, Richard&quot;</value>
+                  <value>&quot;Clark, William F&quot;</value>
+                  <value>&quot;Cohen, Edward&quot;</value>
+                  <value>&quot;Cole, Scott G&quot;</value>
+                  <value>&quot;Costain, Danny E&quot;</value>
+                  <value>&quot;Cote, Michael Joseph&quot;</value>
+                  <value>&quot;Crockett, Patsy Garside&quot;</value>
+                  <value>&quot;Davis, Stephen Warner&quot;</value>
+                  <value>&quot;Delli Paoli, Nicolas&quot;</value>
+                  <value>&quot;Densmore, Roger E III&quot;</value>
+                  <value>&quot;Despres, Mark&quot;</value>
+                  <value>&quot;Dunleavy, James P&quot;</value>
+                  <value>&quot;Erkkinen, Wayne E&quot;</value>
+                  <value>&quot;Faulkingham, William R&quot;</value>
+                  <value>&quot;Foss, Richard Andrew Jr&quot;</value>
+                  <value>&quot;Foster, Gregory E&quot;</value>
+                  <value>&quot;Fournier, Norman L&quot;</value>
+                  <value>&quot;Fowler, Fenwick L&quot;</value>
+                  <value>&quot;Galemmo, Charles&quot;</value>
+                  <value>&quot;Gifford, Jeffery A&quot;</value>
+                  <value>&quot;Gombar, William J&quot;</value>
+                  <value>&quot;Goodwin, Timothy H&quot;</value>
+                  <value>&quot;Grover, Mark D&quot;</value>
+                  <value>&quot;Hastings, Edward H IV&quot;</value>
+                  <value>&quot;Hiatt, Joshua Timothy&quot;</value>
+                  <value>&quot;Jabar, George M&quot;</value>
+                  <value>&quot;Jandreau, Nelson&quot;</value>
+                  <value>&quot;Krolick, Clifford&quot;</value>
+                  <value>&quot;Lawler, Michael J&quot;</value>
+                  <value>&quot;Lemont, Kenneth F&quot;</value>
+                  <value>&quot;Lippincott, William J&quot;</value>
+                  <value>&quot;Lyford, Peter A&quot;</value>
+                  <value>&quot;Male&quot;</value>
+                  <value>&quot;McKinney, Michael A&quot;</value>
+                  <value>&quot;Merry, Joel A&quot;</value>
+                  <value>&quot;Meserve, Hamilton W&quot;</value>
+                  <value>&quot;Michael, John M&quot;</value>
+                  <value>&quot;Mullins, Michael Joseph&quot;</value>
+                  <value>&quot;Munson, Thomas W&quot;</value>
+                  <value>&quot;Nutting, John M&quot;</value>
+                  <value>&quot;Parent, Richard L Jr&quot;</value>
+                  <value>&quot;Perkins, Michael Dana&quot;</value>
+                  <value>&quot;Perry, Joseph C Sr&quot;</value>
+                  <value>&quot;Pietroski, Joseph J&quot;</value>
+                  <value>&quot;Pray, Charles P&quot;</value>
+                  <value>&quot;Rielly, Morgan&quot;</value>
+                  <value>&quot;Rockwell, Randy&quot;</value>
+                  <value>&quot;Sayers, Michael Joseph&quot;</value>
+                  <value>&quot;Seavey, H Stedman&quot;</value>
+                  <value>&quot;Sezak, Robert&quot;</value>
+                  <value>&quot;Sharpe, Braden&quot;</value>
+                  <value>&quot;Shorey, William D&quot;</value>
+                  <value>&quot;Stoddard, Jacob T&quot;</value>
+                  <value>&quot;Sylvester, Michael A&quot;</value>
+                  <value>&quot;Taylor, Scott B&quot;</value>
+                  <value>&quot;Todd, Donovan E III&quot;</value>
+                  <value>&quot;Torbett, Andrew R&quot;</value>
+                  <value>&quot;Underwood, Joseph&quot;</value>
+                  <value>&quot;Underwood, Paul J&quot;</value>
+                  <value>&quot;Washburn, Robert&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column-instance column='[candidate_name]' derivation='Attribute' name='[attr:candidate_name:nk]' pivot='key' type='nominal' />
+            <column caption='Cand Party' datatype='string' name='[cand_party]' role='dimension' type='nominal' />
+            <column caption='Candidate Name' datatype='string' name='[candidate_name]' role='dimension' type='nominal' />
+            <column caption='Gender (me-ethics)' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_493355269948358657]' derivation='None' name='[none:Calculation_493355269948358657:nk]' pivot='key' type='nominal' />
+            <column-instance column='[cand_party]' derivation='None' name='[none:cand_party:nk]' pivot='key' type='nominal' />
+            <column-instance column='[primary_result]' derivation='None' name='[none:primary_result:nk]' pivot='key' type='nominal' />
+            <column caption='Office' datatype='string' name='[office]' role='dimension' type='nominal' />
+            <column caption='Primary Result' datatype='string' name='[primary_result]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_493355269956943879]' derivation='User' name='[usr:Calculation_493355269956943879:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1mpmemv1p5fhne1dg2xk911ksvab'>
+            <column aggregation='Sum' caption='District' datatype='integer' name='[Calculation_493355269955330053]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='IFNULL([HD2013],[SD2013])' />
+            </column>
+            <column caption='Office' datatype='string' name='[Calculation_493355269955846150]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [Chamber]&#10;WHEN &apos;House&apos; THEN &apos;Representative&apos;&#10;WHEN &apos;Senate&apos; THEN &apos;Senator&apos;&#10;END' />
+            </column>
+            <column datatype='string' name='[Chamber]' role='dimension' type='nominal' />
+            <column datatype='spatial' name='[Geometry]' role='measure' type='nominal' />
+            <column aggregation='Sum' caption='Hd2013' datatype='integer' name='[HD2013]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Sd2013' datatype='integer' name='[SD2013]' role='dimension' type='ordinal' />
+            <column-instance column='[Geometry]' derivation='Collect' name='[clct:Geometry:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_493355269955330053]' derivation='None' name='[none:Calculation_493355269955330053:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_493355269955846150]' derivation='None' name='[none:Calculation_493355269955846150:nk]' pivot='key' type='nominal' />
+            <column-instance column='[HD2013]' derivation='None' name='[none:HD2013:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[SD2013]' derivation='None' name='[none:SD2013:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16nqjia0k8k965180r75g0osydpw].[none:Calculation_493355269948358657:nk]'>
+            <groupfilter function='member' level='[none:Calculation_493355269948358657:nk]' member='&quot;Female&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.16nqjia0k8k965180r75g0osydpw].[none:primary_result:nk]'>
+            <groupfilter function='member' level='[none:primary_result:nk]' member='&quot;Won&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.16nqjia0k8k965180r75g0osydpw].[none:Calculation_493355269948358657:nk]</column>
+            <column>[federated.16nqjia0k8k965180r75g0osydpw].[none:primary_result:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.1mpmemv1p5fhne1dg2xk911ksvab].[none:Calculation_493355269955846150:nk]' value='33' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.1mpmemv1p5fhne1dg2xk911ksvab].[none:Calculation_493355269955846150:nk]' value='14' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.16nqjia0k8k965180r75g0osydpw].[usr:Calculation_493355269956943879:nk]' value='Political party with female primary winner'>
+              <formatted-text>
+                <run>Political party with female primary winner</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='background' value='false' />
+            <format attr='enabled' id='barrier_line-land-polygon' value='false' />
+            <format attr='enabled' id='barrier_line-land-line' value='false' />
+            <format attr='enabled' id='national_park' value='false' />
+            <format attr='enabled' id='pitch' value='false' />
+            <format attr='enabled' id='industrial' value='false' />
+            <format attr='enabled' id='built-up-area' value='false' />
+            <format attr='enabled' id='water' value='false' />
+            <format attr='enabled' id='waterway-river-canal' value='false' />
+            <format attr='enabled' id='aeroway-polygon' value='false' />
+            <format attr='enabled' id='aeroway-runway' value='false' />
+            <format attr='enabled' id='aeroway-taxiway' value='false' />
+            <format attr='enabled' id='parks' value='false' />
+            <format attr='enabled' id='landcover_wood' value='false' />
+            <format attr='enabled' id='landcover_scrub' value='false' />
+            <format attr='enabled' id='landcover_grass' value='false' />
+            <format attr='enabled' id='landcover_crop' value='false' />
+            <format attr='enabled' id='Coastline' value='true' />
+            <format attr='enabled' id='admin-1-label-9th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-8th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-7th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-6th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-5th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-4th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-3rd-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-2nd-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-1st-tier' value='false' />
+            <format attr='enabled' id='us-admin-1-label-abbr-3rd-tier' value='false' />
+            <format attr='enabled' id='us-admin-1-label-abbr-2nd-tier' value='false' />
+            <format attr='enabled' id='us-admin-1-label-abbr-1st-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-5th-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-4th-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-3rd-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-2nd-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-1st-tier' value='false' />
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.34999999403953552' />
+            <format attr='map-style' value='light' />
+            <format attr='wrap' value='false' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.16nqjia0k8k965180r75g0osydpw].[usr:Calculation_493355269956943879:nk]' />
+              <lod column='[federated.1mpmemv1p5fhne1dg2xk911ksvab].[clct:Geometry:nk]' />
+              <lod column='[federated.1mpmemv1p5fhne1dg2xk911ksvab].[none:HD2013:ok]' />
+              <lod column='[federated.1mpmemv1p5fhne1dg2xk911ksvab].[none:SD2013:ok]' />
+              <lod column='[federated.1mpmemv1p5fhne1dg2xk911ksvab].[none:Calculation_493355269955330053:ok]' />
+              <lod column='[federated.16nqjia0k8k965180r75g0osydpw].[none:cand_party:nk]' />
+              <tooltip column='[federated.16nqjia0k8k965180r75g0osydpw].[attr:candidate_name:nk]' />
+              <geometry column='[federated.1mpmemv1p5fhne1dg2xk911ksvab].[clct:Geometry:nk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run bold='true' fontsize='12'><![CDATA[<[federated.1mpmemv1p5fhne1dg2xk911ksvab].[none:Calculation_493355269955846150:nk]> - <[federated.1mpmemv1p5fhne1dg2xk911ksvab].[none:Calculation_493355269955330053:ok]>]]></run>
+                <run>
+
+Candidate and campaign cash raised or received
+</run>
+                <run italic='true'>A • before the candidate&apos;s name = incumbent</run>
+                <run><![CDATA[
+
+<Sheet name="female candidate tooltip" maxwidth="400" maxheight="300" filter="<All Fields>">
+]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='180' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1mpmemv1p5fhne1dg2xk911ksvab].[Latitude (generated)]</rows>
+        <cols>([federated.1mpmemv1p5fhne1dg2xk911ksvab].[none:Calculation_493355269955846150:nk] * [federated.1mpmemv1p5fhne1dg2xk911ksvab].[Longitude (generated)])</cols>
+        <join-lod-include-overrides>
+          <column>[federated.16nqjia0k8k965180r75g0osydpw].[office]</column>
+        </join-lod-include-overrides>
+        <tooltip-style tooltip-mode='sticky' />
+      </table>
+      <simple-id uuid='{BEC929CF-05FE-47B1-8123-98EFD762C4BF}' />
+    </worksheet>
+    <worksheet name='female candidate tooltip'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='house-and-senate (maine-state-campaign-finance-2020)' name='federated.16nqjia0k8k965180r75g0osydpw' />
+            <datasource caption='house-and-senate-fix' name='federated.1mpmemv1p5fhne1dg2xk911ksvab' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16nqjia0k8k965180r75g0osydpw'>
+            <column caption='Gender Grouper' datatype='string' name='[Calculation_493355269945221120]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IFNULL([gender],[candidate_name])' />
+            </column>
+            <column caption='Gender' datatype='string' name='[Calculation_493355269948358657]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Gender (Remainder Grouped Manually)]' />
+            </column>
+            <column caption='Support' datatype='real' default-format='c&quot;$&quot;#,##0;(&quot;$&quot;#,##0)' name='[Calculation_493355269963075592]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [support_oppose_indicator] = &apos;Support&apos; THEN [contribution_receipt_amount] END' />
+            </column>
+            <column caption='Short Party' datatype='string' name='[Calculation_493355269964009482]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='LEFT([cand_party],1)' />
+            </column>
+            <column caption='Incumbent marker' datatype='string' name='[Calculation_493355269973774352]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [seat_status] = &apos;INCUMBENT&apos; THEN &apos;•&apos; END' />
+            </column>
+            <column caption='Name + incumbency + party' datatype='string' name='[Calculation_493355269973905425]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ISNULL([Calculation_493355269973774352]) THEN [candidate_name] + &apos; (&apos; + [Calculation_493355269964009482] + &apos;)&apos;&#10;ELSE [Calculation_493355269973774352]  + &apos; &apos; +  [candidate_name] + &apos; (&apos; + [Calculation_493355269964009482] + &apos;)&apos; END' />
+            </column>
+            <column datatype='string' name='[Gender (Remainder Grouped Manually)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Calculation_493355269945221120]' default='&quot;Other&quot;' new-bin='true'>
+                <bin default-name='false' value='&quot;Female&quot;'>
+                  <value>&quot;Abercrombie, Susan M&quot;</value>
+                  <value>&quot;Austin, Susan M&quot;</value>
+                  <value>&quot;Bernard, Susan&quot;</value>
+                  <value>&quot;Blume, Lydia&quot;</value>
+                  <value>&quot;Brenner, Stacy&quot;</value>
+                  <value>&quot;Collamore, Amanda Noelle&quot;</value>
+                  <value>&quot;Cushing, Andre E III&quot;</value>
+                  <value>&quot;Daughtry, Matthea E&quot;</value>
+                  <value>&quot;Dolloff, Josanne&quot;</value>
+                  <value>&quot;Female&quot;</value>
+                  <value>&quot;Fleming, Anne Chalmers&quot;</value>
+                  <value>&quot;Fogg, Patricia A&quot;</value>
+                  <value>&quot;Gautier, Patricia M&quot;</value>
+                  <value>&quot;Graves, Carole Stover&quot;</value>
+                  <value>&quot;Hallett, Elaine D&quot;</value>
+                  <value>&quot;Hatch, Victoria&quot;</value>
+                  <value>&quot;Hawke, Stephanie&quot;</value>
+                  <value>&quot;Javner, Kathy Irene&quot;</value>
+                  <value>&quot;Jordan, Heidi P&quot;</value>
+                  <value>&quot;Kaplan, Michelle R&quot;</value>
+                  <value>&quot;Kelly, Terri D&quot;</value>
+                  <value>&quot;Leparulo, Karry&quot;</value>
+                  <value>&quot;Libby, Laurel D&quot;</value>
+                  <value>&quot;Luce, Molly P&quot;</value>
+                  <value>&quot;MacDonald, Sharri K&quot;</value>
+                  <value>&quot;McCreight, Joyce E&quot;</value>
+                  <value>&quot;Menair, Marion Suzanne&quot;</value>
+                  <value>&quot;Morales, Victoria&quot;</value>
+                  <value>&quot;Peavey, Sharon W&quot;</value>
+                  <value>&quot;Perreault, Corinne A&quot;</value>
+                  <value>&quot;Robinson, Kimberley F&quot;</value>
+                  <value>&quot;Rosenblatt, Annalee Z&quot;</value>
+                  <value>&quot;Soma-Hernandez, Cynthia J&quot;</value>
+                  <value>&quot;Terry, Maureen Fitzgerald&quot;</value>
+                  <value>&quot;Trescot, Mary R&quot;</value>
+                  <value>&quot;Turner, April Dawn&quot;</value>
+                  <value>&quot;Wallace, Lowell B&quot;</value>
+                  <value>&quot;Wiswell, Susan Jane&quot;</value>
+                  <value>&quot;Witonis, Susan Eileen&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Male&quot;'>
+                  <value>&quot;Baldacci, Peter K&quot;</value>
+                  <value>&quot;Blasi, Antonio&quot;</value>
+                  <value>&quot;CABOT, BENJAMIN K&quot;</value>
+                  <value>&quot;Clark, Richard&quot;</value>
+                  <value>&quot;Clark, William F&quot;</value>
+                  <value>&quot;Cohen, Edward&quot;</value>
+                  <value>&quot;Cole, Scott G&quot;</value>
+                  <value>&quot;Costain, Danny E&quot;</value>
+                  <value>&quot;Cote, Michael Joseph&quot;</value>
+                  <value>&quot;Crockett, Patsy Garside&quot;</value>
+                  <value>&quot;Davis, Stephen Warner&quot;</value>
+                  <value>&quot;Delli Paoli, Nicolas&quot;</value>
+                  <value>&quot;Densmore, Roger E III&quot;</value>
+                  <value>&quot;Despres, Mark&quot;</value>
+                  <value>&quot;Dunleavy, James P&quot;</value>
+                  <value>&quot;Erkkinen, Wayne E&quot;</value>
+                  <value>&quot;Faulkingham, William R&quot;</value>
+                  <value>&quot;Foss, Richard Andrew Jr&quot;</value>
+                  <value>&quot;Foster, Gregory E&quot;</value>
+                  <value>&quot;Fournier, Norman L&quot;</value>
+                  <value>&quot;Fowler, Fenwick L&quot;</value>
+                  <value>&quot;Galemmo, Charles&quot;</value>
+                  <value>&quot;Gifford, Jeffery A&quot;</value>
+                  <value>&quot;Gombar, William J&quot;</value>
+                  <value>&quot;Goodwin, Timothy H&quot;</value>
+                  <value>&quot;Grover, Mark D&quot;</value>
+                  <value>&quot;Hastings, Edward H IV&quot;</value>
+                  <value>&quot;Hiatt, Joshua Timothy&quot;</value>
+                  <value>&quot;Jabar, George M&quot;</value>
+                  <value>&quot;Jandreau, Nelson&quot;</value>
+                  <value>&quot;Krolick, Clifford&quot;</value>
+                  <value>&quot;Lawler, Michael J&quot;</value>
+                  <value>&quot;Lemont, Kenneth F&quot;</value>
+                  <value>&quot;Lippincott, William J&quot;</value>
+                  <value>&quot;Lyford, Peter A&quot;</value>
+                  <value>&quot;Male&quot;</value>
+                  <value>&quot;McKinney, Michael A&quot;</value>
+                  <value>&quot;Merry, Joel A&quot;</value>
+                  <value>&quot;Meserve, Hamilton W&quot;</value>
+                  <value>&quot;Michael, John M&quot;</value>
+                  <value>&quot;Mullins, Michael Joseph&quot;</value>
+                  <value>&quot;Munson, Thomas W&quot;</value>
+                  <value>&quot;Nutting, John M&quot;</value>
+                  <value>&quot;Parent, Richard L Jr&quot;</value>
+                  <value>&quot;Perkins, Michael Dana&quot;</value>
+                  <value>&quot;Perry, Joseph C Sr&quot;</value>
+                  <value>&quot;Pietroski, Joseph J&quot;</value>
+                  <value>&quot;Pray, Charles P&quot;</value>
+                  <value>&quot;Rielly, Morgan&quot;</value>
+                  <value>&quot;Rockwell, Randy&quot;</value>
+                  <value>&quot;Sayers, Michael Joseph&quot;</value>
+                  <value>&quot;Seavey, H Stedman&quot;</value>
+                  <value>&quot;Sezak, Robert&quot;</value>
+                  <value>&quot;Sharpe, Braden&quot;</value>
+                  <value>&quot;Shorey, William D&quot;</value>
+                  <value>&quot;Stoddard, Jacob T&quot;</value>
+                  <value>&quot;Sylvester, Michael A&quot;</value>
+                  <value>&quot;Taylor, Scott B&quot;</value>
+                  <value>&quot;Todd, Donovan E III&quot;</value>
+                  <value>&quot;Torbett, Andrew R&quot;</value>
+                  <value>&quot;Underwood, Joseph&quot;</value>
+                  <value>&quot;Underwood, Paul J&quot;</value>
+                  <value>&quot;Washburn, Robert&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column caption='Cand Party' datatype='string' name='[cand_party]' role='dimension' type='nominal' />
+            <column caption='Candidate Name' datatype='string' name='[candidate_name]' role='dimension' type='nominal' />
+            <column caption='Contribution Receipt Amount' datatype='real' name='[contribution_receipt_amount]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='District' datatype='integer' name='[district]' role='dimension' type='ordinal' />
+            <column caption='Financetype' datatype='string' name='[financetype]' role='dimension' type='nominal' />
+            <column caption='Gender (me-ethics)' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_493355269948358657]' derivation='None' name='[none:Calculation_493355269948358657:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_493355269973905425]' derivation='None' name='[none:Calculation_493355269973905425:nk]' pivot='key' type='nominal' />
+            <column-instance column='[cand_party]' derivation='None' name='[none:cand_party:nk]' pivot='key' type='nominal' />
+            <column-instance column='[financetype]' derivation='None' name='[none:financetype:nk]' pivot='key' type='nominal' />
+            <column-instance column='[primary_result]' derivation='None' name='[none:primary_result:nk]' pivot='key' type='nominal' />
+            <column caption='Office' datatype='string' name='[office]' role='dimension' type='nominal' />
+            <column caption='Primary Result' datatype='string' name='[primary_result]' role='dimension' type='nominal' />
+            <column caption='Seat Status' datatype='string' name='[seat_status]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_493355269963075592]' derivation='Sum' name='[sum:Calculation_493355269963075592:qk]' pivot='key' type='quantitative' />
+            <column caption='Support Oppose Indicator' datatype='string' name='[support_oppose_indicator]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1mpmemv1p5fhne1dg2xk911ksvab'>
+            <column caption='Office' datatype='string' name='[Calculation_493355269955846150]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [Chamber]&#10;WHEN &apos;House&apos; THEN &apos;Representative&apos;&#10;WHEN &apos;Senate&apos; THEN &apos;Senator&apos;&#10;END' />
+            </column>
+            <column datatype='string' name='[Chamber]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Hd2013' datatype='integer' name='[HD2013]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Sd2013' datatype='integer' name='[SD2013]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16nqjia0k8k965180r75g0osydpw].[Tooltip (District,Office)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action - female candidate tooltip]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[district]' />
+              <groupfilter function='level-members' level='[office]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.16nqjia0k8k965180r75g0osydpw].[none:Calculation_493355269948358657:nk]'>
+            <groupfilter function='member' level='[none:Calculation_493355269948358657:nk]' member='&quot;Female&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.16nqjia0k8k965180r75g0osydpw].[none:primary_result:nk]'>
+            <groupfilter function='member' level='[none:primary_result:nk]' member='&quot;Won&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.16nqjia0k8k965180r75g0osydpw].[none:Calculation_493355269948358657:nk]</column>
+            <column>[federated.16nqjia0k8k965180r75g0osydpw].[none:primary_result:nk]</column>
+            <column>[federated.16nqjia0k8k965180r75g0osydpw].[Tooltip (District,Office)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.16nqjia0k8k965180r75g0osydpw].[sum:Calculation_493355269963075592:qk]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.16nqjia0k8k965180r75g0osydpw].[none:cand_party:nk]' value='72' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='div-level' scope='rows' value='0' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.16nqjia0k8k965180r75g0osydpw].[none:cand_party:nk]' />
+              <text column='[federated.16nqjia0k8k965180r75g0osydpw].[sum:Calculation_493355269963075592:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='left' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-transparency' value='78' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.16nqjia0k8k965180r75g0osydpw].[none:Calculation_493355269973905425:nk] / [federated.16nqjia0k8k965180r75g0osydpw].[none:financetype:nk])</rows>
+        <cols>[federated.16nqjia0k8k965180r75g0osydpw].[sum:Calculation_493355269963075592:qk]</cols>
+        <join-lod-include-overrides>
+          <column>[federated.1mpmemv1p5fhne1dg2xk911ksvab].[Calculation_493355269955846150]</column>
+          <column>[federated.1mpmemv1p5fhne1dg2xk911ksvab].[HD2013]</column>
+          <column>[federated.1mpmemv1p5fhne1dg2xk911ksvab].[SD2013]</column>
+        </join-lod-include-overrides>
+      </table>
+      <simple-id uuid='{1F085092-7FD8-4F4D-BE5A-1978D758BA8C}' />
+    </worksheet>
+    <worksheet name='female primary winner share by party'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='10'>Legislative chamber: </run>
+            <run bold='true' fontsize='10'><![CDATA[<[federated.16nqjia0k8k965180r75g0osydpw].[office]>]]></run>
+            <run>Æ&#10;</run>
+            <run fontsize='10' italic='true'>Female share of all candidates who ran in primaries shown in gray</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='house-and-senate (maine-state-campaign-finance-2020)' name='federated.16nqjia0k8k965180r75g0osydpw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16nqjia0k8k965180r75g0osydpw'>
+            <column caption='Gender Grouper' datatype='string' name='[Calculation_493355269945221120]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IFNULL([gender],[candidate_name])' />
+            </column>
+            <column caption='Gender' datatype='string' name='[Calculation_493355269948358657]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Gender (Remainder Grouped Manually)]' />
+            </column>
+            <column caption='candidate/candidates' datatype='string' name='[Calculation_493355269953265666]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='IF COUNTD([candidate_name])&gt;1 THEN &apos;candidates&apos; ELSE &apos;candidate&apos; END' />
+            </column>
+            <column caption='Winning Candidates' datatype='string' name='[Calculation_493355269965168651]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [primary_result] = &apos;Won&apos; THEN [candidate_name] END' />
+            </column>
+            <column caption='Candidates with Primaries' datatype='integer' name='[Calculation_493355269977370642]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD(&#10;    IF NOT ISNULL([primary_result]) AND [primary_result] != &apos;None&apos;&#10;    THEN [candidate_name]&#10;END)' />
+            </column>
+            <column datatype='string' name='[Gender (Remainder Grouped Manually)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Calculation_493355269945221120]' default='&quot;Other&quot;' new-bin='true'>
+                <bin default-name='false' value='&quot;Female&quot;'>
+                  <value>&quot;Abercrombie, Susan M&quot;</value>
+                  <value>&quot;Austin, Susan M&quot;</value>
+                  <value>&quot;Bernard, Susan&quot;</value>
+                  <value>&quot;Blume, Lydia&quot;</value>
+                  <value>&quot;Brenner, Stacy&quot;</value>
+                  <value>&quot;Collamore, Amanda Noelle&quot;</value>
+                  <value>&quot;Cushing, Andre E III&quot;</value>
+                  <value>&quot;Daughtry, Matthea E&quot;</value>
+                  <value>&quot;Dolloff, Josanne&quot;</value>
+                  <value>&quot;Female&quot;</value>
+                  <value>&quot;Fleming, Anne Chalmers&quot;</value>
+                  <value>&quot;Fogg, Patricia A&quot;</value>
+                  <value>&quot;Gautier, Patricia M&quot;</value>
+                  <value>&quot;Graves, Carole Stover&quot;</value>
+                  <value>&quot;Hallett, Elaine D&quot;</value>
+                  <value>&quot;Hatch, Victoria&quot;</value>
+                  <value>&quot;Hawke, Stephanie&quot;</value>
+                  <value>&quot;Javner, Kathy Irene&quot;</value>
+                  <value>&quot;Jordan, Heidi P&quot;</value>
+                  <value>&quot;Kaplan, Michelle R&quot;</value>
+                  <value>&quot;Kelly, Terri D&quot;</value>
+                  <value>&quot;Leparulo, Karry&quot;</value>
+                  <value>&quot;Libby, Laurel D&quot;</value>
+                  <value>&quot;Luce, Molly P&quot;</value>
+                  <value>&quot;MacDonald, Sharri K&quot;</value>
+                  <value>&quot;McCreight, Joyce E&quot;</value>
+                  <value>&quot;Menair, Marion Suzanne&quot;</value>
+                  <value>&quot;Morales, Victoria&quot;</value>
+                  <value>&quot;Peavey, Sharon W&quot;</value>
+                  <value>&quot;Perreault, Corinne A&quot;</value>
+                  <value>&quot;Robinson, Kimberley F&quot;</value>
+                  <value>&quot;Rosenblatt, Annalee Z&quot;</value>
+                  <value>&quot;Soma-Hernandez, Cynthia J&quot;</value>
+                  <value>&quot;Terry, Maureen Fitzgerald&quot;</value>
+                  <value>&quot;Trescot, Mary R&quot;</value>
+                  <value>&quot;Turner, April Dawn&quot;</value>
+                  <value>&quot;Wallace, Lowell B&quot;</value>
+                  <value>&quot;Wiswell, Susan Jane&quot;</value>
+                  <value>&quot;Witonis, Susan Eileen&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Male&quot;'>
+                  <value>&quot;Baldacci, Peter K&quot;</value>
+                  <value>&quot;Blasi, Antonio&quot;</value>
+                  <value>&quot;CABOT, BENJAMIN K&quot;</value>
+                  <value>&quot;Clark, Richard&quot;</value>
+                  <value>&quot;Clark, William F&quot;</value>
+                  <value>&quot;Cohen, Edward&quot;</value>
+                  <value>&quot;Cole, Scott G&quot;</value>
+                  <value>&quot;Costain, Danny E&quot;</value>
+                  <value>&quot;Cote, Michael Joseph&quot;</value>
+                  <value>&quot;Crockett, Patsy Garside&quot;</value>
+                  <value>&quot;Davis, Stephen Warner&quot;</value>
+                  <value>&quot;Delli Paoli, Nicolas&quot;</value>
+                  <value>&quot;Densmore, Roger E III&quot;</value>
+                  <value>&quot;Despres, Mark&quot;</value>
+                  <value>&quot;Dunleavy, James P&quot;</value>
+                  <value>&quot;Erkkinen, Wayne E&quot;</value>
+                  <value>&quot;Faulkingham, William R&quot;</value>
+                  <value>&quot;Foss, Richard Andrew Jr&quot;</value>
+                  <value>&quot;Foster, Gregory E&quot;</value>
+                  <value>&quot;Fournier, Norman L&quot;</value>
+                  <value>&quot;Fowler, Fenwick L&quot;</value>
+                  <value>&quot;Galemmo, Charles&quot;</value>
+                  <value>&quot;Gifford, Jeffery A&quot;</value>
+                  <value>&quot;Gombar, William J&quot;</value>
+                  <value>&quot;Goodwin, Timothy H&quot;</value>
+                  <value>&quot;Grover, Mark D&quot;</value>
+                  <value>&quot;Hastings, Edward H IV&quot;</value>
+                  <value>&quot;Hiatt, Joshua Timothy&quot;</value>
+                  <value>&quot;Jabar, George M&quot;</value>
+                  <value>&quot;Jandreau, Nelson&quot;</value>
+                  <value>&quot;Krolick, Clifford&quot;</value>
+                  <value>&quot;Lawler, Michael J&quot;</value>
+                  <value>&quot;Lemont, Kenneth F&quot;</value>
+                  <value>&quot;Lippincott, William J&quot;</value>
+                  <value>&quot;Lyford, Peter A&quot;</value>
+                  <value>&quot;Male&quot;</value>
+                  <value>&quot;McKinney, Michael A&quot;</value>
+                  <value>&quot;Merry, Joel A&quot;</value>
+                  <value>&quot;Meserve, Hamilton W&quot;</value>
+                  <value>&quot;Michael, John M&quot;</value>
+                  <value>&quot;Mullins, Michael Joseph&quot;</value>
+                  <value>&quot;Munson, Thomas W&quot;</value>
+                  <value>&quot;Nutting, John M&quot;</value>
+                  <value>&quot;Parent, Richard L Jr&quot;</value>
+                  <value>&quot;Perkins, Michael Dana&quot;</value>
+                  <value>&quot;Perry, Joseph C Sr&quot;</value>
+                  <value>&quot;Pietroski, Joseph J&quot;</value>
+                  <value>&quot;Pray, Charles P&quot;</value>
+                  <value>&quot;Rielly, Morgan&quot;</value>
+                  <value>&quot;Rockwell, Randy&quot;</value>
+                  <value>&quot;Sayers, Michael Joseph&quot;</value>
+                  <value>&quot;Seavey, H Stedman&quot;</value>
+                  <value>&quot;Sezak, Robert&quot;</value>
+                  <value>&quot;Sharpe, Braden&quot;</value>
+                  <value>&quot;Shorey, William D&quot;</value>
+                  <value>&quot;Stoddard, Jacob T&quot;</value>
+                  <value>&quot;Sylvester, Michael A&quot;</value>
+                  <value>&quot;Taylor, Scott B&quot;</value>
+                  <value>&quot;Todd, Donovan E III&quot;</value>
+                  <value>&quot;Torbett, Andrew R&quot;</value>
+                  <value>&quot;Underwood, Joseph&quot;</value>
+                  <value>&quot;Underwood, Paul J&quot;</value>
+                  <value>&quot;Washburn, Robert&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column caption='Cand Party' datatype='string' name='[cand_party]' role='dimension' type='nominal' />
+            <column caption='Candidate Name' datatype='string' name='[candidate_name]' role='dimension' type='nominal' />
+            <column-instance column='[candidate_name]' derivation='CountD' name='[ctd:candidate_name:qk]' pivot='key' type='quantitative' />
+            <column caption='Gender (me-ethics)' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_493355269948358657]' derivation='None' name='[none:Calculation_493355269948358657:nk]' pivot='key' type='nominal' />
+            <column-instance column='[cand_party]' derivation='None' name='[none:cand_party:nk]' pivot='key' type='nominal' />
+            <column caption='Office' datatype='string' name='[office]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_493355269965168651]' derivation='CountD' name='[pcto:ctd:Calculation_493355269965168651:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Calculation_493355269977370642]' derivation='User' name='[pcto:usr:Calculation_493355269977370642:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Primary Result' datatype='string' name='[primary_result]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_493355269953265666]' derivation='User' name='[usr:Calculation_493355269953265666:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16nqjia0k8k965180r75g0osydpw].[Action (Office)]'>
+            <groupfilter function='member' level='[office]' member='&quot;Representative&quot;' user:ui-action-filter='[Action2]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.16nqjia0k8k965180r75g0osydpw].[none:Calculation_493355269948358657:nk]' kind='hide'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Calculation_493355269948358657:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Calculation_493355269948358657:nk]' member='&quot;Male&quot;' />
+                <groupfilter function='member' level='[none:Calculation_493355269948358657:nk]' member='&quot;Other&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.16nqjia0k8k965180r75g0osydpw].[none:cand_party:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Democratic&quot;</bucket>
+              <bucket>&quot;Republican&quot;</bucket>
+              <bucket>&quot;Green Independent&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.16nqjia0k8k965180r75g0osydpw].[Action (Office)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.16nqjia0k8k965180r75g0osydpw].[pcto:ctd:Calculation_493355269965168651:qk:2]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.16nqjia0k8k965180r75g0osydpw].[pcto:ctd:Calculation_493355269965168651:qk:2]' value='p0%' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='total-label' data-class='total' field='[federated.16nqjia0k8k965180r75g0osydpw].[none:cand_party:nk]' value='Total' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.16nqjia0k8k965180r75g0osydpw].[none:cand_party:nk]' value='#000000' />
+            <format attr='font-size' field='[federated.16nqjia0k8k965180r75g0osydpw].[none:cand_party:nk]' value='12' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='text-align' id='refline0' value='left' />
+          </style-rule>
+          <style-rule element='refband'>
+            <format attr='fill-color' id='refline0' value='#e6e6e6' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dashed' />
+            <format attr='stroke-size' id='refline0' value='1' />
+            <format attr='stroke-color' id='refline0' value='#0000007e' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.16nqjia0k8k965180r75g0osydpw].[none:cand_party:nk]' />
+              <lod column='[federated.16nqjia0k8k965180r75g0osydpw].[none:Calculation_493355269948358657:nk]' />
+              <lod column='[federated.16nqjia0k8k965180r75g0osydpw].[pcto:usr:Calculation_493355269977370642:qk:2]' />
+              <text column='[federated.16nqjia0k8k965180r75g0osydpw].[pcto:ctd:Calculation_493355269965168651:qk:2]' />
+              <text column='[federated.16nqjia0k8k965180r75g0osydpw].[ctd:candidate_name:qk]' />
+              <text column='[federated.16nqjia0k8k965180r75g0osydpw].[usr:Calculation_493355269953265666:nk]' />
+              <tooltip column='[federated.16nqjia0k8k965180r75g0osydpw].[ctd:candidate_name:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.16nqjia0k8k965180r75g0osydpw].[pcto:ctd:Calculation_493355269965168651:qk:2]' enable-instant-analytics='false' formula='constant' id='refline0' label-type='none' paired-id='refline1' scope='per-cell' symmetric='false' tooltip-type='none' value='0.0' value-column='[federated.16nqjia0k8k965180r75g0osydpw].[pcto:ctd:Calculation_493355269965168651:qk:2]' z-order='1' />
+            <reference-line axis-column='[federated.16nqjia0k8k965180r75g0osydpw].[pcto:ctd:Calculation_493355269965168651:qk:2]' enable-instant-analytics='false' formula='sum' id='refline1' label-type='value' paired-id='refline0' scope='per-cell' symmetric='false' tooltip-type='none' value-column='[federated.16nqjia0k8k965180r75g0osydpw].[pcto:usr:Calculation_493355269977370642:qk:2]' z-order='1' />
+            <customized-tooltip show-buttons='false'>
+              <formatted-text />
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run>Æ    </run>
+                <run bold='true'><![CDATA[ <[federated.16nqjia0k8k965180r75g0osydpw].[pcto:ctd:Calculation_493355269965168651:qk:2]>]]></run>
+                <run><![CDATA[
+     <[federated.16nqjia0k8k965180r75g0osydpw].[ctd:candidate_name:qk]> <[federated.16nqjia0k8k965180r75g0osydpw].[usr:Calculation_493355269953265666:nk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='auto' />
+                <format attr='text-align' value='left' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-weight' value='normal' />
+                <format attr='color' value='#ffffff' />
+                <format attr='font-size' value='11' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.2523757219314575' />
+                <format attr='mark-transparency' value='180' />
+                <format attr='has-stroke' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows total='true'>[federated.16nqjia0k8k965180r75g0osydpw].[none:cand_party:nk]</rows>
+        <cols>[federated.16nqjia0k8k965180r75g0osydpw].[pcto:ctd:Calculation_493355269965168651:qk:2]</cols>
+      </table>
+      <simple-id uuid='{3C40D9CE-036B-46F5-B2E0-B3EA80A74049}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Share of female winners in Maine&apos;s 2020 primary races'>
+      <style />
+      <size maxheight='1200' maxwidth='1400' minheight='1000' minwidth='400' sizing-mode='range' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' friendly-name='Parent container' h='98666' id='12' param='vert' w='98858' x='571' y='667'>
+          <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='3500' id='13' w='98858' x='571' y='667'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='95166' id='5' w='98858' x='571' y='4167'>
+            <zone h='33583' id='3' name='female primary winner share by party' w='98858' x='571' y='4167'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='61583' id='14' param='vert' w='98858' x='571' y='37750'>
+              <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' fixed-size='42' h='4167' id='10' is-fixed='true' name='districts with female primary winners' pane-specification-id='0' param='[federated.16nqjia0k8k965180r75g0osydpw].[usr:Calculation_493355269956943879:nk]' w='97154' x='1423' y='38583'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='55750' id='9' name='districts with female primary winners' show-caption='true' w='97154' x='1423' y='42750'>
+                <layout-cache minheight='291' type-h='scalable' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='padding' value='10' />
+                <format attr='background-color' value='#f5f5f5b4' />
+              </zone-style>
+            </zone>
+          </zone>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='750' minheight='750' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='34' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98666' id='33' param='vert' w='98858' x='571' y='667'>
+                <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='3500' id='13' w='98858' x='571' y='667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='33583' id='3' is-fixed='true' name='female primary winner share by party' w='98858' x='571' y='4167'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='55750' id='9' is-fixed='true' name='districts with female primary winners' show-caption='true' w='97430' x='1285' y='42750'>
+                  <layout-cache minheight='291' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' fixed-size='42' h='4167' id='10' name='districts with female primary winners' pane-specification-id='0' param='[federated.16nqjia0k8k965180r75g0osydpw].[usr:Calculation_493355269956943879:nk]' w='97430' x='1285' y='38583'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{488B375E-9658-434E-BCFD-797F7996E5FD}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='dashboard' maximized='true' name='Share of female winners in Maine&apos;s 2020 primary races'>
+      <viewpoints>
+        <viewpoint name='districts with female primary winners'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='2' />
+        </viewpoint>
+        <viewpoint name='female primary winner share by party'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='9' />
+      <simple-id uuid='{5D2BFD11-7565-4ECC-8889-30A5D9450BAA}' />
+    </window>
+    <window class='worksheet' hidden='true' name='districts with female primary winners'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.16nqjia0k8k965180r75g0osydpw].[usr:Calculation_493355269956943879:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{930EB06A-3095-42E9-AB0E-1C5649D0343B}' />
+    </window>
+    <window class='worksheet' hidden='true' name='female candidate tooltip'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.16nqjia0k8k965180r75g0osydpw].[none:cand_party:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C6CE3CAA-764A-421C-9EE2-B21A338330C3}' />
+    </window>
+    <window class='worksheet' hidden='true' name='female primary winner share by party'>
+      <cards>
+        <edge name='left'>
+          <strip size='247'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.16nqjia0k8k965180r75g0osydpw].[none:cand_party:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{D93CBACC-DBC3-476B-84EB-22E10175154E}' />
+    </window>
+  </windows>
+</workbook>

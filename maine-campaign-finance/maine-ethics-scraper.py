@@ -160,7 +160,6 @@ def write_to_gsheet():
     conn = http.client.HTTPSConnection("api.data.world")
 
     headers = {'authorization': "Bearer " + config.dw_key}
-
     queryid = 'a65bf908-26ba-4f11-b413-a57bd8b3a9f5'
     dw_project = '2020-maine-state-campaign-finance'
     sheet = 'maine-state-campaign-finance-2020'

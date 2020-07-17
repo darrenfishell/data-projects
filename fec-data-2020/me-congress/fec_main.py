@@ -48,7 +48,7 @@ def lambda_handler(event, context):
 
             # Execute write functions to write to datadotworld
             newtest, oldlen, newlen = write(df)
-            newrecords = oldlen - newlen
+            newrecords = newlen - oldlen
 
             if newtest:
                 print(f'Wrote {newrecords} new records records to {file}, which now has {newlen}.')
