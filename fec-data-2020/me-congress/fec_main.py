@@ -42,21 +42,17 @@ def lambda_handler(event, context):
         # Set filename
         file = files[idx]
 
-        try:
-            # Run function r, return dataframes
-            df = get(*params[idx])
+        # Run function r, return dataframes
+        df = get(*params[idx])
 
-            # Execute write functions to write to datadotworld
-            newtest, oldlen, newlen = write(df)
-            newrecords = newlen - oldlen
+        # Execute write functions to write to datadotworld
+        newtest, oldlen, newlen = write(df)
+        newrecords = newlen - oldlen
 
-            if newtest:
-                print(f'Wrote {newrecords} new records records to {file}, which now has {newlen}.')
-            else:
-                print(f'No update to {file}, which has {newlen} records.')
-
-        except:
-            print(f'Failed to write {file}')
+        if newtest:
+            print(f'Wrote {newrecords} new records records to {file}, which now has {newlen}.')
+        else:
+            print(f'No update to {file}, which has {newlen} records.')
 
     end = time.time()
     duration = end - start

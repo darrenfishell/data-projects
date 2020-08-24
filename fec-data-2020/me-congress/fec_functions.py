@@ -81,6 +81,7 @@ def get_committees(names):
 
 
 def get_itemized(cycle, cands):
+
     def get_unitem(cycle, commid):
 
         end = 'https://api.open.fec.gov/v1/committee/'
@@ -101,11 +102,12 @@ def get_itemized(cycle, cands):
     dfs = []
     udfs = []
     page_count = 0
+    r_count = 0
     cand_count = len(cands)
+    for_start = time.time()
 
     for idx, commid in enumerate(ids):
-
-        for_start = time.time()
+        item_page = 0
 
         params = {
             'per_page': '100'
@@ -118,51 +120,47 @@ def get_itemized(cycle, cands):
             , 'committee_id': commid
         }
 
-        udfs.append(get_unitem(cycle, commid))
+        try:
+            udfs.append(get_unitem(cycle, commid))
+        except:
+            continue
 
         # Initialize Schedule A request
         r = requests.get(end, params=params).json()
-        r_count = 1
+        r_count += 1
 
         candidate = cands['candidate_name'][idx]
 
         try:
             pages = r['pagination']['pages']
+
+            while r['pagination']['last_indexes'] is not None:
+                df = json_normalize(r['results'])
+                dfs.append(df)
+
+                last_index = r['pagination']['last_indexes']['last_index']
+                last_date = r['pagination']['last_indexes']['last_contribution_receipt_date']
+
+                params.update([('last_index', last_index)
+                                  , ('last_contribution_receipt_date', last_date)])
+
+                r = requests.get(end, params=params).json()
+                r_count += 1
+                page_count += 1
+                item_page += 1
+
+                for_duration = time.time() - for_start
+                r_rate = r_count / for_duration
+
+                if r_rate >= 1.9:
+                    time.sleep(.5)
+
         except:
-            pages = 0
-        if pages == 0:
-            df = json_normalize(r['results'])
-            dfs.append(df)
-        else:
-            #Store eumulative page count
-            page_count = page_count + pages
+            print(f'Broke on page {item_page} for {candidate}.')
+            print(f'Last index: {last_index} //n Last date: {last_date} //n commid: {commid}')
+            print(r['pagination']['last_indexes'])
 
-            try:
-                while r['pagination']['last_indexes'] is not None:
-
-                    df = json_normalize(r['results'])
-                    dfs.append(df)
-
-                    last_index = r['pagination']['last_indexes']['last_index']
-                    last_date = r['pagination']['last_indexes']['last_contribution_receipt_date']
-
-                    params.update([('last_index', last_index)
-                                      , ('last_contribution_receipt_date', last_date)])
-
-                    r = requests.get(end, params=params).json()
-                    r_count += 1
-
-                    for_duration = for_start - time.time()
-
-                    if r_count / for_duration >= 1.95:
-                        time.sleep(.5)
-                        print(f'Triggered .5s sleep on {page_count}, candidate {candidate}')
-
-            except:
-                print(f'Broke on page {page_count} for {candidate}.')
-                print(f'Last index: {last_index} //n Last date: {last_date} //n commid: {commid}')
-
-        print(f'Reached page {pages} for {candidate}.')
+        print(f'Reached page {item_page} of {pages} for {candidate}.\n')
 
     print(f'{page_count} pages for {cand_count} candidates')
 
@@ -306,24 +304,25 @@ def get_summary(cycle, cands):
     ids = cands['committee_id']
     dfs = []
 
-    for idx, item in enumerate(ids):
+    for idx, id in enumerate(ids):
         params = {
             'api_key': config.fec_key
             , 'cycle': cycle
             , 'per_page': '100'
-            , 'committee_id': item
         }
 
-        r = requests.get(end + item + '/totals', params=params).json()
+        r = requests.get(end + id + '/totals', params=params).json()
+        try:
+            df = json_normalize(r['results'])
+        except:
+            continue
 
-        df = json_normalize(r['results'])
         dfs.append(df)
 
     # After for loop, concatenate dfs
     df = pd.concat(dfs, sort=False, ignore_index=True).drop_duplicates()
 
     return df
-
 
 def write_cands(df):
     with dw.open_remote_file('darrenfishell/2020-election-repo', 'candidate_committee_lookup.csv') as w:
@@ -345,10 +344,12 @@ def write_indiv(df):
 
 def write_summary(df):
     results = dw.query('darrenfishell/2020-election-repo', 'SELECT * FROM congress_financial_summaries')
-    oldlen = sum(results.dataframe['receipts'])
-    newlen = len(df['receipts'])
+    oldcash = sum(results.dataframe['receipts'])
+    oldlen = len(results.dataframe)
+    newcash = sum(df['receipts'])
+    newlen = len(df)
 
-    test = oldlen < newlen
+    test = oldcash < newcash
 
     if test:
         with dw.open_remote_file('darrenfishell/2020-election-repo', 'congress_financial_summaries.csv') as w:

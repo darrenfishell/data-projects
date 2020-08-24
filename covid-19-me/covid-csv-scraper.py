@@ -19,6 +19,12 @@ def get_county():
     county = county[cols]
     return county
 
+def get_states():
+    nyt_file = pd.read_csv(nyt_url, parse_dates=['date'])
+    pops = dw.query('darrenfishell/covid-19-me', 'SELECT * FROM `state_populations`').dataframe
+    pops['state'] = pops['state'].str.strip()
+    nyt_file = pd.merge(nyt_file, pops, on='state', how='left')
+    return nyt_file
 
 def get_age():
     age = pd.read_csv(age_url, parse_dates=['DATA_REFRESH_DT', 'DATA_AS_OF_DT'])
@@ -31,9 +37,13 @@ def get_age():
 def write_to_gsheet(df, tab):
     # Declare target sheet
     wks = sh.worksheet('title', tab)
-    dfg = wks.get_as_df()
 
-    if tab == 'nyt_states' or tab == 'descartes_mobility':
+    try:
+        dfg = wks.get_as_df()
+    except:
+        dfg = []
+
+    if tab not in ['cases_by_county','cases_by_age']:
 
         try:
             last_update = pd.to_datetime(dfg['date']).max()
@@ -82,22 +92,21 @@ county_url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRPtRRaID4XRBSnrzG
 age_url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRPtRRaID4XRBSnrzGomnTtUUkq5qsq5zj8fGpg5xse8ytsyFUVqAKKypYybVpsU5cHgIbY3BOiynOC/pub?gid=574023130&single=true&output=csv'
 nyt_url = 'https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv'
 descartes_url = 'https://raw.githubusercontent.com/descarteslabs/DL-COVID-19/master/DL-us-mobility-daterow.csv'
+covid_tracking_me_url = 'https://covidtracking.com/api/v1/states/me/daily.csv'
 
 county = get_county()
 age = get_age()
-nyt_file = pd.read_csv(nyt_url, parse_dates=['date'])
-
+nyt_file = get_states()
 descartes_maine = pd.read_csv(descartes_url, parse_dates=['date'])
-
-print(descartes_maine)
-print(descartes_maine.columns)
+covid_tracking = pd.read_csv(covid_tracking_me_url, parse_dates=['date'])
 
 descartes_maine = descartes_maine.loc[(descartes_maine['admin1'] == 'Maine') & (descartes_maine['admin2'].notna())]
 
 df_to_gsheet = {'cases_by_county': county
     , 'cases_by_age': age
     , 'nyt_states': nyt_file
-    , 'descartes_mobility': descartes_maine}
+    , 'descartes_mobility': descartes_maine
+    , 'covid-tracking-proj': covid_tracking}
 
 for tab, df in df_to_gsheet.items():
 
