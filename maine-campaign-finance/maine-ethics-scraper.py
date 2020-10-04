@@ -147,12 +147,12 @@ def get_trans(year, headers):
 
         print(count)
 
-        if count < len(df):
-            with dw.open_remote_file('darrenfishell/2020-maine-state-campaign-finance', file + '.csv') as w:
-                df.to_csv(w, index=False)
-            print(f'Wrote file {file}.csv to data.world, at {length} records.')
-        else:
-            print(f'No updates to {file}.')
+        # if count < len(df):
+        with dw.open_remote_file('darrenfishell/2020-maine-state-campaign-finance', file + '.csv') as w:
+            df.to_csv(w, index=False)
+        print(f'Wrote file {file}.csv to data.world, at {length} records.')
+        # else:
+        #     print(f'No updates to {file}.')
 
 def write_to_gsheet():
     # Write contribution query to GSheets

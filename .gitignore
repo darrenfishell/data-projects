@@ -62,3 +62,10 @@ maine-campaign-finance/gcreds.json
 me-ethics-scraper/gcreds.json
 fec-data-2020/me-congress/fec-dev/config.py
 ppp/raw-data/PPP Data 150k plus.csv
+*.xml
+campaign-2020/fec-data-pipeline/gcreds.json
+*.xml
+*.xml
+fec-data-2020/.idea/workspace.xml
+*.xml
+*.xml

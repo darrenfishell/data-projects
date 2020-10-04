@@ -1,7 +1,7 @@
 from fec_functions import *
 import time
 
-def lambda_handler(event, context):
+def lambda_handler(event, context, get_ies=None):
     start = time.time()
     # Step 1: Set state(s) and cycle(s) for candidate search
     state = 'ME'
@@ -50,7 +50,7 @@ def lambda_handler(event, context):
         newrecords = newlen - oldlen
 
         if newtest:
-            print(f'Wrote {newrecords} new records records to {file}, which now has {newlen}.')
+            print(f'Wrote {newrecords} new records to {file}, which now has {newlen}.')
         else:
             print(f'No update to {file}, which has {newlen} records.')
 

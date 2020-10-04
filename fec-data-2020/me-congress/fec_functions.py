@@ -17,11 +17,14 @@ def get_cands(state, cycle):
     end = 'https://api.open.fec.gov/v1/candidates/search'
 
     for state in state:
-
+        
         for cycle in cycle:
             params = {'election_year': cycle
-                , 'state': state
-                , 'api_key': config.fec_key}
+                      , 'state': state
+                      , 'api_key': config.fec_key
+                      , 'is_active_candidate': True
+                      , 'has_raised_funds': True
+                      }
 
             r = requests.get(end, params=params).json()
 
@@ -34,7 +37,7 @@ def get_cands(state, cycle):
                                                     , 'first_file_date'
                                                   ]]
 
-            comm = json_normalize(data=r['results'],record_path='principal_committees')
+            comm = json_normalize(data=r['results'], record_path='principal_committees')
             comm = comm[['candidate_ids'
                     , 'committee_id'
                     , 'name']]
@@ -49,6 +52,7 @@ def get_cands(state, cycle):
                 'name_x': 'candidate_name'
                 , 'name_y': 'committee_name'
             }
+
             cands.rename(columns=colnm, inplace=True)
             cands.drop(columns='candidate_ids', inplace=True)
 
@@ -57,7 +61,6 @@ def get_cands(state, cycle):
     cand_all = pd.concat(cand_all, sort=False, ignore_index=True).drop_duplicates()
 
     return cand_all
-
 
 def get_committees(names):
     names = names.split(',')
@@ -152,7 +155,8 @@ def get_itemized(cycle, cands):
                 for_duration = time.time() - for_start
                 r_rate = r_count / for_duration
 
-                if r_rate >= 1.9:
+                if r_rate >= 1.8:
+                    print(f'Hit rate {r_rate} on {candidate} page {page_count}')
                     time.sleep(.5)
 
         except:
@@ -160,7 +164,7 @@ def get_itemized(cycle, cands):
             print(f'Last index: {last_index} //n Last date: {last_date} //n commid: {commid}')
             print(r['pagination']['last_indexes'])
 
-        print(f'Reached page {item_page} of {pages} for {candidate}.\n')
+        print(f'Reached page {item_page} of {pages} for {candidate}.')
 
     print(f'{page_count} pages for {cand_count} candidates')
 
