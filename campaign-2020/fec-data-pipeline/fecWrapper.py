@@ -237,6 +237,8 @@ class FecFinder:
 
         for param in params:
 
+            start_for = time.time()
+
             r = self.throttled_request(url, param)
 
             pages = r.get('pagination', {}).get('pages', None)
@@ -250,6 +252,8 @@ class FecFinder:
             pager = 0
 
             while last_indexes is not None:
+
+                start_while = time.time()
 
                 payload = r.get('results', None)
 
@@ -270,11 +274,15 @@ class FecFinder:
 
                 r = self.throttled_request(url, param)
 
+                while_duration = time.time() - start_while
+
                 last_indexes = r.get('pagination', {}).get('last_indexes', None)
+
+            for_duration = time.time() - start_for
 
             candidate = candidates.loc[candidates['committee_id'] == param.get('committee_id'), 'candidate_name'].max()
 
-            print(f'Captured {pager} of {pages} pages for {year}, for candidate: {candidate}.')
+            print(f'Captured {pager} of {pages} pages in {for_duration} for {year}, for candidate: {candidate}.')
 
         df = pd.concat(dfs, sort=False, ignore_index=True).drop_duplicates(subset='transaction_id')
 
