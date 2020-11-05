@@ -17,6 +17,7 @@ class FecFinder:
         self.ie_endpt = 'schedules/schedule_e/'
         self.coord_endpt = 'schedules/schedule_f/'
         self.indiv_endpt = 'schedules/schedule_a/'
+        self.efile_endpt = 'efile/'
 
     def year_gen(self, start_year, end_year):
         return [year for year in range(start_year, end_year + 1) if year % 2 == 0]
@@ -294,6 +295,75 @@ class FecFinder:
         udf = reshape_unitemized(get_unitemized(), cols)
 
         df = pd.concat([df, udf], sort=False, ignore_index=True)
+
+        # Parse datetime
+        df['contribution_receipt_date'] = df['contribution_receipt_date'].str.split('T', expand=True)[0]
+
+        return df
+
+    def efile_sched_a_getter(self, **kwargs):
+
+        candidates = kwargs.get('candidates', None)
+        min_date = kwargs.get('min_date',None)
+        comm_ids = candidates['committee_id'].unique()
+
+        url = os.path.join(self.base_url, self.version, self.indiv_endpt, self.efile_endpt)
+
+        key_dict = {
+            'per_page': '100'
+            , 'sort': 'contribution_receipt_date'
+            , 'api_key': self.api_key
+            , 'page' : 1
+            , 'min_date' : min_date
+        }
+
+        params = self.param_generator(dict=key_dict
+                                      , committee_id=comm_ids)
+
+        dfs = []
+
+        for param in params:
+
+            start_for = time.time()
+
+            r = self.throttled_request(url, param)
+
+            pages = r.get('pagination', {}).get('pages', None)
+            page = r.get('pagination', {}).get('page', None)
+
+            year = param.get('two_year_transaction_period', None)
+
+            if pages == 0 or page is None:
+                continue
+
+            while page <= pages:
+
+                start_while = time.time()
+
+                try:
+                    payload = r.get('results', None)
+                    dfs.append(json_normalize(payload))
+                except:
+                    continue
+
+                page += 1
+
+                param.update([('page', page)])
+
+                r = self.throttled_request(url, param)
+
+                while_duration = time.time() - start_while
+
+            for_duration = time.time() - start_for
+
+            candidate = candidates.loc[candidates['committee_id'] == param.get('committee_id'), 'candidate_name'].max()
+
+            print(f'Captured {page-1} of {pages} pages in {for_duration} from e-filings for candidate: {candidate}.')
+
+        df = pd.concat(dfs, sort=False, ignore_index=True).drop_duplicates(subset='transaction_id')
+
+        #Clean + filter steps
+        df['contributor_zip'] = df['contributor_zip'].str[:5]
 
         # Parse datetime
         df['contribution_receipt_date'] = df['contribution_receipt_date'].str.split('T', expand=True)[0]
