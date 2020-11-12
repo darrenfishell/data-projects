@@ -18,6 +18,7 @@ class FecFinder:
         self.coord_endpt = 'schedules/schedule_f/'
         self.indiv_endpt = 'schedules/schedule_a/'
         self.efile_endpt = 'efile/'
+        self.sched_b_endpt = 'schedules/schedule_b/'
 
     def year_gen(self, start_year, end_year):
         return [year for year in range(start_year, end_year + 1) if year % 2 == 0]
@@ -445,6 +446,87 @@ class FecFinder:
         #Cleaning steps
         df['committee.zip'] = df['committee.zip'].str[:5]
         df['expenditure_date'] = df['expenditure_date'].str.split('T', expand=True)[0]
+
+        return df
+
+    def sched_b_getter(self, **kwargs):
+
+        candidates = kwargs.get('candidates', None)
+        comm_ids = candidates['committee_id'].unique()
+        election_year = kwargs.get('cycle', None)
+
+        url = os.path.join(self.base_url, self.version, self.sched_b_endpt)
+
+        print(url)
+        print(comm_ids)
+
+        key_dict = {
+            'per_page': '100'
+            , 'api_key': self.api_key
+            , 'last_index': []
+            , 'last_disbursement_date': []
+        }
+
+        params = self.param_generator(dict=key_dict
+                                      , two_year_transaction_period=election_year
+                                      , committee_id=comm_ids)
+
+        dfs = []
+
+        for param in params:
+
+            r = self.throttled_request(url, param)
+
+            pages = r.get('pagination', {}).get('pages', None)
+
+            year = param.get('two_year_transaction_period', None)
+
+            if pages == 0:
+                continue
+
+            last_indexes = r.get('pagination', {}).get('last_indexes', None)
+            pager = 0
+
+            while last_indexes is not None:
+
+                payload = r.get('results', None)
+
+                if payload is None:
+                    break
+
+                dfs.append(json_normalize(payload))
+
+                pager += 1
+
+                last_date = r.get('pagination', {}) \
+                    .get('last_indexes', {}) \
+                    .get('last_disbursement_date', None)
+
+                last_index = r.get('pagination', {}) \
+                    .get('last_indexes', {}) \
+                    .get('last_index', None)
+
+                param.update([('last_index', last_index)
+                             , ('last_disbursement_date', last_date)])
+
+                r = self.throttled_request(url, param)
+
+                pagination = r.get('pagination', None)
+
+                if pagination is None:
+                    continue
+
+                last_indexes = pagination.get('last_indexes', None)
+
+            candidate = candidates.loc[candidates['committee_id'] == param.get('committee_id'), 'candidate_name'].max()
+
+            print(f'Captured {pager} of {pages} pages for candidate in {year}: {candidate}.')
+
+        df = pd.concat(dfs, sort=False, ignore_index=True).drop_duplicates(subset='transaction_id')
+
+        #Cleaning steps
+        df['committee.zip'] = df['committee.zip'].str[:5]
+        df['disbursement_date'] = df['disbursement_date'].str.split('T', expand=True)[0]
 
         return df
 

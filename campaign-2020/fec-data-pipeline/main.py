@@ -1,12 +1,10 @@
 import fecWrapper
 import dataDotWrapper
-import gSheetsWrapper
 
 def lambda_handler(event, context):
 
     fec = fecWrapper.FecFinder()
     dw = dataDotWrapper.dataDotWorld()
-    gs = gSheetsWrapper.sheetsWriter()
 
     #FEC query params
     start_year = 2020
@@ -60,36 +58,43 @@ def lambda_handler(event, context):
     #                , repo=dw_repo
     #                , data=df
     #                , dupe_key=['candidate_id', 'transaction_id'])
+    #
+    # df = fec.efile_sched_a_getter(candidates=candidates
+    #                               , min_date=efile_start)
+    #
+    # dw.file_merger(filename='efiling-october-quarterly'
+    #                , repo=dw_repo
+    #                , data=df
+    #                , dupe_key='transaction_id')
 
-    df = fec.efile_sched_a_getter(candidates=candidates
-                                  , min_date=efile_start)
+    df = fec.sched_b_getter(candidates=candidates, cycle=cycles)
 
-    dw.file_merger(filename='efiling-october-quarterly'
+    dw.file_merger(filename='campaign-expenditures'
                    , repo=dw_repo
                    , data=df
                    , dupe_key='transaction_id')
 
-    #Write data.world SQL view out to Google Sheets
-    # Data.World queryid: GSheet mapping
-    dw_query_sheet = {
-        '026e8f40-d10e-4324-8b45-80dbc0e61627': 'individual-contributors'
-        , 'e2b1bde2-1e60-4d49-bd31-da5aa7ce0611': 'campaign-summaries'
-    }
-
-    for queryid, tab in dw_query_sheet.items():
-
-        df = dw.retrieve_query(queryid=queryid
-                               , repo=dw_repo)
-
-        house = df[df['office_full'] == 'House']
-        senate = df[df['office_full'] == 'Senate']
-
-        gs.write_to_sheets(sheet=house_sheet
-                           , tab=tab
-                           , data=house)
-
-        gs.write_to_sheets(sheet=senate_sheet
-                           , tab=tab
-                           , data=senate)
+    # #Write data.world SQL view out to Google Sheets
+    # # Data.World queryid: GSheet mapping
+    # dw_query_sheet = {
+    #     '026e8f40-d10e-4324-8b45-80dbc0e61627': 'individual-contributors'
+    #     , 'e2b1bde2-1e60-4d49-bd31-da5aa7ce0611': 'campaign-summaries'
+    # }
+    #
+    # for queryid, tab in dw_query_sheet.items():
+    #
+    #     df = dw.retrieve_query(queryid=queryid
+    #                            , repo=dw_repo)
+    #
+    #     house = df[df['office_full'] == 'House']
+    #     senate = df[df['office_full'] == 'Senate']
+    #
+    #     gs.write_to_sheets(sheet=house_sheet
+    #                        , tab=tab
+    #                        , data=house)
+    #
+    #     gs.write_to_sheets(sheet=senate_sheet
+    #                        , tab=tab
+    #                        , data=senate)
 
 lambda_handler(event=[], context={})
