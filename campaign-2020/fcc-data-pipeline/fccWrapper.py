@@ -48,7 +48,8 @@ def station_getter():
 def get_facility_detail(facilities, states):
 
     lkp_dict = dict(zip(facilities.iloc[:, 0], facilities.iloc[:, 4]))
-
+    count = len(lkp_dict)
+    i = 0
     dfs = []
 
     for key, medium in lkp_dict.items():
@@ -62,6 +63,11 @@ def get_facility_detail(facilities, states):
         if state in states:
             dfs.append(df)
             print(f'Loaded facility: {key}')
+
+        i+=1
+
+        if i % 10 == 0:
+            print(f'Index: {i} of {count}')
 
     df = pd.concat(dfs, sort=False, ignore_index=True).drop_duplicates()
 
