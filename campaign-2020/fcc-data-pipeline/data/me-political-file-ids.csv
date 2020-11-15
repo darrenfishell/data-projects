@@ -1,0 +1,299 @@
+entity_folder_id,entity_id,folder_name,folder_path,allow_rename_ind,allow_subfolder_ind,allow_upload_ind,allow_delete_ind,more_public_files_ind,parent_folder_id,file_count,create_ts,last_update_ts
+0f628d14-7046-1227-8d85-3093bd860f32,39649,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T14:51:38-05:00,2016-02-29T14:51:38-05:00
+5c8581d9-4c68-9107-8350-16d5b8428ee5,39649,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T14:51:38-05:00,2016-02-29T14:51:38-05:00
+cfc36577-f10f-6600-fbcb-1ad52b56f5d6,39659,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T14:32:58-05:00,2016-02-29T14:32:58-05:00
+46916874-0ef1-bede-0aca-2725f91c8611,39659,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T14:32:58-05:00,2016-02-29T14:32:58-05:00
+ad6b4e61-02d5-0ccb-c6a3-a09be72e03db,39662,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T15:16:04-05:00,2016-02-29T15:16:04-05:00
+2a379ae1-5b94-5f4c-a1af-a04b7a23f1f5,39662,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T15:16:04-05:00,2016-02-29T15:16:04-05:00
+ec52a636-dce3-f8cb-9f92-69289b372a9e,25683,Political Files,Political Files,N,N,N,N,N,,4848,2016-02-29T14:31:39-05:00,2016-02-29T14:31:39-05:00
+af429d40-064e-5f07-4835-a51d3338d37f,25683,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T14:31:39-05:00,2016-02-29T14:31:39-05:00
+0fa06b0b-dab6-f370-6c63-31a14745df38,48408,Political Files,Political Files,N,N,N,N,N,,18,2016-02-29T14:45:46-05:00,2016-02-29T14:45:46-05:00
+bd6c9c47-409b-456d-69ea-468b75f39dec,48408,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,2,2016-02-29T14:45:46-05:00,2016-02-29T14:45:46-05:00
+d76c2694-c38f-7244-d73d-dab325e32e80,3667,Political Files,Political Files,N,N,N,N,N,,3778,2016-02-29T15:04:41-05:00,2016-02-29T15:04:41-05:00
+498c207e-04c8-92f3-673a-bdc3795507a5,3667,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T15:04:41-05:00,2016-02-29T15:04:41-05:00
+db3820af-e9b1-54a8-4f8d-fb825baa06a0,39644,Political Files,Political Files,N,N,N,N,N,,1117,2016-02-29T15:16:05-05:00,2016-02-29T15:16:05-05:00
+fd9d73e2-aad1-e276-37dd-1e662610e50b,39644,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,5,2016-02-29T15:16:05-05:00,2016-02-29T15:16:05-05:00
+65edb495-a393-ff74-484d-a2534354e862,39648,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T14:51:40-05:00,2016-02-29T14:51:40-05:00
+5dd7c61d-d294-2353-f927-0d34ad587958,39648,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T14:51:40-05:00,2016-02-29T14:51:40-05:00
+fdef700f-4585-82af-de2c-4da77af8fbc6,39656,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T14:46:17-05:00,2016-02-29T14:46:17-05:00
+4ae3d14d-ba75-05b6-673e-9de69f09726d,39656,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T14:46:17-05:00,2016-02-29T14:46:17-05:00
+9cadc44d-df8c-5e38-eaa4-1608f572369a,39664,Political Files,Political Files,N,N,N,N,N,,1271,2016-02-29T14:54:08-05:00,2016-02-29T14:54:08-05:00
+f542a2f7-b52f-2f73-78df-df4cf23d0b34,39664,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,5,2016-02-29T14:54:08-05:00,2016-02-29T14:54:08-05:00
+20a70c23-71a8-a9e5-8a0c-b4a62707ef16,48305,Political Files,Political Files,N,N,N,N,N,,2319,2016-02-29T15:01:20-05:00,2016-02-29T15:01:20-05:00
+d3762d98-9f60-7303-276b-4f973200985c,48305,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T15:01:20-05:00,2016-02-29T15:01:20-05:00
+149652b8-ee24-d823-b44f-9aa673d86796,17005,Political Files,Political Files,N,N,N,N,N,,5795,2016-02-29T15:18:42-05:00,2016-02-29T15:18:42-05:00
+12df85a5-e704-8095-62bc-6454048908d2,17005,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,1,2016-02-29T15:18:42-05:00,2016-02-29T15:18:42-05:00
+5347fe99-c070-4dcd-3a8e-81babd4255ce,53065,Political Files,Political Files,N,N,N,N,N,,1452,2016-02-29T15:19:08-05:00,2016-02-29T15:19:08-05:00
+5588eb3d-cdc9-2c48-115b-cd0e2451d45d,53065,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T15:19:08-05:00,2016-02-29T15:19:08-05:00
+9032fe5e-d99b-9ba7-baf5-4a46fe478070,73288,Political Files,Political Files,N,N,N,N,N,,3470,2016-02-29T15:09:02-05:00,2016-02-29T15:09:02-05:00
+81e5f0fe-d41e-316b-9826-d4d2cc4ee152,73288,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T15:09:02-05:00,2016-02-29T15:09:02-05:00
+8efe0e61-5152-c2b2-0e5c-a1a72a539237,84088,Political Files,Political Files,N,N,N,N,N,,3602,2016-02-29T15:01:09-05:00,2016-02-29T15:01:09-05:00
+453de281-a4c2-a896-bf81-0eee596078be,84088,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T15:01:09-05:00,2016-02-29T15:01:09-05:00
+82e0f4ed-405b-66c8-7432-8fc80ec975cf,17514,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T17:33:27-05:00,2016-02-29T17:33:27-05:00
+4a9df150-726b-727c-4fef-f0059682f8db,17514,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:33:27-05:00,2016-02-29T17:33:27-05:00
+49d4a3c6-d197-4175-91dd-da35ac015a32,74068,Political Files,Political Files,N,N,N,N,N,,40,2016-02-29T17:34:45-05:00,2016-02-29T17:34:45-05:00
+1fd8848d-9e82-225d-19d9-46c8656dc087,74068,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:34:45-05:00,2016-02-29T17:34:45-05:00
+3c1ec4bd-d0dd-10b0-8fcf-848771790878,3140,Political Files,Political Files,N,N,N,N,N,,21,2016-02-29T17:55:49-05:00,2016-02-29T17:55:49-05:00
+ecbf458f-162c-40cb-f6ac-626cf6901067,3140,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:55:49-05:00,2016-02-29T17:55:49-05:00
+1428731f-6e94-e6b2-a4f5-97793e7da679,9202,Political Files,Political Files,N,N,N,N,N,,175,2016-02-29T17:43:38-05:00,2016-02-29T17:43:38-05:00
+1fa23fc7-92a4-7050-62e5-67c6f7a8052a,9202,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:43:38-05:00,2016-02-29T17:43:38-05:00
+049e59ff-11c1-80e3-86a6-7cdfb9e04a30,73088,Political Files,Political Files,N,N,N,N,N,,49,2016-02-29T17:23:47-05:00,2016-02-29T17:23:47-05:00
+6fa475dc-0dab-05f9-655c-abc3a8c35742,73088,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:23:47-05:00,2016-02-29T17:23:47-05:00
+13313844-fbab-f1ce-bb14-7254f31e3215,17671,Political Files,Political Files,N,N,N,N,N,,48,2016-02-29T18:11:01-05:00,2016-02-29T18:11:01-05:00
+4d1fa876-5407-881e-2d33-e68848ba42af,17671,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T18:11:01-05:00,2016-02-29T18:11:01-05:00
+e6e017a5-899e-60d6-4e81-92291c581421,33287,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T17:58:38-05:00,2016-02-29T17:58:38-05:00
+e30776b6-e039-290c-6303-eab9ec69d292,33287,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:58:38-05:00,2016-02-29T17:58:38-05:00
+c7162bff-4ef9-3197-4ed3-ad90e5e730d3,3670,Political Files,Political Files,N,N,N,N,N,,282,2016-02-29T17:29:45-05:00,2016-02-29T17:29:45-05:00
+9561ad3e-92f0-74d5-cab0-716b06f72e7d,3670,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:29:45-05:00,2016-02-29T17:29:45-05:00
+5c1ac7cd-ba01-620e-5978-53196e73366a,49517,Political Files,Political Files,N,N,N,N,N,,13,2016-02-29T17:57:03-05:00,2016-02-29T17:57:03-05:00
+c1d8a3b4-d47e-6b3e-2b56-2f28e215924e,49517,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,6,2016-02-29T17:57:03-05:00,2016-02-29T17:57:03-05:00
+6306e788-7406-c026-5ff4-e99fc87a3ae7,9209,Political Files,Political Files,N,N,N,N,N,,5,2016-02-29T18:05:57-05:00,2016-02-29T18:05:57-05:00
+f34e2b2f-0a77-05eb-ecb3-ef52b7ac9e9a,9209,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T18:05:57-05:00,2016-02-29T18:05:57-05:00
+d3d7f89f-368f-858b-6130-55c45c9d85f5,9423,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T17:47:02-05:00,2016-02-29T17:47:02-05:00
+532a0964-d0be-f847-8e98-89b6d5dffd75,9423,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:47:02-05:00,2016-02-29T17:47:02-05:00
+bec8d520-60d3-e0a0-795d-ab0e30486d56,58544,Political Files,Political Files,N,N,N,N,N,,287,2016-02-29T18:06:54-05:00,2016-02-29T18:06:54-05:00
+a1d55d71-525b-f11a-8cd1-285e353d9e3d,58544,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T18:06:54-05:00,2016-02-29T18:06:54-05:00
+3e3b7fe2-2a40-742a-bb9d-01c30c95aab7,24994,Political Files,Political Files,N,N,N,N,N,,1,2016-02-29T17:59:41-05:00,2016-02-29T17:59:41-05:00
+58030394-b2ff-1ce8-bde1-7ad8ecfa8eb4,24994,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:59:41-05:00,2016-02-29T17:59:41-05:00
+437c1e4e-28d1-7170-9a94-54e82133c8e9,33469,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T17:53:47-05:00,2016-02-29T17:53:47-05:00
+03863d51-6ccc-1e15-1ae2-c4377846214f,33469,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:53:47-05:00,2016-02-29T17:53:47-05:00
+e2a99132-85f6-85b6-3f72-947a389dfe24,49983,Political Files,Political Files,N,N,N,N,N,,28,2016-02-29T17:55:12-05:00,2016-02-29T17:55:12-05:00
+b677c19f-7068-dd3a-c1b1-35e3856df872,49983,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:55:12-05:00,2016-02-29T17:55:12-05:00
+3c0f819e-7ce7-07cf-d0ee-a8c20491e88e,160465,Political Files,Political Files,N,N,N,N,N,,3,2016-02-29T17:36:06-05:00,2016-02-29T17:36:06-05:00
+0488dea3-48c3-4c42-9f81-8088a1c48316,160465,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:36:06-05:00,2016-02-29T17:36:06-05:00
+02ce5f1d-0a97-196a-091d-c4085349097e,46351,Political Files,Political Files,N,N,N,N,N,,41,2016-02-29T18:06:43-05:00,2016-02-29T18:06:43-05:00
+79b19a6a-8e18-5bf6-4a5e-6005179c0aff,46351,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T18:06:43-05:00,2016-02-29T18:06:43-05:00
+cf4ed887-9f49-62d5-32ec-9238f9d91230,11031,Political Files,Political Files,N,N,N,N,N,,25,2016-02-29T17:40:14-05:00,2016-02-29T17:40:14-05:00
+07fc758f-7c3a-e2e8-ef83-dbed34121a92,11031,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:40:14-05:00,2016-02-29T17:40:14-05:00
+05dabec0-57f4-df66-98b7-53026daca454,37469,Political Files,Political Files,N,N,N,N,N,,25,2016-02-29T17:54:39-05:00,2016-02-29T17:54:39-05:00
+99e4a055-a9ec-5a58-26f5-7b689c04bfc6,37469,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:54:39-05:00,2016-02-29T17:54:39-05:00
+7e14327d-239a-492d-683c-26dd6ee656dc,52604,Political Files,Political Files,N,N,N,N,N,,31,2016-02-29T17:26:31-05:00,2016-02-29T17:26:31-05:00
+4b9322fd-ea54-904c-7b3e-bacb219975a2,52604,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:26:31-05:00,2016-02-29T17:26:31-05:00
+126b09f6-3be9-3335-82e7-cc950badb4db,52607,Political Files,Political Files,N,N,N,N,N,,31,2016-02-29T17:48:17-05:00,2016-02-29T17:48:17-05:00
+e29b9b81-d7d4-a65e-5655-a0bc89909cd9,52607,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:48:17-05:00,2016-02-29T17:48:17-05:00
+1caf0707-c1f5-d338-de6e-0113d421f95a,56570,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T17:38:15-05:00,2016-02-29T17:38:15-05:00
+9c7bb06f-855b-05c3-16df-3b0c3865f8b2,56570,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,6,2016-02-29T17:38:15-05:00,2016-02-29T17:38:15-05:00
+841c8233-c903-322b-c3ae-ccbc65b3d504,57300,Political Files,Political Files,N,N,N,N,N,,513,2016-02-29T18:00:52-05:00,2016-02-29T18:00:52-05:00
+4874fd58-571d-1461-8ca1-a7b5f8de5d3d,57300,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T18:00:52-05:00,2016-02-29T18:00:52-05:00
+daba4969-e37f-dfaf-95e6-0d8b94046ec5,58538,Political Files,Political Files,N,N,N,N,N,,6,2016-02-29T17:31:21-05:00,2016-02-29T17:31:21-05:00
+753b5ad4-fd80-cd0a-7c9c-839add348de7,58538,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:31:21-05:00,2016-02-29T17:31:21-05:00
+98650424-dc2e-acd4-674a-d52f907b8670,52176,Political Files,Political Files,N,N,N,N,N,,25,2016-02-29T17:24:18-05:00,2016-02-29T17:24:18-05:00
+c3d95e70-cf2c-45bf-f866-15b8b79e5efe,52176,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:24:18-05:00,2016-02-29T17:24:18-05:00
+278b01b8-142c-4319-2b5a-5df58de2778f,64434,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T17:59:32-05:00,2016-02-29T17:59:32-05:00
+ffc35aa9-cbc0-2efc-d3b2-bbc6686a5f7e,64434,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:59:32-05:00,2016-02-29T17:59:32-05:00
+3cea6cf6-40c1-1b69-1ee7-9fa1eb6ade9d,66674,Political Files,Political Files,N,N,N,N,N,,65,2016-02-29T17:37:01-05:00,2016-02-29T17:37:01-05:00
+6cee2ae4-602a-3aff-7fb9-8e29d306ebbd,66674,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,1,2016-02-29T17:37:01-05:00,2016-02-29T17:37:01-05:00
+8dd43a09-4ad2-85a8-66e4-4cc1e2e98704,68296,Political Files,Political Files,N,N,N,N,N,,144,2016-02-29T17:27:33-05:00,2016-02-29T17:27:33-05:00
+5a63019a-0484-9a77-3629-b7875e0b1bf3,68296,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:27:33-05:00,2016-02-29T17:27:33-05:00
+73e1d2d5-752f-d3bd-3e7b-9c4b60e06090,128805,Political Files,Political Files,N,N,N,N,N,,143,2016-02-29T17:54:20-05:00,2016-02-29T17:54:20-05:00
+a2f14458-0c97-16b2-8bda-68755f32b123,128805,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:54:20-05:00,2016-02-29T17:54:20-05:00
+1a35a2b0-216c-2cbc-830e-ae0c28785fe5,128808,Political Files,Political Files,N,N,N,N,N,,13,2016-02-29T17:48:57-05:00,2016-02-29T17:48:57-05:00
+5d6ed11b-ac63-697a-7c3c-a40a4ee892ad,128808,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:48:57-05:00,2016-02-29T17:48:57-05:00
+e295c6ca-76f9-ac3b-c898-ed40a5c8d7af,22880,Political Files,Political Files,N,N,N,N,N,,167,2016-02-29T16:00:11-05:00,2016-02-29T16:00:11-05:00
+c71712ba-8976-57ad-daa2-24e6276ef633,22880,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:00:11-05:00,2016-02-29T16:00:11-05:00
+0039ffee-11c8-9784-aa68-aa4760e32f06,341,Political Files,Political Files,N,N,N,N,N,,351,2016-02-29T17:08:30-05:00,2016-02-29T17:08:30-05:00
+713332d7-d67c-8ded-b998-b5cdcf773a97,341,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:08:30-05:00,2016-02-29T17:08:30-05:00
+cb43bd73-fc8d-0044-e3e1-4d17f90a424a,9422,Political Files,Political Files,N,N,N,N,N,,197,2016-02-29T16:41:52-05:00,2016-02-29T16:41:52-05:00
+41dd7a3f-85b9-921f-2386-a54eb3068cfe,9422,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:41:52-05:00,2016-02-29T16:41:52-05:00
+fa7a24a6-d159-73eb-cba0-0a5e97ecbd63,4092,Political Files,Political Files,N,N,N,N,N,,515,2016-02-29T16:21:48-05:00,2016-02-29T16:21:48-05:00
+9557c4a8-3a27-ff5a-30a5-99a9d3652227,4092,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:21:48-05:00,2016-02-29T16:21:48-05:00
+aaea1ebd-6124-4421-b9d1-fd1224b03075,421,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T16:20:41-05:00,2016-02-29T16:20:41-05:00
+df32b6c0-0414-c7cb-6693-44389bf486cf,421,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:20:41-05:00,2016-02-29T16:20:41-05:00
+5ad76fba-0849-4631-c87a-ba777c107be0,6782,Political Files,Political Files,N,N,N,N,N,,307,2016-02-29T15:57:02-05:00,2016-02-29T15:57:02-05:00
+85bee830-6269-a183-1f5c-e4a26ea10b9b,6782,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T15:57:02-05:00,2016-02-29T15:57:02-05:00
+941a64cc-a604-2083-b1d8-7d3c2d4e7eb6,3665,Political Files,Political Files,N,N,N,N,N,,28,2016-02-29T16:45:29-05:00,2016-02-29T16:45:29-05:00
+c91144ee-59c8-66ef-dd51-86fd5bf88be2,3665,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,19,2016-02-29T16:45:29-05:00,2016-02-29T16:45:29-05:00
+81f39c42-ff61-e71f-6a78-1a5e7f5bdc27,3671,Political Files,Political Files,N,N,N,N,N,,307,2016-02-29T16:27:12-05:00,2016-02-29T16:27:12-05:00
+9c9fc137-5553-1e94-4a9a-f830c5029eff,3671,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:27:12-05:00,2016-02-29T16:27:12-05:00
+931f313e-cc86-edfb-0fe3-7a3352438433,66712,Political Files,Political Files,N,N,N,N,N,,258,2016-02-29T16:53:34-05:00,2016-02-29T16:53:34-05:00
+caed4537-c6fe-f81f-0931-b0130ee113ba,66712,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:53:34-05:00,2016-02-29T16:53:34-05:00
+ebe10952-6ad4-5961-920f-919355ded8a2,4090,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T16:28:31-05:00,2016-02-29T16:28:31-05:00
+20108cfd-66d2-0801-a27e-870f3fcdc67b,4090,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:28:31-05:00,2016-02-29T16:28:31-05:00
+7a5b3b5b-b54c-a61d-a975-d333d13caae1,4380,Political Files,Political Files,N,N,N,N,N,,375,2016-02-29T16:56:03-05:00,2016-02-29T16:56:03-05:00
+1e83130c-7699-30aa-3be5-6d0cb91ac107,4380,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:56:03-05:00,2016-02-29T16:56:03-05:00
+7a046a53-ce5c-6018-290f-d37a5f27e8b1,49564,Political Files,Political Files,N,N,N,N,N,,46,2016-02-29T16:33:34-05:00,2016-02-29T16:33:34-05:00
+c563e2cb-5d26-78f0-da23-164e8ceb439d,49564,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:33:34-05:00,2016-02-29T16:33:34-05:00
+86c56b51-732e-4d35-c7d9-d8309f46a893,25747,Political Files,Political Files,N,N,N,N,N,,218,2016-02-29T16:41:40-05:00,2016-02-29T16:41:40-05:00
+40aef272-acbb-9a97-e3bd-fe2702ae14f1,25747,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,1,2016-02-29T16:41:40-05:00,2016-02-29T16:41:40-05:00
+8ceac42f-1667-6a68-92b4-e4aee64197df,41105,Political Files,Political Files,N,N,N,N,N,,33,2016-02-29T15:48:28-05:00,2016-02-29T15:48:28-05:00
+dbae6804-8f22-4cf7-6bd2-12364ae35fd4,41105,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T15:48:28-05:00,2016-02-29T15:48:28-05:00
+c3381455-e6c1-7496-6bc4-74f4016715fc,28151,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T16:36:09-05:00,2016-02-29T16:36:09-05:00
+193f337e-060e-4192-0f80-b4cf838a7326,28151,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:36:09-05:00,2016-02-29T16:36:09-05:00
+593ddde4-77df-0520-2ad2-a87c5c81c42c,3134,Political Files,Political Files,N,N,N,N,N,,346,2016-02-29T15:51:19-05:00,2016-02-29T15:51:19-05:00
+b403013c-057b-38a4-0154-14b26ab63485,3134,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T15:51:19-05:00,2016-02-29T15:51:19-05:00
+93a6732e-9f04-11f2-a452-986ea9aafc3a,53405,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T17:00:32-05:00,2016-02-29T17:00:32-05:00
+64e563d8-57ff-1031-6c29-2c096708692e,53405,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:00:32-05:00,2016-02-29T17:00:32-05:00
+bbb9e4c8-94bf-3086-76cb-741ec3c94965,58726,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T16:13:59-05:00,2016-02-29T16:13:59-05:00
+3dbda997-83f2-fade-9586-4d07c9f35838,58726,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:13:59-05:00,2016-02-29T16:13:59-05:00
+28833c34-1025-75c6-d535-cf1bbfe7e139,60040,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T16:13:13-05:00,2016-02-29T16:13:13-05:00
+c2b424ac-f1bf-718b-9f6b-955ed52c7ecb,60040,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:13:13-05:00,2016-02-29T16:13:13-05:00
+027ff4dc-1516-f93f-c006-b5a6a41af83e,9180,Political Files,Political Files,N,N,N,N,N,,22,2016-02-29T16:58:19-05:00,2016-02-29T16:58:19-05:00
+9d4d3a0e-fd2a-1cd4-0950-a3a341149a2a,9180,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:58:19-05:00,2016-02-29T16:58:19-05:00
+6ee7c76f-0cef-7854-6386-a58d7809e520,9284,Political Files,Political Files,N,N,N,N,N,,435,2016-02-29T16:31:34-05:00,2016-02-29T16:31:34-05:00
+0c217fb7-5150-8b5d-e011-b62deff4dc9c,9284,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:31:34-05:00,2016-02-29T16:31:34-05:00
+80f986b3-89bd-079a-ab58-d2335c0f6148,67698,Political Files,Political Files,N,N,N,N,N,,26,2016-02-29T16:51:05-05:00,2016-02-29T16:51:05-05:00
+78a4002d-7389-b442-f48a-c24ce59fcb8e,67698,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:51:05-05:00,2016-02-29T16:51:05-05:00
+9b6a39f5-25dd-6679-49d9-21dd8f268c66,65497,Political Files,Political Files,N,N,N,N,N,,18,2016-02-29T15:54:02-05:00,2016-02-29T15:54:02-05:00
+248164c2-72e8-9244-c8ac-5169db103aea,65497,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T15:54:02-05:00,2016-02-29T15:54:02-05:00
+1aa0fe75-9582-88cb-fa2d-fcd3aa3d4201,65947,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T15:55:48-05:00,2016-02-29T15:55:48-05:00
+a8e06dd9-d888-1a2c-d89a-bf55f0f61f69,65947,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T15:55:48-05:00,2016-02-29T15:55:48-05:00
+1025d11a-14c0-c48f-3f1e-4f06edcb301f,69132,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T15:46:07-05:00,2016-02-29T15:46:07-05:00
+45e1bb95-ca4a-be65-b76c-22af09189c10,69132,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T15:46:07-05:00,2016-02-29T15:46:07-05:00
+0df32d41-5ba8-c6fa-11f7-f21390bab992,69317,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T16:20:18-05:00,2016-02-29T16:20:18-05:00
+255e8ad3-5162-20e4-cd07-9c0c1ceae0c3,69317,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:20:18-05:00,2016-02-29T16:20:18-05:00
+8c956824-9030-5c1a-0c0b-799f182e4152,74067,Political Files,Political Files,N,N,N,N,N,,24,2016-02-29T17:19:58-05:00,2016-02-29T17:19:58-05:00
+0fa2665b-4bdc-0ac7-a0f9-daef26845a94,74067,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:19:58-05:00,2016-02-29T17:19:58-05:00
+b1771d3e-0c28-05a4-fbbb-83662e7979b5,171239,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T16:46:17-05:00,2016-02-29T16:46:17-05:00
+ba8ea33a-b575-c32c-60e5-716d3cceaeec,171239,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:46:17-05:00,2016-02-29T16:46:17-05:00
+0df3b223-acdd-8b07-8a3e-46072b41fb9b,76041,Political Files,Political Files,N,N,N,N,N,,15,2016-02-29T16:03:59-05:00,2016-02-29T16:03:59-05:00
+48cee4bb-bfe4-32f9-a0b2-e988c81674d5,76041,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:03:59-05:00,2016-02-29T16:03:59-05:00
+51fbba48-d514-f8c8-cfdb-1a4d4f17d5b8,78242,Political Files,Political Files,N,N,N,N,N,,3,2016-02-29T16:05:12-05:00,2016-02-29T16:05:12-05:00
+084c8dcf-5bca-6b44-5efe-24193066e503,78242,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,1,2016-02-29T16:05:12-05:00,2016-02-29T16:05:12-05:00
+aa8f14ad-7af0-070b-f942-047f4a009d1a,12160,Political Files,Political Files,N,N,N,N,N,,21,2016-02-29T17:11:10-05:00,2016-02-29T17:11:10-05:00
+e661b41e-59b2-f093-9308-ed638f1a2eda,12160,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:11:10-05:00,2016-02-29T17:11:10-05:00
+b8ffdbef-90c7-1013-1f6a-83200828e1ea,12882,Political Files,Political Files,N,N,N,N,N,,33,2016-02-29T16:26:22-05:00,2016-02-29T16:26:22-05:00
+0000d2dd-74c5-70c3-7e95-7821e3b509ad,12882,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,1,2016-02-29T16:26:22-05:00,2016-02-29T16:26:22-05:00
+eb67e563-d5fb-a90c-3853-f9999a0dd523,172799,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T16:10:34-05:00,2016-02-29T16:10:34-05:00
+f20f7767-7038-117f-f1e7-95de25d6411f,172799,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,1,2016-02-29T16:10:34-05:00,2016-02-29T16:10:34-05:00
+b8e94dd2-2894-368f-b28a-d2ade5f16954,17482,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T16:31:35-05:00,2016-02-29T16:31:35-05:00
+8d60e6c2-4ae1-ab7c-e989-3a8ec4d02581,17482,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:31:35-05:00,2016-02-29T16:31:35-05:00
+4f516aa8-51c6-5bc3-cc64-790ecdcc039a,17483,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T16:26:14-05:00,2016-02-29T16:26:14-05:00
+e0f5356e-dcd5-5003-d8dc-0925f6a20254,17483,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:26:14-05:00,2016-02-29T16:26:14-05:00
+1cbe8fc9-bc98-811b-a4fe-505850cb5a39,17673,Political Files,Political Files,N,N,N,N,N,,46,2016-02-29T16:42:41-05:00,2016-02-29T16:42:41-05:00
+6b32582b-a62f-0260-0041-ec6024fd5be8,17673,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:42:41-05:00,2016-02-29T16:42:41-05:00
+2e28da77-837b-4c6a-27f4-325ac4ac1a7a,28684,Political Files,Political Files,N,N,N,N,N,,349,2016-02-29T15:34:09-05:00,2016-02-29T15:34:09-05:00
+49024ed9-0660-3549-1bb7-e48d90c824db,28684,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T15:34:09-05:00,2016-02-29T15:34:09-05:00
+afd8025f-f1fd-7e06-f271-f70cd71fd4d9,18535,Political Files,Political Files,N,N,N,N,N,,106,2016-02-29T16:32:22-05:00,2016-02-29T16:32:22-05:00
+959b7a3b-1218-b364-33a5-18bafdbec8ea,18535,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:32:22-05:00,2016-02-29T16:32:22-05:00
+b32e6e8d-1be1-dc75-d64b-64304cd3cdcf,174338,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T16:14:30-05:00,2016-02-29T16:14:30-05:00
+4c00ee71-bbf4-47a2-5171-70aeaf9d6cde,174338,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:14:30-05:00,2016-02-29T16:14:30-05:00
+629dfdf3-d6b6-72c5-8dc8-0ad156cc440c,22184,Political Files,Political Files,N,N,N,N,N,,318,2016-02-29T16:18:32-05:00,2016-02-29T16:18:32-05:00
+fc3498eb-2f41-81d9-bf47-703d8b6e64e3,22184,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:18:32-05:00,2016-02-29T16:18:32-05:00
+adf95dbb-0d79-587e-46a7-bd766dc1ded5,22323,Political Files,Political Files,N,N,N,N,N,,1,2016-02-29T16:58:18-05:00,2016-02-29T16:58:18-05:00
+a64e29ef-4d1b-4db0-2b9a-c72719b823c4,22323,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:58:18-05:00,2016-02-29T16:58:18-05:00
+e0c21270-ea3e-8273-b47f-a680866f8c6c,22878,Political Files,Political Files,N,N,N,N,N,,1090,2016-02-29T15:46:01-05:00,2016-02-29T15:46:01-05:00
+e93f866d-e1fc-bf88-aa64-2fbe80600861,22878,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T15:46:01-05:00,2016-02-29T15:46:01-05:00
+9953c579-6c33-fe2d-ff88-dd36735f4a99,24949,Political Files,Political Files,N,N,N,N,N,,275,2016-02-29T15:38:04-05:00,2016-02-29T15:38:04-05:00
+9b4f1788-1605-5c2c-6e1c-9c32194ba8b0,24949,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T15:38:04-05:00,2016-02-29T15:38:04-05:00
+3de5ca06-7b74-b1da-78c3-38a6a1b21d3e,69267,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T17:04:00-05:00,2016-02-29T17:04:00-05:00
+19778f22-6fc8-69de-9a87-30e62573e31b,69267,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:04:00-05:00,2016-02-29T17:04:00-05:00
+913b21f7-beab-0802-92b7-f80dcf4a7fc8,69640,Political Files,Political Files,N,N,N,N,N,,23,2016-02-29T16:50:59-05:00,2016-02-29T16:50:59-05:00
+188cdeec-ef7d-42fd-d6c9-e26f28fc5fb8,69640,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:50:59-05:00,2016-02-29T16:50:59-05:00
+89b7cc0a-f0be-fbe9-8c1d-0fd5d6c56f71,33288,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T15:45:58-05:00,2016-02-29T15:45:58-05:00
+41600df3-ffe3-e31d-47ea-d83fa939751e,33288,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T15:45:58-05:00,2016-02-29T15:45:58-05:00
+3bb39972-12ed-0d80-8e9f-6c4d7bbdebcf,33470,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T16:25:16-05:00,2016-02-29T16:25:16-05:00
+7a0b432a-2c4f-5caa-ee22-4cae82ed74ff,33470,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:25:16-05:00,2016-02-29T16:25:16-05:00
+80b4612f-bfd2-de6b-5e6d-0b8d1fcc2900,35218,Political Files,Political Files,N,N,N,N,N,,101,2016-02-29T16:37:36-05:00,2016-02-29T16:37:36-05:00
+a7ba8142-026c-7e18-2fbf-52b70221927c,35218,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:37:36-05:00,2016-02-29T16:37:36-05:00
+c62126f6-0bff-8e17-50fc-dd576ab1e5f1,17670,Political Files,Political Files,N,N,N,N,N,,169,2016-02-29T17:07:00-05:00,2016-02-29T17:07:00-05:00
+050c2489-b621-8576-649b-668f59ce4b25,17670,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:07:00-05:00,2016-02-29T17:07:00-05:00
+5a0bf4cb-b69f-ad3a-6afe-ad3cbbf78d8c,25411,Political Files,Political Files,N,N,N,N,N,,418,2016-02-29T16:29:59-05:00,2016-02-29T16:29:59-05:00
+65326f97-299d-2e6e-58c2-3c83132cfa92,25411,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:29:59-05:00,2016-02-29T16:29:59-05:00
+38a9c00d-2a47-60c9-e57f-690e3914fb94,26388,Political Files,Political Files,N,N,N,N,N,,63,2016-02-29T16:23:26-05:00,2016-02-29T16:23:26-05:00
+322b0b70-70b0-3550-3876-1cf48d9e3dcc,26388,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:23:26-05:00,2016-02-29T16:23:26-05:00
+36a9a851-1d45-3fd5-f9a4-98c807b78700,26389,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T17:16:04-05:00,2016-02-29T17:16:04-05:00
+acf344f8-4525-4393-fd84-fc5a0cd33427,26389,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:16:04-05:00,2016-02-29T17:16:04-05:00
+131676be-0c18-d470-e652-4521751bc649,28685,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T15:39:06-05:00,2016-02-29T15:39:06-05:00
+bb96bedc-55a6-b01e-97ce-ed35a2f17206,28685,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T15:39:06-05:00,2016-02-29T15:39:06-05:00
+ffce1862-fd04-09c1-8297-9dc57f95160a,37467,Political Files,Political Files,N,N,N,N,N,,25,2016-02-29T17:12:01-05:00,2016-02-29T17:12:01-05:00
+f8729f11-c009-f317-0f65-62e60676e546,37467,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:12:01-05:00,2016-02-29T17:12:01-05:00
+ee491a9c-1877-fddd-eee5-d3787b621d55,39645,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T16:48:45-05:00,2016-02-29T16:48:45-05:00
+20f18fef-b0c7-37a9-4c24-2166d3765770,39645,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:48:45-05:00,2016-02-29T16:48:45-05:00
+0f160e9d-9895-3318-12d7-10523ab6d134,39646,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T17:04:14-05:00,2016-02-29T17:04:14-05:00
+cc7b90d2-f607-7102-e6de-b45d86123977,39646,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:04:14-05:00,2016-02-29T17:04:14-05:00
+b31929bd-e3ec-59de-1e0e-ed7d2f6bb4e4,39650,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T17:08:40-05:00,2016-02-29T17:08:40-05:00
+43f925a0-78cb-e354-d791-744aa8e66bfe,39650,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:08:40-05:00,2016-02-29T17:08:40-05:00
+60d95a8c-0348-9004-1aac-fca386e3c41d,39653,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T16:57:24-05:00,2016-02-29T16:57:24-05:00
+d72b96fc-6a7f-2afa-9a61-c28bf643ff79,39653,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:57:24-05:00,2016-02-29T16:57:24-05:00
+cc91b67f-f14f-212a-9757-823c5637c51d,39661,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T17:01:10-05:00,2016-02-29T17:01:10-05:00
+c441d312-8de7-741d-4235-f0cd7e51bba6,39661,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:01:10-05:00,2016-02-29T17:01:10-05:00
+0b5ee792-8659-a8b3-e187-a9aa2f2f4d8a,39655,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T16:26:01-05:00,2016-02-29T16:26:01-05:00
+bfc454b0-2b53-b463-c1ce-a3cd0d9df1be,39655,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:26:01-05:00,2016-02-29T16:26:01-05:00
+c095061d-ccfe-dd46-dc84-46f1b19cd4e9,41007,Political Files,Political Files,N,N,N,N,N,,270,2016-02-29T16:35:02-05:00,2016-02-29T16:35:02-05:00
+f702659c-46ff-2862-6df5-37da715cbf9a,41007,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:35:02-05:00,2016-02-29T16:35:02-05:00
+67d29d47-9eb0-066f-f66f-7689dbd21fe8,40925,Political Files,Political Files,N,N,N,N,N,,418,2016-02-29T17:01:07-05:00,2016-02-29T17:01:07-05:00
+98e39f84-fe13-9bc0-c1bc-26dbe00bf55d,40925,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:01:07-05:00,2016-02-29T17:01:07-05:00
+d064788b-c7f0-157d-6212-9e6da4c96ce4,41104,Political Files,Political Files,N,N,N,N,N,,349,2016-02-29T17:01:57-05:00,2016-02-29T17:01:57-05:00
+8eef020e-2164-6fba-6a10-4494927b40da,41104,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:01:57-05:00,2016-02-29T17:01:57-05:00
+7e89d473-2510-3066-4c52-4419b9cb0a6f,46352,Political Files,Political Files,N,N,N,N,N,,165,2016-02-29T17:07:36-05:00,2016-02-29T17:07:36-05:00
+e0764362-aee0-2024-e8f9-d8b5d44d5365,46352,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:07:36-05:00,2016-02-29T17:07:36-05:00
+f6317bb8-4e7a-0414-785f-d777600f1b12,46353,Political Files,Political Files,N,N,N,N,N,,48,2016-02-29T17:04:58-05:00,2016-02-29T17:04:58-05:00
+202fc653-67e3-f81c-95c5-a051ddbccfff,46353,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:04:58-05:00,2016-02-29T17:04:58-05:00
+bcb37cb3-6ce7-419e-a9aa-5da08a99626e,46323,Political Files,Political Files,N,N,N,N,N,,24,2016-02-29T15:45:41-05:00,2016-02-29T15:45:41-05:00
+01aa3e12-7f98-18b8-f721-95f00f8f8fa8,46323,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T15:45:41-05:00,2016-02-29T15:45:41-05:00
+9755bf23-06bb-53ab-2ef5-6f751525bffc,49690,Political Files,Political Files,N,N,N,N,N,,35,2016-02-29T17:01:50-05:00,2016-02-29T17:01:50-05:00
+e09a6911-8742-d747-f0ec-4d8562df498c,49690,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:01:50-05:00,2016-02-29T17:01:50-05:00
+33e1cfdb-fb6c-5b3c-9903-e617934eab21,49982,Political Files,Political Files,N,N,N,N,N,,191,2016-02-29T16:19:15-05:00,2016-02-29T16:19:15-05:00
+4396399a-a2a1-f1db-4c2b-6d9ba12a44ad,49982,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:19:15-05:00,2016-02-29T16:19:15-05:00
+a404fe9e-226e-b556-149e-fa8091532165,52037,Political Files,Political Files,N,N,N,N,N,,33,2016-02-29T17:06:33-05:00,2016-02-29T17:06:33-05:00
+b6533028-6a0d-1075-624c-f51a6b42f67e,52037,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:06:33-05:00,2016-02-29T17:06:33-05:00
+e9e0637a-f4b0-29ea-f6df-4e0bbaa7d8ef,52605,Political Files,Political Files,N,N,N,N,N,,273,2016-02-29T16:48:58-05:00,2016-02-29T16:48:58-05:00
+746b6016-43b0-fde0-ad2f-86dff3772ca1,52605,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:48:58-05:00,2016-02-29T16:48:58-05:00
+038da0c1-f5c3-44ad-767b-eddcbc924d93,52608,Political Files,Political Files,N,N,N,N,N,,480,2016-02-29T16:59:43-05:00,2016-02-29T16:59:43-05:00
+58f376ff-654f-2a3b-9fa9-4faabfa6ec0d,52608,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:59:43-05:00,2016-02-29T16:59:43-05:00
+ca8e6d91-deff-c9ee-98e7-3919c73b912e,54578,Political Files,Political Files,N,N,N,N,N,,235,2016-02-29T15:54:05-05:00,2016-02-29T15:54:05-05:00
+15efd9d9-a045-5703-894f-faecaac9b561,54578,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T15:54:05-05:00,2016-02-29T15:54:05-05:00
+f3fcd9fe-9251-e374-64f5-79f7f1558231,56569,Political Files,Political Files,N,N,N,N,N,,55,2016-02-29T16:52:26-05:00,2016-02-29T16:52:26-05:00
+b8ed1ffd-c954-4163-e9bd-10c2b4313978,56569,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:52:26-05:00,2016-02-29T16:52:26-05:00
+e94390f2-d5cf-949a-d429-168b643c05c1,57301,Political Files,Political Files,N,N,N,N,N,,307,2016-02-29T15:36:05-05:00,2016-02-29T15:36:05-05:00
+c05eccfd-d81a-3ab3-b845-a66bb733df17,57301,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T15:36:05-05:00,2016-02-29T15:36:05-05:00
+9c57c924-2c7b-9165-f2bf-0e011db6630e,58536,Political Files,Political Files,N,N,N,N,N,,98,2016-02-29T16:31:57-05:00,2016-02-29T16:31:57-05:00
+c34e77de-c80d-8e75-4a77-dd92818faa0c,58536,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:31:57-05:00,2016-02-29T16:31:57-05:00
+4ba45580-464b-b6ae-3244-98f3230b2a64,58548,Political Files,Political Files,N,N,N,N,N,,70,2016-02-29T15:48:07-05:00,2016-02-29T15:48:07-05:00
+a3af177b-c4a7-215e-8c6f-faca28f2c516,58548,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T15:48:07-05:00,2016-02-29T15:48:07-05:00
+1defeb8a-70e8-41cd-f86f-6afc7f64b3fc,59505,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T16:17:27-05:00,2016-02-29T16:17:27-05:00
+635cfb66-1f90-07f5-9ccd-0e70ff0a51ea,59505,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:17:27-05:00,2016-02-29T16:17:27-05:00
+f3b1ae7e-a6e9-f0f0-a632-61407be202c7,59534,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T16:56:51-05:00,2016-02-29T16:56:51-05:00
+d19ed25f-26e3-2336-9aed-e88507bbbace,59534,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:56:51-05:00,2016-02-29T16:56:51-05:00
+65bd3a3e-0497-554b-f35f-bcdf7e7de9ea,62289,Political Files,Political Files,N,N,N,N,N,,309,2016-02-29T17:18:08-05:00,2016-02-29T17:18:08-05:00
+8109ff71-deec-0e1b-7050-57829a840262,62289,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:18:08-05:00,2016-02-29T17:18:08-05:00
+ec19e124-db2e-a22b-9805-aae4f9a6997a,65498,Political Files,Political Files,N,N,N,N,N,,16,2016-02-29T16:04:20-05:00,2016-02-29T16:04:20-05:00
+6ee2c549-9e44-eaf7-9630-33556068a448,65498,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:04:20-05:00,2016-02-29T16:04:20-05:00
+608ee6f6-c822-be84-3568-ad9fd6f02548,65675,Political Files,Political Files,N,N,N,N,N,,289,2016-02-29T16:26:32-05:00,2016-02-29T16:26:32-05:00
+a73e3acd-c54f-25a0-05e2-de90484e2220,65675,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:26:32-05:00,2016-02-29T16:26:32-05:00
+5e9eb4a0-225a-1c1d-e48f-c7d34bd53390,66276,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T15:48:03-05:00,2016-02-29T15:48:03-05:00
+abf9aeac-e096-84bc-eaca-1cd839f816bb,66276,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T15:48:03-05:00,2016-02-29T15:48:03-05:00
+ce1eb556-97eb-c3ef-6696-059fb48a302f,68297,Political Files,Political Files,N,N,N,N,N,,418,2016-02-29T16:29:11-05:00,2016-02-29T16:29:11-05:00
+f66860db-9140-8e74-909f-95273baff923,68297,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:29:11-05:00,2016-02-29T16:29:11-05:00
+94016017-b5e5-089d-c2ca-f8e4f9bfcd48,68660,Political Files,Political Files,N,N,N,N,N,,512,2016-02-29T15:47:37-05:00,2016-02-29T15:47:37-05:00
+2c90e1b0-fa77-25e6-560a-3898fa2a5b24,68660,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T15:47:37-05:00,2016-02-29T15:47:37-05:00
+8cd5d5e8-e07e-c560-dc19-3e3ede8aa372,69854,Political Files,Political Files,N,N,N,N,N,,2,2016-02-29T16:29:23-05:00,2016-02-29T16:29:23-05:00
+1a500ea4-9250-a8db-bd46-4da430900d1d,69854,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:29:23-05:00,2016-02-29T16:29:23-05:00
+f0881eb2-7e00-ccd7-d472-244999bb6a5b,69855,Political Files,Political Files,N,N,N,N,N,,145,2016-02-29T16:31:18-05:00,2016-02-29T16:31:18-05:00
+86ebd794-5370-09d4-de06-7b6a5919eeff,69855,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:31:18-05:00,2016-02-29T16:31:18-05:00
+11281a2d-c19d-de4e-1abb-41fcfddca8e6,73885,Political Files,Political Files,N,N,N,N,N,,20,2016-02-29T16:42:57-05:00,2016-02-29T16:42:57-05:00
+91383a99-d019-5ec3-415a-e8701332a2e2,73885,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:42:57-05:00,2016-02-29T16:42:57-05:00
+ec85f3cc-1224-b653-c807-c1843c95e9d5,73718,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T17:09:49-05:00,2016-02-29T17:09:49-05:00
+b4f73082-0a31-403f-69f0-41300a992671,73718,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:09:49-05:00,2016-02-29T17:09:49-05:00
+4586f162-98e2-4f0a-1deb-22f829672ea6,73915,Political Files,Political Files,N,N,N,N,N,,235,2016-02-29T16:39:44-05:00,2016-02-29T16:39:44-05:00
+61c8c162-5eb1-e514-22f4-ba429ad8d488,73915,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:39:44-05:00,2016-02-29T16:39:44-05:00
+ac10ae57-1a28-4fb1-5349-7c1640cc7572,84096,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T16:09:02-05:00,2016-02-29T16:09:02-05:00
+8131096e-7a7b-1ab5-e9f3-b3e0b9ba7b65,84096,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:09:02-05:00,2016-02-29T16:09:02-05:00
+5f31d639-ec07-645c-ee1b-96a8c58e7c9d,92341,Political Files,Political Files,N,N,N,N,N,,25,2016-02-29T16:42:01-05:00,2016-02-29T16:42:01-05:00
+05d8c611-2b57-285d-3a11-aaa4a1d1dca5,92341,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:42:01-05:00,2016-02-29T16:42:01-05:00
+8cfb51f9-678d-5ce6-b38b-35612089d46b,92566,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T17:03:44-05:00,2016-02-29T17:03:44-05:00
+5fa05ceb-5163-4080-1da6-d2c1fd41287d,92566,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:03:44-05:00,2016-02-29T17:03:44-05:00
+92c4f2c4-9a73-2a18-9bf8-cce4e2fad562,123284,Political Files,Political Files,N,N,N,N,N,,20,2016-02-29T16:26:39-05:00,2016-02-29T16:26:39-05:00
+6fc6bb14-5e3a-ab0e-2ef9-afbe8d909f21,123284,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:26:39-05:00,2016-02-29T16:26:39-05:00
+e59e4b0b-203a-2020-5ee1-a16cf2a3fa98,165949,Political Files,Political Files,N,N,N,N,N,,165,2016-02-29T16:49:38-05:00,2016-02-29T16:49:38-05:00
+cbc6546c-239c-25f0-1fcf-c67966597e35,165949,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:49:38-05:00,2016-02-29T16:49:38-05:00
+b1a6daa1-e6b0-9df9-a482-834e19212e42,170487,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T16:53:29-05:00,2016-02-29T16:53:29-05:00
+1b738c30-cedf-53a5-fee6-3de32677323d,170487,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:53:29-05:00,2016-02-29T16:53:29-05:00
+cc7c2fe4-b58e-6f0f-9d9a-17b6923dd35a,170898,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T16:53:13-05:00,2016-02-29T16:53:13-05:00
+d3ed8f9c-08a6-5cc2-369d-b3ee41b97f3c,170898,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:53:13-05:00,2016-02-29T16:53:13-05:00
+02b9d947-fd64-0bcc-60e4-0aa696a7632a,172500,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T16:15:56-05:00,2016-02-29T16:15:56-05:00
+6e73b0d1-8fe1-bdda-7f08-44a9046110b2,172500,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:15:56-05:00,2016-02-29T16:15:56-05:00
+38b9e15c-7f7d-73ae-65e3-91dfdae3597f,172331,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T16:57:30-05:00,2016-02-29T16:57:30-05:00
+bafa702b-f530-03bb-6840-59a22fa3f249,172331,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:57:30-05:00,2016-02-29T16:57:30-05:00
+5fd8721a-f5fe-93f8-6b09-f6f806590cce,172503,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T17:08:04-05:00,2016-02-29T17:08:04-05:00
+666e7b14-16d6-8567-fb5e-7f6dc7ce0e3e,172503,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:08:04-05:00,2016-02-29T17:08:04-05:00
+c9fe2c74-8e37-f904-0023-e74f1ad2cf7c,174218,Political Files,Political Files,N,N,N,N,N,,25,2016-02-29T16:41:16-05:00,2016-02-29T16:41:16-05:00
+b5f30fcb-42aa-9909-6646-4657d235a553,174218,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:41:16-05:00,2016-02-29T16:41:16-05:00
+923ebcfa-8b94-580e-d677-35ad695994d7,174153,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T15:52:17-05:00,2016-02-29T15:52:17-05:00
+fb581a81-4480-48c9-3805-56cae2a3ad60,174153,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T15:52:17-05:00,2016-02-29T15:52:17-05:00
+e1bc31e8-0174-54bb-f478-a806d047ab0d,174228,Political Files,Political Files,N,N,N,N,N,,25,2016-02-29T15:39:34-05:00,2016-02-29T15:39:34-05:00
+282a0ea6-0029-4a8c-a081-e05d46a23f42,174228,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T15:39:34-05:00,2016-02-29T15:39:34-05:00
+513f475a-74b6-9ef7-c204-7e15d9361b53,174242,Political Files,Political Files,N,N,N,N,N,,25,2016-02-29T17:05:59-05:00,2016-02-29T17:05:59-05:00
+d8e0b690-0fb0-8bee-9631-8dde5feedbd1,174242,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T17:05:59-05:00,2016-02-29T17:05:59-05:00
+f0fe4738-41e3-6448-22e0-1e13135bc0cb,177407,Political Files,Political Files,N,N,N,N,N,,0,2016-02-29T16:06:02-05:00,2016-02-29T16:06:02-05:00
+7fa04b95-f7a3-38f1-23dc-21ff584d838b,177407,Political Matters and Controversial Issues Disclosures,Political Matters and Controversial Issues Disclosures,N,Y,Y,N,Y,,0,2016-02-29T16:06:02-05:00,2016-02-29T16:06:02-05:00
