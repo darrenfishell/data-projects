@@ -1,0 +1,140 @@
+﻿zip_code,zip_population,case_count,patient_city,patient_county,data_snapshot_date,household_median_income_estimate
+4210,23456,183,Auburn,Androscoggin,11/8/20,48924
+4222,3880,12,Durham,Androscoggin,11/8/20,73030
+4416,5414,6,Bucksport,Hancock,11/8/20,46250
+4605,13627,24,Ellsworth,Hancock,11/8/20,56787
+4274,5702,32,Poland,Androscoggin,11/8/20,61857
+4614,2791,7,Blue Hill,Hancock,11/8/20,59324
+4280,6941,34,Sabattus,Androscoggin,11/8/20,67275
+4640,2482,15,Hancock,Hancock,11/8/20,55341
+4282,5942,65,Turner,Androscoggin,11/8/20,63047
+4259,3169,9,Monmouth,Kennebec,11/8/20,54821
+4330,25417,151,Augusta,Kennebec,11/8/20,45278
+4344,2887,14,Farmingdale,Kennebec,11/8/20,39486
+4345,11873,37,Gardiner,Kennebec,11/8/20,56055
+4347,2416,9,Hallowell,Kennebec,11/8/20,59548
+4350,3639,10,Litchfield,Kennebec,11/8/20,69464
+4351,2648,14,Manchester,Kennebec,11/8/20,69083
+4355,2760,7,Readfield,Kennebec,11/8/20,82292
+4363,2692,11,Windsor,Kennebec,11/8/20,54948
+4364,5963,8,Winthrop,Kennebec,11/8/20,65990
+4901,26132,82,Waterville,Kennebec,11/8/20,43168
+4917,3152,16,Belgrade,Kennebec,11/8/20,80303
+4730,10103,10,Houlton,Aroostook,11/8/20,38750
+4927,3582,18,Clinton,Kennebec,11/8/20,47990
+4963,7446,31,Oakland,Kennebec,11/8/20,55253
+4841,7469,42,Rockland,Knox,11/8/20,41308
+4843,5057,15,Camden,Knox,11/8/20,57132
+4856,3667,13,Rockport,Knox,11/8/20,63011
+4861,2748,9,Thomaston,Knox,11/8/20,52907
+4862,3587,12,Union,Knox,11/8/20,57209
+4864,4785,22,Warren,Knox,11/8/20,67422
+4348,3070,8,Jefferson,Lincoln,11/8/20,56445
+4543,2201,6,Damariscotta,Lincoln,11/8/20,52941
+4236,4518,27,Greene,Androscoggin,11/8/20,69571
+4578,4539,10,Wiscasset,Lincoln,11/8/20,44835
+4037,3982,10,Fryeburg,Oxford,11/8/20,48065
+4736,9165,14,Caribou,Aroostook,11/8/20,38450
+4220,3221,6,Buckfield,Oxford,11/8/20,54444
+4224,3171,12,Dixfield,Oxford,11/8/20,37656
+4257,2652,12,Mexico,Oxford,11/8/20,45000
+4268,4991,11,Norway,Oxford,11/8/20,47798
+4270,6257,15,Oxford,Oxford,11/8/20,54250
+4276,6032,24,Rumford,Oxford,11/8/20,35440
+4281,5453,19,South Paris,Oxford,11/8/20,46597
+4401,44974,110,Bangor,Penobscot,11/8/20,47789
+4412,9544,17,Brewer,Penobscot,11/8/20,58403
+4419,2924,10,Carmel,Penobscot,11/8/20,67143
+4429,5113,6,Holden,Penobscot,11/8/20,59190
+4444,9173,27,Hampden,Penobscot,11/8/20,79716
+4743,4614,7,Fort Kent,Aroostook,11/8/20,42940
+4456,2995,6,Levant,Penobscot,11/8/20,63004
+4457,6062,6,Lincoln,Penobscot,11/8/20,39797
+4461,3545,7,Milford,Penobscot,11/8/20,63036
+4462,4761,30,Millinocket,Penobscot,11/8/20,37295
+4468,9860,16,Old Town,Penobscot,11/8/20,42475
+4473,11075,17,Orono,Penobscot,11/8/20,45742
+4474,3707,8,Orrington,Penobscot,11/8/20,64857
+4928,2415,8,Corinna,Penobscot,11/8/20,40762
+4930,4265,9,Dexter,Penobscot,11/8/20,37050
+4953,3504,13,Newport,Penobscot,11/8/20,50192
+4426,4496,9,Dover Foxcroft,Piscataquis,11/8/20,39928
+4008,2947,14,Bowdoinham,Sagadahoc,11/8/20,72533
+4086,9012,29,Topsham,Sagadahoc,11/8/20,74653
+4287,3261,6,Bowdoin,Sagadahoc,11/8/20,53243
+4357,3561,11,Richmond,Sagadahoc,11/8/20,53750
+4530,11031,31,Bath,Sagadahoc,11/8/20,52545
+4924,2337,22,Canaan,Somerset,11/8/20,50731
+4937,6581,13,Fairfield,Somerset,11/8/20,41084
+4240,37093,545,Lewiston,Androscoggin,11/8/20,41371
+4756,3192,6,Madawaska,Aroostook,11/8/20,39706
+4950,4694,59,Madison,Somerset,11/8/20,42229
+4957,3928,30,Norridgewock,Somerset,11/8/20,47622
+4965,2163,10,Palmyra,Somerset,11/8/20,48679
+4967,4087,25,Pittsfield,Somerset,11/8/20,50893
+4976,9465,68,Skowhegan,Somerset,11/8/20,42000
+4496,3727,8,Winterport,Waldo,11/8/20,58373
+4849,3941,16,Lincolnville,Waldo,11/8/20,59904
+4915,9275,71,Belfast,Waldo,11/8/20,55737
+4974,2785,10,Searsport,Waldo,11/8/20,36563
+4981,2446,9,Stockton Springs,Waldo,11/8/20,55591
+4619,2965,35,Calais,Washington,11/8/20,31078
+4654,3489,6,Machias,Washington,11/8/20,36615
+4694,2357,14,Baileyville,Washington,11/8/20,47228
+3901,8017,49,Berwick,York,11/8/20,85242
+3902,2456,23,Cape Neddick,York,11/8/20,84048
+3903,6621,44,Eliot,York,11/8/20,77435
+3904,7981,94,Kittery,York,11/8/20,69702
+3906,4997,37,North Berwick,York,11/8/20,72837
+3908,7365,64,South Berwick,York,11/8/20,86623
+3909,11004,104,York,York,11/8/20,93882
+4001,2711,27,Acton,York,11/8/20,56797
+4002,7790,84,Alfred,York,11/8/20,65291
+4005,24486,201,Biddeford,York,11/8/20,51953
+4027,6542,33,Lebanon,York,11/8/20,64771
+4030,2447,20,East Waterboro,York,11/8/20,68312
+4042,4518,24,Hollis Center,York,11/8/20,64183
+4043,11858,79,Kennebunk,York,11/8/20,76136
+4046,8150,28,Kennebunkport,York,11/8/20,71000
+4048,3175,26,Limerick,York,11/8/20,54340
+4049,4146,23,Limington,York,11/8/20,70512
+4061,3475,22,North Waterboro,York,11/8/20,70984
+4064,8968,59,Old Orchard Beach,York,11/8/20,50971
+4072,19810,134,Saco,York,11/8/20,68271
+4073,16333,172,Sanford,York,11/8/20,47220
+4076,2851,17,Shapleigh,York,11/8/20,67819
+4083,4720,50,Springvale,York,11/8/20,60158
+4087,2728,14,Waterboro,York,11/8/20,55978
+4090,11374,61,Wells,York,11/8/20,67269
+4093,8442,49,Buxton,York,11/8/20,72439
+4250,4223,25,Lisbon,Androscoggin,11/8/20,48875
+4252,4874,23,Lisbon Falls,Androscoggin,11/8/20,66056
+4011,21275,78,Brunswick,Cumberland,11/8/20,60326
+4015,4036,10,Casco,Cumberland,11/8/20,68125
+4021,6595,49,Cumberland Center,Cumberland,11/8/20,105573
+4253,2199,7,Livermore,Androscoggin,11/8/20,59511
+4032,8620,40,Freeport,Cumberland,11/8/20,80723
+4038,17859,121,Gorham,Cumberland,11/8/20,78251
+4039,8123,37,Gray,Cumberland,11/8/20,71855
+4040,3321,11,Harrison,Cumberland,11/8/20,44551
+4055,4093,10,Naples,Cumberland,11/8/20,67528
+4062,18327,202,Windham,Cumberland,11/8/20,76692
+4254,3265,15,Livermore Falls,Androscoggin,11/8/20,36094
+4071,5263,22,Raymond,Cumberland,11/8/20,75478
+4074,20326,196,Scarborough,Cumberland,11/8/20,97589
+4079,4048,9,Harpswell,Cumberland,11/8/20,77188
+4084,8450,45,Standish,Cumberland,11/8/20,73632
+4092,19778,329,Westbrook,Cumberland,11/8/20,55563
+4096,8694,33,Yarmouth,Cumberland,11/8/20,81731
+4097,3975,23,North Yarmouth,Cumberland,11/8/20,110500
+4101,18739,353,Portland,Cumberland,11/8/20,42076
+4102,18695,271,Portland,Cumberland,11/8/20,57982
+4103,31953,450,Portland,Cumberland,11/8/20,66799
+4105,12485,200,Falmouth,Cumberland,11/8/20,119022
+4106,26250,280,South Portland,Cumberland,11/8/20,66009
+4107,9569,111,Cape Elizabeth,Cumberland,11/8/20,111739
+4260,5974,15,New Gloucester,Cumberland,11/8/20,70081
+4258,2720,11,Minot,Androscoggin,11/8/20,73036
+4239,4581,21,Jay,Franklin,11/8/20,58823
+4294,4245,9,Wilton,Franklin,11/8/20,48056
+4938,9832,49,Farmington,Franklin,11/8/20,42301

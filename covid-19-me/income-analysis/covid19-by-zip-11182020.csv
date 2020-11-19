@@ -1,0 +1,397 @@
+﻿Zip_Code,Zip_Population,Case_Count,Patient_City,Patient_County,Data_Snapshot_Date
+04210,23456,183,Auburn,Androscoggin,2020-11-08
+04222,3880,12,Durham,Androscoggin,2020-11-08
+04236,4518,27,Greene,Androscoggin,2020-11-08
+04240,37093,545,Lewiston,Androscoggin,2020-11-08
+04250,4223,25,Lisbon,Androscoggin,2020-11-08
+04252,4874,23,Lisbon Falls,Androscoggin,2020-11-08
+04253,2199,7,Livermore,Androscoggin,2020-11-08
+04254,3265,15,Livermore Falls,Androscoggin,2020-11-08
+04256,3047,cc1-5,Mechanic Falls,Androscoggin,2020-11-08
+04258,2720,11,Minot,Androscoggin,2020-11-08
+04263,2474,cc1-5,Leeds,Androscoggin,2020-11-08
+04274,5702,32,Poland,Androscoggin,2020-11-08
+04280,6941,34,Sabattus,Androscoggin,2020-11-08
+04282,5942,65,Turner,Androscoggin,2020-11-08
+04471,661,No Detected Cases,Orient,Aroostook,2020-11-08
+04497,380,No Detected Cases,Wytopitlock,Aroostook,2020-11-08
+04730,10103,10,Houlton,Aroostook,2020-11-08
+04732,1603,cc1-5,Ashland,Aroostook,2020-11-08
+04733,201,No Detected Cases,Benedicta,Aroostook,2020-11-08
+04734,684,No Detected Cases,Blaine,Aroostook,2020-11-08
+04735,637,cc1-5,Bridgewater,Aroostook,2020-11-08
+04736,9165,14,Caribou,Aroostook,2020-11-08
+04739,1174,cc1-5,Eagle Lake,Aroostook,2020-11-08
+04740,1305,No Detected Cases,Easton,Aroostook,2020-11-08
+04742,3335,cc1-5,Fort Fairfield,Aroostook,2020-11-08
+04743,4614,7,Fort Kent,Aroostook,2020-11-08
+04745,1132,No Detected Cases,Frenchville,Aroostook,2020-11-08
+04746,477,cc1-5,Grand Isle,Aroostook,2020-11-08
+04747,1293,cc1-5,Island Falls,Aroostook,2020-11-08
+04750,2434,cc1-5,Limestone,Aroostook,2020-11-08
+04756,3192,6,Madawaska,Aroostook,2020-11-08
+04757,2849,cc1-5,Mapleton,Aroostook,2020-11-08
+04758,1456,cc1-5,Mars Hill,Aroostook,2020-11-08
+04760,802,No Detected Cases,Monticello,Aroostook,2020-11-08
+04761,509,cc6-19,New Limerick,Aroostook,2020-11-08
+04762,598,cc1-5,New Sweden,Aroostook,2020-11-08
+04763,710,cc1-5,Oakfield,Aroostook,2020-11-08
+04764,63,No Detected Cases,Oxbow,Aroostook,2020-11-08
+04766,441,No Detected Cases,Perham,Aroostook,2020-11-08
+04768,398,No Detected Cases,Portage,Aroostook,2020-11-08
+04769,9253,cc1-5,Presque Isle,Aroostook,2020-11-08
+04772,758,No Detected Cases,Saint Agatha,Aroostook,2020-11-08
+04773,649,No Detected Cases,Saint David,Aroostook,2020-11-08
+04774,756,cc1-5,Saint Francis,Aroostook,2020-11-08
+04776,949,cc1-5,Sherman,Aroostook,2020-11-08
+04779,370,cc1-5,Sinclair,Aroostook,2020-11-08
+04780,808,No Detected Cases,Smyrna Mills,Aroostook,2020-11-08
+04781,573,No Detected Cases,Wallagrass,Aroostook,2020-11-08
+04783,501,No Detected Cases,Stockholm,Aroostook,2020-11-08
+04785,2330,cc1-5,Van Buren,Aroostook,2020-11-08
+04786,2059,cc1-5,Washburn,Aroostook,2020-11-08
+04787,620,No Detected Cases,Westfield,Aroostook,2020-11-08
+04003,305,No Detected Cases,Bailey Island,Cumberland,2020-11-08
+04009,5547,cc1-5,Bridgton,Cumberland,2020-11-08
+04011,21275,78,Brunswick,Cumberland,2020-11-08
+04015,4036,10,Casco,Cumberland,2020-11-08
+04017,354,cc1-5,Chebeague Island,Cumberland,2020-11-08
+04019,76,No Detected Cases,Cliff Island,Cumberland,2020-11-08
+04021,6595,49,Cumberland Center,Cumberland,2020-11-08
+04024,681,cc1-5,East Baldwin,Cumberland,2020-11-08
+04029,1978,cc6-19,Sebago,Cumberland,2020-11-08
+04032,8620,40,Freeport,Cumberland,2020-11-08
+04038,17859,121,Gorham,Cumberland,2020-11-08
+04039,8123,37,Gray,Cumberland,2020-11-08
+04040,3321,11,Harrison,Cumberland,2020-11-08
+04050,250,cc1-5,Long Island,Cumberland,2020-11-08
+04055,4093,10,Naples,Cumberland,2020-11-08
+04062,18327,202,Windham,Cumberland,2020-11-08
+04066,616,cc1-5,Orrs Island,Cumberland,2020-11-08
+04069,1566,cc1-5,Pownal,Cumberland,2020-11-08
+04071,5263,22,Raymond,Cumberland,2020-11-08
+04074,20326,196,Scarborough,Cumberland,2020-11-08
+04078,133,cc1-5,South Freeport,Cumberland,2020-11-08
+04079,4048,9,Harpswell,Cumberland,2020-11-08
+04084,8450,45,Standish,Cumberland,2020-11-08
+04085,2012,cc6-19,Steep Falls,Cumberland,2020-11-08
+04091,1070,cc1-5,West Baldwin,Cumberland,2020-11-08
+04092,19778,329,Westbrook,Cumberland,2020-11-08
+04096,8694,33,Yarmouth,Cumberland,2020-11-08
+04097,3975,23,North Yarmouth,Cumberland,2020-11-08
+04101,18739,353,Portland,Cumberland,2020-11-08
+04102,18695,271,Portland,Cumberland,2020-11-08
+04103,31953,450,Portland,Cumberland,2020-11-08
+04105,12485,200,Falmouth,Cumberland,2020-11-08
+04106,26250,280,South Portland,Cumberland,2020-11-08
+04107,9569,111,Cape Elizabeth,Cumberland,2020-11-08
+04108,951,cc1-5,Peaks Island,Cumberland,2020-11-08
+04109,97,No Detected Cases,Portland,Cumberland,2020-11-08
+04110,1569,cc6-19,Cumberland Foreside,Cumberland,2020-11-08
+04260,5974,15,New Gloucester,Cumberland,2020-11-08
+04239,4581,21,Jay,Franklin,2020-11-08
+04285,435,cc1-5,Weld,Franklin,2020-11-08
+04294,4245,9,Wilton,Franklin,2020-11-08
+04936,404,No Detected Cases,Eustis,Franklin,2020-11-08
+04938,9832,49,Farmington,Franklin,2020-11-08
+04947,1762,cc6-19,Kingfield,Franklin,2020-11-08
+04955,1475,cc1-5,New Sharon,Franklin,2020-11-08
+04956,694,cc1-5,New Vineyard,Franklin,2020-11-08
+04966,1753,cc6-19,Phillips,Franklin,2020-11-08
+04970,1716,cc6-19,Rangeley,Franklin,2020-11-08
+04982,320,cc1-5,Stratton,Franklin,2020-11-08
+04983,1695,cc6-19,Strong,Franklin,2020-11-08
+04984,519,cc1-5,Temple,Franklin,2020-11-08
+04408,230,No Detected Cases,Aurora,Hancock,2020-11-08
+04416,5414,6,Bucksport,Hancock,2020-11-08
+04421,1177,cc1-5,Castine,Hancock,2020-11-08
+04472,2330,cc1-5,Orland,Hancock,2020-11-08
+04476,1223,cc1-5,Penobscot,Hancock,2020-11-08
+04605,13627,24,Ellsworth,Hancock,2020-11-08
+04607,1249,cc1-5,Gouldsboro,Hancock,2020-11-08
+04609,5321,cc1-5,Bar Harbor,Hancock,2020-11-08
+04612,732,No Detected Cases,Bernard,Hancock,2020-11-08
+04613,182,No Detected Cases,Birch Harbor,Hancock,2020-11-08
+04614,2791,7,Blue Hill,Hancock,2020-11-08
+04616,849,cc1-5,Brooklin,Hancock,2020-11-08
+04617,762,cc1-5,Brooksville,Hancock,2020-11-08
+04624,192,No Detected Cases,Corea,Hancock,2020-11-08
+04625,136,cc1-5,Cranberry Isles,Hancock,2020-11-08
+04627,1731,cc1-5,Deer Isle,Hancock,2020-11-08
+04634,1932,cc1-5,Franklin,Hancock,2020-11-08
+04635,59,No Detected Cases,Frenchboro,Hancock,2020-11-08
+04640,2482,15,Hancock,Hancock,2020-11-08
+04642,166,No Detected Cases,Harborside,Hancock,2020-11-08
+04650,249,cc1-5,Little Deer Isle,Hancock,2020-11-08
+04653,536,No Detected Cases,Bass Harbor,Hancock,2020-11-08
+04660,1427,cc1-5,Mount Desert,Hancock,2020-11-08
+04662,449,No Detected Cases,Northeast Harbor,Hancock,2020-11-08
+04664,1292,cc1-5,Sullivan,Hancock,2020-11-08
+04669,147,No Detected Cases,Prospect Harbor,Hancock,2020-11-08
+04673,126,No Detected Cases,Sargentville,Hancock,2020-11-08
+04674,410,No Detected Cases,Seal Cove,Hancock,2020-11-08
+04675,226,cc1-5,Seal Harbor,Hancock,2020-11-08
+04676,1038,No Detected Cases,Sedgwick,Hancock,2020-11-08
+04677,285,cc1-5,Sorrento,Hancock,2020-11-08
+04679,1696,cc1-5,Southwest Harbor,Hancock,2020-11-08
+04681,994,cc1-5,Stonington,Hancock,2020-11-08
+04684,1336,cc1-5,Surry,Hancock,2020-11-08
+04685,320,No Detected Cases,Swans Island,Hancock,2020-11-08
+04693,500,No Detected Cases,Winter Harbor,Hancock,2020-11-08
+04259,3169,9,Monmouth,Kennebec,2020-11-08
+04265,1052,cc1-5,North Monmouth,Kennebec,2020-11-08
+04284,1285,cc1-5,Wayne,Kennebec,2020-11-08
+04330,25417,151,Augusta,Kennebec,2020-11-08
+04344,2887,14,Farmingdale,Kennebec,2020-11-08
+04345,11873,37,Gardiner,Kennebec,2020-11-08
+04346,1682,cc6-19,Randolph,Kennebec,2020-11-08
+04347,2416,9,Hallowell,Kennebec,2020-11-08
+04349,1087,cc1-5,Kents Hill,Kennebec,2020-11-08
+04350,3639,10,Litchfield,Kennebec,2020-11-08
+04351,2648,14,Manchester,Kennebec,2020-11-08
+04352,1602,cc1-5,Mount Vernon,Kennebec,2020-11-08
+04355,2760,7,Readfield,Kennebec,2020-11-08
+04358,4427,cc1-5,South China,Kennebec,2020-11-08
+04359,89,cc1-5,South Gardiner,Kennebec,2020-11-08
+04360,602,cc1-5,Vienna,Kennebec,2020-11-08
+04363,2692,11,Windsor,Kennebec,2020-11-08
+04364,5963,8,Winthrop,Kennebec,2020-11-08
+04901,26132,82,Waterville,Kennebec,2020-11-08
+04910,2079,cc1-5,Albion,Kennebec,2020-11-08
+04917,3152,16,Belgrade,Kennebec,2020-11-08
+04927,3582,18,Clinton,Kennebec,2020-11-08
+04963,7446,31,Oakland,Kennebec,2020-11-08
+04989,4610,cc1-5,Vassalboro,Kennebec,2020-11-08
+04547,1239,cc1-5,Friendship,Knox,2020-11-08
+04563,1595,cc1-5,Cushing,Knox,2020-11-08
+04574,1598,cc1-5,Washington,Knox,2020-11-08
+04645,73,No Detected Cases,Isle Au Haut,Knox,2020-11-08
+04841,7469,42,Rockland,Knox,2020-11-08
+04843,5057,15,Camden,Knox,2020-11-08
+04847,1611,cc1-5,Hope,Knox,2020-11-08
+04853,381,cc6-19,North Haven,Knox,2020-11-08
+04854,1717,cc1-5,Owls Head,Knox,2020-11-08
+04856,3667,13,Rockport,Knox,2020-11-08
+04858,1630,No Detected Cases,South Thomaston,Knox,2020-11-08
+04859,770,cc1-5,Spruce Head,Knox,2020-11-08
+04860,1940,No Detected Cases,Tenants Harbor,Knox,2020-11-08
+04861,2748,9,Thomaston,Knox,2020-11-08
+04862,3587,12,Union,Knox,2020-11-08
+04863,1274,cc1-5,Vinalhaven,Knox,2020-11-08
+04864,4785,22,Warren,Knox,2020-11-08
+04342,1694,cc1-5,Dresden,Lincoln,2020-11-08
+04348,3070,8,Jefferson,Lincoln,2020-11-08
+04353,2348,cc1-5,Whitefield,Lincoln,2020-11-08
+04535,695,cc1-5,Alna,Lincoln,2020-11-08
+04537,2115,cc1-5,Boothbay,Lincoln,2020-11-08
+04538,2297,cc1-5,Boothbay Harbor,Lincoln,2020-11-08
+04539,1501,cc6-19,Bristol,Lincoln,2020-11-08
+04543,2201,6,Damariscotta,Lincoln,2020-11-08
+04544,750,cc1-5,East Boothbay,Lincoln,2020-11-08
+04551,916,cc1-5,Bremen,Lincoln,2020-11-08
+04553,1802,cc6-19,Newcastle,Lincoln,2020-11-08
+04554,708,No Detected Cases,New Harbor,Lincoln,2020-11-08
+04555,1782,No Detected Cases,Nobleboro,Lincoln,2020-11-08
+04556,1327,cc1-5,Edgecomb,Lincoln,2020-11-08
+04558,375,cc1-5,Pemaquid,Lincoln,2020-11-08
+04564,349,No Detected Cases,Round Pond,Lincoln,2020-11-08
+04568,447,No Detected Cases,South Bristol,Lincoln,2020-11-08
+04571,341,No Detected Cases,Trevett,Lincoln,2020-11-08
+04572,5449,cc6-19,Waldoboro,Lincoln,2020-11-08
+04573,527,cc1-5,Walpole,Lincoln,2020-11-08
+04576,634,cc1-5,Southport,Lincoln,2020-11-08
+04578,4539,10,Wiscasset,Lincoln,2020-11-08
+04010,1592,cc6-19,Brownfield,Oxford,2020-11-08
+04022,1243,cc1-5,Denmark,Oxford,2020-11-08
+04037,3982,10,Fryeburg,Oxford,2020-11-08
+04041,1690,cc1-5,Hiram,Oxford,2020-11-08
+04051,1228,cc6-19,Lovell,Oxford,2020-11-08
+04068,1683,cc1-5,Porter,Oxford,2020-11-08
+04088,1698,cc1-5,Waterford,Oxford,2020-11-08
+04216,884,cc1-5,Andover,Oxford,2020-11-08
+04217,3446,cc1-5,Bethel,Oxford,2020-11-08
+04219,1555,cc1-5,Bryant Pond,Oxford,2020-11-08
+04220,3221,6,Buckfield,Oxford,2020-11-08
+04221,1113,cc1-5,Canton,Oxford,2020-11-08
+04224,3171,12,Dixfield,Oxford,2020-11-08
+04231,239,No Detected Cases,Stoneham,Oxford,2020-11-08
+04237,249,cc1-5,Hanover,Oxford,2020-11-08
+04238,1498,cc6-19,Hebron,Oxford,2020-11-08
+04255,968,cc1-5,Greenwood,Oxford,2020-11-08
+04257,2652,12,Mexico,Oxford,2020-11-08
+04261,513,No Detected Cases,Newry,Oxford,2020-11-08
+04268,4991,11,Norway,Oxford,2020-11-08
+04270,6257,15,Oxford,Oxford,2020-11-08
+04275,508,cc1-5,Roxbury,Oxford,2020-11-08
+04276,6032,24,Rumford,Oxford,2020-11-08
+04281,5453,19,South Paris,Oxford,2020-11-08
+04289,1962,cc6-19,West Paris,Oxford,2020-11-08
+04290,1620,cc6-19,Peru,Oxford,2020-11-08
+04292,972,cc1-5,Sumner,Oxford,2020-11-08
+04401,44974,110,Bangor,Penobscot,2020-11-08
+04410,1331,cc1-5,Bradford,Penobscot,2020-11-08
+04411,1617,cc1-5,Bradley,Penobscot,2020-11-08
+04412,9544,17,Brewer,Penobscot,2020-11-08
+04417,372,cc1-5,Burlington,Penobscot,2020-11-08
+04418,1928,No Detected Cases,Greenbush,Penobscot,2020-11-08
+04419,2924,10,Carmel,Penobscot,2020-11-08
+04422,1384,cc1-5,Charleston,Penobscot,2020-11-08
+04427,2944,cc1-5,Corinth,Penobscot,2020-11-08
+04428,3224,cc1-5,Eddington,Penobscot,2020-11-08
+04429,5113,6,Holden,Penobscot,2020-11-08
+04430,1621,cc20-49,East Millinocket,Penobscot,2020-11-08
+04434,1352,cc1-5,Etna,Penobscot,2020-11-08
+04435,1113,No Detected Cases,Exeter,Penobscot,2020-11-08
+04444,9173,27,Hampden,Penobscot,2020-11-08
+04448,1374,cc1-5,Howland,Penobscot,2020-11-08
+04449,1516,cc1-5,Hudson,Penobscot,2020-11-08
+04450,1404,cc1-5,Kenduskeag,Penobscot,2020-11-08
+04451,358,No Detected Cases,Kingman,Penobscot,2020-11-08
+04453,809,No Detected Cases,Lagrange,Penobscot,2020-11-08
+04455,980,No Detected Cases,Lee,Penobscot,2020-11-08
+04456,2995,6,Levant,Penobscot,2020-11-08
+04457,6062,6,Lincoln,Penobscot,2020-11-08
+04459,701,cc1-5,Mattawamkeag,Penobscot,2020-11-08
+04460,1457,cc6-19,Medway,Penobscot,2020-11-08
+04461,3545,7,Milford,Penobscot,2020-11-08
+04462,4761,30,Millinocket,Penobscot,2020-11-08
+04468,9860,16,Old Town,Penobscot,2020-11-08
+04473,11075,17,Orono,Penobscot,2020-11-08
+04474,3707,8,Orrington,Penobscot,2020-11-08
+04475,410,No Detected Cases,Passadumkeag,Penobscot,2020-11-08
+04487,1037,No Detected Cases,Springfield,Penobscot,2020-11-08
+04488,1284,cc1-5,Stetson,Penobscot,2020-11-08
+04493,1980,cc1-5,West Enfield,Penobscot,2020-11-08
+04495,432,No Detected Cases,Winn,Penobscot,2020-11-08
+04765,1238,cc1-5,Patten,Penobscot,2020-11-08
+04777,414,cc1-5,Stacyville,Penobscot,2020-11-08
+04928,2415,8,Corinna,Penobscot,2020-11-08
+04930,4265,9,Dexter,Penobscot,2020-11-08
+04932,1166,cc1-5,Dixmont,Penobscot,2020-11-08
+04939,1156,cc1-5,Garland,Penobscot,2020-11-08
+04953,3504,13,Newport,Penobscot,2020-11-08
+04969,1446,cc1-5,Plymouth,Penobscot,2020-11-08
+04406,897,cc1-5,Abbot,Piscataquis,2020-11-08
+04414,1523,cc1-5,Brownville,Piscataquis,2020-11-08
+04426,4496,9,Dover Foxcroft,Piscataquis,2020-11-08
+04441,1373,No Detected Cases,Greenville,Piscataquis,2020-11-08
+04442,362,No Detected Cases,Greenville Junction,Piscataquis,2020-11-08
+04443,2504,cc1-5,Guilford,Piscataquis,2020-11-08
+04463,2614,No Detected Cases,Milo,Piscataquis,2020-11-08
+04464,613,No Detected Cases,Monson,Piscataquis,2020-11-08
+04479,1335,cc1-5,Sangerville,Piscataquis,2020-11-08
+04481,628,No Detected Cases,Sebec,Piscataquis,2020-11-08
+04485,260,No Detected Cases,Shirley Mills,Piscataquis,2020-11-08
+04008,2947,14,Bowdoinham,Sagadahoc,2020-11-08
+04086,9012,29,Topsham,Sagadahoc,2020-11-08
+04287,3261,6,Bowdoin,Sagadahoc,2020-11-08
+04357,3561,11,Richmond,Sagadahoc,2020-11-08
+04530,11031,31,Bath,Sagadahoc,2020-11-08
+04548,1082,cc1-5,Georgetown,Sagadahoc,2020-11-08
+04562,2419,cc1-5,Phippsburg,Sagadahoc,2020-11-08
+04579,3230,cc1-5,Woolwich,Sagadahoc,2020-11-08
+04478,304,No Detected Cases,Rockwood,Somerset,2020-11-08
+04911,2034,cc6-19,Anson,Somerset,2020-11-08
+04912,1051,cc1-5,Athens,Somerset,2020-11-08
+04920,1674,cc6-19,Bingham,Somerset,2020-11-08
+04923,446,No Detected Cases,Cambridge,Somerset,2020-11-08
+04924,2337,22,Canaan,Somerset,2020-11-08
+04925,63,No Detected Cases,Caratunk,Somerset,2020-11-08
+04929,857,No Detected Cases,Detroit,Somerset,2020-11-08
+04937,6581,13,Fairfield,Somerset,2020-11-08
+04942,1350,No Detected Cases,Harmony,Somerset,2020-11-08
+04943,1781,cc6-19,Hartland,Somerset,2020-11-08
+04945,1155,No Detected Cases,Jackman,Somerset,2020-11-08
+04950,4694,59,Madison,Somerset,2020-11-08
+04957,3928,30,Norridgewock,Somerset,2020-11-08
+04958,1983,cc6-19,North Anson,Somerset,2020-11-08
+04961,1060,cc1-5,New Portland,Somerset,2020-11-08
+04965,2163,10,Palmyra,Somerset,2020-11-08
+04967,4087,25,Pittsfield,Somerset,2020-11-08
+04971,2076,cc1-5,Saint Albans,Somerset,2020-11-08
+04976,9465,68,Skowhegan,Somerset,2020-11-08
+04978,974,cc1-5,Smithfield,Somerset,2020-11-08
+04979,1063,No Detected Cases,Solon,Somerset,2020-11-08
+04985,187,No Detected Cases,West Forks,Somerset,2020-11-08
+04354,1638,cc1-5,Palermo,Waldo,2020-11-08
+04438,1190,cc6-19,Frankfort,Waldo,2020-11-08
+04496,3727,8,Winterport,Waldo,2020-11-08
+04848,598,No Detected Cases,Islesboro,Waldo,2020-11-08
+04849,3941,16,Lincolnville,Waldo,2020-11-08
+04915,9275,71,Belfast,Waldo,2020-11-08
+04921,1727,cc20-49,Brooks,Waldo,2020-11-08
+04922,1218,No Detected Cases,Burnham,Waldo,2020-11-08
+04941,1829,cc1-5,Freedom,Waldo,2020-11-08
+04949,993,cc1-5,Liberty,Waldo,2020-11-08
+04951,1011,No Detected Cases,Monroe,Waldo,2020-11-08
+04952,1897,cc6-19,Morrill,Waldo,2020-11-08
+04973,1417,cc1-5,Searsmont,Waldo,2020-11-08
+04974,2785,10,Searsport,Waldo,2020-11-08
+04981,2446,9,Stockton Springs,Waldo,2020-11-08
+04986,1802,cc6-19,Thorndike,Waldo,2020-11-08
+04987,1066,No Detected Cases,Troy,Waldo,2020-11-08
+04988,2284,cc1-5,Unity,Waldo,2020-11-08
+04413,130,cc1-5,Brookton,Washington,2020-11-08
+04424,811,cc1-5,Danforth,Washington,2020-11-08
+04454,56,No Detected Cases,Lambert Lake,Washington,2020-11-08
+04490,313,No Detected Cases,Topsfield,Washington,2020-11-08
+04491,134,No Detected Cases,Vanceboro,Washington,2020-11-08
+04492,160,No Detected Cases,Waite,Washington,2020-11-08
+04606,1324,cc1-5,Addison,Washington,2020-11-08
+04611,495,cc1-5,Beals,Washington,2020-11-08
+04619,2965,35,Calais,Washington,2020-11-08
+04622,1396,cc1-5,Cherryfield,Washington,2020-11-08
+04623,1083,No Detected Cases,Columbia Falls,Washington,2020-11-08
+04626,616,cc1-5,Cutler,Washington,2020-11-08
+04628,756,No Detected Cases,Dennysville,Washington,2020-11-08
+04630,1495,cc1-5,East Machias,Washington,2020-11-08
+04631,1337,cc1-5,Eastport,Washington,2020-11-08
+04643,992,cc1-5,Harrington,Washington,2020-11-08
+04648,562,No Detected Cases,Jonesboro,Washington,2020-11-08
+04649,1331,cc6-19,Jonesport,Washington,2020-11-08
+04652,1628,cc1-5,Lubec,Washington,2020-11-08
+04654,3489,6,Machias,Washington,2020-11-08
+04655,1085,No Detected Cases,Machiasport,Washington,2020-11-08
+04657,302,cc1-5,Meddybemps,Washington,2020-11-08
+04658,1354,cc1-5,Milbridge,Washington,2020-11-08
+04666,1200,cc6-19,Pembroke,Washington,2020-11-08
+04667,1645,cc1-5,Perry,Washington,2020-11-08
+04668,1809,cc1-5,Princeton,Washington,2020-11-08
+04671,595,cc1-5,Robbinston,Washington,2020-11-08
+04680,1167,cc1-5,Steuben,Washington,2020-11-08
+04686,87,No Detected Cases,Wesley,Washington,2020-11-08
+04691,444,cc1-5,Whiting,Washington,2020-11-08
+04694,2357,14,Baileyville,Washington,2020-11-08
+03901,8017,49,Berwick,York,2020-11-08
+03902,2456,23,Cape Neddick,York,2020-11-08
+03903,6621,44,Eliot,York,2020-11-08
+03904,7981,94,Kittery,York,2020-11-08
+03905,1815,cc6-19,Kittery Point,York,2020-11-08
+03906,4997,37,North Berwick,York,2020-11-08
+03907,925,cc6-19,Ogunquit,York,2020-11-08
+03908,7365,64,South Berwick,York,2020-11-08
+03909,11004,104,York,York,2020-11-08
+03910,328,cc6-19,York,York,2020-11-08
+03911,250,cc1-5,York,York,2020-11-08
+04001,2711,27,Acton,York,2020-11-08
+04002,7790,84,Alfred,York,2020-11-08
+04005,24486,201,Biddeford,York,2020-11-08
+04020,1550,cc6-19,Cornish,York,2020-11-08
+04027,6542,33,Lebanon,York,2020-11-08
+04030,2447,20,East Waterboro,York,2020-11-08
+04042,4518,24,Hollis Center,York,2020-11-08
+04043,11858,79,Kennebunk,York,2020-11-08
+04046,8150,28,Kennebunkport,York,2020-11-08
+04047,2121,cc1-5,Parsonsfield,York,2020-11-08
+04048,3175,26,Limerick,York,2020-11-08
+04049,4146,23,Limington,York,2020-11-08
+04061,3475,22,North Waterboro,York,2020-11-08
+04064,8968,59,Old Orchard Beach,York,2020-11-08
+04072,19810,134,Saco,York,2020-11-08
+04073,16333,172,Sanford,York,2020-11-08
+04076,2851,17,Shapleigh,York,2020-11-08
+04083,4720,50,Springvale,York,2020-11-08
+04087,2728,14,Waterboro,York,2020-11-08
+04090,11374,61,Wells,York,2020-11-08
+04093,8442,49,Buxton,York,2020-11-08
+04095,1617,cc1-5,West Newfield,York,2020-11-08
