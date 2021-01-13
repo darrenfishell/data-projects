@@ -75,3 +75,4 @@ campaign-2020/fec-data-pipeline/itemized_contributions.csv
 tableau-updater/selenium
 tableau-updater/webdriver_manager
 tableau-updater/chromedriver
+campaign-2020/fec-data-pipeline/.idea/fec-data-pipeline.iml
