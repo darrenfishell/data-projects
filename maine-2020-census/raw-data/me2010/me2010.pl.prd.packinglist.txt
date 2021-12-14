@@ -1,0 +1,46 @@
+################################################################################
+      File: Packing list for zip file.
+       STUSAB: ME
+      Created: Wed Feb 23 10:54:24 EST 2011
+     Zip File: /dpp/prod/HANDOFF/pop/plst/me/me2010.pl.prd.zip
+ Packing List: /dpp/prod/plst/reports/me/me2010.pl.prd.packinglist.txt
+################################################################################
+
+################################################################################
+Data Segmentation information
+
+ Column Description
+ ====== ===============================
+      1 Table Name
+        Example: p13a
+      2 Segment information, which is 1 or more segment:cell descriptors separated by a space
+        Example: 1:7
+        Example: 6:89
+        Example: 6:4 7:325 8:180
+
+p1|1:71|
+p2|1:73|
+p3|2:71|
+p4|2:73|
+h1|2:3|
+################################################################################
+
+################################################################################
+Zip Contents, excluding the packing list (this file)
+
+ Column Description
+ ====== ===============================
+      1 File Name
+      2 DateTime Last Modified, format is YYYY-MM-DD HH24:MI:SS
+      3 File size in bytes
+        Note: UNIX files do not have carriage returns, therefore if this file
+        is converted the filesize may differ.
+      4 Row Count
+        Note, only computed for the geoheader and data segments.
+
+megeo2010.pl|2011-02-16 17:00:35|43355037|86537|
+me000012010.pl|2011-02-16 17:00:01|27543204|86537|
+me000022010.pl|2011-02-16 17:00:11|28126880|86537|
+#################################################################################
+END OF PACKINGLIST
+#################################################################################
