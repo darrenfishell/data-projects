@@ -78,3 +78,10 @@ tableau-updater/chromedriver
 campaign-2020/fec-data-pipeline/.idea/fec-data-pipeline.iml
 .DS_Store
 *.twbr
+/biomass-bailout/.DS_Store
+/bls-journalism-stats/.DS_Store
+/fec-data-2020/.DS_Store
+/fec-data-2020/presidential/.DS_Store
+/retail-power-compare/.DS_Store
+/retail-power-compare/raw/.DS_Store
+/spatial-files/.DS_Store
