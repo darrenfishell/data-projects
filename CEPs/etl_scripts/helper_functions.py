@@ -42,46 +42,51 @@ def download_eia_861(start_year, end_year, data_dir=None):
 
 
 def process_and_merge_861(data_dir, process_dir):
-
     files = glob.glob(os.path.join(data_dir, '*.xls*'))
-
+    col_range = 'A:R'
+    skiprows = 2
     tiers = ['RESIDENTIAL', 'COMMERCIAL', 'INDUSTRIAL']
     measures = ['REVENUE', 'SALES_MWH', 'CUSTOMERS']
 
+    # Set up column names
     tier_cols = [f'{tier}_{measure}' for tier in tiers for measure in measures]
-
-    col_range = 'A:R'
-    skiprows = 2
-
-    columns = [
-                  'YEAR',
-                  'UTILITY_NUMBER',
-                  'UTILITY_NAME',
-                  'PART',
-                  'SERVICE_TYPE',
-                  'DATA_TYPE',
-                  'STATE',
-                  'OWNERSHIP',
-                  'BA_CODE'
-              ] + tier_cols
+    all_columns = ['YEAR', 'UTILITY_NUMBER', 'UTILITY_NAME', 'PART', 'SERVICE_TYPE', 'DATA_TYPE',
+                   'STATE', 'OWNERSHIP', 'BA_CODE'] + tier_cols
 
     dfs = []
 
     for file in files:
         print(f'Reading in {file}')
         df = pd.read_excel(file, skiprows=skiprows, usecols=col_range)
-        df.columns = columns
+        df.columns = all_columns
         dfs.append(df)
 
     df_merged = pd.concat(dfs, axis=0).reset_index(drop=True)
 
     # Remove erroneous footer rows
-    df_merged = df_merged[df_merged['YEAR'].apply(lambda x: type(x) == int)]
+    df_merged = df_merged[df_merged['YEAR'].apply(lambda x: isinstance(x, int))]
 
-    print(f'Merged dataframe of {df.shape}')
+    dfs = []
 
-    df_merged.to_csv(os.path.join(process_dir, 'sales_ult_cust_all_years.csv'))
+    for tier in tiers:
+        ref_list = tiers.copy()
+        ref_list.remove(tier)
+
+        exclusion = '|'.join(ref_list)
+        exclude_regex = f'^(?!{exclusion})'
+
+        df = df_merged.filter(regex=exclude_regex).assign(CUSTOMER_TYPE=tier)
+        df.columns = [col.replace(f'{tier}_', '') for col in df.columns]
+        dfs.append(df)
+
+    pivot_df = pd.concat(dfs, axis=0).reset_index(drop=True)
+
+    print(f'Merged dataframe of {pivot_df.shape}')
+
+    output_file_path = os.path.join(process_dir, 'sales_ult_cust_all_years.csv')
+    pivot_df.to_csv(output_file_path, index=False)
 
     print(f'Wrote dataframe to CSV in {process_dir}')
 
-    return df_merged
+    return pivot_df
+
