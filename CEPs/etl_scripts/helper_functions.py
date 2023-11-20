@@ -50,14 +50,20 @@ def process_and_merge_861(data_dir, process_dir):
 
     # Set up column names
     tier_cols = [f'{tier}_{measure}' for tier in tiers for measure in measures]
-    all_columns = ['YEAR', 'UTILITY_NUMBER', 'UTILITY_NAME', 'PART', 'SERVICE_TYPE', 'DATA_TYPE',
-                   'STATE', 'OWNERSHIP', 'BA_CODE'] + tier_cols
+    all_columns = ['YEAR', 'UTILITY_NUMBER', 'UTILITY_NAME', 'PART', 'SERVICE_TYPE', 'DATA_TYPE', 'STATE', 'OWNERSHIP', 'BA_CODE'] + tier_cols
 
     dfs = []
 
     for file in files:
         print(f'Reading in {file}')
         df = pd.read_excel(file, skiprows=skiprows, usecols=col_range)
+
+        # BA_CODE does not exist in 2012 file, add this
+        # Drop last column incorrectly indexed from A:K
+        if '2012' in file:
+            df.insert(loc=8, column='BA_CODE', value=np.nan)
+            df = df.drop(df.columns[-1], axis=1)
+
         df.columns = all_columns
         dfs.append(df)
 
@@ -96,39 +102,59 @@ def process_and_merge_861(data_dir, process_dir):
     return pivot_df
 
 
-def process_customer_migration_files(source_dir, target_dir):
+def process_customer_migration_files(remote_file, data_dir, target_dir):
+
+    # Get and write file
+    resp = requests.get(remote_file)
+    filepath = os.path.join(data_dir, 'customer_migration_statistics.xls')
+    with open(filepath, 'wb') as file:
+        file.write(resp.content)
+
+    cust_cols = ['DATE', 'CEP_CUSTOMERS', 'TOTAL_CUSTOMERS', 'UTILITY']
+    load_cols = ['DATE', 'CEP_LOAD_MWH', 'TOTAL_CLASS_LOAD_MWH', 'UTILITY']
+
+    # Select and transform source data
     col_range = 'A:AK'
-    skiprows = 3
-    df = pd.read_excel(source_dir, skiprows=skiprows, usecols=col_range)
-    df = df[~df.iloc[:, 1].isna()]
 
-    exclude_regex = f'^(?!%)'
-    df = df.filter(regex=exclude_regex)
-
-    district_dict = {
-        'BANGOR HYDRO DISTRICT': slice(1, 3),
-        'CENTRAL MAINE POWER CO.': slice(9, 11),
-        'MAINE PUBLIC SERVICE': slice(17, 19)
+    sheet_to_file_map = {
+        'Customers': {
+            'filename': 'customers_migrated.csv',
+            'cols': cust_cols,
+            'skiprows': 3
+        },
+        'Load': {
+            'filename': 'load_migrated.csv',
+            'cols': load_cols,
+            'skiprows': 4
+        }
     }
 
-    dfs = []
-    cep_cols = [
-        'DATE',
-        'CEP_CUSTOMERS',
-        'TOTAL_CUSTOMERS',
-        'UTILITY'
-    ]
+    for sheet, deets in sheet_to_file_map.items():
 
-    # Transform each utility partition, adding ref column
-    for utility, col_slice in district_dict.items():
-        df_slice = df.iloc[:, np.r_[0, col_slice]].assign(UTILITY=utility)
-        df_slice.columns = cep_cols
-        dfs.append(df_slice)
+        df = pd.read_excel(resp.content, sheet_name=sheet, skiprows=deets.get('skiprows'), usecols=col_range)
+        df = df[~df.iloc[:, 1].isna()]
 
-    migration_df = pd.concat(dfs, axis=0)
+        exclude_regex = f'^(?!%)'
+        df = df.filter(regex=exclude_regex)
 
-    migration_df.to_csv(os.path.join(target_dir, 'mpuc_customer_migration_statistics.csv'), index=False)
+        district_dict = {
+            'BANGOR HYDRO DISTRICT': slice(1, 3),
+            'CENTRAL MAINE POWER CO.': slice(9, 11),
+            'MAINE PUBLIC SERVICE': slice(17, 19)
+        }
 
-    print(f'Captured and wrote file of shape {migration_df.shape}')
+        dfs = []
+
+        # Transform each utility partition, adding ref column
+        for utility, col_slice in district_dict.items():
+            df_slice = df.iloc[:, np.r_[0, col_slice]].assign(UTILITY=utility)
+            df_slice.columns = deets.get('cols')
+            dfs.append(df_slice)
+
+        migration_df = pd.concat(dfs, axis=0)
+
+        migration_df.to_csv(os.path.join(target_dir, deets.get('filename')), index=False)
+
+        print(f'Captured and wrote {sheet} file of shape {migration_df.shape}')
 
     return migration_df
