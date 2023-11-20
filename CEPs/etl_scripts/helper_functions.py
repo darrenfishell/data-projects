@@ -42,7 +42,7 @@ def download_eia_861(start_year, end_year, data_dir=None):
 
 
 def process_and_merge_861(data_dir, process_dir):
-    files = glob.glob(os.path.join(data_dir, '*.xls*'))
+    files = glob.glob(os.path.join(data_dir, 'Sales_*.xls*'))
     col_range = 'A:R'
     skiprows = 2
     tiers = ['RESIDENTIAL', 'COMMERCIAL', 'INDUSTRIAL']
@@ -56,6 +56,12 @@ def process_and_merge_861(data_dir, process_dir):
 
     for file in files:
         print(f'Reading in {file}')
+
+        if '2019' in file:
+            col_range = 'A:S'
+        else:
+            col_range = 'A:R'
+
         df = pd.read_excel(file, skiprows=skiprows, usecols=col_range)
 
         # BA_CODE does not exist in 2012 file, add this
@@ -64,7 +70,13 @@ def process_and_merge_861(data_dir, process_dir):
             df.insert(loc=8, column='BA_CODE', value=np.nan)
             df = df.drop(df.columns[-1], axis=1)
 
+        if '2019' in file:
+            df = df.drop('Short Form', axis=1)
+
         df.columns = all_columns
+
+        display(df.head())
+
         dfs.append(df)
 
     df_merged = pd.concat(dfs, axis=0).reset_index(drop=True)
