@@ -10,8 +10,8 @@ from io import BytesIO
 
 eia_page = 'https://www.eia.gov/electricity/data/eia861/'
 
-def download_eia_861(start_year, end_year, data_dir=None):
 
+def download_eia_861(start_year, end_year, data_dir=None):
     target_regex = re.compile(r'Sales_Ult_Cust_\d{4}\.xls')
 
     if start_year < 2012:
@@ -95,3 +95,40 @@ def process_and_merge_861(data_dir, process_dir):
 
     return pivot_df
 
+
+def process_customer_migration_files(source_dir, target_dir):
+    col_range = 'A:AK'
+    skiprows = 3
+    df = pd.read_excel(source_dir, skiprows=skiprows, usecols=col_range)
+    df = df[~df.iloc[:, 1].isna()]
+
+    exclude_regex = f'^(?!%)'
+    df = df.filter(regex=exclude_regex)
+
+    district_dict = {
+        'BANGOR HYDRO DISTRICT': slice(1, 3),
+        'CENTRAL MAINE POWER CO.': slice(9, 11),
+        'MAINE PUBLIC SERVICE': slice(17, 19)
+    }
+
+    dfs = []
+    cep_cols = [
+        'DATE',
+        'CEP_CUSTOMERS',
+        'TOTAL_CUSTOMERS',
+        'UTILITY'
+    ]
+
+    # Transform each utility partition, adding ref column
+    for utility, col_slice in district_dict.items():
+        df_slice = df.iloc[:, np.r_[0, col_slice]].assign(UTILITY=utility)
+        df_slice.columns = cep_cols
+        dfs.append(df_slice)
+
+    migration_df = pd.concat(dfs, axis=0)
+
+    migration_df.to_csv(os.path.join(target_dir, 'mpuc_customer_migration_statistics.csv'), index=False)
+
+    print(f'Captured and wrote file of shape {migration_df.shape}')
+
+    return migration_df
