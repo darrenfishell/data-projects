@@ -81,6 +81,11 @@ def process_and_merge_861(data_dir, process_dir):
 
     pivot_df = pd.concat(dfs, axis=0).reset_index(drop=True)
 
+    # Correct value to thousands of dollars
+    pivot_df['REVENUE'] = pivot_df['REVENUE'] * 1000
+    pivot_df['SALES_MWH'] = pivot_df['SALES_MWH'] * 1000
+    pivot_df.rename(columns={'SALES_MWH': 'SALES_KWH'}, inplace=True)
+
     print(f'Merged dataframe of {pivot_df.shape}')
 
     output_file_path = os.path.join(process_dir, 'sales_ult_cust_all_years.csv')
