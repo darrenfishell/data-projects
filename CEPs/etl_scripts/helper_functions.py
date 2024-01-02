@@ -122,8 +122,8 @@ def process_customer_migration_files(remote_file, data_dir, target_dir):
     with open(filepath, 'wb') as file:
         file.write(resp.content)
 
-    cust_cols = ['DATE', 'CEP_CUSTOMERS', 'TOTAL_CUSTOMERS', 'UTILITY']
-    load_cols = ['DATE', 'CEP_LOAD_MWH', 'TOTAL_CLASS_LOAD_MWH', 'UTILITY']
+    cust_cols = ['DATE', 'CEP_CUSTOMERS', 'TOTAL_CUSTOMERS']
+    load_cols = ['DATE', 'CEP_LOAD_MWH', 'TOTAL_CLASS_LOAD_MWH']
 
     # Select and transform source data
     col_range = 'A:AK'
@@ -150,18 +150,29 @@ def process_customer_migration_files(remote_file, data_dir, target_dir):
         df = df.filter(regex=exclude_regex)
 
         district_dict = {
-            'BANGOR HYDRO DISTRICT': slice(1, 3),
-            'CENTRAL MAINE POWER CO.': slice(9, 11),
-            'MAINE PUBLIC SERVICE': slice(17, 19)
+            'BANGOR HYDRO DISTRICT': {
+                'SMALL': slice(1, 3),
+                'MEDIUM': slice(4, 6)
+            },
+            'CENTRAL MAINE POWER CO.': {
+                'SMALL': slice(9, 11),
+                'MEDIUM': slice(12, 14)
+            },
+            'MAINE PUBLIC SERVICE': {
+                'SMALL': slice(17, 19),
+                'MEDIUM': slice(20, 22)
+            }
         }
 
         dfs = []
 
         # Transform each utility partition, adding ref column
-        for utility, col_slice in district_dict.items():
-            df_slice = df.iloc[:, np.r_[0, col_slice]].assign(UTILITY=utility)
-            df_slice.columns = deets.get('cols')
-            dfs.append(df_slice)
+        for utility, v in district_dict.items():
+            for customer_class, col_slice in v.items():
+                df_slice = df.iloc[:, np.r_[0, col_slice]]
+                df_slice.columns = deets.get('cols')
+                df_slice = df_slice.assign(UTILITY=utility).assign(CUSTOMER_CLASS=customer_class)
+                dfs.append(df_slice)
 
         migration_df = pd.concat(dfs, axis=0)
 
