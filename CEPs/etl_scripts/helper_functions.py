@@ -152,15 +152,15 @@ def process_customer_migration_files(remote_file, data_dir, target_dir):
         district_dict = {
             'BANGOR HYDRO DISTRICT': {
                 'SMALL': slice(1, 3),
-                'MEDIUM': slice(4, 6)
+                'MEDIUM': slice(3, 5)
             },
             'CENTRAL MAINE POWER CO.': {
                 'SMALL': slice(9, 11),
-                'MEDIUM': slice(12, 14)
+                'MEDIUM': slice(11, 13)
             },
             'MAINE PUBLIC SERVICE': {
                 'SMALL': slice(17, 19),
-                'MEDIUM': slice(20, 22)
+                'MEDIUM': slice(19, 21)
             }
         }
 

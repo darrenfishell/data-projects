@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fdc639e3-dea7-4a19-b0a0-42c0180416a8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../arka/fdic-sdi/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/bls-journalism-stats.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CEPs/eda.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CEPs/data/cep-data-flow.tfl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CEPs/data/cep-enrollment-trend.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CEPs/etl_scripts/cep_data_prep.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../CEPs/etl_scripts/cep_data_prep.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CEPs/retail_power_comparison.twb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CEPs/retail_power_comparison.twbx" beforeDir="false" afterPath="$PROJECT_DIR$/../CEPs/retail_power_comparison.twbx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QCEW newspaper job scraper.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/QCEW newspaper job scraper.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,9 +37,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectFrameBounds">
     <option name="x" value="408" />
     <option name="y" value="61" />
@@ -76,14 +80,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
