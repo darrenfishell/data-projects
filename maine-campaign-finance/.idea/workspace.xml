@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="97c0958e-4785-4776-8ac2-011c6cd641f9" name="Default Changelist" comment="" />
+    <list default="true" id="45e5aebb-4b8d-4091-841d-1273f9a119f2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/maine-campaign-finance.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/maine-campaign-finance.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/me-state-campaign-finance-loader.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/me-state-campaign-finance-loader.ipynb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,86 +27,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1bQIIuE21iqdpflCabsr1CjTf4i" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2dZWawsf9sjmpnduBnU5TpIWjCs" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-  </component>
-  <component name="RunManager">
-    <configuration name="maine-ethics-scraper" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="maine-campaign-finance" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/maine-ethics-scraper.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.maine-ethics-scraper" />
-      </list>
-    </recent_temporary>
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.notebooks.jupyter.connections.configuration.JupyterServerConfigurable"
+  }
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="97c0958e-4785-4776-8ac2-011c6cd641f9" name="Default Changelist" comment="" />
-      <created>1588557813647</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1588557813647</updated>
-    </task>
-    <servers />
-  </component>
-  <component name="WindowStateProjectService">
-    <state width="1580" height="474" key="GridCell.Tab.0.bottom" timestamp="1594946546369">
-      <screen x="0" y="23" width="3008" height="1618" />
-    </state>
-    <state width="1580" height="474" key="GridCell.Tab.0.bottom/0.23.3008.1618@0.23.3008.1618" timestamp="1594946546369" />
-    <state width="1580" height="475" key="GridCell.Tab.0.bottom/0.23.3008.1619@0.23.3008.1619" timestamp="1594769573826" />
-    <state width="1580" height="474" key="GridCell.Tab.0.center" timestamp="1594946546368">
-      <screen x="0" y="23" width="3008" height="1618" />
-    </state>
-    <state width="1580" height="474" key="GridCell.Tab.0.center/0.23.3008.1618@0.23.3008.1618" timestamp="1594946546368" />
-    <state width="1580" height="475" key="GridCell.Tab.0.center/0.23.3008.1619@0.23.3008.1619" timestamp="1594769573826" />
-    <state width="1580" height="474" key="GridCell.Tab.0.left" timestamp="1594946546368">
-      <screen x="0" y="23" width="3008" height="1618" />
-    </state>
-    <state width="1580" height="474" key="GridCell.Tab.0.left/0.23.3008.1618@0.23.3008.1618" timestamp="1594946546368" />
-    <state width="1580" height="475" key="GridCell.Tab.0.left/0.23.3008.1619@0.23.3008.1619" timestamp="1594769573825" />
-    <state width="1580" height="474" key="GridCell.Tab.0.right" timestamp="1594946546369">
-      <screen x="0" y="23" width="3008" height="1618" />
-    </state>
-    <state width="1580" height="474" key="GridCell.Tab.0.right/0.23.3008.1618@0.23.3008.1618" timestamp="1594946546369" />
-    <state width="1580" height="475" key="GridCell.Tab.0.right/0.23.3008.1619@0.23.3008.1619" timestamp="1594769573826" />
-    <state x="928" y="471" key="SettingsEditor" timestamp="1591390667576">
-      <screen x="0" y="23" width="3008" height="1619" />
-    </state>
-    <state x="928" y="471" key="SettingsEditor/0.23.3008.1619@0.23.3008.1619" timestamp="1591390667576" />
-    <state x="1528" y="557" width="837" height="550" key="find.popup" timestamp="1594767229821">
-      <screen x="0" y="23" width="3008" height="1619" />
-    </state>
-    <state x="1528" y="557" width="837" height="550" key="find.popup/0.23.3008.1619@0.23.3008.1619" timestamp="1594767229821" />
-  </component>
 </project>
